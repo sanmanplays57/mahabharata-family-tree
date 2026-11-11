@@ -1182,6 +1182,7 @@
 
 - id: adhisimakrishna
   name: Adhisimakrishna
+  aka: [Asimakrishna, Asima-krishna]
   sex: m
   kind: human
   house: kuru
@@ -1193,12 +1194,12 @@
 
 - id: nichakshu
   name: Nichakshu
-  aka: [Nicakshu, Nishcaknu]
+  aka: [Nicakshu, Nishcaknu, Nichakra]
   sex: m
   kind: human
   house: kuru
   title: Paurava king after the war (Purana)
-  summary: "2nd king after Ashvamedhadatta in the Puranic continuation of the Paurava line. When the Ganga carried away Hastinapura, he moved the capital to Kaushambi. The critical edition of the Vishnu Purana reads his name as Niścaknu."
+  summary: "2nd king after Ashvamedhadatta in the Puranic continuation of the Paurava line. When the Ganga carried away Hastinapura, he moved the capital to Kaushambi. Wilson's translation calls him Nichakra; the critical edition reads Niścaknu."
   ver: purana
   parents:
     - { id: adhisimakrishna, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
@@ -1232,7 +1233,7 @@
   kind: human
   house: kuru
   title: Paurava king after the war (Purana)
-  summary: "5th king after Ashvamedhadatta in the Puranic continuation of the Paurava line. Son of Chitraratha. Missing from some lists of these kings, but present in the Vishnu Purana."
+  summary: "Son of Chitraratha in the critical edition of the Vishnu Purana. Wilson's translation, from the older printed text, has no Shuchiratha and goes straight from Chitraratha to Vrishnimat."
   ver: purana
   parents:
     - { id: chitraratha-paurava, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
@@ -1295,13 +1296,13 @@
     - { id: richa, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
 
 - id: sukhibala
-  name: Sukhibala
-  aka: [Sukhihala, Sukhinala]
+  name: Sukhihala
+  aka: [Sukhibala, Sukhinala]
   sex: m
   kind: human
   house: kuru
   title: Paurava king after the war (Purana)
-  summary: "11th king after Ashvamedhadatta in the Puranic continuation of the Paurava line. Vishnu Purana reads sukhibala; other lists give Sukhihala or similar."
+  summary: "11th king after Ashvamedhadatta in the Puranic continuation of the Paurava line. Sukhihala in Wilson's translation; the critical edition reads sukhibala."
   ver: purana
   parents:
     - { id: nrichakshu, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
@@ -1430,13 +1431,13 @@
     - { id: udayana, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
 
 - id: dandapani
-  name: Dandapani
-  aka: [Khandapani]
+  name: Khandapani
+  aka: [Dandapani]
   sex: m
   kind: human
   house: kuru
   title: Paurava king after the war (Purana)
-  summary: "23th king after Ashvamedhadatta in the Puranic continuation of the Paurava line. Vishnu Purana reads daṇḍapāṇi; other lists give Khandapani."
+  summary: "23rd king after Ashvamedhadatta in the Puranic continuation of the Paurava line. Khandapani in Wilson's translation; the critical edition reads daṇḍapāṇi."
   ver: purana
   parents:
     - { id: ahinara, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }

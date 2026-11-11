@@ -405,6 +405,28 @@ function citeHTML(c) {
     }
     m = part.match(/^PE:\s*(.+)$/i);
     if (m) return `<a href="https://archive.org/details/puranicencyclopa00maniuoft/mode/2up?q=${encodeURIComponent(m[1])}" target="_blank" rel="noopener" title="Vettam Mani, Puranic Encyclopaedia">PE “${esc(m[1])}”</a>`;
+    // "CE 3.259.7, 3.260.2" or "CE 3.258.13, 14": Sanskrit Critical Edition, one GRETIL page per book.
+    m = part.match(/^CE\s+(.+)$/);
+    if (m) {
+      let book = null, chap = null;
+      const pad = (v, n) => String(v).padStart(n, "0");
+      return "CE " + m[1].split(/\s*,\s*/).map((ref) => {
+        const full = ref.match(/^(\d+)\.(\d+)\.(\d+)/);
+        if (full) [book, chap] = [full[1], full[2]];
+        const verse = full ? full[3] : (ref.match(/^\d+/) || [])[0];
+        if (!book || !verse) return esc(ref);
+        return `<a href="https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_${pad(book, 2)}_u.htm" target="_blank" rel="noopener" title="Sanskrit Critical Edition on GRETIL: find ${pad(book, 2)},${pad(chap, 3)}.${pad(verse, 3)} on the page">${esc(ref)}</a>`;
+      }).join(", ");
+    }
+    // "Vishnu Purana 4.21.2": Wilson's English translation on sacred-texts, where repeated
+    // chapter numbers get suffixes in book order (Book IV ch. 21 = chapter-xxi-2).
+    m = part.match(/^Vishnu Purana\s+(\d+)\.(\d+)/);
+    if (m) {
+      const book = +m[1], ch = +m[2];
+      const occ = [22, 16, 18, 24, 38, 8].slice(0, book - 1).filter((n) => n >= ch).length + 1;
+      const url = `https://sacred-texts.com/book/the-vishnu-purana/chapter-${roman(ch)}${occ > 1 ? "-" + occ : ""}`;
+      return `<a href="${url}" target="_blank" rel="noopener" title="Wilson's English translation, Book ${book} chapter ${ch} (checked against the Sanskrit critical edition)">${esc(part)}</a>`;
+    }
     return esc(part);
   });
   return `<span class="cite">${parts.join("; ")}</span>`;
