@@ -1,0 +1,270 @@
+# Panchala, Matsya, the preceptors, Magadha and others.
+
+- id: bharadvaja
+  name: Bharadvaja
+  aka: [Bharadwaja]
+  sex: m
+  kind: rishi
+  title: sage, father of Drona
+  summary: Great sage. At the sight of the apsara Ghritachi his seed fell; he kept it in a pot, and Drona was born from it.
+  wiki: Bharadwaja
+
+- id: drona
+  name: Drona
+  aka: [Dronacharya, Bharadvaja, Acharya]
+  sex: m
+  kind: rishi
+  title: teacher of the princes
+  summary: Born from a pot holding Bharadvaja's seed, "not born of any woman". The Brahmin teacher of arms to both Kauravas and Pandavas, he commanded the Kaurava army after Bhishma; told falsely that Ashwatthama was dead, he laid down his arms and was beheaded by Dhrishtadyumna.
+  wiki: Drona
+  birth: Born from a pot (drona) in which his father's seed was kept.
+  parents:
+    - { id: bharadvaja, rel: father, cite: "adi 63, 67" }
+  spouses:
+    - { id: kripi, cite: "adi 131, 133" }
+  incarnation:
+    - { of: brihaspati, kind: portion, cite: adi 67 }
+  returned:
+    - { to: brihaspati, cite: "svargarohana 4, 5", note: "“Drona entered Brihaspati, foremost of the Angirasas” (CE 18.5.10)." }
+
+- id: gautama-sharadvan
+  name: Sharadvan Gautama
+  aka: [Saradwat, Sharadvat, Gautama]
+  sex: m
+  kind: rishi
+  title: archer-sage, father of Kripa and Kripi
+  summary: Sage born with arrows, devoted to archery. His seed fell on a clump of reeds at the sight of an apsara, and the twins Kripa and Kripi were born there.
+  wiki: Shatananda
+
+- id: kripa
+  name: Kripa
+  aka: [Kripacharya, Gautama, Sharadvata]
+  sex: m
+  kind: rishi
+  title: teacher of the princes, survivor
+  summary: Twin born on a clump of reeds from Sharadvan's seed; King Shantanu found and raised him. The princes' first teacher of arms, he was one of the three Kaurava survivors of the war.
+  wiki: Kripa
+  birth: Born with his twin sister on a clump of reeds where his father's seed fell.
+  parents:
+    - { id: gautama-sharadvan, rel: father, cite: adi 63 }
+    - { id: shantanu, rel: adoptive-father, note: "Shantanu found the twins while hunting and raised them out of compassion (kripa).", cite: adi 130 }
+  incarnation:
+    - { of: rudras, kind: portion, cite: adi 67 }
+
+- id: kripi
+  name: Kripi
+  sex: f
+  kind: human
+  house: other
+  title: wife of Drona
+  summary: Twin sister of Kripa, born on the reeds and raised by Shantanu; wife of Drona and mother of Ashwatthama.
+  parents:
+    - { id: gautama-sharadvan, rel: father, cite: adi 63 }
+    - { id: shantanu, rel: adoptive-father, cite: adi 130 }
+
+- id: ashwatthama
+  name: Ashwatthama
+  aka: [Aswatthaman, Ashvatthaman, Drauni, Ashwatthaman]
+  sex: m
+  kind: rishi
+  title: son of Drona
+  summary: Drona's son, born with a jewel in his forehead. On the war's last night he slaughtered the sleeping Panchalas and Draupadi's sons, and aimed his weapon at Uttara's womb; Krishna cursed him to wander for three thousand years.
+  wiki: Ashwatthama
+  parents:
+    - { id: drona, rel: father, cite: adi 67 }
+    - { id: kripi, rel: mother, cite: adi 63 }
+  incarnation:
+    - { of: shiva, kind: portion, cite: adi 67, note: "One of four united portions: Mahadeva, Yama, Kama and Krodha." }
+    - { of: yama, kind: portion, cite: adi 67 }
+    - { of: kama, kind: portion, cite: adi 67 }
+    - { of: krodha, kind: portion, cite: adi 67 }
+
+- id: prishata
+  name: Prishata
+  sex: m
+  kind: human
+  house: panchala
+  title: king of Panchala
+  summary: King of Panchala and friend of Bharadvaja; father of Drupada, who studied alongside Drona.
+  parents: []
+
+- id: drupada
+  name: Drupada
+  aka: [Yajnasena, Somaka, Panchalaraja, Prishati]
+  sex: m
+  kind: human
+  house: panchala
+  title: king of Panchala
+  summary: Son of Prishata and childhood friend of Drona, whom he later spurned. Defeated by Drona's pupils and humiliated, he held a sacrifice for a son to kill Drona; Dhrishtadyumna and Draupadi rose from the fire.
+  wiki: Drupada
+  parents:
+    - { id: prishata, rel: father, cite: adi 131 }
+  incarnation:
+    - { of: maruts, kind: portion, cite: adi 67 }
+  returned:
+    - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+
+- id: dhrishtadyumna
+  name: Dhrishtadyumna
+  aka: [Dhristadyumna, Parshata, Draupada]
+  sex: m
+  kind: human
+  house: panchala
+  title: commander of the Pandava army
+  summary: Rose from Drupada's sacrificial fire in armour, born to kill Drona; commander-in-chief of the Pandava army. He beheaded Drona as he sat in meditation, and Ashwatthama killed him in his sleep.
+  wiki: Dhrishtadyumna
+  birth: Rose from the sacrificial fire, armed and armoured.
+  parents:
+    - { id: drupada, rel: father, cite: adi 63, note: "Born from his sacrificial fire." }
+  incarnation:
+    - { of: agni, kind: portion, cite: adi 67 }
+  returned:
+    - { to: agni, cite: "svargarohana 5" }
+
+- id: shikhandi
+  name: Shikhandi
+  aka: [Shikhandin, Sikhandin, Shikhandini]
+  sex: m
+  kind: human
+  house: panchala
+  title: born female, became male
+  summary: Born to Drupada as a daughter, Shikhandini, and raised as a son; the yaksha Sthuna later exchanged sexes with her. Bhishma would not fight one born a woman, so Arjuna shot him from behind Shikhandi.
+  wiki: Shikhandi
+  birth: Born female; became male through an exchange with the yaksha Sthuna.
+  parents:
+    - { id: drupada, rel: father, cite: adi 63 }
+  incarnation:
+    - { of: rakshasa-shikhandi, kind: rebirth, cite: adi 67, note: "Adi 67: “was (the incarnation of) a Rakshasa”." }
+    - { of: amba, kind: rebirth, note: "Udyoga Parva: Amba, spurned after Bhishma abducted her, burned herself and was reborn to destroy him. Conflicts with Adi 67.", cite: CE 5.188.12 }
+
+- id: virata
+  name: Virata
+  sex: m
+  kind: human
+  house: other
+  title: king of Matsya
+  summary: King of the Matsyas, in whose court the Pandavas spent their thirteenth year of exile in disguise. His daughter Uttara married Abhimanyu.
+  wiki: Virata
+  spouses:
+    - { id: sudeshna, cite: CE 4.3.18 }
+  incarnation:
+    - { of: maruts, kind: portion, cite: adi 67 }
+  returned:
+    - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+
+- id: sudeshna
+  name: Sudeshna
+  sex: f
+  kind: human
+  house: other
+  title: queen of Matsya
+  summary: Virata's queen and sister of Kichaka. She sent Draupadi, serving her in disguise, to Kichaka's quarters.
+  wiki: Sudeshna
+
+- id: uttar
+  name: Uttara Kumara
+  aka: [Uttar, Bhuminjaya]
+  sex: m
+  kind: human
+  house: other
+  title: prince of Matsya
+  summary: Virata's son, who boasted he could defeat the Kaurava raiders and panicked at the sight of them. Arjuna, disguised as the eunuch Brihannala, made him his charioteer and won the battle.
+  wiki: Uttara (Mahabharata)
+  parents:
+    - { id: virata, rel: father, cite: adi 188 }
+    - { id: sudeshna, rel: mother }
+  returned:
+    - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+
+- id: brihadratha
+  name: Brihadratha
+  aka: [Vrihadratha]
+  sex: m
+  kind: human
+  house: other
+  title: king of Magadha
+  summary: King of Magadha who married twin princesses of Kashi. The sage Chandakaushika gave him a mango for a son; he split it between the queens, and each bore half a child.
+
+- id: brihadratha-queens
+  name: Twin queens of Brihadratha
+  kind: group
+  title: mothers of Jarasandha
+  summary: Twin princesses of Kashi married to Brihadratha. Each ate half of the sage's mango and gave birth to half a child.
+
+- id: jara
+  name: Jara
+  sex: f
+  kind: rakshasa
+  title: rakshasi who joined Jarasandha
+  summary: Rakshasi who found the two lifeless halves of the baby discarded and joined them, bringing him to life. He was named Jarasandha, "joined by Jara".
+
+- id: jarasandha
+  name: Jarasandha
+  sex: m
+  kind: human
+  house: other
+  title: emperor of Magadha
+  summary: Emperor of Magadha, born in two halves to two mothers and joined by the rakshasi Jara. He drove the Yadavas from Mathura to Dvaraka; Bhima killed him in a wrestling match by tearing him back into two halves.
+  wiki: Jarasandha
+  birth: Born as two half-bodies to two queens; the rakshasi Jara joined them.
+  parents:
+    - { id: brihadratha, rel: father, cite: "PE: JARASANDHA I" }
+    - { id: brihadratha-queens, rel: mother, note: "Two mothers, each bearing half a child.", cite: "PE: JARA" }
+    - { id: jara, rel: adoptive-mother, note: "Joined the two halves into one living child.", cite: "PE: JARA" }
+  incarnation:
+    - { of: viprachitti, kind: rebirth, cite: adi 67 }
+
+- id: bhagadatta
+  name: Bhagadatta
+  sex: m
+  kind: human
+  house: other
+  title: king of Pragjyotisha
+  summary: Elephant-riding king of Pragjyotisha who fought for the Kauravas; Arjuna killed him on the twelfth day. Adi 67 says he was the asura Vashkala reborn. Later tradition makes him Narakasura's son, but in the epic itself (Sabha 14, CE 2.13.13) he rules over Mura and Naraka as subordinate Yavana lords.
+  wiki: Bhagadatta
+  parents:
+    - { id: narakasura, rel: father, ver: later, note: "Later tradition. The epic (CE 2.13.13) has Bhagadatta ruling Mura and Naraka, “the two Yavana lords”; the Puranic Encyclopaedia names his grandfather as Sailalaya instead." }
+  incarnation:
+    - { of: vashkala, kind: rebirth, cite: adi 67 }
+
+- id: narakasura
+  name: Narakasura
+  aka: [Naraka, Bhauma]
+  sex: m
+  kind: asura
+  title: asura king of Pragjyotisha
+  summary: Asura king, son of the Earth, who held sixteen thousand women captive. Krishna killed him and married the captives.
+  wiki: Narakasura
+
+- id: hiranyadhanus
+  name: Hiranyadhanus
+  sex: m
+  kind: human
+  house: other
+  title: Nishada king
+  summary: King of the Nishadas and father of Ekalavya.
+
+- id: ekalavya
+  name: Ekalavya
+  sex: m
+  kind: human
+  house: other
+  title: Nishada archer
+  summary: Nishada prince whom Drona refused as a pupil. He taught himself archery before a clay image of Drona, and when Drona demanded a fee he gave up his right thumb.
+  wiki: Ekalavya
+  parents:
+    - { id: hiranyadhanus, rel: father, cite: adi 134 }
+  incarnation:
+    - { of: krodhavashas, kind: portion, cite: adi 67 }
+
+- id: shankha
+  name: Shankha
+  sex: m
+  kind: human
+  house: other
+  title: prince of Matsya
+  summary: Son of King Virata and brother of Uttara Kumara; fought for the Pandavas. After death he and Uttara "entered the Vishvadevas".
+  parents:
+    - { id: virata, rel: father, cite: adi 188 }
+  returned:
+    - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }

@@ -1,0 +1,60 @@
+# Background verses. `lines` are copied verbatim from the GRETIL Critical Edition
+# (refs/gretil/mbh/MBH1-18U.HTM) under the verse id in `ce` — main text only, never
+# star (*) or appendix (@) passages. build.mjs checks every line, converts it to
+# Devanagari and lays the verses out in one repeating tile.
+# Find candidates with:  node tools/find-verse.mjs "<iast fragment>"   or   --id 06,024.022
+
+# --- the epic itself ---
+- { ce: "01,001.000", ref: "Mahabharata — opening invocation", lines: ["nārāyaṇaṃ namaskṛtya naraṃ caiva narottamam", "devīṃ sarasvatīṃ caiva tato jayam udīrayet"] }
+- { ce: "01,001.188", ref: "Mahabharata 1.1.188", lines: ["kālaḥ pacati bhūtāni kālaḥ saṃharati prajāḥ", "nirdahantaṃ prajāḥ kālaṃ kālaḥ śamayate punaḥ"] }
+- { ce: "01,011.012", ref: "Mahabharata 1.11.12", lines: ["ahiṃsā paramo dharmaḥ sarvaprāṇabhṛtāṃ smṛtaḥ"] }
+- { ce: "01,056.033", ref: "Mahabharata 1.56.33 — the epic on itself", lines: ["dharme cārthe ca kāme ca mokṣe ca bharatarṣabha", "yad ihāsti tad anyatra yan nehāsti na tat kva cit"] }
+- { ce: "01,068.040", ref: "Shakuntala to Dushyanta, 1.68.40", lines: ["ardhaṃ bhāryā manuṣyasya bhāryā śreṣṭhatamaḥ sakhā", "bhāryā mūlaṃ trivargasya bhāryā mitraṃ mariṣyataḥ"] }
+- { ce: "01,068.062", ref: "Shakuntala to Dushyanta, 1.68.62", lines: ["aṅgād aṅgāt saṃbhavasi hṛdayād abhijāyase", "ātmā vai putranāmāsi sa jīva śaradaḥ śatam"] }
+- { ce: "01,090.031", ref: "The voice from heaven to Dushyanta, 1.90.31", lines: ["mātā bhastrā pituḥ putro yena jātaḥ sa eva saḥ", "bharasva putraṃ duḥṣanta māvamaṃsthāḥ śakuntalām"] }
+- { ce: "03,203.041", ref: "Mahabharata 3.203.41", lines: ["ānṛśaṃsyaṃ paro dharmaḥ kṣamā ca paramaṃ balam", "ātmajñānaṃ paraṃ jñānaṃ paraṃ satyavrataṃ vratam"] }
+- { ce: "03,297.041", ref: "Yudhishthira to the Yaksha, 3.297.41", lines: ["mātā gurutarā bhūmeḥ pitā uccataraś ca khāt", "manaḥ śīghrataraṃ vāyoś cintā bahutarī nṛṇām"] }
+- { ce: "05,033.041", ref: "Vidura, 5.33.41", lines: ["ekaḥ pāpāni kurute phalaṃ bhuṅkte mahājanaḥ", "bhoktāro vipramucyante kartā doṣeṇa lipyate"] }
+- { ce: "05,033.053", ref: "Vidura, 5.33.53", lines: ["dvāv imau puruṣau rājan svargasyopari tiṣṭhataḥ", "prabhuś ca kṣamayā yukto daridraś ca pradānavān"] }
+- { ce: "05,033.066", ref: "Vidura, 5.33.66", lines: ["ṣaḍ doṣāḥ puruṣeṇeha hātavyā bhūtim icchatā", "nidrā tandrī bhayaṃ krodha ālasyaṃ dīrghasūtratā"] }
+- { ce: "05,035.049", ref: "Vidura, 5.35.49", lines: ["na sā sabhā yatra na santi vṛddhā; na te vṛddhā ye na vadanti dharmam", "nāsau dharmo yatra na satyam asti; na tat satyaṃ yac chalenānuviddham"] }
+- { ce: "05,039.058", ref: "Vidura, 5.39.58", lines: ["akrodhena jayet krodham asādhuṃ sādhunā jayet", "jayet kadaryaṃ dānena jayet satyena cānṛtam"] }
+- { ce: "05,141.033", ref: "Karna to Krishna, 5.141.33", lines: ["viditaṃ me hṛṣīkeśa yato dharmas tato jayaḥ"] }
+- { ce: "06,062.034", ref: "Mahabharata 6.62.34", lines: ["yataḥ kṛṣṇas tato dharmo yato dharmas tato jayaḥ"] }
+- { ce: "11,002.003", ref: "Vidura to Dhritarashtra, 11.2.3", lines: ["sarve kṣayāntā nicayāḥ patanāntāḥ samucchrayāḥ", "saṃyogā viprayogāntā maraṇāntaṃ hi jīvitam"] }
+- { ce: "12,028.036", ref: "Mahabharata 12.28.36", lines: ["yathā kāṣṭhaṃ ca kāṣṭhaṃ ca sameyātāṃ mahodadhau", "sametya ca vyatīyātāṃ tadvad bhūtasamāgamaḥ"] }
+- { ce: "12,136.104", ref: "Mahabharata 12.136.104", lines: ["na kaś cit kasya cin mitraṃ na kaś cit kasya cit suhṛt", "arthair arthā nibadhyante gajair vanagajā iva"] }
+- { ce: "12,258.029", ref: "Mahabharata 12.258.29", lines: ["nāsti mātṛsamā chāyā nāsti mātṛsamā gatiḥ", "nāsti mātṛsamaṃ trāṇaṃ nāsti mātṛsamā prapā"] }
+- { ce: "12,288.020", ref: "Mahabharata 12.288.20", lines: ["guhyaṃ brahma tad idaṃ vo bravīmi; na mānuṣāc chreṣṭhataraṃ hi kiṃ cit"] }
+- { ce: "18,005.049", ref: "Vyasa, near the epic's close, 18.5.49", lines: ["ūrdhvabāhur viraumy eṣa na ca kaś cic chṛṇoti me", "dharmād arthaś ca kāmaś ca sa kimarthaṃ na sevyate"] }
+
+# --- Bhagavad Gita (Bhishma Parva 23-40; Gita chapter = CE chapter - 22) ---
+- { ce: "06,023.001", ref: "Bhagavad Gita 1.1", lines: ["dharmakṣetre kurukṣetre samavetā yuyutsavaḥ", "māmakāḥ pāṇḍavāś caiva kim akurvata saṃjaya"] }
+- { ce: "06,024.011", ref: "Bhagavad Gita 2.11", lines: ["aśocyān anvaśocas tvaṃ prajñāvādāṃś ca bhāṣase", "gatāsūn agatāsūṃś ca nānuśocanti paṇḍitāḥ"] }
+- { ce: "06,024.013", ref: "Bhagavad Gita 2.13", lines: ["dehino 'smin yathā dehe kaumāraṃ yauvanaṃ jarā", "tathā dehāntaraprāptir dhīras tatra na muhyati"] }
+- { ce: "06,024.020", ref: "Bhagavad Gita 2.20", lines: ["na jāyate mriyate vā kadā cin; nāyaṃ bhūtvā bhavitā vā na bhūyaḥ", "ajo nityaḥ śāśvato 'yaṃ purāṇo; na hanyate hanyamāne śarīre"] }
+- { ce: "06,024.022", ref: "Bhagavad Gita 2.22", lines: ["vāsāṃsi jīrṇāni yathā vihāya; navāni gṛhṇāti naro 'parāṇi", "tathā śarīrāṇi vihāya jīrṇāny; anyāni saṃyāti navāni dehī"] }
+- { ce: "06,024.023", ref: "Bhagavad Gita 2.23", lines: ["nainaṃ chindanti śastrāṇi nainaṃ dahati pāvakaḥ", "na cainaṃ kledayanty āpo na śoṣayati mārutaḥ"] }
+- { ce: "06,024.027", ref: "Bhagavad Gita 2.27", lines: ["jātasya hi dhruvo mṛtyur dhruvaṃ janma mṛtasya ca", "tasmād aparihārye 'rthe na tvaṃ śocitum arhasi"] }
+- { ce: "06,024.047", ref: "Bhagavad Gita 2.47", lines: ["karmaṇy evādhikāras te mā phaleṣu kadā cana", "mā karmaphalahetur bhūr mā te saṅgo 'stv akarmaṇi"] }
+- { ce: "06,024.050", ref: "Bhagavad Gita 2.50", lines: ["buddhiyukto jahātīha ubhe sukṛtaduṣkṛte", "tasmād yogāya yujyasva yogaḥ karmasu kauśalam"] }
+- { ce: "06,024.062", ref: "Bhagavad Gita 2.62", lines: ["dhyāyato viṣayān puṃsaḥ saṅgas teṣūpajāyate", "saṅgāt saṃjāyate kāmaḥ kāmāt krodho 'bhijāyate"] }
+- { ce: "06,024.063", ref: "Bhagavad Gita 2.63", lines: ["krodhād bhavati saṃmohaḥ saṃmohāt smṛtivibhramaḥ", "smṛtibhraṃśād buddhināśo buddhināśāt praṇaśyati"] }
+- { ce: "06,025.021", ref: "Bhagavad Gita 3.21", lines: ["yad yad ācarati śreṣṭhas tat tad evetaro janaḥ", "sa yat pramāṇaṃ kurute lokas tad anuvartate"] }
+- { ce: "06,025.035", ref: "Bhagavad Gita 3.35", lines: ["śreyān svadharmo viguṇaḥ paradharmāt svanuṣṭhitāt", "svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ"] }
+- { ce: "06,026.007", ref: "Bhagavad Gita 4.7", lines: ["yadā yadā hi dharmasya glānir bhavati bhārata", "abhyutthānam adharmasya tadātmānaṃ sṛjāmy aham"] }
+- { ce: "06,026.008", ref: "Bhagavad Gita 4.8", lines: ["paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām", "dharmasaṃsthāpanārthāya saṃbhavāmi yuge yuge"] }
+- { ce: "06,026.011", ref: "Bhagavad Gita 4.11", lines: ["ye yathā māṃ prapadyante tāṃs tathaiva bhajāmy aham", "mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ"] }
+- { ce: "06,026.038", ref: "Bhagavad Gita 4.38", lines: ["na hi jñānena sadṛśaṃ pavitram iha vidyate", "tat svayaṃ yogasaṃsiddhaḥ kālenātmani vindati"] }
+- { ce: "06,028.005", ref: "Bhagavad Gita 6.5", lines: ["uddhared ātmanātmānaṃ nātmānam avasādayet", "ātmaiva hy ātmano bandhur ātmaiva ripur ātmanaḥ"] }
+- { ce: "06,028.034", ref: "Arjuna, Bhagavad Gita 6.34", lines: ["cañcalaṃ hi manaḥ kṛṣṇa pramāthi balavad dṛḍham", "tasyāhaṃ nigrahaṃ manye vāyor iva suduṣkaram"] }
+- { ce: "06,031.022", ref: "Bhagavad Gita 9.22", lines: ["ananyāś cintayanto māṃ ye janāḥ paryupāsate", "teṣāṃ nityābhiyuktānāṃ yogakṣemaṃ vahāmy aham"] }
+- { ce: "06,031.026", ref: "Bhagavad Gita 9.26", lines: ["patraṃ puṣpaṃ phalaṃ toyaṃ yo me bhaktyā prayacchati", "tad ahaṃ bhaktyupahṛtam aśnāmi prayatātmanaḥ"] }
+- { ce: "06,032.020", ref: "Bhagavad Gita 10.20", lines: ["aham ātmā guḍākeśa sarvabhūtāśayasthitaḥ", "aham ādiś ca madhyaṃ ca bhūtānām anta eva ca"] }
+- { ce: "06,032.037", ref: "Bhagavad Gita 10.37", lines: ["vṛṣṇīnāṃ vāsudevo 'smi pāṇḍavānāṃ dhanaṃjayaḥ", "munīnām apy ahaṃ vyāsaḥ kavīnām uśanā kaviḥ"] }
+- { ce: "06,033.012", ref: "Bhagavad Gita 11.12", lines: ["divi sūryasahasrasya bhaved yugapad utthitā", "yadi bhāḥ sadṛśī sā syād bhāsas tasya mahātmanaḥ"] }
+- { ce: "06,033.032", ref: "Bhagavad Gita 11.32", lines: ["kālo 'smi lokakṣayakṛt pravṛddho; lokān samāhartum iha pravṛttaḥ"] }
+- { ce: "06,037.001", ref: "Bhagavad Gita 15.1", lines: ["ūrdhvamūlam adhaḥśākham aśvatthaṃ prāhur avyayam", "chandāṃsi yasya parṇāni yas taṃ veda sa vedavit"] }
+- { ce: "06,037.007", ref: "Bhagavad Gita 15.7", lines: ["mamaivāṃśo jīvaloke jīvabhūtaḥ sanātanaḥ", "manaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati"] }
+- { ce: "06,040.066", ref: "Bhagavad Gita 18.66", lines: ["sarvadharmān parityajya mām ekaṃ śaraṇaṃ vraja", "ahaṃ tvā sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ"] }
+- { ce: "06,040.078", ref: "Sanjaya, Bhagavad Gita 18.78", lines: ["yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanurdharaḥ", "tatra śrīr vijayo bhūtir dhruvā nītir matir mama"] }

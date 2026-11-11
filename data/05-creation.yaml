@@ -1,0 +1,768 @@
+# The creation genealogy of Adi 65-66 (Daksha's daughters, Kashyapa's lines, Dharma's family,
+# Bhrigu's line) plus Pulastya's line from the Ramopakhyana (CE 3.258-259) and the
+# Jaya-Vijaya rebirths (Puranic Encyclopaedia, from the Bhagavata).
+
+# --- Daksha's daughters married to Kashyapa (Adi 65: thirteen; Adi 66: "thirteen on Kasyapa") ---
+- id: diti
+  name: Diti
+  sex: f
+  kind: asura
+  title: mother of the Daityas
+  summary: Daughter of Daksha and wife of Kashyapa; mother of Hiranyakashipu and so of the Daityas.
+  wiki: Diti
+  parents:
+    - { id: daksha, rel: father, cite: adi 65 }
+  spouses:
+    - { id: kashyapa, cite: "adi 65, 66" }
+
+- id: danu
+  name: Danu
+  sex: f
+  kind: asura
+  title: mother of the Danavas
+  summary: Daughter of Daksha and wife of Kashyapa; mother of forty Danavas, among them Viprachitti, Puloman, Svarbhanu and Vrishaparvan — so the Kuru line, through Vrishaparvan's daughter Sharmishtha, descends from her.
+  parents:
+    - { id: daksha, rel: father, cite: adi 65 }
+  spouses:
+    - { id: kashyapa, cite: "adi 65, 66" }
+
+- id: danayu
+  name: Danayu
+  sex: f
+  kind: asura
+  title: mother of Vritra
+  summary: Daughter of Daksha and wife of Kashyapa; mother of four asuras, Vikshara, Vala, Vira and Vritra.
+  parents:
+    - { id: daksha, rel: father, cite: adi 65 }
+  spouses:
+    - { id: kashyapa, cite: "adi 65, 66" }
+
+- id: simhika
+  name: Simhika
+  aka: [Sinhika]
+  sex: f
+  kind: asura
+  title: mother of Rahu
+  summary: Daughter of Daksha and wife of Kashyapa; mother of Rahu, "the persecutor of the Sun and the Moon". Adi 65 separately lists Svarbhanu among Danu's sons; later texts treat Svarbhanu and Rahu as one.
+  parents:
+    - { id: daksha, rel: father, cite: adi 65 }
+  spouses:
+    - { id: kashyapa, cite: "adi 65, 66" }
+
+- id: krodha-daksha
+  name: Krodha
+  aka: [Krura]
+  sex: f
+  kind: asura
+  title: daughter of Daksha, mother of the Krodhavashas
+  summary: Daughter of Daksha and wife of Kashyapa, whose countless offspring were "crooked and wicked". Adi 66 gives her nine daughters, Surasa among them. Not the same as Krodha, Wrath personified.
+  parents:
+    - { id: daksha, rel: father, cite: adi 65 }
+  spouses:
+    - { id: kashyapa, cite: "adi 65, 66" }
+
+- id: kala-daksha
+  name: Kala
+  sex: f
+  kind: asura
+  title: daughter of Daksha
+  summary: Daughter of Daksha and wife of Kashyapa; her sons were "like Yama himself", Vinashana and Krodhahantri among them.
+  parents:
+    - { id: daksha, rel: father, cite: adi 65 }
+  spouses:
+    - { id: kashyapa, cite: "adi 65, 66" }
+
+- id: pradha
+  name: Pradha
+  sex: f
+  kind: apsara
+  title: mother of Gandharvas and Apsaras
+  summary: Daughter of Daksha and wife of Kashyapa; mother of Gandharvas such as Vishvavasu and of the apsaras Alambusha, Mishrakeshi, Tilottama, Rambha and others.
+  parents:
+    - { id: daksha, rel: father, cite: adi 65 }
+  spouses:
+    - { id: kashyapa, cite: "adi 65, 66" }
+
+- id: vishva
+  name: Vishva
+  sex: f
+  kind: god
+  title: daughter of Daksha
+  summary: Daughter of Daksha and one of Kashyapa's thirteen wives.
+  parents:
+    - { id: daksha, rel: father, cite: adi 65 }
+  spouses:
+    - { id: kashyapa, cite: "adi 65, 66" }
+
+- id: vinata
+  name: Vinata
+  sex: f
+  kind: god
+  title: mother of Garuda and Aruna
+  summary: Daughter of Daksha and wife of Kashyapa; mother of Garuda and Aruna. Enslaved by her co-wife Kadru after losing a wager, she was freed by Garuda bringing the nectar.
+  wiki: Vinata
+  parents:
+    - { id: daksha, rel: father, cite: adi 65 }
+  spouses:
+    - { id: kashyapa, cite: "adi 65, 66" }
+
+- id: kapila-daksha
+  name: Kapila
+  sex: f
+  kind: god
+  title: daughter of Daksha
+  summary: Daughter of Daksha and wife of Kashyapa; "the Brahmanas, kine, Gandharvas and Apsaras were born of Kapila".
+  parents:
+    - { id: daksha, rel: father, cite: adi 65 }
+  spouses:
+    - { id: kashyapa, cite: "adi 65, 66" }
+
+- id: muni-daksha
+  name: Muni
+  sex: f
+  kind: gandharva
+  title: mother of Gandharvas
+  summary: Daughter of Daksha and wife of Kashyapa; mother of sixteen Devas and Gandharvas, Chitraratha among them.
+  parents:
+    - { id: daksha, rel: father, cite: adi 65 }
+  spouses:
+    - { id: kashyapa, cite: "adi 65, 66" }
+
+- id: kadru
+  name: Kadru
+  sex: f
+  kind: naga
+  title: mother of the nagas
+  summary: Daughter of Daksha and wife of Kashyapa; mother of the great serpents Shesha, Vasuki and Takshaka. She cursed her own sons to burn in Janamejaya's snake sacrifice — the curse behind the epic's frame story.
+  wiki: Kadru
+  parents:
+    - { id: daksha, rel: father, cite: adi 65 }
+  spouses:
+    - { id: kashyapa, cite: "adi 65, 66" }
+
+# --- the other Adityas (Adi 65; CE 1.59.15) ---
+- id: dhatri
+  name: Dhatri
+  sex: m
+  kind: god
+  title: an Aditya
+  summary: First-named of the twelve Adityas, sons of Kashyapa and Aditi.
+  parents: [{ id: kashyapa, rel: father, cite: adi 65 }, { id: aditi, rel: mother, cite: adi 65 }]
+
+- id: mitra
+  name: Mitra
+  sex: m
+  kind: god
+  title: an Aditya
+  summary: One of the twelve Adityas, god of friendship and contracts, often paired with Varuna.
+  wiki: Mitra (Hindu god)
+  parents: [{ id: kashyapa, rel: father, cite: adi 65 }, { id: aditi, rel: mother, cite: adi 65 }]
+
+- id: aryaman
+  name: Aryaman
+  sex: m
+  kind: god
+  title: an Aditya
+  summary: One of the twelve Adityas, sons of Kashyapa and Aditi.
+  wiki: Aryaman
+  parents: [{ id: kashyapa, rel: father, cite: adi 65 }, { id: aditi, rel: mother, cite: adi 65 }]
+
+- id: varuna
+  name: Varuna
+  sex: m
+  kind: god
+  title: an Aditya, lord of the waters
+  summary: One of the twelve Adityas and lord of the waters. His eldest wife was Divi, daughter of Shukra.
+  wiki: Varuna
+  parents: [{ id: kashyapa, rel: father, cite: adi 65 }, { id: aditi, rel: mother, cite: adi 65 }]
+  spouses:
+    - { id: divi, cite: adi 66 }
+
+- id: amsha
+  name: Amsha
+  aka: [Ansa, Amsa]
+  sex: m
+  kind: god
+  title: an Aditya
+  summary: One of the twelve Adityas, sons of Kashyapa and Aditi.
+  parents: [{ id: kashyapa, rel: father, cite: adi 65 }, { id: aditi, rel: mother, cite: adi 65 }]
+
+- id: bhaga
+  name: Bhaga
+  aka: [Vaga]
+  sex: m
+  kind: god
+  title: an Aditya
+  summary: One of the twelve Adityas, god of good fortune.
+  wiki: Bhaga
+  parents: [{ id: kashyapa, rel: father, cite: adi 65 }, { id: aditi, rel: mother, cite: adi 65 }]
+
+- id: pushan
+  name: Pushan
+  aka: [Pusha]
+  sex: m
+  kind: god
+  title: an Aditya
+  summary: One of the twelve Adityas. Ganguli's list reads "Usha" here, but the Critical Edition (1.59.15) has pūṣā, Pushan.
+  wiki: Pushan
+  parents: [{ id: kashyapa, rel: father, cite: adi 65 }, { id: aditi, rel: mother, cite: adi 65 }]
+
+- id: savitri-aditya
+  name: Savitr
+  aka: [Savitri, Savita]
+  sex: m
+  kind: god
+  title: an Aditya, father of the Ashvins
+  summary: One of the twelve Adityas, a solar god. By Tvashtri's daughter, who had taken the form of a mare, he fathered the twin Ashvins.
+  wiki: Savitr
+  parents: [{ id: kashyapa, rel: father, cite: adi 65 }, { id: aditi, rel: mother, cite: adi 65 }]
+  spouses:
+    - { id: tvashtri-daughter, cite: "CE 1.60.34" }
+
+- id: tvashtri
+  name: Tvashtri
+  aka: [Tvashtr, Tvashta]
+  sex: m
+  kind: god
+  title: an Aditya, the divine craftsman
+  summary: One of the twelve Adityas, the fashioner of forms. His daughter became Savitr's wife and mother of the Ashvins.
+  wiki: Tvashtr
+  parents: [{ id: kashyapa, rel: father, cite: adi 65 }, { id: aditi, rel: mother, cite: adi 65 }]
+
+- id: tvashtri-daughter
+  name: Tvashtri's daughter
+  aka: [Tvashtri, Tvāṣṭrī]
+  sex: f
+  kind: god
+  title: mother of the Ashvins
+  summary: Called Tvāṣṭrī ("daughter of Tvashtri") in the Sanskrit; in the form of a mare she bore Savitr the twin Ashvins in the sky. Ganguli's translation, "Tvashtri … became the wife of Savitri", turns the feminine name into the male Aditya.
+  parents:
+    - { id: tvashtri, rel: father, cite: "CE 1.60.34", note: "Implied by the name Tvāṣṭrī, “daughter of Tvashtri”." }
+
+# --- Diti's line ---
+- id: prahlada
+  name: Prahlada
+  sex: m
+  kind: asura
+  title: eldest son of Hiranyakashipu
+  summary: Eldest of Hiranyakashipu's five sons, and the grandfather of Bali.
+  wiki: Prahlada
+  parents:
+    - { id: hiranyakashipu, rel: father, cite: adi 65 }
+
+- id: anuhlada
+  name: Anuhlada
+  aka: [Anuhrada]
+  sex: m
+  kind: asura
+  title: son of Hiranyakashipu
+  summary: Youngest-but-two of Hiranyakashipu's sons. Adi 67 says he was born on earth as Dhrishtaketu.
+  parents:
+    - { id: hiranyakashipu, rel: father, cite: adi 65 }
+
+- id: virochana
+  name: Virochana
+  sex: m
+  kind: asura
+  title: son of Prahlada
+  summary: Son of Prahlada and father of Bali.
+  wiki: Virochana
+  parents:
+    - { id: prahlada, rel: father, cite: adi 65 }
+
+- id: bali
+  name: Bali
+  aka: [Mahabali, Vali]
+  sex: m
+  kind: asura
+  title: asura king, son of Virochana
+  summary: Son of Virochana; father of Bana.
+  wiki: Mahabali
+  parents:
+    - { id: virochana, rel: father, cite: adi 65 }
+
+- id: bana
+  name: Bana
+  aka: [Banasura, Vana, Mahakala]
+  sex: m
+  kind: asura
+  title: thousand-armed asura, devotee of Shiva
+  summary: Son of Bali, a follower of Rudra also called Mahakala. His daughter Usha fell in love with Krishna's grandson Aniruddha.
+  wiki: Banasura
+  parents:
+    - { id: bali, rel: father, cite: adi 65 }
+
+- id: usha
+  name: Usha
+  aka: [Ushas, Usa]
+  sex: f
+  kind: asura
+  title: Bana's daughter, wife of Aniruddha
+  summary: Daughter of Bana. She saw Aniruddha in a dream and had him carried to her palace; Krishna fought Bana to free him, and she married him.
+  parents:
+    - { id: bana, rel: father, cite: "PE: USA I" }
+  spouses:
+    - { id: aniruddha, cite: "PE: USA I" }
+
+- id: hiranyaksha
+  name: Hiranyaksha
+  sex: m
+  kind: asura
+  title: Daitya, brother of Hiranyakashipu
+  summary: Daitya paired with Hiranyakashipu as the first birth of Vishnu's cursed gatekeepers Jaya and Vijaya; killed by Vishnu (as the boar, in the Puranas).
+  wiki: Hiranyaksha
+  ver: purana
+  incarnation:
+    - { of: jaya-vijaya, kind: rebirth, ver: purana, cite: "PE: JAYA XI" }
+
+# --- Danu's and Danayu's lines ---
+- id: puloman
+  name: Puloman
+  aka: [Pauloman, Puloma]
+  sex: m
+  kind: asura
+  title: Danava, father of Shachi
+  summary: One of Danu's forty sons; father of Shachi, who is called Paulomi, "Puloman's daughter".
+  parents: [{ id: danu, rel: mother, cite: adi 65 }, { id: kashyapa, rel: father, cite: adi 65 }]
+
+- id: vritra
+  name: Vritra
+  sex: m
+  kind: asura
+  title: the great asura slain by Indra
+  summary: Son of Danayu, "Vritra the great Asura", Indra's archetypal enemy. Adi 67 says he was born on earth as King Manimat.
+  wiki: Vritra
+  parents: [{ id: danayu, rel: mother, cite: adi 65 }, { id: kashyapa, rel: father, cite: adi 65 }]
+
+# --- Vinata's and Kadru's lines ---
+- id: garuda
+  name: Garuda
+  aka: [Suparna, Vainateya, Tarkshya]
+  sex: m
+  kind: animal
+  title: king of birds, Vishnu's mount
+  summary: Son of Vinata and Kashyapa, king of birds. He stole the nectar from the gods to free his mother from Kadru, and became Vishnu's mount. Adi 66 reckons him among the Adityas.
+  wiki: Garuda
+  parents: [{ id: vinata, rel: mother, cite: "adi 65, 66" }, { id: kashyapa, rel: father, cite: adi 65 }]
+
+- id: aruna
+  name: Aruna
+  sex: m
+  kind: god
+  title: charioteer of the Sun
+  summary: Son of Vinata, Garuda's elder brother and the Sun's charioteer. By Shyeni he fathered the vultures Sampati and Jatayu.
+  wiki: Aruna (Hinduism)
+  parents: [{ id: vinata, rel: mother, cite: "adi 65, 66" }, { id: kashyapa, rel: father, cite: adi 65 }]
+  spouses:
+    - { id: shyeni, cite: adi 66 }
+
+- id: shyeni
+  name: Shyeni
+  aka: [Syeni]
+  sex: f
+  kind: animal
+  title: mother of Sampati and Jatayu
+  summary: Daughter of Tamra and wife of Aruna; mother of the vultures Sampati and Jatayu.
+
+- id: sampati
+  name: Sampati
+  sex: m
+  kind: animal
+  title: vulture, elder brother of Jatayu
+  summary: Son of Aruna and Shyeni, the elder vulture who in the Rama story points the monkeys toward Lanka.
+  wiki: Sampati
+  parents: [{ id: aruna, rel: father, cite: adi 66 }, { id: shyeni, rel: mother, cite: adi 66 }]
+
+- id: jatayu
+  name: Jatayu
+  sex: m
+  kind: animal
+  title: vulture who fought Ravana
+  summary: Son of Aruna and Shyeni; in the Rama story he fought Ravana to save Sita and was cut down.
+  wiki: Jatayu
+  parents: [{ id: aruna, rel: father, cite: adi 66 }, { id: shyeni, rel: mother, cite: adi 66 }]
+
+- id: vasuki
+  name: Vasuki
+  sex: m
+  kind: naga
+  title: king of the nagas
+  summary: Son of Kadru, serpent king, used as the rope when the ocean was churned.
+  wiki: Vasuki
+  parents: [{ id: kadru, rel: mother, cite: adi 65 }, { id: kashyapa, rel: father, cite: adi 65 }]
+
+- id: chitraratha
+  name: Chitraratha
+  aka: [Angaraparna]
+  sex: m
+  kind: gandharva
+  title: Gandharva king
+  summary: Gandharva son of Muni and Kashyapa. In Adi Parva he challenged the Pandavas on the Ganga by night, was defeated by Arjuna, and became their friend.
+  parents: [{ id: muni-daksha, rel: mother, cite: adi 65 }, { id: kashyapa, rel: father, cite: adi 65 }]
+
+# --- Dharma's family (Adi 66; CE 1.60.13-14) ---
+- id: nakshatras
+  name: The 27 Nakshatras
+  aka: [lunar mansions, wives of Soma]
+  kind: group
+  title: Daksha's daughters, wives of the Moon
+  summary: Twenty-seven daughters of Daksha given to Soma; they mark time as the lunar mansions.
+  parents:
+    - { id: daksha, rel: father, cite: adi 66 }
+  spouses:
+    - { id: soma, cite: adi 66 }
+
+- id: rati
+  name: Rati
+  sex: f
+  kind: god
+  title: wife of Kama
+  summary: Goddess of love and pleasure, wife of Kama, Dharma's son.
+  wiki: Rati
+  spouses:
+    - { id: kama, cite: adi 66 }
+
+- id: sthanu
+  name: Sthanu
+  sex: m
+  kind: rishi
+  title: spiritual son of Brahma, father of the Rudras
+  summary: Another spiritual son of Brahma, father of the eleven Rudras.
+  parents:
+    - { id: brahma, rel: father, cite: adi 66 }
+
+# --- Angiras's sons ---
+- id: utathya
+  name: Utathya
+  sex: m
+  kind: rishi
+  title: son of Angiras
+  summary: Son of Angiras and elder brother of Brihaspati.
+  parents:
+    - { id: angiras, rel: father, cite: adi 66 }
+
+- id: samvarta
+  name: Samvarta
+  sex: m
+  kind: rishi
+  title: son of Angiras
+  summary: Son of Angiras and brother of Brihaspati, a sage of rigid vows.
+  parents:
+    - { id: angiras, rel: father, cite: adi 66 }
+
+# --- Bhrigu's line (Adi 5, 8, 66; CE 3.115-116) ---
+- id: bhrigu
+  name: Bhrigu
+  sex: m
+  kind: rishi
+  title: great sage, born from Brahma's breast
+  summary: Sage who came out "ripping open the breast of Brahman"; father of Shukra and Chyavana, and ancestor of the Bhargavas down to Parashurama.
+  wiki: Bhrigu
+  birth: Came out by ripping open the breast of Brahma.
+  parents:
+    - { id: brahma, rel: father, cite: adi 66 }
+  spouses:
+    - { id: puloma, cite: adi 5 }
+
+- id: puloma
+  name: Puloma
+  sex: f
+  kind: human
+  house: other
+  title: wife of Bhrigu, mother of Chyavana
+  summary: Bhrigu's beloved wife. A rakshasa also named Puloman carried her off while she was pregnant; the child fell from her womb in anger, blazing, and burnt the rakshasa to ashes — hence the name Chyavana, "the fallen".
+  wiki: Puloma
+
+- id: chyavana
+  name: Chyavana
+  sex: m
+  kind: rishi
+  title: son of Bhrigu
+  summary: Son of Bhrigu, born prematurely in fury while his mother was being abducted. By Arushi he fathered Aurva; he also had a son Pramati, Ruru's father.
+  wiki: Chyavana
+  parents:
+    - { id: bhrigu, rel: father, cite: "adi 5, 66" }
+    - { id: puloma, rel: mother, cite: adi 5 }
+  spouses:
+    - { id: arushi, cite: adi 66 }
+
+- id: arushi
+  name: Arushi
+  sex: f
+  kind: human
+  house: other
+  title: wife of Chyavana
+  summary: Wife of Chyavana, called "the daughter of Manu"; Aurva was born by ripping open her thigh.
+
+- id: aurva
+  name: Aurva
+  sex: m
+  kind: rishi
+  title: son of Chyavana
+  summary: Son of Chyavana and Arushi, born from her thigh. Grandfather of Jamadagni.
+  wiki: Aurva
+  birth: Came out by ripping open his mother's thigh.
+  parents:
+    - { id: chyavana, rel: father, cite: adi 66 }
+    - { id: arushi, rel: mother, cite: adi 66 }
+
+- id: richika
+  name: Richika
+  sex: m
+  kind: rishi
+  title: son of Aurva, grandfather of Parashurama
+  summary: Son of Aurva, mighty even as a boy. He married Satyavati, the daughter of King Gadhi and sister of Vishvamitra.
+  parents:
+    - { id: aurva, rel: father, cite: adi 66 }
+  spouses:
+    - { id: satyavati-gadhi, cite: "CE 3.115.17" }
+
+- id: gadhi
+  name: Gadhi
+  sex: m
+  kind: human
+  house: other
+  title: king of Kanyakubja
+  summary: King of Kanyakubja, father of Vishvamitra and of Satyavati, whom he gave to the sage Richika.
+  wiki: Gadhi
+
+- id: satyavati-gadhi
+  name: Satyavati
+  sex: f
+  kind: human
+  house: other
+  title: daughter of Gadhi, wife of Richika
+  summary: Daughter of King Gadhi and sister of Vishvamitra; wife of Richika and mother of Jamadagni. Not the same as Satyavati, mother of Vyasa.
+  parents:
+    - { id: gadhi, rel: father, cite: "CE 3.115.17" }
+
+- id: jamadagni
+  name: Jamadagni
+  sex: m
+  kind: rishi
+  title: sage, father of Parashurama
+  summary: Son of Richika and Satyavati, so a nephew of Vishvamitra and a cousin of Shakuntala. He married Renuka; the youngest of his four sons was Parashurama.
+  wiki: Jamadagni
+  parents:
+    - { id: richika, rel: father, cite: adi 66 }
+    - { id: satyavati-gadhi, rel: mother, cite: "CE 3.115.28" }
+  spouses:
+    - { id: renuka, cite: "CE 3.116.2" }
+
+- id: renuka
+  name: Renuka
+  sex: f
+  kind: human
+  house: other
+  title: wife of Jamadagni
+  summary: Princess given by King Prasenajit to Jamadagni; mother of Parashurama.
+  wiki: Renuka
+
+- id: parashurama
+  name: Parashurama
+  aka: [Rama Jamadagnya, Bhargava Rama, Jamadagnya]
+  sex: m
+  kind: rishi
+  title: warrior-sage, slayer of Kshatriyas
+  summary: Youngest son of Jamadagni, "the slayer of the Kshatriyas". He taught arms to Bhishma, Drona and Karna, and fought Bhishma for twenty-three days on Amba's behalf.
+  wiki: Parashurama
+  parents:
+    - { id: jamadagni, rel: father, cite: adi 66 }
+    - { id: renuka, rel: mother, cite: "CE 3.116.4", note: "“To her were born four sons, with Rama the fifth” — five in all; Adi 66 says Jamadagni had four sons, Rama the youngest." }
+
+- id: pramati
+  name: Pramati
+  sex: m
+  kind: rishi
+  title: son of Chyavana, father of Ruru
+  summary: Son of Chyavana; by the apsara Ghritachi he fathered Ruru.
+  parents:
+    - { id: chyavana, rel: father, cite: "adi 5, 8" }
+
+- id: ghritachi
+  name: Ghritachi
+  sex: f
+  kind: apsara
+  title: celestial nymph
+  summary: Apsara, mother of Ruru by Pramati. The sight of her also caused Bharadvaja's seed to fall, from which Drona was born.
+  wiki: Ghritachi
+
+- id: ruru
+  name: Ruru
+  sex: m
+  kind: rishi
+  title: sage who gave half his life for his bride
+  summary: Son of Pramati and Ghritachi. When his betrothed Pramadvara died of a snakebite he gave half his remaining life to revive her, then vowed to kill every snake he met.
+  parents:
+    - { id: pramati, rel: father, cite: "adi 5, 8" }
+    - { id: ghritachi, rel: mother, cite: "adi 5, 8" }
+  spouses:
+    - { id: pramadvara, cite: "adi 5, 8" }
+
+- id: vishvavasu
+  name: Vishvavasu
+  aka: [Viswavasu]
+  sex: m
+  kind: gandharva
+  title: king of the Gandharvas
+  summary: Gandharva king, son of Pradha. By Menaka he fathered Pramadvara, whom Menaka abandoned by a river.
+  parents:
+    - { id: pradha, rel: mother, cite: adi 65 }
+
+- id: sthulakesha
+  name: Sthulakesha
+  aka: [Sthulakesa]
+  sex: m
+  kind: rishi
+  title: sage who raised Pramadvara
+  summary: Sage who found the abandoned baby Pramadvara and raised her.
+
+- id: pramadvara
+  name: Pramadvara
+  sex: f
+  kind: human
+  house: other
+  title: wife of Ruru
+  summary: Daughter of the Gandharva Vishvavasu and the apsara Menaka — so a half-sister of Shakuntala — raised by the sage Sthulakesha. Bitten by a snake before her wedding, she was revived when Ruru gave her half his life.
+  parents:
+    - { id: vishvavasu, rel: father, cite: adi 8 }
+    - { id: menaka, rel: mother, cite: adi 8 }
+    - { id: sthulakesha, rel: adoptive-father, cite: adi 8 }
+
+- id: shunaka
+  name: Shunaka
+  aka: [Sunaka]
+  sex: m
+  kind: rishi
+  title: son of Ruru, ancestor of Shaunaka
+  summary: Son of Ruru and Pramadvara. Adi 5 calls him the "great ancestor" of Shaunaka, the sage at whose twelve-year sacrifice in the Naimisha forest the whole Mahabharata is recited.
+  parents:
+    - { id: ruru, rel: father, cite: "adi 5, 8" }
+    - { id: pramadvara, rel: mother, cite: "adi 5, 8" }
+
+# --- Shukra's family ---
+- id: divi
+  name: Divi
+  sex: f
+  kind: god
+  title: daughter of Shukra, wife of Varuna
+  summary: Daughter of Shukra and eldest wife of Varuna; mother of Vala and of Sura, the goddess of wine.
+  parents:
+    - { id: shukra, rel: father, cite: adi 66 }
+
+# --- Pulastya's line (CE 3.258-259) ---
+- id: kubera
+  name: Kubera
+  aka: [Vaishravana, Dhanesha, Kuvera]
+  sex: m
+  kind: yaksha
+  title: lord of wealth, king of the Yakshas
+  summary: Pulastya's son, born of a cow. He left his father for Brahma, who made him immortal, lord of wealth and guardian of a quarter. His title Vaiśravaṇa means "son of Vishravas", yet in the epic Vishravas was created only afterwards, from half of Pulastya's self, in anger at him.
+  wiki: Kubera
+  birth: Born to Pulastya of a cow (gavi, CE 3.258.12).
+  parents:
+    - { id: pulastya, rel: father, cite: "CE 3.258.12" }
+
+- id: nalakubara
+  name: Nalakubara
+  aka: [Nalakuvara]
+  sex: m
+  kind: yaksha
+  title: son of Kubera
+  summary: Son of Kubera, given to him by Brahma along with Lanka.
+  wiki: Nalakuvara
+  parents:
+    - { id: kubera, rel: father, cite: "CE 3.258.16" }
+
+- id: vishravas
+  name: Vishravas
+  aka: [Vishrava, Visrava]
+  sex: m
+  kind: rishi
+  title: half of Pulastya, father of Ravana
+  summary: Created by Pulastya from half of his own self, out of anger at Kubera. By the rakshasi Pushpotkata he fathered Ravana and Kumbhakarna.
+  wiki: Vishrava
+  birth: Pulastya "created himself by himself" — born from half of Pulastya's self.
+  parents:
+    - { id: pulastya, rel: father, cite: "CE 3.258.13, 14", note: "Not born but made: “in anger his father created himself by himself; he was born, named Vishravas, from half of his self.”" }
+  spouses:
+    - { id: pushpotkata, cite: "CE 3.259.5, 7" }
+
+- id: pushpotkata
+  name: Pushpotkata
+  sex: f
+  kind: rakshasa
+  title: rakshasi, mother of Ravana
+  summary: One of three rakshasis given by Kubera to serve Vishravas; mother of Ravana and Kumbhakarna.
+
+- id: ravana
+  name: Ravana
+  aka: [Dashagriva, Dashanana]
+  sex: m
+  kind: rakshasa
+  title: ten-headed king of Lanka
+  summary: Son of Vishravas and Pushpotkata, Pulastya's grandson. He abducted Sita and was killed by Rama, as told in the epic's Ramopakhyana. In the Puranic Jaya-Vijaya story he is the second birth of one of Vishnu's gatekeepers.
+  wiki: Ravana
+  parents:
+    - { id: vishravas, rel: father, cite: "CE 3.259.7, 3.260.2" }
+    - { id: pushpotkata, rel: mother, cite: "CE 3.259.7" }
+  incarnation:
+    - { of: jaya-vijaya, kind: rebirth, ver: purana, cite: "PE: JAYA XI" }
+
+- id: kumbhakarna
+  name: Kumbhakarna
+  sex: m
+  kind: rakshasa
+  title: Ravana's giant brother
+  summary: Son of Vishravas and Pushpotkata, Ravana's giant brother who slept for months at a time. In the Jaya-Vijaya story he is the second birth of the other gatekeeper.
+  wiki: Kumbhakarna
+  parents:
+    - { id: vishravas, rel: father, cite: "CE 3.259.7" }
+    - { id: pushpotkata, rel: mother, cite: "CE 3.259.7" }
+  incarnation:
+    - { of: jaya-vijaya, kind: rebirth, ver: purana, cite: "PE: JAYA XI" }
+
+# --- Jaya and Vijaya ---
+- id: jaya-vijaya
+  name: Jaya and Vijaya
+  aka: [Jaya, Vijaya, gatekeepers of Vaikuntha]
+  kind: group
+  title: Vishnu's gatekeepers, cursed to three asura births
+  summary: Gatekeepers of Vaikuntha who turned away the sage Sanaka; he cursed them to three births as asuras, each ended by Vishnu — Hiranyaksha and Hiranyakashipu, Ravana and Kumbhakarna, Shishupala and Dantavaktra — after which they returned to Vaikuntha (Bhagavata, via the Puranic Encyclopaedia).
+  wiki: Jaya-Vijaya
+  ver: purana
+
+- id: dantavaktra
+  name: Dantavaktra
+  aka: [Dantavakra]
+  sex: m
+  kind: human
+  house: other
+  title: king of Karusha
+  summary: King of Karusha, ally of Shishupala, killed by Krishna. Adi 67 counts him among the kings born of the Krodhavasha asuras; in the Puranas he is Vijaya's third birth.
+  incarnation:
+    - { of: krodhavashas, kind: portion, cite: adi 67 }
+    - { of: jaya-vijaya, kind: rebirth, ver: purana, cite: "PE: DANTAVAKTRA II", note: "Specifically Vijaya, in his third asura birth." }
+
+- id: dhrishtaketu
+  name: Dhrishtaketu
+  sex: m
+  kind: human
+  house: other
+  title: king of Chedi
+  summary: King of Chedi who fought for the Pandavas. Adi 67 says he was the asura Anuhlada reborn; after death he "entered the Vishvadevas".
+  incarnation:
+    - { of: anuhlada, kind: rebirth, cite: adi 67 }
+  returned:
+    - { to: vishvadevas, cite: "svargarohana 5" }
+
+- id: jayanta
+  name: Jayanta
+  sex: m
+  kind: god
+  title: son of Indra and Shachi
+  summary: Son of Indra and Shachi. Adi 223 compares Subhadra bearing Abhimanyu to "Puloma's daughter bringing forth Jayanta".
+  wiki: Jayanta
+  parents:
+    - { id: indra, rel: father, cite: adi 223 }
+    - { id: shachi, rel: mother, cite: adi 223 }

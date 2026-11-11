@@ -1,0 +1,10 @@
+# dependencies and generated files
+node_modules/
+build/
+
+# source texts: copyrighted (Debroy PDF, Puranic Encyclopaedia scan) or large downloads.
+# Re-fetch the free ones with tools/fetch-ganguli.mjs and the GRETIL URLs in CLAUDE.md.
+refs/
+
+# private working notes (mention local files that must not be published)
+CLAUDE.md

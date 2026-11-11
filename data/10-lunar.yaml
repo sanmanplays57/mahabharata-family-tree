@@ -1,0 +1,979 @@
+# The lunar line from Manu and Ila down to Pratipa, following the detailed
+# genealogy of Adi 95 (Ganguli spellings kept as aliases). Wives' fathers are in notes.
+
+- id: manu
+  name: Vaivasvata Manu
+  aka: [Manu, Vaivasvata, Shraddhadeva]
+  sex: m
+  kind: human
+  house: other
+  title: progenitor of mankind
+  summary: Son of Vivasvat (the Sun) and father of humankind. Through his child Ila he is the ancestor of the lunar line.
+  wiki: Vaivasvata Manu
+  parents:
+    - { id: surya, rel: father, cite: "adi 75, 95" }
+
+- id: ila
+  name: Ila
+  aka: [Ha, Sudyumna]
+  sex: f
+  kind: human
+  house: kuru
+  title: child of Manu who changed sex
+  summary: Child of Manu who alternated between female and male. Adi 75 says Ila was both mother and father of Pururavas; the Puranas name the Moon's son Budha as the father.
+  wiki: Ila (Hinduism)
+  parents:
+    - { id: manu, rel: father, cite: adi 95 }
+  spouses:
+    - { id: budha, ver: purana, cite: "PE: BUDHA" }
+
+- id: budha
+  name: Budha
+  aka: [Mercury]
+  sex: m
+  kind: god
+  title: Mercury, son of the Moon
+  summary: The planet Mercury, son of Soma by Tara, the wife of Brihaspati — itself a case of contested paternity. Not named in the Adi Parva's genealogies; the Puranas make him Pururavas's father.
+  wiki: Budha
+  ver: purana
+  parents:
+    - { id: soma, rel: father, ver: purana, cite: "PE: BUDHA" }
+    - { id: tara, rel: mother, ver: purana, cite: "PE: BUDHA" }
+
+- id: tara
+  name: Tara
+  sex: f
+  kind: god
+  title: wife of Brihaspati
+  summary: Wife of Brihaspati, abducted by Soma, by whom she bore Budha. Both Soma and Brihaspati claimed the child.
+  wiki: Tara (Hindu goddess)
+  ver: purana
+  spouses:
+    - { id: brihaspati, ver: purana, cite: "PE: TARA II" }
+
+- id: pururavas
+  name: Pururavas
+  sex: m
+  kind: human
+  house: kuru
+  title: first king of the lunar line
+  summary: Born of Ila, and lover of the apsara Urvashi, by whom he had six sons. Adi 75 says Ila "was both his mother and father".
+  wiki: Pururavas
+  parents:
+    - { id: ila, rel: mother, cite: adi 75, note: "Adi 75: “Ila was both his mother and father.”" }
+    - { id: budha, rel: father, ver: purana, cite: "PE: BUDHA" }
+  spouses:
+    - { id: urvashi, cite: adi 75 }
+
+- id: urvashi
+  name: Urvashi
+  aka: [Urvasi]
+  sex: f
+  kind: apsara
+  title: celestial nymph
+  summary: Foremost of the apsaras. She lived with Pururavas and bore him six sons, Ayus first among them.
+  wiki: Urvashi
+
+- id: ayus
+  name: Ayus
+  aka: [Ayu]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Pururavas
+  summary: Eldest of Pururavas's six sons by Urvashi. On Svarbhanu's daughter he fathered Nahusha and three other sons.
+  parents:
+    - { id: pururavas, rel: father, cite: adi 75 }
+    - { id: urvashi, rel: mother, cite: adi 75 }
+  spouses:
+    - { id: svarbhanu-daughter, cite: adi 75 }
+
+- id: svarbhanu-daughter
+  name: Daughter of Svarbhanu
+  aka: [Prabha]
+  sex: f
+  kind: asura
+  title: wife of Ayus
+  summary: Asura princess, daughter of Svarbhanu (Rahu), and mother of Nahusha. The Puranas call her Prabha.
+  parents:
+    - { id: svarbhanu, rel: father, cite: adi 75 }
+
+- id: nahusha
+  name: Nahusha
+  sex: m
+  kind: human
+  house: kuru
+  title: king who briefly ruled heaven
+  summary: Son of Ayus who for a time took Indra's throne, until the sage Agastya's curse turned him into a serpent. Father of Yayati.
+  wiki: Nahusha
+  parents:
+    - { id: ayus, rel: father, cite: adi 75 }
+    - { id: svarbhanu-daughter, rel: mother, cite: adi 75 }
+
+- id: yayati
+  name: Yayati
+  sex: m
+  kind: human
+  house: kuru
+  title: father of the five lines
+  summary: Son of Nahusha. Cursed with old age by Shukra, he took his youngest son Puru's youth in exchange and made Puru king over his elder brothers.
+  wiki: Yayati
+  parents:
+    - { id: nahusha, rel: father, cite: adi 95 }
+  spouses:
+    - { id: devayani, cite: adi 95 }
+    - { id: sharmishtha, cite: adi 95 }
+
+- id: shukra
+  name: Shukra
+  aka: [Sukra, Usanas, Ushanas, Kavya, Bhargava]
+  sex: m
+  kind: rishi
+  title: preceptor of the asuras
+  summary: Guru of the asuras, master of the art of reviving the dead. He cursed his son-in-law Yayati with old age.
+  wiki: Shukra
+  parents:
+    - { id: bhrigu, rel: father, cite: adi 66 }
+
+- id: devayani
+  name: Devayani
+  sex: f
+  kind: human
+  house: other
+  title: daughter of Shukra
+  summary: Shukra's daughter. Pushed into a well by the asura princess Sharmishtha, she married Yayati and made Sharmishtha her servant. Mother of Yadu and Turvasu.
+  wiki: Devayani
+  parents:
+    - { id: shukra, rel: father, cite: "adi 78, 95" }
+
+- id: vrishaparvan
+  name: Vrishaparvan
+  sex: m
+  kind: asura
+  title: king of the asuras
+  summary: Asura king, father of Sharmishtha. Adi 67 says he was born on earth as King Dirghaprajna.
+  parents:
+    - { id: danu, rel: mother, cite: adi 65 }
+    - { id: kashyapa, rel: father, cite: adi 65 }
+
+- id: sharmishtha
+  name: Sharmishtha
+  aka: [Sarmishtha]
+  sex: f
+  kind: asura
+  title: asura princess
+  summary: Daughter of Vrishaparvan, made servant to Devayani after their quarrel. She secretly bore Yayati three sons, Puru the youngest.
+  wiki: Sharmishtha
+  parents:
+    - { id: vrishaparvan, rel: father, cite: "adi 78, 95" }
+
+- id: yadu
+  name: Yadu
+  sex: m
+  kind: human
+  house: yadava
+  title: founder of the Yadavas
+  summary: Eldest son of Yayati, by Devayani. He refused to give his father his youth and was disinherited; the Yadavas, Krishna's people, descend from him.
+  parents:
+    - { id: yayati, rel: father, cite: "adi 83, 95" }
+    - { id: devayani, rel: mother, cite: "adi 83, 95" }
+
+- id: turvasu
+  name: Turvasu
+  sex: m
+  kind: human
+  house: other
+  title: son of Yayati
+  summary: Second son of Yayati by Devayani; refused to take on his father's old age.
+  parents:
+    - { id: yayati, rel: father, cite: "adi 83, 95" }
+    - { id: devayani, rel: mother, cite: "adi 83, 95" }
+
+- id: druhyu
+  name: Druhyu
+  sex: m
+  kind: human
+  house: other
+  title: son of Yayati
+  summary: Son of Yayati by Sharmishtha; refused to take on his father's old age.
+  parents:
+    - { id: yayati, rel: father, cite: adi 95 }
+    - { id: sharmishtha, rel: mother, cite: adi 95 }
+
+- id: anu
+  name: Anu
+  sex: m
+  kind: human
+  house: other
+  title: son of Yayati
+  summary: Son of Yayati by Sharmishtha; refused to take on his father's old age.
+  parents:
+    - { id: yayati, rel: father, cite: adi 95 }
+    - { id: sharmishtha, rel: mother, cite: adi 95 }
+
+- id: puru
+  name: Puru
+  sex: m
+  kind: human
+  house: kuru
+  title: founder of the Paurava line
+  summary: Youngest son of Yayati. He gave his father his own youth for a thousand years and was made king; the Pauravas, Kurus and Pandavas descend from him.
+  wiki: Puru (Vedic tribe)
+  parents:
+    - { id: yayati, rel: father, cite: adi 95 }
+    - { id: sharmishtha, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: kausalya-puru, cite: adi 95 }
+
+- id: kausalya-puru
+  name: Kausalya
+  sex: f
+  kind: human
+  house: other
+  title: wife of Puru
+  summary: Wife of Puru and mother of Janamejaya I.
+
+- id: janamejaya-1
+  name: Janamejaya I
+  aka: [Janamejaya]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Puru
+  summary: Son of Puru who performed three horse-sacrifices and a Vishvajit sacrifice, then retired to the forest.
+  parents:
+    - { id: puru, rel: father, cite: adi 95 }
+    - { id: kausalya-puru, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: ananta, cite: adi 95, note: "daughter of Madhava" }
+
+- id: ananta
+  name: Ananta
+  sex: f
+  kind: human
+  house: other
+  title: daughter of Madhava
+  summary: Wife of Janamejaya I and mother of Prachinvat.
+
+- id: prachinvat
+  name: Prachinvat
+  aka: [Prachinwat]
+  sex: m
+  kind: human
+  house: kuru
+  title: conqueror of the east
+  summary: Named for conquering the east as far as the sunrise. He married Ashmaki, a Yadava princess.
+  parents:
+    - { id: janamejaya-1, rel: father, cite: adi 95 }
+    - { id: ananta, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: ashmaki, cite: adi 95, note: "a daughter of the Yadavas" }
+
+- id: ashmaki
+  name: Ashmaki
+  aka: [Asmaki]
+  sex: f
+  kind: human
+  house: yadava
+  title: Yadava princess
+  summary: Yadava princess, wife of Prachinvat and mother of Samyati.
+
+- id: samyati
+  name: Samyati
+  aka: [Sanyati]
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Prachinvat and Ashmaki; husband of Varangi.
+  parents:
+    - { id: prachinvat, rel: father, cite: adi 95 }
+    - { id: ashmaki, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: varangi, cite: adi 95, note: "daughter of Drishadvata" }
+
+- id: varangi
+  name: Varangi
+  sex: f
+  kind: human
+  house: other
+  summary: Daughter of Drishadvata; wife of Samyati and mother of Ahamyati.
+
+- id: ahamyati
+  name: Ahamyati
+  aka: [Ahayanti]
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Samyati and Varangi; husband of Bhanumati, daughter of Kritavirya.
+  parents:
+    - { id: samyati, rel: father, cite: adi 95 }
+    - { id: varangi, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: bhanumati-kritavirya, cite: adi 95, note: "daughter of Kritavirya" }
+
+- id: bhanumati-kritavirya
+  name: Bhanumati
+  sex: f
+  kind: human
+  house: other
+  title: daughter of Kritavirya
+  summary: Daughter of Kritavirya; wife of Ahamyati and mother of Sarvabhauma. Not the same as Duryodhana's wife of later tradition.
+
+- id: sarvabhauma
+  name: Sarvabhauma
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Ahamyati. He took Sunanda, the Kekaya princess, by force.
+  parents:
+    - { id: ahamyati, rel: father, cite: adi 95 }
+    - { id: bhanumati-kritavirya, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: sunanda-kekaya, cite: adi 95, note: "the Kekaya princess, obtained by force" }
+
+- id: sunanda-kekaya
+  name: Sunanda
+  sex: f
+  kind: human
+  house: other
+  title: Kekaya princess
+  summary: Kekaya princess taken by force by Sarvabhauma; mother of Jayatsena.
+
+- id: jayatsena-paurava
+  name: Jayatsena
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Sarvabhauma and Sunanda; married Sushrava of Vidarbha.
+  parents:
+    - { id: sarvabhauma, rel: father, cite: adi 95 }
+    - { id: sunanda-kekaya, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: sushrava, cite: adi 95, note: "daughter of the Vidarbha king" }
+
+- id: sushrava
+  name: Sushrava
+  aka: [Susrava]
+  sex: f
+  kind: human
+  house: other
+  title: Vidarbha princess
+  summary: Daughter of the king of Vidarbha; mother of Avachina.
+
+- id: avachina
+  name: Avachina
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Jayatsena; he too married a Vidarbha princess, Maryada.
+  parents:
+    - { id: jayatsena-paurava, rel: father, cite: adi 95 }
+    - { id: sushrava, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: maryada-vidarbha, cite: adi 95 }
+
+- id: maryada-vidarbha
+  name: Maryada
+  sex: f
+  kind: human
+  house: other
+  title: Vidarbha princess
+  summary: Vidarbha princess, wife of Avachina and mother of Arihan.
+
+- id: arihan-1
+  name: Arihan
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Avachina
+  summary: Son of Avachina and Maryada; husband of Angi.
+  parents:
+    - { id: avachina, rel: father, cite: adi 95 }
+    - { id: maryada-vidarbha, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: angi, cite: adi 95 }
+
+- id: angi
+  name: Angi
+  sex: f
+  kind: human
+  house: other
+  summary: Wife of Arihan and mother of Mahabhauma.
+
+- id: mahabhauma
+  name: Mahabhauma
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Arihan; married Suyajna, daughter of Prasenajit.
+  parents:
+    - { id: arihan-1, rel: father, cite: adi 95 }
+    - { id: angi, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: suyajna, cite: adi 95, note: "daughter of Prasenajit" }
+
+- id: suyajna
+  name: Suyajna
+  sex: f
+  kind: human
+  house: other
+  summary: Daughter of Prasenajit; mother of Ayutanayi.
+
+- id: ayutanayi
+  name: Ayutanayi
+  sex: m
+  kind: human
+  house: kuru
+  summary: Named for a sacrifice that required the fat of ten thousand (ayuta) male beings. He married Kama, daughter of Prithushravas.
+  parents:
+    - { id: mahabhauma, rel: father, cite: adi 95 }
+    - { id: suyajna, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: kama-prithushravas, cite: adi 95, note: "daughter of Prithushravas" }
+
+- id: kama-prithushravas
+  name: Kama
+  sex: f
+  kind: human
+  house: other
+  title: daughter of Prithushravas
+  summary: Daughter of Prithushravas; wife of Ayutanayi and mother of Akrodhana.
+
+- id: akrodhana
+  name: Akrodhana
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Ayutanayi; married Karambha, the Kalinga princess.
+  parents:
+    - { id: ayutanayi, rel: father, cite: adi 95 }
+    - { id: kama-prithushravas, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: karambha, cite: adi 95, note: "daughter of the king of Kalinga" }
+
+- id: karambha
+  name: Karambha
+  sex: f
+  kind: human
+  house: other
+  title: Kalinga princess
+  summary: Daughter of the king of Kalinga; mother of Devatithi.
+
+- id: devatithi
+  name: Devatithi
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Akrodhana; married Maryada of Videha.
+  parents:
+    - { id: akrodhana, rel: father, cite: adi 95 }
+    - { id: karambha, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: maryada-videha, cite: adi 95 }
+
+- id: maryada-videha
+  name: Maryada
+  sex: f
+  kind: human
+  house: other
+  title: Videha princess
+  summary: Princess of Videha; wife of Devatithi and mother of the second Arihan.
+
+- id: arihan-2
+  name: Arihan
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Devatithi
+  summary: Son of Devatithi; married Sudeva, princess of Anga.
+  parents:
+    - { id: devatithi, rel: father, cite: adi 95 }
+    - { id: maryada-videha, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: sudeva-anga, cite: adi 95 }
+
+- id: sudeva-anga
+  name: Sudeva
+  sex: f
+  kind: human
+  house: other
+  title: princess of Anga
+  summary: Princess of Anga; mother of Riksha.
+
+- id: riksha
+  name: Riksha
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Arihan. He married the naga princess Jwala, daughter of Takshaka.
+  parents:
+    - { id: arihan-2, rel: father, cite: adi 95 }
+    - { id: sudeva-anga, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: jwala, cite: adi 95 }
+
+- id: takshaka
+  name: Takshaka
+  sex: m
+  kind: naga
+  title: king of the nagas
+  summary: Naga king. His daughter Jwala married into the Puru line; many generations later he killed King Parikshit, which led to Janamejaya's snake sacrifice, the frame story of the epic.
+  wiki: Takshaka
+  parents:
+    - { id: kadru, rel: mother, cite: adi 65 }
+    - { id: kashyapa, rel: father, cite: adi 65 }
+
+- id: jwala
+  name: Jwala
+  aka: [Jvala]
+  sex: f
+  kind: naga
+  title: daughter of Takshaka
+  summary: Naga princess, daughter of Takshaka; wife of Riksha and mother of Matinara.
+  parents:
+    - { id: takshaka, rel: father, cite: adi 95 }
+
+- id: matinara
+  name: Matinara
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Riksha and Jwala. After his twelve-year sacrifice on the Sarasvati, the river goddess appeared and chose him as her husband.
+  parents:
+    - { id: riksha, rel: father, cite: adi 95 }
+    - { id: jwala, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: saraswati, cite: adi 95 }
+
+- id: saraswati
+  name: Saraswati
+  aka: [Sarasvati]
+  sex: f
+  kind: god
+  title: river goddess
+  summary: The river goddess. She appeared at the end of Matinara's sacrifice, chose him for her husband and bore Tamsu.
+  wiki: Saraswati
+
+- id: tamsu
+  name: Tamsu
+  aka: [Tansu]
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Matinara and the river goddess Saraswati; father of Ilina.
+  parents:
+    - { id: matinara, rel: father, cite: adi 95 }
+    - { id: saraswati, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: kalingi, cite: adi 95 }
+
+- id: kalingi
+  name: Kalingi
+  sex: f
+  kind: human
+  house: other
+  title: Kalinga princess
+  summary: Wife of Tamsu and mother of Ilina.
+
+- id: ilina
+  name: Ilina
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Tamsu. By Rathantari he had five sons, the eldest of them Dushyanta.
+  parents:
+    - { id: tamsu, rel: father, cite: adi 95 }
+    - { id: kalingi, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: rathantari, cite: adi 95 }
+
+- id: rathantari
+  name: Rathantari
+  sex: f
+  kind: human
+  house: other
+  summary: Wife of Ilina and mother of five sons, Dushyanta the eldest.
+
+- id: dushyanta
+  name: Dushyanta
+  aka: [Dushmanta, Dusyanta]
+  sex: m
+  kind: human
+  house: kuru
+  title: king, husband of Shakuntala
+  summary: Eldest son of Ilina. He married Shakuntala in secret in Kanva's hermitage, then disowned her until a voice from heaven declared her son his own.
+  wiki: Dushyanta
+  parents:
+    - { id: ilina, rel: father, cite: adi 95 }
+    - { id: rathantari, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: shakuntala, cite: adi 95 }
+
+- id: vishvamitra
+  name: Vishvamitra
+  aka: [Viswamitra, Kaushika]
+  sex: m
+  kind: rishi
+  title: king turned sage
+  summary: King who became a brahmarshi through austerity. The apsara Menaka was sent to break his penance, and Shakuntala was born of them.
+  wiki: Vishvamitra
+  parents:
+    - { id: gadhi, rel: father, cite: "CE 13.4.46" }
+
+- id: menaka
+  name: Menaka
+  sex: f
+  kind: apsara
+  title: celestial nymph
+  summary: Apsara sent by Indra to disturb Vishvamitra's penance; mother of Shakuntala, whom she left in the forest.
+  wiki: Menaka
+
+- id: kanva
+  name: Kanva
+  aka: [Kanwa]
+  sex: m
+  kind: rishi
+  title: sage of the Kashyapa race
+  summary: Hermit who found the abandoned baby Shakuntala guarded by birds and raised her as his daughter.
+  wiki: Kanva
+
+- id: shakuntala
+  name: Shakuntala
+  aka: [Sakuntala]
+  sex: f
+  kind: human
+  house: other
+  title: mother of Bharata
+  summary: Daughter of Vishvamitra and Menaka, raised by the sage Kanva. She married Dushyanta and bore Bharata, after whom the land and the epic are named.
+  wiki: Shakuntala
+  parents:
+    - { id: vishvamitra, rel: father, cite: "adi 72, 95" }
+    - { id: menaka, rel: mother, cite: adi 72 }
+    - { id: kanva, rel: adoptive-father, cite: adi 72 }
+
+- id: bharata
+  name: Bharata
+  aka: [Sarvadamana]
+  sex: m
+  kind: human
+  house: kuru
+  title: emperor, eponym of Bharata
+  summary: Son of Dushyanta and Shakuntala; universal emperor after whom the Bharata race (and India, Bharatavarsha) is named. The name means "the supported".
+  wiki: Bharata (Mahabharata)
+  parents:
+    - { id: dushyanta, rel: father, cite: adi 95 }
+    - { id: shakuntala, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: sunanda-kashi, cite: adi 95, note: "daughter of Sarvasena, king of Kashi" }
+
+- id: sunanda-kashi
+  name: Sunanda
+  sex: f
+  kind: human
+  house: other
+  title: Kashi princess
+  summary: Daughter of Sarvasena of Kashi; wife of Bharata and mother of Bhumanyu.
+
+- id: bhumanyu
+  name: Bhumanyu
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Bharata; married Vijaya, daughter of Dasharha.
+  parents:
+    - { id: bharata, rel: father, cite: adi 95 }
+    - { id: sunanda-kashi, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: vijaya-dasharha, cite: adi 95 }
+
+- id: vijaya-dasharha
+  name: Vijaya
+  sex: f
+  kind: human
+  house: other
+  title: daughter of Dasharha
+  summary: Daughter of Dasharha; wife of Bhumanyu and mother of Suhotra.
+
+- id: suhotra-paurava
+  name: Suhotra
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Bhumanyu
+  summary: Son of Bhumanyu; married Suvarna of the Ikshvaku line.
+  parents:
+    - { id: bhumanyu, rel: father, cite: adi 95 }
+    - { id: vijaya-dasharha, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: suvarna, cite: adi 95, note: "daughter of Ikshvaku" }
+
+- id: suvarna
+  name: Suvarna
+  sex: f
+  kind: human
+  house: other
+  title: Ikshvaku princess
+  summary: Daughter of Ikshvaku (that is, of the solar line); wife of Suhotra and mother of Hasti.
+
+- id: hasti
+  name: Hasti
+  aka: [Hastin]
+  sex: m
+  kind: human
+  house: kuru
+  title: founder of Hastinapura
+  summary: Son of Suhotra; he founded the city named after him, Hastinapura.
+  parents:
+    - { id: suhotra-paurava, rel: father, cite: adi 95 }
+    - { id: suvarna, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: yashodhara, cite: adi 95, note: "princess of Trigarta" }
+
+- id: yashodhara
+  name: Yashodhara
+  aka: [Yasodhara]
+  sex: f
+  kind: human
+  house: other
+  title: Trigarta princess
+  summary: Princess of Trigarta; wife of Hasti and mother of Vikunthana.
+
+- id: vikunthana
+  name: Vikunthana
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Hasti; married Sudeva, a Dasharha princess.
+  parents:
+    - { id: hasti, rel: father, cite: adi 95 }
+    - { id: yashodhara, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: sudeva-dasharha, cite: adi 95 }
+
+- id: sudeva-dasharha
+  name: Sudeva
+  sex: f
+  kind: human
+  house: other
+  title: Dasharha princess
+  summary: Princess of the Dasharhas; wife of Vikunthana and mother of Ajamidha.
+
+- id: ajamidha
+  name: Ajamidha
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Vikunthana. By four wives — Raikeyi, Gandhari, Visala and Riksha — he had 2,400 sons, of whom Samvarana carried on the line.
+  parents:
+    - { id: vikunthana, rel: father, cite: adi 95 }
+    - { id: sudeva-dasharha, rel: mother, cite: adi 95 }
+
+- id: samvarana
+  name: Samvarana
+  sex: m
+  kind: human
+  house: kuru
+  title: husband of Tapati
+  summary: Son of Ajamidha (his mother is not named among the four wives). He married Tapati, daughter of the Sun, and fathered Kuru.
+  wiki: Samvarana
+  parents:
+    - { id: ajamidha, rel: father, cite: adi 95 }
+  spouses:
+    - { id: tapati, cite: adi 95 }
+
+- id: tapati
+  name: Tapati
+  sex: f
+  kind: god
+  title: daughter of the Sun
+  summary: Daughter of Vivasvat, the Sun; wife of Samvarana and mother of Kuru. Through her, Surya is an ancestor of the Kurus as well as Karna's father.
+  wiki: Tapati
+  parents:
+    - { id: surya, rel: father, cite: adi 95, far: true }
+
+- id: kuru
+  name: Kuru
+  sex: m
+  kind: human
+  house: kuru
+  title: eponym of the Kurus
+  summary: Son of Samvarana and Tapati. The Kuru dynasty and the field of Kurukshetra take their name from him.
+  parents:
+    - { id: samvarana, rel: father, cite: adi 95 }
+    - { id: tapati, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: shubhangi, cite: adi 95, note: "princess of Dasharha" }
+
+- id: shubhangi
+  name: Shubhangi
+  aka: [Subhangi]
+  sex: f
+  kind: human
+  house: other
+  title: Dasharha princess
+  summary: Wife of Kuru and mother of Viduratha.
+
+- id: viduratha
+  name: Viduratha
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Kuru; married Supriya of the Madhavas.
+  parents:
+    - { id: kuru, rel: father, cite: adi 95 }
+    - { id: shubhangi, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: supriya, cite: adi 95 }
+
+- id: supriya
+  name: Supriya
+  sex: f
+  kind: human
+  house: other
+  title: Madhava princess
+  summary: Daughter of the Madhavas; wife of Viduratha and mother of Anashvan.
+
+- id: anashvan
+  name: Anashvan
+  aka: [Anaswan]
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Viduratha; married Amrita of the Madhavas.
+  parents:
+    - { id: viduratha, rel: father, cite: adi 95 }
+    - { id: supriya, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: amrita, cite: adi 95 }
+
+- id: amrita
+  name: Amrita
+  sex: f
+  kind: human
+  house: other
+  title: Madhava princess
+  summary: Daughter of the Madhavas; wife of Anashvan and mother of Parikshit I.
+
+- id: parikshit-1
+  name: Parikshit I
+  aka: [Parikshit]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Anashvan
+  summary: Early Kuru king, son of Anashvan. Not the grandson of Arjuna, who bears the same name.
+  parents:
+    - { id: anashvan, rel: father, cite: adi 95 }
+    - { id: amrita, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: suvasa, cite: adi 95, note: "daughter of the Vahudas" }
+
+- id: suvasa
+  name: Suvasa
+  sex: f
+  kind: human
+  house: other
+  summary: Daughter of the Vahudas; wife of Parikshit I and mother of Bhimasena I.
+
+- id: bhimasena-1
+  name: Bhimasena I
+  aka: [Bhimasena]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Parikshit I
+  summary: Early Kuru king. Not the Pandava Bhima, who bears the same name.
+  parents:
+    - { id: parikshit-1, rel: father, cite: adi 95 }
+    - { id: suvasa, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: kumari-kekaya, cite: adi 95 }
+
+- id: kumari-kekaya
+  name: Kumari
+  sex: f
+  kind: human
+  house: other
+  title: Kekaya princess
+  summary: Princess of Kekaya; wife of Bhimasena I and mother of Pratishravas.
+
+- id: pratishravas
+  name: Pratishravas
+  aka: [Pratisravas]
+  sex: m
+  kind: human
+  house: kuru
+  summary: Son of Bhimasena I and father of Pratipa.
+  parents:
+    - { id: bhimasena-1, rel: father, cite: adi 95 }
+    - { id: kumari-kekaya, rel: mother, cite: adi 95 }
+
+- id: pratipa
+  name: Pratipa
+  sex: m
+  kind: human
+  house: kuru
+  title: father of Shantanu
+  summary: Kuru king, son of Pratishravas. By Sunanda of the Shibis he had Devapi, Shantanu and Bahlika.
+  wiki: Pratipa
+  parents:
+    - { id: pratishravas, rel: father, cite: adi 95 }
+  spouses:
+    - { id: sunanda-shibi, cite: adi 95, note: "daughter of Shibi" }
+
+- id: sunanda-shibi
+  name: Sunanda
+  sex: f
+  kind: human
+  house: other
+  title: daughter of Shibi
+  summary: Daughter of Shibi; wife of Pratipa and mother of Devapi, Shantanu and Bahlika.
+
+- id: devapi
+  name: Devapi
+  sex: m
+  kind: human
+  house: kuru
+  title: eldest son of Pratipa
+  summary: Eldest son of Pratipa, who went to the forest as a hermit while still a boy, leaving the throne to Shantanu.
+  wiki: Devapi
+  parents:
+    - { id: pratipa, rel: father, cite: adi 95 }
+    - { id: sunanda-shibi, rel: mother, cite: adi 95 }
+
+- id: bahlika
+  name: Bahlika
+  aka: [Valhika, Balhika]
+  sex: m
+  kind: human
+  house: kuru
+  title: brother of Shantanu
+  summary: Youngest son of Pratipa. Grandfather of Bhurishravas, he fought for the Kauravas as an old man and was killed by Bhima.
+  wiki: Bahlika (king)
+  parents:
+    - { id: pratipa, rel: father, cite: adi 95 }
+    - { id: sunanda-shibi, rel: mother, cite: adi 95 }
+
+- id: somadatta
+  name: Somadatta
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Bahlika
+  summary: Son of Bahlika and father of Bhurishravas; fought on the Kaurava side.
+  parents:
+    - { id: bahlika, rel: father, cite: "PE: SOMADATTA III" }
+
+- id: bhurishravas
+  name: Bhurishravas
+  aka: [Bhurisravas, Yupaketu]
+  sex: m
+  kind: human
+  house: kuru
+  title: Kaurava-side warrior
+  summary: Son of Somadatta. Arjuna cut off his arm while he fought Satyaki, and Satyaki then killed him as he sat in meditation.
+  wiki: Bhurishravas
+  parents:
+    - { id: somadatta, rel: father, cite: "PE: SOMADATTA III" }
+  returned:
+    - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }

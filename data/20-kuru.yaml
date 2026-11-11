@@ -1,0 +1,1464 @@
+# The Kuru core: Shantanu to Janamejaya.
+
+- id: shantanu
+  name: Shantanu
+  aka: [Santanu]
+  sex: m
+  kind: human
+  house: kuru
+  title: king of Hastinapura
+  summary: Son of Pratipa, whose touch restored the old to youth. He married Ganga, then Satyavati; for his sake Bhishma swore lifelong celibacy.
+  wiki: Shantanu
+  parents:
+    - { id: pratipa, rel: father, cite: adi 95 }
+    - { id: sunanda-shibi, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: ganga, cite: "adi 95, 98" }
+    - { id: satyavati, cite: "adi 95, 100" }
+  incarnation:
+    - { of: mahabhisha, kind: rebirth, cite: "adi 96, 97", note: "Cursed by Brahma for staring at Ganga in heaven." }
+
+- id: ganga
+  name: Ganga
+  aka: [Ganges, Jahnavi, Bhagirathi]
+  sex: f
+  kind: god
+  title: river goddess
+  summary: The river goddess. She married Shantanu on condition he never question her, and drowned seven newborn sons — the Vasus, freeing them from their curse. Shantanu stopped her at the eighth, Bhishma.
+  wiki: Ganga in Hinduism
+
+- id: ganga-sons
+  name: Seven elder sons of Ganga
+  kind: group
+  title: drowned at birth
+  summary: Seven sons of Shantanu and Ganga, each thrown into the river at birth. They were seven of the Vasus, released from Vasishtha's curse by dying at once.
+  parents:
+    - { id: shantanu, rel: father, cite: adi 98 }
+    - { id: ganga, rel: mother, cite: adi 98 }
+  incarnation:
+    - { of: vasus, kind: portion, cite: adi 67 }
+
+- id: bhishma
+  name: Bhishma
+  aka: [Devavrata, Gangeya, Shantanava, Pitamaha, Bhishma Pitamaha, Gangaputra]
+  sex: m
+  kind: human
+  house: kuru
+  title: grand-uncle of the Kurus
+  summary: Eighth son of Shantanu and Ganga. He vowed never to marry or rule so that his father could marry Satyavati, and was granted death only when he chose it. Commander of the Kaurava army for ten days.
+  wiki: Bhishma
+  parents:
+    - { id: shantanu, rel: father, cite: "adi 95, 98" }
+    - { id: ganga, rel: mother, cite: "adi 95, 98" }
+  incarnation:
+    - { of: vasus, kind: portion, cite: "adi 63, 67", note: "The youngest of the eight Vasus." }
+  returned:
+    - { to: vasus, cite: "svargarohana 4, 5", note: "“Bhishma attained the Vasus — eight Vasus are now seen” (CE 18.5.9)." }
+
+- id: uparichara
+  name: Uparichara Vasu
+  aka: [Uparichara, Vasu, Chaidya Uparichara]
+  sex: m
+  kind: human
+  house: other
+  title: king of Chedi
+  summary: King of Chedi who received a crystal chariot from Indra. While hunting he sent his seed to his wife Girika by a hawk; it fell into the Yamuna and was swallowed by the fish Adrika, who bore Satyavati and Matsya.
+  wiki: Uparichara Vasu
+  spouses:
+    - { id: girika, cite: adi 63 }
+
+- id: girika
+  name: Girika
+  sex: f
+  kind: human
+  house: other
+  title: wife of Uparichara
+  summary: Wife of Uparichara Vasu, daughter of the mountain Kolahala and the river Shuktimati. The seed meant for her became Satyavati and Matsya.
+
+- id: adrika
+  name: Adrika
+  sex: f
+  kind: apsara
+  title: apsara cursed to be a fish
+  summary: Apsara cursed by a Brahmin to live as a fish in the Yamuna. She swallowed Uparichara's seed, and when fishermen caught her she gave birth to twins and was freed.
+
+- id: dasharaja
+  name: Dasharaja
+  aka: [chief of the fishermen, Dasa]
+  sex: m
+  kind: human
+  house: other
+  title: chief of the fishermen
+  summary: Chief of the fishermen who raised Satyavati. He would give her to Shantanu only if her sons inherited, which led to Bhishma's vow.
+
+- id: satyavati
+  name: Satyavati
+  aka: [Gandhakali, Kali, Matsyagandha, Yojanagandha, Gandhavati, Daseyi]
+  sex: f
+  kind: human
+  house: kuru
+  title: queen of Hastinapura
+  summary: Born from a fish and raised by fishermen. She bore Vyasa to the sage Parashara before marrying Shantanu, then summoned Vyasa to father heirs when her son Vichitravirya died childless.
+  wiki: Satyavati
+  birth: Taken from the belly of the fish Adrika along with her twin brother Matsya; smelled of fish until Parashara's blessing.
+  parents:
+    - { id: uparichara, rel: father, cite: adi 63 }
+    - { id: adrika, rel: mother, cite: adi 63 }
+    - { id: dasharaja, rel: adoptive-father, cite: adi 63, note: "The king gave her to the fishermen: “Let this one be thy daughter.”" }
+
+- id: matsya
+  name: Matsya
+  sex: m
+  kind: human
+  house: other
+  title: Satyavati's twin brother
+  summary: Twin brother of Satyavati, born from the same fish. Uparichara kept him, and he became the virtuous King Matsya.
+  parents:
+    - { id: uparichara, rel: father, cite: adi 63 }
+    - { id: adrika, rel: mother, cite: adi 63 }
+
+- id: vasishtha
+  name: Vasishtha
+  aka: [Vasistha]
+  sex: m
+  kind: rishi
+  title: great sage
+  summary: Great sage. His curse on the eight Vasus, who stole his cow, sent them to be born as Ganga's sons. Great-grandfather of Vyasa.
+  wiki: Vasishtha
+
+- id: shakti
+  name: Shakti
+  aka: [Sakti, Shaktri]
+  sex: m
+  kind: rishi
+  title: son of Vasishtha
+  summary: Son of Vasishtha and father of Parashara; devoured by a rakshasa set on him by King Kalmashapada.
+  wiki: Shakti Maharishi
+  parents:
+    - { id: vasishtha, rel: father, cite: adi 178 }
+
+- id: parashara
+  name: Parashara
+  aka: [Parasara]
+  sex: m
+  kind: rishi
+  title: sage, father of Vyasa
+  summary: Sage, son of Shakti. He met Satyavati as she ferried him across the Yamuna, hid them in a fog of his making, and fathered Vyasa on an island in the river.
+  wiki: Parashara
+  parents:
+    - { id: shakti, rel: father, cite: adi 60 }
+
+- id: vyasa
+  name: Vyasa
+  aka: [Krishna Dvaipayana, Dwaipayana, Veda Vyasa, Badarayana, Vedavyasa]
+  sex: m
+  kind: rishi
+  title: author of the epic, grandfather of the Kurus
+  summary: Son of Parashara and Satyavati, born on an island in the Yamuna; arranger of the Vedas and composer of the Mahabharata. At his mother's request he fathered Dhritarashtra, Pandu and Vidura for his dead half-brother Vichitravirya.
+  wiki: Vyasa
+  birth: Born on an island in the Yamuna, hence "Dvaipayana".
+  parents:
+    - { id: parashara, rel: father, cite: "adi 60, 63" }
+    - { id: satyavati, rel: mother, cite: "adi 60, 63" }
+
+- id: shuka
+  name: Shuka
+  aka: [Suka, Shukadeva]
+  sex: m
+  kind: rishi
+  title: son of Vyasa
+  summary: Son of Vyasa and one of the disciples to whom he taught the Mahabharata; in the Shanti Parva he is born from Vyasa's seed on a fire-stick at the sight of the apsara Ghritachi.
+  wiki: Shuka
+  parents:
+    - { id: vyasa, rel: father, cite: adi 63 }
+
+- id: chitrangada-kuru
+  name: Chitrangada
+  sex: m
+  kind: human
+  house: kuru
+  title: elder son of Shantanu and Satyavati
+  summary: Elder son of Shantanu and Satyavati. He became king but was killed young by a Gandharva of the same name.
+  wiki: Chitrangada (king)
+  parents:
+    - { id: shantanu, rel: father, cite: adi 95 }
+    - { id: satyavati, rel: mother, cite: adi 95 }
+
+- id: vichitravirya
+  name: Vichitravirya
+  sex: m
+  kind: human
+  house: kuru
+  title: king, legal father of Dhritarashtra and Pandu
+  summary: Younger son of Shantanu and Satyavati. Bhishma won him the princesses of Kashi, but he died childless; Vyasa then fathered sons on his widows, who count legally as Vichitravirya's.
+  wiki: Vichitravirya
+  parents:
+    - { id: shantanu, rel: father, cite: adi 95 }
+    - { id: satyavati, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: ambika, cite: adi 95 }
+    - { id: ambalika, cite: adi 95 }
+
+- id: kashi-king
+  name: King of Kashi
+  aka: [Kashiraja, Kasiraja]
+  sex: m
+  kind: human
+  house: other
+  title: father of Amba, Ambika and Ambalika
+  summary: King of Kashi whose three daughters Bhishma carried off from their svayamvara for Vichitravirya. Never named — the Adi Parva, the Critical Edition's Udyoga Parva and the Puranic Encyclopaedia all call him only "the king (lord) of Kashi".
+  spouses:
+    - { id: kashi-queen, cite: CE 5.174 }
+
+- id: kashi-queen
+  name: Queen of Kashi
+  sex: f
+  kind: human
+  house: other
+  title: Amba's mother (unnamed)
+  summary: Wife of the king of Kashi and daughter of the royal sage Hotravahana; mother of Amba. Neither she nor her husband is named.
+  parents:
+    - { id: hotravahana, rel: father, cite: "CE 5.174", note: "Amba bows to “Hotravahana, her mother's father”." }
+
+- id: hotravahana
+  name: Hotravahana
+  sex: m
+  kind: human
+  house: other
+  title: royal sage, Amba's maternal grandfather
+  summary: Royal sage (rajarshi) and Amba's maternal grandfather. He found her in a hermitage after Shalva rejected her and sent her to Parashurama, who then fought Bhishma for twenty-three days on her behalf.
+  pe: HOTRAVAHANA
+
+- id: amba
+  name: Amba
+  aka: [Amva]
+  sex: f
+  kind: human
+  house: other
+  title: eldest princess of Kashi
+  summary: Eldest princess of Kashi, carried off by Bhishma. Her chosen husband Shalva rejected her after the abduction, and Bhishma would not marry her; she vowed to destroy him and was reborn as Shikhandi.
+  wiki: Amba (Mahabharata)
+  parents:
+    - { id: kashi-king, rel: father, cite: adi 102 }
+    - { id: kashi-queen, rel: mother, cite: "CE 5.174" }
+
+- id: ambika
+  name: Ambika
+  aka: [Amvika]
+  sex: f
+  kind: human
+  house: kuru
+  title: mother of Dhritarashtra
+  summary: Princess of Kashi and widow of Vichitravirya. She shut her eyes at Vyasa's fearsome appearance during niyoga, so her son Dhritarashtra was born blind; next time she sent her maid in her place.
+  wiki: Ambika (Mahabharata)
+  parents:
+    - { id: kashi-king, rel: father, cite: "adi 95, 102" }
+    - { id: kashi-queen, rel: mother, note: "Inferred: the three are called sisters, but only Amba's maternal line is named." }
+
+- id: ambalika
+  name: Ambalika
+  aka: [Amvalika]
+  sex: f
+  kind: human
+  house: kuru
+  title: mother of Pandu
+  summary: Princess of Kashi and widow of Vichitravirya. She turned pale at the sight of Vyasa, so her son Pandu was born pale.
+  wiki: Ambalika
+  parents:
+    - { id: kashi-king, rel: father, cite: "adi 95, 102" }
+    - { id: kashi-queen, rel: mother, note: "Inferred: the three are called sisters, but only Amba's maternal line is named." }
+
+- id: ambika-maid
+  name: Ambika's maid
+  aka: [Sudra maid, Parishrami]
+  sex: f
+  kind: human
+  house: other
+  title: mother of Vidura
+  summary: The Sudra maidservant Ambika sent to Vyasa in her place. She received him gladly, and her son Vidura was born wise and sound.
+
+- id: dhritarashtra
+  name: Dhritarashtra
+  aka: [Dhritarastra]
+  sex: m
+  kind: human
+  house: kuru
+  title: blind king, father of the Kauravas
+  summary: Eldest son of Ambika, fathered by Vyasa in the name of the dead Vichitravirya, and born blind. As king he never restrained his son Duryodhana.
+  wiki: Dhritarashtra
+  parents:
+    - { id: ambika, rel: mother, cite: adi 95 }
+    - { id: vichitravirya, rel: legal-father, cite: "adi 63, 95" }
+    - { id: vyasa, rel: father, cite: "adi 63, 67, 95" }
+  spouses:
+    - { id: gandhari, cite: adi 110 }
+  incarnation:
+    - { of: hamsa, kind: avatar, cite: "adi 67", note: "CE 1.61.77-78: Arishta’s son Hamsa, lord of the Gandharvas, was born as Dhritarashtra from Vyasa. Ganguli’s translation splits this sentence in two." }
+  returned:
+    - { to: hamsa, cite: "svargarohana 4", note: "Indra shows him in heaven as “the king of the Gandharvas”; Svargarohana 5 adds that he reached the realms of Kubera." }
+
+- id: pandu
+  name: Pandu
+  sex: m
+  kind: human
+  house: kuru
+  title: king, legal father of the Pandavas
+  summary: Son of Ambalika by Vyasa, legally Vichitravirya's. He ruled in place of his blind brother until a dying sage's curse made union with a wife fatal to him, so his sons were fathered by gods.
+  wiki: Pandu
+  parents:
+    - { id: ambalika, rel: mother, cite: adi 95 }
+    - { id: vichitravirya, rel: legal-father, cite: "adi 63, 95" }
+    - { id: vyasa, rel: father, cite: "adi 63, 95" }
+  spouses:
+    - { id: kunti, cite: adi 95 }
+    - { id: madri, cite: adi 95 }
+
+- id: vidura
+  name: Vidura
+  aka: [Kshatta, Kshattri]
+  sex: m
+  kind: human
+  house: kuru
+  title: counsellor, Dharma incarnate
+  summary: Son of Vyasa by Ambika's Sudra maid, and so barred from the throne. The wisest counsellor at the Kuru court; he was the god Dharma, cursed by the sage Animandavya to be born a Sudra.
+  wiki: Vidura
+  parents:
+    - { id: vyasa, rel: father, cite: "adi 63, 95, 106" }
+    - { id: ambika-maid, rel: mother, cite: adi 106 }
+  spouses:
+    - { id: devaka-daughter, cite: adi 114 }
+  incarnation:
+    - { of: dharma, kind: avatar, cite: "adi 63, 106", note: "Cursed by Animandavya for punishing him too harshly. Adi 67 adds, oddly, that he was “the excellent son of the Rishi Atri”." }
+  returned:
+    - { to: yudhishthira, note: "At his death Vidura's spirit enters Yudhishthira's body through yoga (Ashramavasika Parva).", cite: ashramavasika 26 }
+    - { to: dharma, cite: "svargarohana 5", note: "“Kshattri (Vidura) and King Yudhishthira entered Dharma” (CE 18.5.19)." }
+
+- id: devaka-daughter
+  name: Daughter of Devaka
+  aka: [Parashavi]
+  sex: f
+  kind: human
+  house: other
+  title: wife of Vidura
+  summary: Daughter of King Devaka by a Sudra wife, chosen by Bhishma as Vidura's bride. Later texts call her Parashavi.
+  parents:
+    - { id: devaka, rel: father, cite: adi 114 }
+
+- id: gandhari
+  name: Gandhari
+  sex: f
+  kind: human
+  house: other
+  title: queen, mother of the Kauravas
+  summary: Princess of Gandhara who blindfolded herself for life on marrying the blind Dhritarashtra. After two years' pregnancy she bore a mass of flesh, which Vyasa divided into a hundred sons and a daughter.
+  wiki: Gandhari (Mahabharata)
+  parents:
+    - { id: subala, rel: father, cite: "adi 63, 67, 110" }
+  incarnation:
+    - { of: mati, kind: avatar, cite: adi 67 }
+
+- id: subala
+  name: Subala
+  aka: [Suvala]
+  sex: m
+  kind: human
+  house: other
+  title: king of Gandhara
+  summary: King of Gandhara, father of Gandhari and Shakuni.
+
+- id: shakuni
+  name: Shakuni
+  aka: [Sakuni, Saubala, Gandhararaja]
+  sex: m
+  kind: human
+  house: other
+  title: Duryodhana's uncle, the dice master
+  summary: Gandhari's brother. He won the Pandavas' kingdom from Yudhishthira in the rigged dice game and was killed by Sahadeva in the war.
+  wiki: Shakuni
+  parents:
+    - { id: subala, rel: father, cite: adi 63 }
+  incarnation:
+    - { of: dvapara, kind: avatar, cite: adi 67, note: "“Was Dwapara himself.”" }
+  returned:
+    - { to: dvapara, cite: "svargarohana 5" }
+
+- id: kunti
+  name: Kunti
+  aka: [Pritha, Kuntibhojaja]
+  sex: f
+  kind: human
+  house: yadava
+  title: mother of Karna and the Pandavas
+  summary: Born Pritha, daughter of the Yadava Shura, and given as a baby to her father's childless cousin Kuntibhoja. A boon from Durvasa let her summon any god for a son. She bore Karna to Surya before marriage, then Yudhishthira, Bhima and Arjuna as Pandu's wife.
+  wiki: Kunti
+  parents:
+    - { id: shura, rel: father, cite: adi 67 }
+    - { id: kuntibhoja, rel: adoptive-father, cite: adi 67, note: "Shura had promised his firstborn to his childless cousin." }
+    - { id: marisha, rel: mother, cite: "PE: SURA VI" }
+  incarnation:
+    - { of: siddhi, kind: avatar, cite: adi 67 }
+
+- id: kuntibhoja
+  name: Kuntibhoja
+  sex: m
+  kind: human
+  house: yadava
+  title: adoptive father of Kunti
+  summary: Yadava king of the Kuntis. Childless, he adopted Shura's firstborn Pritha, who is named Kunti after him; later he had two sons, Purujit and a younger Kuntibhoja, who fought for the Pandavas. His wife is not named in the epic or in the Puranic Encyclopaedia. Adi 67 calls him the son of Shura's paternal aunt; the Puranic Encyclopaedia, the son of Shura's sister.
+  parents:
+    - { id: kuntibhoja-mother, rel: mother, cite: "PE: KUNTIBHOJA", note: "Adi 67 instead: “the son of his (Shura’s) paternal aunt”." }
+
+- id: madra-king
+  name: King of Madra
+  aka: [Artayana]
+  sex: m
+  kind: human
+  house: other
+  title: father of Shalya and Madri
+  summary: Father of Shalya and Madri; unnamed in the Adi Parva.
+
+- id: madri
+  name: Madri
+  sex: f
+  kind: human
+  house: other
+  title: mother of Nakula and Sahadeva
+  summary: Princess of Madra and Pandu's second wife; Bhishma paid a heavy bride-price for her. She used Kunti's mantra to bear twins to the Ashvins, and joined Pandu on his funeral pyre after his death in her embrace.
+  wiki: Madri
+  parents:
+    - { id: madra-king, rel: father, cite: "PE: MADRI" }
+  incarnation:
+    - { of: dhriti, kind: avatar, cite: adi 67 }
+
+- id: shalya
+  name: Shalya
+  aka: [Salya, Madraraja]
+  sex: m
+  kind: human
+  house: other
+  title: king of Madra, uncle of the twins
+  summary: Madri's brother. Duryodhana tricked him into fighting for the Kauravas; as Karna's charioteer he undermined him. He commanded the Kaurava army on the last day and was killed by Yudhishthira.
+  wiki: Shalya
+  parents:
+    - { id: madra-king, rel: father, cite: "PE: MADRI" }
+  incarnation:
+    - { of: samhlada, kind: rebirth, cite: adi 67 }
+
+- id: karna
+  name: Karna
+  aka: [Vasusena, Radheya, Vaikartana, Suryaputra, Angaraja, Sutaputra, Kaunteya, Partha]
+  sex: m
+  kind: human
+  house: kuru
+  title: Kunti's firstborn, king of Anga
+  summary: Kunti's son by Surya, born before her marriage with natural armour and earrings. She set him adrift in a river, and the charioteer Adhiratha and his wife Radha raised him. Duryodhana's closest friend; he learned only on the eve of war that the Pandavas were his brothers.
+  wiki: Karna
+  birth: Born to the unmarried Kunti with natural armour and earrings; cast into the water in a basket.
+  parents:
+    - { id: kunti, rel: mother, cite: "adi 63, 67, 111" }
+    - { id: surya, rel: divine-father, cite: "adi 63, 67, 111" }
+    - { id: adhiratha, rel: adoptive-father, cite: "adi 67, 111" }
+    - { id: radha, rel: adoptive-mother, cite: "adi 67, 111" }
+  incarnation:
+    - { of: surya, kind: portion, cite: adi 67, note: "“The best portion of the maker of day.”" }
+  returned:
+    - { to: surya, cite: "svargarohana 4, 5", note: "“Karna entered the Sun, his father” (āviveśa raviṃ karṇaḥ pitaram, CE 18.5.18)." }
+
+- id: adhiratha
+  name: Adhiratha
+  sex: m
+  kind: human
+  house: other
+  title: charioteer, Karna's foster father
+  summary: Charioteer (suta) who found the infant Karna floating in a basket and raised him with his wife Radha.
+  spouses:
+    - { id: radha, cite: adi 111 }
+
+- id: radha
+  name: Radha
+  sex: f
+  kind: human
+  house: other
+  title: Karna's foster mother
+  summary: Wife of the charioteer Adhiratha and Karna's foster mother; Karna is called Radheya after her.
+
+- id: yudhishthira
+  name: Yudhishthira
+  aka: [Dharmaraja, Ajatashatru, Yudhisthira, Yudhishthir, Yudhistir, Dharmaputra, Kaunteya, Partha, Kanka]
+  sex: m
+  kind: human
+  house: kuru
+  title: eldest Pandava, emperor
+  summary: Eldest Pandava, son of Kunti by Dharma, famed for truthfulness. He gambled away his kingdom, brothers and wife to Shakuni, then reigned after the war.
+  wiki: Yudhishthira
+  parents:
+    - { id: kunti, rel: mother, cite: "adi 95, 124" }
+    - { id: pandu, rel: legal-father, cite: "adi 95, 124" }
+    - { id: dharma, rel: divine-father, cite: "adi 63, 95" }
+  spouses:
+    - { id: draupadi, cite: adi 95 }
+    - { id: devika, cite: adi 95 }
+  incarnation:
+    - { of: dharma, kind: portion, cite: adi 67 }
+    - { of: five-indras, kind: rebirth, cite: adi 199, note: "One of the five former Indras (Vyasa's story to Drupada)." }
+  returned:
+    - { to: dharma, cite: "svargarohana 5", note: "“Kshattri (Vidura) and King Yudhishthira entered Dharma” (CE 18.5.19)." }
+
+- id: bhima
+  name: Bhima
+  aka: [Bhimasena, Vrikodara, Bhim, Kaunteya, Partha, Ballava, Bhimsen]
+  sex: m
+  kind: human
+  house: kuru
+  title: second Pandava
+  summary: Second Pandava, son of Kunti by Vayu, of enormous strength and appetite. He killed Hidimba, Jarasandha and Kichaka, and in the war killed all hundred Kaurava brothers, Duhshasana and Duryodhana among them.
+  wiki: Bhima
+  parents:
+    - { id: kunti, rel: mother, cite: "adi 95, 124" }
+    - { id: pandu, rel: legal-father, cite: "adi 95, 124" }
+    - { id: vayu, rel: divine-father, cite: "adi 63, 95" }
+  spouses:
+    - { id: draupadi, cite: adi 95 }
+    - { id: hidimbi, cite: "adi 61, 95" }
+    - { id: valandhara, cite: adi 95 }
+  incarnation:
+    - { of: vayu, kind: portion, cite: adi 67 }
+    - { of: five-indras, kind: rebirth, cite: adi 199 }
+  returned:
+    - { to: vayu, cite: "svargarohana 4", note: "Seen in heaven seated beside the Wind god, among the Maruts." }
+
+- id: arjuna
+  name: Arjuna
+  aka: [Partha, Dhananjaya, Savyasachi, Gudakesha, Phalguna, Kiriti, Jishnu, Bibhatsu, Vijaya, Shvetavahana, Krishna, Kaunteya, Brihannala, Gandivadhanva, Arjun]
+  sex: m
+  kind: human
+  house: kuru
+  title: third Pandava, the archer
+  summary: Third Pandava, son of Kunti by Indra, and the greatest archer of his age. He won Draupadi at her svayamvara, received the Bhagavad Gita from Krishna, and killed Karna.
+  wiki: Arjuna
+  parents:
+    - { id: kunti, rel: mother, cite: "adi 95, 124" }
+    - { id: pandu, rel: legal-father, cite: "adi 95, 124" }
+    - { id: indra, rel: divine-father, cite: "adi 63, 95" }
+  spouses:
+    - { id: draupadi, cite: adi 95 }
+    - { id: subhadra, cite: "adi 63, 95" }
+    - { id: ulupi, cite: adi 216 }
+    - { id: chitrangada-manipur, cite: adi 217 }
+  incarnation:
+    - { of: nara, kind: avatar, cite: adi 67 }
+    - { of: indra, kind: portion, cite: adi 67, note: "Adi 67 says both: a portion of Indra, and Nara reborn." }
+    - { of: five-indras, kind: rebirth, cite: adi 199 }
+
+- id: nakula
+  name: Nakula
+  aka: [Madreya, Nakul, Granthika]
+  sex: m
+  kind: human
+  house: kuru
+  title: fourth Pandava
+  summary: Elder of Madri's twins by the Ashvins, the handsomest man of his time and a master horseman. Kunti raised him after Madri's death.
+  wiki: Nakula
+  parents:
+    - { id: madri, rel: mother, cite: "adi 95, 124" }
+    - { id: pandu, rel: legal-father, cite: "adi 95, 124" }
+    - { id: ashvins, rel: divine-father, cite: "adi 95, 124" }
+  spouses:
+    - { id: draupadi, cite: adi 95 }
+    - { id: karenumati, cite: adi 95 }
+  incarnation:
+    - { of: ashvins, kind: portion, cite: adi 67 }
+    - { of: five-indras, kind: rebirth, cite: adi 199 }
+  returned:
+    - { to: ashvins, cite: "svargarohana 4", note: "Seen in heaven in the Ashvins’ realm." }
+
+- id: sahadeva
+  name: Sahadeva
+  aka: [Madreya, Tantipala]
+  sex: m
+  kind: human
+  house: kuru
+  title: fifth Pandava
+  summary: Younger of Madri's twins by the Ashvins; wise and skilled in astrology. He killed Shakuni in the war.
+  wiki: Sahadeva
+  parents:
+    - { id: madri, rel: mother, cite: "adi 95, 124" }
+    - { id: pandu, rel: legal-father, cite: "adi 95, 124" }
+    - { id: ashvins, rel: divine-father, cite: "adi 95, 124" }
+  spouses:
+    - { id: draupadi, cite: adi 95 }
+    - { id: vijaya-madra, cite: adi 95 }
+  incarnation:
+    - { of: ashvins, kind: portion, cite: adi 67 }
+    - { of: five-indras, kind: rebirth, cite: adi 199 }
+  returned:
+    - { to: ashvins, cite: "svargarohana 4", note: "Seen in heaven in the Ashvins’ realm." }
+
+- id: draupadi
+  name: Draupadi
+  aka: [Panchali, Krishnaa, Yajnaseni, Drupadi, Sairandhri, Parshati, Krishna]
+  sex: f
+  kind: human
+  house: panchala
+  title: wife of the five Pandavas
+  summary: Born from Drupada's sacrificial altar. Arjuna won her at her svayamvara and she became the shared wife of all five Pandavas. Her humiliation in the dice hall, dragged in and nearly disrobed, set the course for the war.
+  wiki: Draupadi
+  birth: Rose from the sacrificial altar at Drupada's sacrifice.
+  parents:
+    - { id: drupada, rel: father, cite: adi 63, note: "Born from his sacrificial altar, not from a woman." }
+  incarnation:
+    - { of: shachi, kind: portion, cite: adi 67 }
+    - { of: sri, kind: avatar, cite: adi 199, note: "Vyasa's five-Indras story makes her Sri herself, destined to be the five Indras' common wife — a different answer from Adi 67." }
+  returned:
+    - { to: sri, cite: "svargarohana 4", note: "Indra in heaven: “This one is Sree herself… issuing not from any mother’s womb.”" }
+
+- id: devika
+  name: Devika
+  sex: f
+  kind: human
+  house: other
+  title: wife of Yudhishthira
+  summary: Daughter of Govasana of the Shaibyas, who chose Yudhishthira at her svayamvara; mother of Yaudheya.
+  wiki: Devika
+
+- id: valandhara
+  name: Valandhara
+  aka: [Balandhara]
+  sex: f
+  kind: human
+  house: other
+  title: wife of Bhima
+  summary: Princess of Kashi whom Bhima won by prowess; mother of Sarvaga.
+
+- id: hidimbi
+  name: Hidimbi
+  aka: [Hidimba, Hidimva]
+  sex: f
+  kind: rakshasa
+  title: rakshasi wife of Bhima
+  summary: Rakshasi and sister of the rakshasa Hidimba, whom Bhima killed. She married Bhima in the forest and bore Ghatotkacha.
+  wiki: Hidimbi
+
+- id: karenumati
+  name: Karenumati
+  sex: f
+  kind: human
+  house: other
+  title: wife of Nakula
+  summary: Princess of Chedi, wife of Nakula and mother of Niramitra.
+
+- id: vijaya-madra
+  name: Vijaya
+  sex: f
+  kind: human
+  house: other
+  title: wife of Sahadeva
+  summary: Daughter of King Dyutimat of Madra, who chose Sahadeva at her svayamvara; mother of Suhotra.
+
+- id: subhadra
+  name: Subhadra
+  aka: [Bhadra, Chitra]
+  sex: f
+  kind: human
+  house: yadava
+  title: Krishna's sister, wife of Arjuna
+  summary: Sister of Krishna and Balarama. Arjuna carried her off from Dvaraka with Krishna's blessing; mother of Abhimanyu. Through Kunti she was also Arjuna's cousin.
+  wiki: Subhadra
+  parents:
+    - { id: vasudeva, rel: father, cite: adi 221 }
+
+- id: ulupi
+  name: Ulupi
+  sex: f
+  kind: naga
+  title: naga princess, wife of Arjuna
+  summary: Naga princess, daughter of Kauravya, who pulled Arjuna down into the Ganga to marry him during his exile. Mother of Iravan.
+  wiki: Ulupi
+  parents:
+    - { id: kauravya, rel: father, cite: adi 216 }
+
+- id: kauravya
+  name: Kauravya
+  sex: m
+  kind: naga
+  title: naga king
+  summary: Naga king of the Airavata line, father of Ulupi.
+
+- id: chitrangada-manipur
+  name: Chitrangada
+  sex: f
+  kind: human
+  house: other
+  title: princess of Manipura, wife of Arjuna
+  summary: Princess of Manipura who married Arjuna on condition that their son stay as her father's heir. Mother of Babhruvahana.
+  wiki: Chitrangada (princess)
+  parents:
+    - { id: chitravahana, rel: father, cite: adi 217 }
+
+- id: chitravahana
+  name: Chitravahana
+  sex: m
+  kind: human
+  house: other
+  title: king of Manipura
+  summary: King of Manipura and father of Chitrangada; his line had only one child per generation.
+
+- id: prativindhya
+  name: Prativindhya
+  aka: [Pritivindhya]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Yudhishthira and Draupadi
+  summary: Eldest of Draupadi's five sons. Ashwatthama killed him with his brothers in their sleep on the last night of the war.
+  wiki: Upapandavas
+  parents:
+    - { id: yudhishthira, rel: father, cite: "adi 63, 95" }
+    - { id: draupadi, rel: mother, cite: "adi 63, 95" }
+  incarnation:
+    - { of: vishvadevas, kind: portion, cite: adi 67 }
+  returned:
+    - { to: gandharvas-five, cite: "svargarohana 4" }
+
+- id: sutasoma
+  name: Sutasoma
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Bhima and Draupadi
+  summary: Son of Bhima and Draupadi; killed by Ashwatthama in the night massacre.
+  wiki: Upapandavas
+  parents:
+    - { id: bhima, rel: father, cite: "adi 63, 95" }
+    - { id: draupadi, rel: mother, cite: "adi 63, 95" }
+  incarnation:
+    - { of: vishvadevas, kind: portion, cite: adi 67 }
+  returned:
+    - { to: gandharvas-five, cite: "svargarohana 4" }
+
+- id: shrutakirti
+  name: Shrutakirti
+  aka: [Srutakirti, Srutakriti, Shrutakarma, Shrutakarman]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Arjuna and Draupadi
+  summary: Son of Arjuna and Draupadi; killed by Ashwatthama in the night massacre. The texts vary between Shrutakirti and Shrutakarma.
+  wiki: Upapandavas
+  parents:
+    - { id: arjuna, rel: father, cite: "adi 63, 95" }
+    - { id: draupadi, rel: mother, cite: "adi 63, 95" }
+  incarnation:
+    - { of: vishvadevas, kind: portion, cite: adi 67 }
+  returned:
+    - { to: gandharvas-five, cite: "svargarohana 4" }
+
+- id: shatanika
+  name: Shatanika
+  aka: [Satanika]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Nakula and Draupadi
+  summary: Son of Nakula and Draupadi; killed by Ashwatthama in the night massacre.
+  wiki: Upapandavas
+  parents:
+    - { id: nakula, rel: father, cite: "adi 63, 95" }
+    - { id: draupadi, rel: mother, cite: "adi 63, 95" }
+  incarnation:
+    - { of: vishvadevas, kind: portion, cite: adi 67 }
+  returned:
+    - { to: gandharvas-five, cite: "svargarohana 4" }
+
+- id: shrutasena
+  name: Shrutasena
+  aka: [Srutasena, Srutakarman]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Sahadeva and Draupadi
+  summary: Son of Sahadeva and Draupadi; killed by Ashwatthama in the night massacre. Adi 63 and 67 call him Shrutasena, while Adi 95 gives the name Shrutakarman.
+  wiki: Upapandavas
+  parents:
+    - { id: sahadeva, rel: father, cite: "adi 63, 95" }
+    - { id: draupadi, rel: mother, cite: "adi 63, 95" }
+  incarnation:
+    - { of: vishvadevas, kind: portion, cite: adi 67 }
+  returned:
+    - { to: gandharvas-five, cite: "svargarohana 4" }
+
+- id: yaudheya
+  name: Yaudheya
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Yudhishthira and Devika
+  summary: Son of Yudhishthira and Devika.
+  parents:
+    - { id: yudhishthira, rel: father, cite: adi 95 }
+    - { id: devika, rel: mother, cite: adi 95 }
+
+- id: sarvaga
+  name: Sarvaga
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Bhima and Valandhara
+  summary: Son of Bhima and the Kashi princess Valandhara.
+  parents:
+    - { id: bhima, rel: father, cite: adi 95 }
+    - { id: valandhara, rel: mother, cite: adi 95 }
+
+- id: ghatotkacha
+  name: Ghatotkacha
+  sex: m
+  kind: rakshasa
+  title: half-rakshasa son of Bhima
+  summary: Son of Bhima and the rakshasi Hidimbi, a giant shape-shifter. Karna used Indra's never-failing dart on him during the night fighting, the dart he had been saving for Arjuna.
+  wiki: Ghatotkacha
+  parents:
+    - { id: bhima, rel: father, cite: "adi 61, 63, 95" }
+    - { id: hidimbi, rel: mother, cite: "adi 61, 63, 95" }
+
+- id: barbarika
+  name: Barbarika
+  aka: [Khatushyamji, Shyam Baba]
+  sex: m
+  kind: rakshasa
+  title: son of Ghatotkacha and Maurvi
+  summary: Son of Ghatotkacha and Maurvi in the Skanda Purana and in folk tradition. He gave Krishna his head before the war and watched the battle from a hilltop; worshipped as Khatu Shyam in Rajasthan. Not in the Sanskrit epic.
+  wiki: Barbarika
+  pe: BARBARIKA
+  ver: purana
+  parents:
+    - { id: ghatotkacha, rel: father, ver: purana, cite: "PE: BARBARIKA" }
+    - { id: maurvi, rel: mother, ver: purana, cite: "PE: BARBARIKA" }
+  incarnation:
+    - { of: yaksha-barbarika, kind: rebirth, ver: purana, cite: "PE: BARBARIKA", note: "A Yaksha who boasted he could defeat the Danavas without Vishnu; Brahma cursed him to be killed by Vishnu in his next life." }
+
+- id: maurvi
+  name: Maurvi
+  aka: [Morvi, Mauravi, Ahilawati]
+  sex: f
+  kind: human
+  house: other
+  title: wife of Ghatotkacha, mother of Barbarika
+  summary: Wife of Ghatotkacha and mother of Barbarika, in the Skanda Purana story retold in the Puranic Encyclopaedia. Not in the Sanskrit epic.
+  wiki: Ahilawati
+  ver: purana
+  spouses:
+    - { id: ghatotkacha, ver: purana, cite: "PE: BARBARIKA" }
+
+- id: yaksha-barbarika
+  name: A Yaksha
+  kind: yaksha
+  title: Barbarika's previous life
+  summary: Unnamed Yaksha who boasted before the gods that he alone could curb the Danavas, so Vishnu need not act. Brahma cursed him to be killed by Vishnu in his next life, in which he was born as Barbarika (Skanda Purana).
+  ver: purana
+
+- id: niramitra
+  name: Niramitra
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Nakula and Karenumati
+  summary: Son of Nakula and the Chedi princess Karenumati.
+  parents:
+    - { id: nakula, rel: father, cite: adi 95 }
+    - { id: karenumati, rel: mother, cite: adi 95 }
+
+- id: suhotra-sahadeva
+  name: Suhotra
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Sahadeva and Vijaya
+  summary: Son of Sahadeva and the Madra princess Vijaya.
+  parents:
+    - { id: sahadeva, rel: father, cite: adi 95 }
+    - { id: vijaya-madra, rel: mother, cite: adi 95 }
+
+- id: iravan
+  name: Iravan
+  aka: [Iravat, Aravan, Kuttantavar]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Arjuna and Ulupi
+  summary: Son of Arjuna by a widowed naga princess, traditionally Ulupi, born "in another's field" — legally the son of her husband, whom Garuda had killed. Killed on the eighth day of the war. In Tamil tradition he is sacrificed to Kali before the war and worshipped as Aravan.
+  wiki: Iravan
+  parents:
+    - { id: arjuna, rel: father, cite: "CE 6.86.6" }
+    - { id: ulupi, rel: mother, cite: "CE 6.86.6", note: "The CE says only “the daughter of the Naga king”, a childless widow given to Arjuna by Airavata. Calling her Ulupi is traditional (Adi 216 makes Ulupi a daughter of Kauravya of the Airavata line)." }
+    - { id: ulupi-husband, rel: legal-father, cite: "CE 6.86.7", note: "“Thus was born, in another's field (parakṣetre), Arjuna's son” — a son born to a widow counts as her dead husband's." }
+
+- id: babhruvahana
+  name: Babhruvahana
+  aka: [Vabhruvahana]
+  sex: m
+  kind: human
+  house: other
+  title: son of Arjuna, king of Manipura
+  summary: Son of Arjuna and Chitrangada, raised as heir of Manipura. During the horse-sacrifice he killed his father in battle; Ulupi revived Arjuna with a naga gem.
+  wiki: Babruvahana
+  parents:
+    - { id: arjuna, rel: father, cite: adi 219 }
+    - { id: chitrangada-manipur, rel: mother, cite: adi 219 }
+
+- id: abhimanyu
+  name: Abhimanyu
+  aka: [Saubhadra, Arjuni]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Arjuna and Subhadra
+  summary: Son of Arjuna and Subhadra; the Moon's son Varchas, lent to earth for sixteen years. He broke into the Chakravyuha formation on the thirteenth day and was surrounded and killed by several warriors at once.
+  wiki: Abhimanyu
+  parents:
+    - { id: arjuna, rel: father, cite: "adi 63, 95" }
+    - { id: subhadra, rel: mother, cite: "adi 63, 95" }
+  spouses:
+    - { id: uttara, cite: adi 95 }
+  incarnation:
+    - { of: varchas, kind: avatar, cite: adi 67, note: "Soma agreed only on condition that Varchas stay sixteen years and return." }
+  returned:
+    - { to: soma, cite: "svargarohana 4, 5", note: "Varchas, son of Soma, “entered Soma at the end of his deeds” (CE 18.5.17)." }
+
+- id: uttara
+  name: Uttara
+  sex: f
+  kind: human
+  house: other
+  title: princess of Matsya, mother of Parikshit
+  summary: Daughter of King Virata, taught dance by Arjuna in disguise. She married Abhimanyu and bore Parikshit after his death.
+  wiki: Uttarā (Mahabharata)
+  parents:
+    - { id: virata, rel: father, cite: adi 95 }
+    - { id: sudeshna, rel: mother }
+
+- id: parikshit
+  name: Parikshit
+  aka: [Parikshit II, Vishnurata]
+  sex: m
+  kind: human
+  house: kuru
+  title: grandson of Arjuna, king
+  summary: Son of Abhimanyu and Uttara. Ashwatthama's weapon struck him in the womb and he was born dead, but Krishna revived him; he succeeded Yudhishthira and was killed by the naga Takshaka.
+  wiki: Parikshit
+  birth: Born dead, scorched in the womb by Ashwatthama's weapon, and revived by Krishna — hence "Parikshit", born in an extinct line.
+  parents:
+    - { id: abhimanyu, rel: father, cite: "adi 49, 95" }
+    - { id: uttara, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: madravati, cite: adi 95 }
+
+- id: madravati
+  name: Madravati
+  sex: f
+  kind: human
+  house: other
+  title: mother of Janamejaya
+  summary: Wife of Parikshit and mother of Janamejaya.
+
+- id: janamejaya
+  name: Janamejaya
+  aka: [Janamejaya II]
+  sex: m
+  kind: human
+  house: kuru
+  title: king to whom the epic is recited
+  summary: Son of Parikshit. To avenge his father he held a great snake sacrifice, and at it Vaishampayana recited the Mahabharata to him; that recital is the epic's frame story.
+  wiki: Janamejaya
+  parents:
+    - { id: parikshit, rel: father, cite: adi 95 }
+    - { id: madravati, rel: mother, cite: adi 95 }
+  spouses:
+    - { id: vapushtama, cite: adi 95 }
+
+- id: vapushtama
+  name: Vapushtama
+  sex: f
+  kind: human
+  house: other
+  title: wife of Janamejaya
+  summary: Princess of Kashi, daughter of King Suvarnavarman; wife of Janamejaya and mother of Shatanika and Shankukarna.
+  parents:
+    - { id: suvarnavarman, rel: father, cite: adi 44 }
+
+- id: suvarnavarman
+  name: Suvarnavarman
+  sex: m
+  kind: human
+  house: other
+  title: king of Kashi
+  summary: King of Kashi who gave his daughter Vapushtama in marriage to Janamejaya.
+  pe: SUVARNAVARMAN
+
+- id: shatanika-2
+  name: Shatanika
+  aka: [Satanika]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Janamejaya
+  summary: Son of Janamejaya and Vapushtama; on a princess of Videha he fathered Ashvamedhadatta.
+  parents:
+    - { id: janamejaya, rel: father, cite: adi 95 }
+    - { id: vapushtama, rel: mother, cite: adi 95 }
+
+- id: shankukarna
+  name: Shankukarna
+  aka: [Sankukarna]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Janamejaya
+  summary: Son of Janamejaya and Vapushtama.
+  parents:
+    - { id: janamejaya, rel: father, cite: adi 95 }
+    - { id: vapushtama, rel: mother, cite: adi 95 }
+
+- id: ashvamedhadatta
+  name: Ashvamedhadatta
+  aka: [Aswamedhadatta]
+  sex: m
+  kind: human
+  house: kuru
+  title: great-great-grandson of Arjuna
+  summary: Son of Shatanika by a princess of Videha; the last generation the Adi Parva names.
+  parents:
+    - { id: shatanika-2, rel: father, cite: adi 95 }
+
+# --- Kauravas ---
+
+- id: duryodhana
+  name: Duryodhana
+  aka: [Suyodhana, Kurupati, Kururaja, Gandhareya, Dhartarashtra]
+  sex: m
+  kind: human
+  house: kuru
+  title: eldest Kaurava
+  summary: Eldest son of Dhritarashtra and Gandhari, born of a portion of Kali. Jealous of the Pandavas from boyhood, he took their kingdom through Shakuni's dice and refused even five villages to avoid war. Bhima struck him down with a blow to the thigh.
+  wiki: Duryodhana
+  parents:
+    - { id: dhritarashtra, rel: father, cite: "adi 63, 95" }
+    - { id: gandhari, rel: mother, cite: "adi 95, 115" }
+  spouses:
+    - { id: bhanumati, ver: later }
+  incarnation:
+    - { of: kali-demon, kind: portion, cite: adi 67 }
+
+- id: bhanumati
+  name: Bhanumati
+  sex: f
+  kind: human
+  house: other
+  title: wife of Duryodhana (later name)
+  summary: Duryodhana's wife, a princess of Kalinga. The epic leaves her unnamed (daughter of Chitrangada of Kalinga); "Bhanumati" comes from later retellings.
+  ver: later
+
+- id: lakshmana-kumara
+  name: Lakshmana Kumara
+  aka: [Lakshmana]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Duryodhana
+  summary: Son of Duryodhana, killed by Abhimanyu on the thirteenth day.
+  parents:
+    - { id: duryodhana, rel: father }
+
+- id: duhshasana
+  name: Duhshasana
+  aka: [Dushasana, Duhsasana, Dussasana]
+  sex: m
+  kind: human
+  house: kuru
+  title: second Kaurava
+  summary: Second son of Dhritarashtra. He dragged Draupadi by the hair into the dice hall and tried to strip her. Bhima killed him in battle and drank his blood, fulfilling his vow.
+  wiki: Dushasana
+  parents:
+    - { id: dhritarashtra, rel: father, cite: "adi 63, 67" }
+    - { id: gandhari, rel: mother, cite: "adi 67, 115" }
+  incarnation:
+    - { of: pulastya-sons, kind: portion, cite: adi 67 }
+
+- id: vikarna
+  name: Vikarna
+  sex: m
+  kind: human
+  house: kuru
+  title: the Kaurava who objected
+  summary: Son of Dhritarashtra, the only Kaurava to protest Draupadi's treatment in the dice hall. He still fought for his brothers and was killed by Bhima.
+  wiki: Vikarna
+  parents:
+    - { id: dhritarashtra, rel: father, cite: "adi 63, 67" }
+    - { id: gandhari, rel: mother, cite: "adi 67, 115" }
+  incarnation:
+    - { of: pulastya-sons, kind: portion, cite: adi 67 }
+
+- id: kauravas
+  name: The other Kauravas
+  aka: [Kauravas, sons of Dhritarashtra, Dhartarashtras]
+  kind: group
+  title: Dhritarashtra's other sons
+  summary: The rest of Dhritarashtra and Gandhari's hundred sons, born from the divided mass of flesh. Adi 67 lists them by birth order; all were killed in the war, almost all of them by Bhima.
+  parents:
+    - { id: dhritarashtra, rel: father, cite: adi 67 }
+    - { id: gandhari, rel: mother, cite: "adi 67, 115" }
+  incarnation:
+    - { of: pulastya-sons, kind: portion, cite: adi 67 }
+  membersCite: adi 63, 67
+  members: [Duhsaha, Durmukha, Vivinsati, Jalasandha, Sulochana, Vinda, Anuvinda, Durdharsha, Suvahu, Dushpradharshana, Durmarshana, Dushkarna, Karna, Chitra, Vipachitra, Chitraksha, Charuchitra, Angada, Durmada, Dushpradharsha, Vivitsu, Vikata, Sama, Urnanabha, Padmanabha, Nanda, Upanandaka, Senapati, Sushena, Kundodara, Mahodara, Chitravahu, Chitravarman, Suvarman, Durvirochana, Ayovahu, Mahavahu, Chitrachapa, Sukundala, Bhimavega, Bhimabala, Valaki, Bhimavikrama, Ugrayudha, Bhimashara, Kanakayu, Dridhayudha, Dridhavarman, Dridhakshatra, Somakirti, Anadara, Jarasandha, Dridhasandha, Satyasandha, Sahasravak, Ugrashravas, Ugrasena, Kshemamurti, Aparajita, Panditaka, Vishalaksha, Duradhara, Dridhahasta, Suhasta, Vatavega, Suvarchas, Adityaketu, Bahvashin, Nagadatta, Anuyayin, Nishangi, Kavachi, Dandi, Dandadhara, Dhanurgraha, Ugra, Bhimaratha, Vira, Viravahu, Alolupa, Abhaya, Raudrakarman, Dridharatha, Anadhrishya, Kundabhedi, Viravi, Dirghalochana, Dirghavahu, Vyudhoru, Kanakangada, Kundaja, Chitraka, Chitrasena, Jaya, Satyavrata, Purumitra]
+
+- id: duhshala
+  name: Duhshala
+  aka: [Duhsala, Dushala]
+  sex: f
+  kind: human
+  house: kuru
+  title: only daughter of Dhritarashtra
+  summary: The one daughter of Dhritarashtra and Gandhari, the hundred-and-first piece of the flesh. She married Jayadratha, king of the Sindhus.
+  wiki: Duhsala
+  parents:
+    - { id: dhritarashtra, rel: father, cite: "adi 67, 116" }
+    - { id: gandhari, rel: mother, cite: "adi 67, 116" }
+  spouses:
+    - { id: jayadratha, cite: adi 67 }
+
+- id: jayadratha
+  name: Jayadratha
+  aka: [Saindhava, Sindhuraja]
+  sex: m
+  kind: human
+  house: other
+  title: king of Sindhu
+  summary: King of the Sindhus and husband of Duhshala. He tried to abduct Draupadi, and on the day Abhimanyu died he held back the Pandavas at the formation's mouth; Arjuna swore to kill him before sunset and did.
+  wiki: Jayadratha
+  parents:
+    - { id: vriddhakshatra, rel: father, cite: CE 7.121.17 }
+
+- id: vriddhakshatra
+  name: Vriddhakshatra
+  sex: m
+  kind: human
+  house: other
+  title: father of Jayadratha
+  summary: King of Sindhu who cursed that whoever made his son's head fall to the ground would have his own head burst; Arjuna's arrow dropped Jayadratha's head into his lap.
+
+- id: yuyutsu
+  name: Yuyutsu
+  sex: m
+  kind: human
+  house: kuru
+  title: Dhritarashtra's son by a Vaishya woman
+  summary: Son of Dhritarashtra by a Vaishya maid, born outside the hundred. He crossed over to the Pandava side at the start of the war, and was one of the few warriors on either side to survive.
+  wiki: Yuyutsu
+  parents:
+    - { id: dhritarashtra, rel: father, cite: "adi 63, 67" }
+    - { id: vaishya-woman, rel: mother, cite: "adi 63, 67" }
+
+- id: vaishya-woman
+  name: Vaishya woman
+  aka: [Sughada]
+  sex: f
+  kind: human
+  house: other
+  title: mother of Yuyutsu
+  summary: Vaishya maid who served Dhritarashtra during Gandhari's long pregnancy; mother of Yuyutsu.
+
+
+- id: ulupi-husband
+  name: Ulupi's first husband
+  sex: m
+  kind: naga
+  title: naga killed by Garuda
+  summary: Unnamed naga, husband of the naga princess who bore Iravan. Garuda (Suparna) killed him, leaving her a childless widow; Airavata then gave her to Arjuna (CE 6.86.7).
+  spouses:
+    - { id: ulupi, cite: "CE 6.86.7" }
+
+
+# --- Kings after Janamejaya, from the Vishnu Purana (4.21.2-3, GRETIL critical edition) ---
+
+- id: adhisimakrishna
+  name: Adhisimakrishna
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "First king after Ashvamedhadatta in the Puranic continuation of the Paurava line. Son of Ashvamedhadatta; the first of the Puranic kings after the war that the Mahabharata does not itself name."
+  ver: purana
+  parents:
+    - { id: ashvamedhadatta, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: nichakshu
+  name: Nichakshu
+  aka: [Nicakshu, Nishcaknu]
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "2nd king after Ashvamedhadatta in the Puranic continuation of the Paurava line. When the Ganga carried away Hastinapura, he moved the capital to Kaushambi. The critical edition of the Vishnu Purana reads his name as Niścaknu."
+  ver: purana
+  parents:
+    - { id: adhisimakrishna, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: ushna
+  name: Ushna
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "3rd king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: nichakshu, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: chitraratha-paurava
+  name: Chitraratha
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "4th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: ushna, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: shuchiratha
+  name: Shuchiratha
+  aka: [Suchiratha]
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "5th king after Ashvamedhadatta in the Puranic continuation of the Paurava line. Son of Chitraratha. Missing from some lists of these kings, but present in the Vishnu Purana."
+  ver: purana
+  parents:
+    - { id: chitraratha-paurava, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: vrishnimat
+  name: Vrishnimat
+  aka: [Vrishniman]
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "6th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: shuchiratha, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: sushena-paurava
+  name: Sushena
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "7th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: vrishnimat, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: sunitha
+  name: Sunitha
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "8th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: sushena-paurava, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: richa
+  name: Richa
+  aka: [Rica]
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "9th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: sunitha, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: nrichakshu
+  name: Nrichakshu
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "10th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: richa, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: sukhibala
+  name: Sukhibala
+  aka: [Sukhihala, Sukhinala]
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "11th king after Ashvamedhadatta in the Puranic continuation of the Paurava line. Vishnu Purana reads sukhibala; other lists give Sukhihala or similar."
+  ver: purana
+  parents:
+    - { id: nrichakshu, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: pariplava
+  name: Pariplava
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "12th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: sukhibala, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: sunaya
+  name: Sunaya
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "13th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: pariplava, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: medhavin
+  name: Medhavin
+  aka: [Medhavi]
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "14th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: sunaya, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: nripanjaya
+  name: Nripanjaya
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "15th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: medhavin, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: mridu
+  name: Mridu
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "16th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: nripanjaya, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: tigma
+  name: Tigma
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "17th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: mridu, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: brihadratha-paurava
+  name: Brihadratha
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "18th king after Ashvamedhadatta in the Puranic continuation of the Paurava line. Not the same as Brihadratha of Magadha, Jarasandha’s father."
+  ver: purana
+  parents:
+    - { id: tigma, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: vasudana
+  name: Vasudana
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "19th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: brihadratha-paurava, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: shatanika-3
+  name: Shatanika II
+  aka: [Shatanika]
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "20th king after Ashvamedhadatta in the Puranic continuation of the Paurava line. A second Shatanika (“another Shatanika”, aparaḥ śatānīkaḥ), not the son of Janamejaya."
+  ver: purana
+  parents:
+    - { id: vasudana, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: udayana
+  name: Udayana
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "21th king after Ashvamedhadatta in the Puranic continuation of the Paurava line. Son of the second Shatanika; the name of the celebrated king of Vatsa at Kaushambi in later Sanskrit literature."
+  ver: purana
+  parents:
+    - { id: shatanika-3, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: ahinara
+  name: Ahinara
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "22th king after Ashvamedhadatta in the Puranic continuation of the Paurava line."
+  ver: purana
+  parents:
+    - { id: udayana, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: dandapani
+  name: Dandapani
+  aka: [Khandapani]
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "23th king after Ashvamedhadatta in the Puranic continuation of the Paurava line. Vishnu Purana reads daṇḍapāṇi; other lists give Khandapani."
+  ver: purana
+  parents:
+    - { id: ahinara, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: niramitra-paurava
+  name: Niramitra
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "24th king after Ashvamedhadatta in the Puranic continuation of the Paurava line. Not the same as Niramitra, Nakula’s son."
+  ver: purana
+  parents:
+    - { id: dandapani, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }
+
+- id: kshemaka
+  name: Kshemaka
+  sex: m
+  kind: human
+  house: kuru
+  title: Paurava king after the war (Purana)
+  summary: "25th king after Ashvamedhadatta in the Puranic continuation of the Paurava line. The last king of the line: “having reached King Kshemaka, the lineage will come to its end in the Kali age” (Vishnu Purana 4.21.3)."
+  ver: purana
+  parents:
+    - { id: niramitra-paurava, rel: father, ver: purana, cite: "Vishnu Purana 4.21.2" }

@@ -1,0 +1,427 @@
+# Yadavas / Vrishnis / Andhakas: Krishna's people.
+
+- id: shura
+  name: Shura
+  aka: [Sura, Shurasena, Surasena]
+  sex: m
+  kind: human
+  house: yadava
+  title: Yadava chief, grandfather of Krishna
+  summary: Foremost of the Yadus, father of Vasudeva and of Pritha (Kunti). He gave Pritha as a baby to his childless cousin Kuntibhoja, which makes Krishna the Pandavas' first cousin.
+  pe: SURA VI
+  spouses:
+    - { id: marisha, cite: "PE: SURA VI" }
+  parents:
+    - { id: hridika, rel: father, ver: purana, cite: "PE: KRSNA", note: "From the Puranic Encyclopaedia’s genealogy of Krishna (…Hridika — Surasena — Vasudeva — Krishna). That makes Kritavarma, Hridika’s son, Shura’s brother; Puranic genealogies differ in this stretch." }
+
+- id: vasudeva
+  name: Vasudeva
+  aka: [Anakadundubhi, Vasudev]
+  sex: m
+  kind: human
+  house: yadava
+  title: father of Krishna
+  summary: Son of Shura and brother of Kunti; father of Krishna by Devaki and of Balarama by Rohini. Ganguli's "Vasudeva" usually means Krishna himself, Vāsudeva, "son of Vasudeva".
+  wiki: Vasudeva
+  parents:
+    - { id: shura, rel: father, cite: adi 67 }
+    - { id: marisha, rel: mother, cite: "PE: SURA VI" }
+  spouses:
+    - { id: devaki, cite: adi 63 }
+    - { id: rohini, cite: "PE: VASUDEVA" }
+  returned:
+    - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+  incarnation:
+    - { of: kashyapa, kind: rebirth, ver: purana, cite: "PE: VASUDEVA", note: "Kashyapa and his wife Aditi, parents of the Adityas (Vishnu among them), are reborn as Vasudeva and Devaki, the parents of Krishna." }
+
+- id: shrutashrava
+  name: Shrutashrava
+  aka: [Srutasrava]
+  sex: f
+  kind: human
+  house: yadava
+  title: Kunti's sister, mother of Shishupala
+  summary: Daughter of Shura and sister of Kunti and Vasudeva; married Damaghosha of Chedi and bore Shishupala.
+  parents:
+    - { id: shura, rel: father, cite: "PE: SURA VI" }
+    - { id: marisha, rel: mother, cite: "PE: SURA VI" }
+  spouses:
+    - { id: damaghosha, cite: "PE: SRUTASRAVAS V" }
+
+- id: devaka
+  name: Devaka
+  sex: m
+  kind: human
+  house: yadava
+  title: Yadava king, father of Devaki
+  summary: Yadava king, father of Devaki and brother of Ugrasena. A daughter of his by a Sudra wife married Vidura. Adi 67 says the asura Devaka was born as a Gandharva king.
+
+- id: devaki
+  name: Devaki
+  sex: f
+  kind: human
+  house: yadava
+  title: mother of Krishna
+  summary: Daughter of Devaka and wife of Vasudeva. Her cousin Kamsa imprisoned her and killed her children until Krishna, her eighth, was smuggled out at birth.
+  wiki: Devaki
+  parents:
+    - { id: devaka, rel: father }
+  incarnation:
+    - { of: aditi, kind: rebirth, ver: purana, cite: "PE: VASUDEVA" }
+
+- id: rohini
+  name: Rohini
+  sex: f
+  kind: human
+  house: yadava
+  title: mother of Balarama
+  summary: Wife of Vasudeva and mother of Balarama, who in the Puranas was transferred to her womb from Devaki's.
+  wiki: Rohini (wife of Vasudeva)
+  incarnation:
+    - { of: surasa, kind: rebirth, ver: purana, cite: "PE: VASUDEVA" }
+
+- id: ugrasena
+  name: Ugrasena
+  sex: m
+  kind: human
+  house: yadava
+  title: king of Mathura
+  summary: King of the Yadavas at Mathura, deposed by his son Kamsa and restored by Krishna. Adi 67 says he was the asura Svarbhanu reborn.
+  wiki: Ugrasena
+  incarnation:
+    - { of: svarbhanu, kind: rebirth, cite: adi 67 }
+  returned:
+    - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+
+- id: kamsa
+  name: Kamsa
+  aka: [Kansa]
+  sex: m
+  kind: human
+  house: yadava
+  title: tyrant of Mathura
+  summary: Son of Ugrasena who usurped his father's throne. Warned that Devaki's eighth son would kill him, he imprisoned her; Krishna killed him. The Danava Kalanemi reborn.
+  wiki: Kamsa
+  parents:
+    - { id: ugrasena, rel: father, cite: adi 67 }
+  incarnation:
+    - { of: kalanemi, kind: rebirth, cite: adi 67 }
+  returned:
+    - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+
+- id: krishna
+  name: Krishna
+  aka: [Vasudeva, Keshava, Kesava, Govinda, Madhava, Hari, Janardana, Hrishikesha, Achyuta, Madhusudana, Murari, Devakinandana, Dvarakadhisha, Partha-sarathi, Krsna]
+  sex: m
+  kind: human
+  house: yadava
+  title: Vishnu on earth, Arjuna's charioteer
+  summary: Son of Vasudeva and Devaki, raised among cowherds in Gokula. Prince of Dvaraka, cousin and ally of the Pandavas, and Arjuna's charioteer, to whom he speaks the Bhagavad Gita. Narayana to Arjuna's Nara.
+  wiki: Krishna
+  parents:
+    - { id: vasudeva, rel: father, cite: adi 63 }
+    - { id: devaki, rel: mother, cite: adi 63 }
+  spouses:
+    - { id: rukmini, cite: "PE: PRADYUMNA" }
+    - { id: satyabhama, cite: "PE: SATYABHAMA" }
+    - { id: jambavati, cite: "PE: JAMBAVATI" }
+  incarnation:
+    - { of: vishnu, kind: portion, cite: adi 67, note: "Adi 67: a portion of Narayana. Adi 63 instead says “Vishnu himself” was born of Devaki." }
+    - { of: vishnu, kind: avatar, cite: adi 199, note: "In Vyasa's five-Indras story, Krishna sprang from one of Narayana's hairs — the black one." }
+  returned:
+    - { to: vishnu, cite: "svargarohana 5", note: "“Vasudeva was a portion of Narayana; accordingly he entered Narayana.”" }
+
+- id: balarama
+  name: Balarama
+  aka: [Baladeva, Valadeva, Balabhadra, Haladhara, Sankarshana, Rohineya, Rama, Halayudha]
+  sex: m
+  kind: human
+  house: yadava
+  title: Krishna's elder brother
+  summary: Elder brother of Krishna, son of Vasudeva by Rohini, who fights with a plough. He taught both Bhima and Duryodhana the mace and stayed out of the war.
+  wiki: Balarama
+  parents:
+    - { id: vasudeva, rel: father }
+    - { id: rohini, rel: mother, cite: adi 193 }
+  spouses:
+    - { id: revati, cite: CE 1.211.7 }
+  incarnation:
+    - { of: shesha, kind: portion, cite: adi 67 }
+    - { of: vishnu, kind: avatar, cite: adi 199, note: "In the five-Indras story, Balarama sprang from Narayana's white hair." }
+  returned:
+    - { to: shesha, note: "As Ananta he went below the earth to bear it again (Svargarohana 5). In the Mausala Parva a white thousand-headed serpent issues from his mouth at death and goes to the ocean.", cite: "mausala 4; svargarohana 5" }
+
+- id: revati
+  name: Revati
+  sex: f
+  kind: human
+  house: other
+  title: wife of Balarama
+  summary: Daughter of King Kakudmi (Raivata). She and her father waited ages in Brahma's realm, and returned to earth far taller than the people of Balarama's time.
+  parents:
+    - { id: kakudmi, rel: father }
+
+- id: kakudmi
+  name: Kakudmi
+  aka: [Raivata]
+  sex: m
+  kind: human
+  house: other
+  title: king, father of Revati
+  summary: King who took his daughter Revati to Brahma to find her a husband. Many ages passed on earth while they waited, and Brahma sent her to marry Balarama.
+  wiki: Kakudmi
+
+- id: bhishmaka
+  name: Bhishmaka
+  sex: m
+  kind: human
+  house: other
+  title: king of Vidarbha
+  summary: King of Vidarbha, father of Rukmini and Rukmi.
+  wiki: Bhishmaka
+
+- id: rukmini
+  name: Rukmini
+  sex: f
+  kind: human
+  house: other
+  title: Krishna's chief queen
+  summary: Princess of Vidarbha and a portion of Sri. Her brother Rukmi had promised her to Shishupala; she asked Krishna to carry her off, and he did.
+  wiki: Rukmini
+  parents:
+    - { id: bhishmaka, rel: father, cite: adi 67 }
+  incarnation:
+    - { of: sri, kind: portion, cite: adi 67 }
+
+- id: rukmi
+  name: Rukmi
+  sex: m
+  kind: human
+  house: other
+  title: Rukmini's brother
+  summary: Prince of Vidarbha who opposed his sister's marriage to Krishna and was humiliated by him. Adi 67 counts him among the kings born of the Krodhavasha asuras.
+  wiki: Rukmi
+  parents:
+    - { id: bhishmaka, rel: father, cite: CE 5.155.2 }
+  incarnation:
+    - { of: krodhavashas, kind: portion, cite: adi 67 }
+
+- id: satyabhama
+  name: Satyabhama
+  sex: f
+  kind: human
+  house: yadava
+  title: wife of Krishna
+  summary: Daughter of Satrajit and one of Krishna's chief wives, married after the affair of the Syamantaka jewel.
+  wiki: Satyabhama
+  parents:
+    - { id: satrajit, rel: father, cite: "PE: SATYABHAMA" }
+  incarnation:
+    - { of: gunavati, kind: rebirth, ver: purana, cite: "PE: SATYABHAMA", note: "Krishna tells her of this past life in the Padma Purana (Uttara Khanda 90)." }
+
+- id: satrajit
+  name: Satrajit
+  sex: m
+  kind: human
+  house: yadava
+  title: owner of the Syamantaka jewel
+  summary: Yadava nobleman who received the Syamantaka jewel from Surya; father of Satyabhama.
+  wiki: Satrajit
+  incarnation:
+    - { of: devasharma, kind: rebirth, ver: purana, cite: "PE: SATYABHAMA" }
+
+- id: jambavati
+  name: Jambavati
+  sex: f
+  kind: animal
+  title: wife of Krishna
+  summary: Daughter of the bear-king Jambavan, given to Krishna with the Syamantaka jewel after the two fought; mother of Samba.
+  wiki: Jambavati
+  parents:
+    - { id: jambavan, rel: father, cite: "PE: JAMBAVATI" }
+
+- id: jambavan
+  name: Jambavan
+  aka: [Jambavat, Jambavantha]
+  sex: m
+  kind: animal
+  title: king of the bears
+  summary: The ancient bear-king of the Ramayana. He fought Krishna for twenty-one days over the Syamantaka jewel before recognising him.
+  wiki: Jambavan
+
+- id: pradyumna
+  name: Pradyumna
+  sex: m
+  kind: human
+  house: yadava
+  title: son of Krishna and Rukmini
+  summary: Eldest son of Krishna and Rukmini, Kama the love-god reborn in the Puranas. Adi 67 says he was Sanatkumara.
+  wiki: Pradyumna
+  parents:
+    - { id: krishna, rel: father, cite: "PE: PRADYUMNA" }
+    - { id: rukmini, rel: mother, cite: CE 1.211.9 }
+  incarnation:
+    - { of: sanatkumara, kind: avatar, cite: adi 67 }
+    - { of: kama, kind: rebirth, ver: purana, note: "The Puranas make him Kama reborn after Shiva burned him.", cite: "PE: PRADYUMNA" }
+  returned:
+    - { to: sanatkumara, cite: "svargarohana 5", note: "“Entered Sanatkumara, whence he had come” (CE 18.5.11)." }
+
+- id: aniruddha
+  name: Aniruddha
+  sex: m
+  kind: human
+  house: yadava
+  title: grandson of Krishna
+  summary: Son of Pradyumna. The asura princess Usha dreamt of him and had him carried off to her; Krishna fought her father Bana to free him.
+  wiki: Aniruddha
+  parents:
+    - { id: pradyumna, rel: father, cite: "PE: ANIRUDDHA" }
+
+- id: samba
+  name: Samba
+  sex: m
+  kind: human
+  house: yadava
+  title: son of Krishna and Jambavati
+  summary: Son of Krishna and Jambavati. To fool some sages, the Yadava youths dressed him as a pregnant woman; their curse made him "give birth" to the iron club that destroyed the Yadavas.
+  wiki: Samba
+  parents:
+    - { id: krishna, rel: father, cite: "PE: SAMBA I" }
+    - { id: jambavati, rel: mother, cite: CE 3.17.12 }
+  returned:
+    - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+
+- id: satyaka
+  name: Satyaka
+  sex: m
+  kind: human
+  house: yadava
+  title: father of Satyaki
+  summary: Vrishni chief, father of Satyaki.
+
+- id: satyaki
+  name: Satyaki
+  aka: [Yuyudhana, Shaineya, Saineya]
+  sex: m
+  kind: human
+  house: yadava
+  title: Vrishni hero, Arjuna's pupil
+  summary: Vrishni warrior and Arjuna's pupil, who fought for the Pandavas. He killed Bhurishravas as he sat in meditation, and died in the Yadava brawl at Prabhasa.
+  wiki: Satyaki
+  parents:
+    - { id: satyaka, rel: father, cite: adi 63 }
+  incarnation:
+    - { of: maruts, kind: portion, cite: adi 67 }
+
+- id: hridika
+  name: Hridika
+  sex: m
+  kind: human
+  house: yadava
+  title: father of Kritavarma
+  summary: Bhoja-Yadava chief, father of Kritavarma.
+
+- id: kritavarma
+  name: Kritavarma
+  aka: [Kritavarman, Hardikya]
+  sex: m
+  kind: human
+  house: yadava
+  title: Yadava who fought for the Kauravas
+  summary: Son of Hridika and commander of the Narayani army that Krishna gave Duryodhana. One of three Kaurava survivors, he joined Ashwatthama's night raid and was killed by Satyaki at Prabhasa.
+  wiki: Kritavarma
+  parents:
+    - { id: hridika, rel: father, cite: adi 63 }
+  incarnation:
+    - { of: maruts, kind: portion, cite: adi 67 }
+    - { of: ashvapati-asura, kind: rebirth, cite: adi 67, note: "The same chapter says the asura Ashvapati became “Hardikya” (son of Hridika)." }
+  returned:
+    - { to: maruts, cite: "svargarohana 5" }
+
+- id: damaghosha
+  name: Damaghosha
+  sex: m
+  kind: human
+  house: other
+  title: king of Chedi
+  summary: King of Chedi, husband of Shrutashrava and father of Shishupala.
+
+- id: shishupala
+  name: Shishupala
+  aka: [Sisupala, Chaidya]
+  sex: m
+  kind: human
+  house: other
+  title: king of Chedi
+  summary: King of Chedi and first cousin of both Krishna and the Pandavas. Krishna promised his mother to pardon a hundred offences; when Shishupala insulted him at Yudhishthira's royal sacrifice, Krishna beheaded him with his discus.
+  wiki: Shishupala
+  birth: Born with three eyes and four arms; the extra ones vanished when Krishna held him on his lap, marking Krishna as his destined killer.
+  parents:
+    - { id: damaghosha, rel: father, cite: "PE: DAMAGHOSA" }
+    - { id: shrutashrava, rel: mother, cite: "PE: SRUTASRAVAS V" }
+  incarnation:
+    - { of: hiranyakashipu, kind: rebirth, cite: adi 67 }
+    - { of: jaya-vijaya, kind: rebirth, ver: purana, cite: "PE: JAYA XI", note: "Third asura birth of the gatekeepers; Adi 67 already makes him Hiranyakashipu reborn." }
+
+- id: devasharma
+  name: Devasharma
+  sex: m
+  kind: human
+  house: other
+  title: Brahmin, Satrajit's previous life
+  summary: Brahmin of Mayapuri at the end of the Krita age, killed in the Himalayan forest by a giant. In the Padma Purana he is reborn as Satrajit, so his daughter Gunavati is his daughter again as Satyabhama.
+  ver: purana
+
+- id: gunavati
+  name: Gunavati
+  sex: f
+  kind: human
+  house: other
+  title: Satyabhama's previous life
+  summary: Daughter of the Brahmin Devasharma, widowed when a giant killed her father and husband; she lived by manual labour and kept the Kartika and Ekadashi vows. In the Padma Purana Krishna tells Satyabhama that she was Gunavati in her previous birth.
+  ver: purana
+  parents:
+    - { id: devasharma, rel: father, ver: purana, cite: "PE: SATYABHAMA" }
+
+- id: marisha
+  name: Marisha
+  aka: [Marisa]
+  sex: f
+  kind: human
+  house: yadava
+  title: wife of Shura, mother of Vasudeva and Kunti
+  summary: First wife of Shura; by him she had ten sons (Vasudeva the eldest) and four daughters — Pritha (Kunti), Shrutadeva, Shrutashrava and Rajadhidevi.
+  spouses:
+    - { id: shura, cite: "PE: SURA VI" }
+
+- id: kuntibhoja-mother
+  name: Kuntibhoja's mother
+  sex: f
+  kind: human
+  house: yadava
+  title: Yadava princess (unnamed)
+  summary: Mother of Kuntibhoja. The Puranic Encyclopaedia makes her a sister of Shura (so Kuntibhoja is Shura's nephew); Adi 67 instead calls Kuntibhoja "the son of his (Shura's) paternal aunt", which would make her Shura's aunt and Kuntibhoja his cousin.
+  parents:
+    - { id: hridika, rel: father, ver: purana, note: "Inferred: the Puranic Encyclopaedia calls her Shura's sister, and its genealogy of Krishna makes Hridika Shura's father." }
+
+- id: purujit
+  name: Purujit
+  sex: m
+  kind: human
+  house: yadava
+  title: Kunti's adoptive brother
+  summary: Son of Kuntibhoja and so Kunti's adoptive brother; with his brother he fought for the Pandavas as Arjuna's "maternal uncle" (mātula, CE 8.4.73).
+  pe: PURUJIT
+  parents:
+    - { id: kuntibhoja, rel: father, cite: "PE: PURUJIT; CE 8.4.73" }
+
+- id: kuntibhoja-2
+  name: Kuntibhoja the younger
+  aka: [Kuntibhoja]
+  sex: m
+  kind: human
+  house: yadava
+  title: son of Kuntibhoja, Kunti's adoptive brother
+  summary: Son of Kuntibhoja who bore his father's name; brother of Purujit and an adoptive brother of Kunti, he fought on the Pandava side.
+  parents:
+    - { id: kuntibhoja, rel: father, cite: "PE: PURUJIT; CE 8.4.73" }

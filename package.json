@@ -1,0 +1,14 @@
+{
+  "name": "mahabharata-family-tree",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "test": "node tools/test-page.mjs"
+  },
+  "dependencies": {
+    "@hpcc-js/wasm-graphviz": "^1.30.0",
+    "js-yaml": "^5.5.0",
+    "puppeteer-core": "^25.17.0"
+  }
+}

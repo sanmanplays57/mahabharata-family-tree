@@ -1,0 +1,511 @@
+# Gods, primordial sages, and the beings whose portions were born on earth.
+# Schema: see CLAUDE.md. Cites "adi 67" = Ganguli translation, Adi Parva, section 67.
+
+- id: brahma
+  name: Brahma
+  aka: [Brahman, Pitamaha, Prajapati]
+  sex: m
+  kind: god
+  title: the creator
+  summary: The creator god, from whom the six mind-born sages and Daksha descend; grandfather of all creatures in the epic's genealogies.
+  wiki: Brahma
+  pe: BRAHMA
+
+- id: marichi
+  name: Marichi
+  sex: m
+  kind: rishi
+  title: mind-born son of Brahma
+  summary: First of Brahma's six mind-born sons; father of Kashyapa.
+  wiki: Marichi
+  parents:
+    - { id: brahma, rel: father, cite: adi 65 }
+
+- id: atri
+  name: Atri
+  sex: m
+  kind: rishi
+  title: mind-born son of Brahma
+  summary: One of Brahma's six mind-born sons; in later tradition the father of Soma, the Moon.
+  wiki: Atri
+  parents:
+    - { id: brahma, rel: father, cite: adi 65 }
+
+- id: angiras
+  name: Angiras
+  sex: m
+  kind: rishi
+  title: mind-born son of Brahma
+  summary: One of Brahma's six mind-born sons; father of Brihaspati, preceptor of the gods.
+  wiki: Angiras (sage)
+  parents:
+    - { id: brahma, rel: father, cite: adi 65 }
+
+- id: pulastya
+  name: Pulastya
+  sex: m
+  kind: rishi
+  title: mind-born son of Brahma
+  summary: One of Brahma's six mind-born sons; ancestor of the Rakshasas, whose "sons" were reborn as the Kauravas.
+  wiki: Pulastya
+  parents:
+    - { id: brahma, rel: father, cite: adi 65 }
+
+- id: daksha
+  name: Daksha
+  sex: m
+  kind: rishi
+  title: progenitor, sprung from Brahma's toe
+  summary: Prajapati born from Brahma's right toe; his thirteen daughters, Aditi and Diti among them, married Kashyapa and mothered gods and asuras.
+  wiki: Daksha
+  birth: Sprang from the right toe of Brahma.
+  parents:
+    - { id: brahma, rel: father, cite: adi 66 }
+
+- id: kashyapa
+  name: Kashyapa
+  aka: [Kasyapa]
+  sex: m
+  kind: rishi
+  title: father of gods and asuras
+  summary: Son of Marichi; husband of Daksha's daughters. By Aditi he fathered the Adityas — Indra, Vivasvat (the Sun), Vishnu and others.
+  wiki: Kashyapa
+  parents:
+    - { id: marichi, rel: father, cite: adi 75 }
+  spouses:
+    - { id: aditi, cite: adi 75 }
+
+- id: aditi
+  name: Aditi
+  sex: f
+  kind: god
+  title: mother of the Adityas
+  summary: Eldest daughter of Daksha and wife of Kashyapa; mother of the twelve Adityas, including Indra, Vivasvat and Vishnu.
+  wiki: Aditi
+  parents:
+    - { id: daksha, rel: father, cite: "adi 65, 95" }
+
+- id: indra
+  name: Indra
+  aka: [Shakra, Sakra, Vasava, Purandara, Devendra, Mahendra]
+  sex: m
+  kind: god
+  title: king of the gods
+  summary: King of the gods and one of the Adityas. Father of Arjuna through Kunti; Arjuna is also called a portion of him.
+  wiki: Indra
+  parents:
+    - { id: kashyapa, rel: father, cite: "adi 65, 75" }
+    - { id: aditi, rel: mother, cite: "adi 65, 75" }
+  spouses:
+    - { id: shachi, cite: "PE: INDRANI" }
+
+- id: shachi
+  name: Shachi
+  aka: [Sachi, Indrani, Paulomi]
+  sex: f
+  kind: god
+  title: queen of the gods
+  summary: Wife of Indra. Adi 67 says Draupadi was born of a portion of her.
+  wiki: Shachi
+  parents:
+    - { id: puloman, rel: father, cite: "CE 1.105.3", note: "She is called Paulomī, “daughter of Puloman”; Adi 223 calls her “Puloma’s daughter”." }
+
+- id: surya
+  name: Surya
+  aka: [Vivasvat, Vivaswat, Vivasvan, Aditya, Savitr, Arka, Bhaskara]
+  sex: m
+  kind: god
+  title: the Sun
+  summary: The Sun god, one of the Adityas. Father of Karna by the unmarried Kunti, of Vaivasvata Manu (ancestor of the lunar line through Ila), and of Tapati, mother of Kuru.
+  wiki: Surya
+  parents:
+    - { id: kashyapa, rel: father, cite: "adi 65, 75" }
+    - { id: aditi, rel: mother, cite: "adi 65, 75" }
+
+- id: vishnu
+  name: Vishnu
+  aka: [Narayana, Hari]
+  sex: m
+  kind: god
+  title: the preserver
+  summary: Supreme god whose portion was born as Krishna. Adi 65 also lists a Vishnu among the twelve Adityas, sons of Aditi.
+  wiki: Vishnu
+  parents:
+    - { id: kashyapa, rel: father, cite: adi 65, note: "as one of the twelve Adityas" }
+    - { id: aditi, rel: mother, cite: adi 65 }
+  spouses:
+    - { id: sri, cite: "PE: LAKSMI I" }
+
+- id: sri
+  name: Sri
+  aka: [Lakshmi, Shri]
+  sex: f
+  kind: god
+  title: goddess of fortune
+  summary: Goddess of fortune and consort of Vishnu. A portion of her was born as Rukmini; the five-Indras story makes her Draupadi.
+  wiki: Lakshmi
+
+- id: shiva
+  name: Shiva
+  aka: [Mahadeva, Rudra, Shankara, Isana, Mahesvara, Hara]
+  sex: m
+  kind: god
+  title: the destroyer
+  summary: The great god. One of four beings whose united portions were born as Ashwatthama.
+  wiki: Shiva
+
+- id: dharma
+  name: Dharma
+  aka: [Dharmadeva, Dharmaraja, god of justice]
+  sex: m
+  kind: god
+  title: god of justice
+  summary: God of righteousness, born from Brahma's right breast. Father of Yudhishthira; cursed by the sage Animandavya to be born a Sudra, he became Vidura. Often identified with Yama.
+  birth: Came out through the right breast of Brahma.
+  parents:
+    - { id: brahma, rel: father, cite: adi 66 }
+  spouses:
+    - { id: dhriti, cite: "adi 66" }
+    - { id: mati, cite: "adi 66", note: "Ganguli prints “Mali”; the Critical Edition (1.60.14) reads mati." }
+
+- id: yama
+  name: Yama
+  aka: [Antaka, Dharmaraja]
+  sex: m
+  kind: god
+  title: lord of the dead
+  summary: God of death. One of four beings whose united portions were born as Ashwatthama; the text often identifies him with Dharma.
+  wiki: Yama
+  parents:
+    - { id: surya, rel: father, cite: CE 1.70.10 }
+
+- id: vayu
+  name: Vayu
+  aka: [Marut, Maruta, Pavana, Vata, Anila]
+  sex: m
+  kind: god
+  title: god of wind
+  summary: The wind god; father of Bhima through Kunti, and of Hanuman in the Ramayana.
+  wiki: Vayu
+
+- id: ashvins
+  name: Ashvins
+  aka: [Aswins, Asvins, Ashvini Kumaras, Nasatya, Dasra]
+  sex: m
+  kind: group
+  title: twin physicians of the gods
+  summary: Twin gods of healing; fathers of the twins Nakula and Sahadeva through Madri.
+  wiki: Ashvins
+  parents:
+    - { id: savitri-aditya, rel: father, cite: "CE 1.60.34", note: "Adi 66 / CE 1.60.34. Elsewhere the Ashvins are sons of Vivasvat; the two solar Adityas are often identified." }
+    - { id: tvashtri-daughter, rel: mother, cite: "CE 1.60.34" }
+
+- id: soma
+  name: Soma
+  aka: [Chandra, Chandrama, the Moon]
+  sex: m
+  kind: god
+  title: the Moon
+  summary: The Moon god. He let his beloved son Varchas be born on earth as Abhimanyu, but only for sixteen years.
+  wiki: Chandra
+  parents:
+    - { id: atri, rel: father, cite: "PE: CANDRA" }
+
+- id: varchas
+  name: Varchas
+  sex: m
+  kind: god
+  title: son of the Moon
+  summary: Son of Soma, born on earth as Abhimanyu on Soma's condition that he stay only sixteen years and return.
+  parents:
+    - { id: soma, rel: father, cite: adi 67 }
+
+- id: agni
+  name: Agni
+  aka: [Pavaka, Hutashana, Vahni]
+  sex: m
+  kind: god
+  title: god of fire
+  summary: The fire god; Dhrishtadyumna, born from Drupada's sacrificial fire, was a portion of him.
+  wiki: Agni
+
+- id: kama
+  name: Kama
+  aka: [Kamadeva, Manmatha, Desire]
+  sex: m
+  kind: god
+  title: god of desire
+  summary: Desire personified; one of four beings whose united portions were born as Ashwatthama.
+  wiki: Kamadeva
+  parents:
+    - { id: dharma, rel: father, cite: adi 66 }
+
+- id: krodha
+  name: Krodha
+  aka: [Wrath, Anger]
+  sex: m
+  kind: god
+  title: wrath personified
+  summary: Wrath personified; one of four beings whose united portions were born as Ashwatthama.
+
+- id: kali-demon
+  name: Kali
+  aka: [Kali Purusha, Kali the demon]
+  sex: m
+  kind: asura
+  title: spirit of the dark age
+  summary: Personification of the Kali age (not the goddess Kali). Duryodhana was born of a portion of him.
+  wiki: Kali (demon)
+
+- id: dvapara
+  name: Dvapara
+  aka: [Dwapara]
+  sex: m
+  kind: god
+  title: spirit of the third age
+  summary: Personification of the Dvapara age, the third of the four ages. Adi 67 says Shakuni "was Dwapara himself".
+  wiki: Dvapara Yuga
+
+- id: nara
+  name: Nara
+  sex: m
+  kind: rishi
+  title: ancient sage, companion of Narayana
+  summary: Primeval sage, eternal companion of Narayana. Born on earth as Arjuna, while Narayana was born as Krishna.
+  wiki: Nara-Narayana
+
+- id: shesha
+  name: Shesha
+  aka: [Sesha, Adishesha, Ananta]
+  sex: m
+  kind: naga
+  title: the cosmic serpent
+  summary: The great serpent on whom Vishnu rests; Balarama was a portion of him.
+  wiki: Shesha
+  parents:
+    - { id: kadru, rel: mother, cite: adi 65 }
+    - { id: kashyapa, rel: father, cite: adi 65 }
+
+- id: sanatkumara
+  name: Sanatkumara
+  sex: m
+  kind: rishi
+  title: eternal youth, mind-born sage
+  summary: One of the four eternally youthful sages; Adi 67 says Pradyumna "was Sanatkumara".
+  wiki: Four Kumaras
+
+- id: siddhi
+  name: Siddhi
+  sex: f
+  kind: god
+  title: goddess of accomplishment
+  summary: Goddess who, per Adi 67, became Kunti.
+
+- id: dhriti
+  name: Dhriti
+  sex: f
+  kind: god
+  title: goddess of steadfastness
+  summary: Goddess who, per Adi 67, became Madri.
+  parents:
+    - { id: daksha, rel: father, cite: adi 66 }
+
+- id: mati
+  name: Mati
+  sex: f
+  kind: god
+  title: goddess of intellect
+  summary: Goddess who, per Adi 67, became Gandhari, the daughter of Subala.
+  parents:
+    - { id: daksha, rel: father, cite: adi 66 }
+
+- id: maruts
+  name: Maruts
+  aka: [Marutas]
+  kind: group
+  title: storm gods
+  summary: Troop of storm gods. Adi 67 makes Satyaki, Drupada, Kritavarma and Virata portions of them.
+  wiki: Maruts
+
+- id: rudras
+  name: Rudras
+  kind: group
+  title: the eleven Rudras
+  summary: The troop of Rudra deities. Adi 67 says Kripa was born of them.
+  wiki: Rudras
+  parents:
+    - { id: sthanu, rel: father, cite: adi 66 }
+
+- id: vasus
+  name: Vasus
+  aka: [the eight Vasus]
+  kind: group
+  title: eight elemental gods
+  summary: Eight gods cursed by Vasishtha to be born as men. Ganga bore them to Shantanu and drowned seven at birth; the eighth, the youngest, lived on as Bhishma.
+  wiki: Vasus
+
+- id: vishvadevas
+  name: Vishvadevas
+  aka: [Viswadevas, Viswas, Vishvedevas]
+  kind: group
+  title: the All-gods
+  summary: Collective gods. Adi 67 says Draupadi's five sons were the Vishvadevas.
+  wiki: Vishvedevas
+
+- id: pulastya-sons
+  name: Sons of Pulastya
+  aka: [Rakshasas of Pulastya]
+  kind: group
+  title: Rakshasas
+  summary: The Rakshasa descendants of Pulastya. Adi 67 says they were reborn as Duryodhana's brothers, the Kauravas.
+  parents:
+    - { id: pulastya, rel: father, cite: adi 67 }
+
+- id: five-indras
+  name: The five former Indras
+  kind: group
+  title: fallen Indras
+  summary: In the story Vyasa tells Drupada, five past Indras were sentenced by Shiva to be born as men; they became the Pandavas, with Sri as their shared wife.
+
+- id: hiranyakashipu
+  name: Hiranyakashipu
+  aka: [Hiranyakasipu]
+  sex: m
+  kind: asura
+  title: Daitya king
+  summary: Son of Diti and enemy of Vishnu. Adi 67 says he was reborn as Shishupala.
+  wiki: Hiranyakashipu
+  parents:
+    - { id: diti, rel: mother, cite: adi 65 }
+    - { id: kashyapa, rel: father, cite: adi 65 }
+  incarnation:
+    - { of: jaya-vijaya, kind: rebirth, ver: purana, cite: "PE: JAYA XI" }
+
+- id: viprachitti
+  name: Viprachitti
+  sex: m
+  kind: asura
+  title: first of the Danavas
+  summary: Chief of the Danavas; Adi 67 says he was born on earth as Jarasandha.
+  wiki: Viprachitti
+  parents:
+    - { id: danu, rel: mother, cite: adi 65 }
+    - { id: kashyapa, rel: father, cite: adi 65 }
+
+- id: samhlada
+  name: Samhlada
+  sex: m
+  kind: asura
+  title: younger brother of Prahlada
+  summary: Daitya prince; Adi 67 says he became Shalya, king of Madra.
+  parents:
+    - { id: hiranyakashipu, rel: father, cite: adi 65 }
+
+- id: vashkala
+  name: Vashkala
+  aka: [Bashkala]
+  sex: m
+  kind: asura
+  title: great asura
+  summary: Asura who, per Adi 67, became Bhagadatta of Pragjyotisha.
+  parents:
+    - { id: hiranyakashipu, rel: father, cite: adi 65 }
+
+- id: kalanemi
+  name: Kalanemi
+  sex: m
+  kind: asura
+  title: mighty Danava
+  summary: Danava who, per Adi 67, was born as Kamsa, son of Ugrasena.
+  wiki: Kalanemi
+
+- id: svarbhanu
+  name: Svarbhanu
+  aka: [Swarbhanu, Rahu]
+  sex: m
+  kind: asura
+  title: the eclipse demon
+  summary: Asura who, per Adi 67, became King Ugrasena.
+  wiki: Rahu
+  parents:
+    - { id: danu, rel: mother, cite: adi 65 }
+    - { id: kashyapa, rel: father, cite: adi 65 }
+
+- id: ashvapati-asura
+  name: Ashvapati
+  aka: [Aswapati]
+  sex: m
+  kind: asura
+  title: son of Diti
+  summary: Asura who, per Adi 67, became "Hardikya", the son of Hridika — that is, Kritavarma. The same chapter also makes Kritavarma a portion of the Maruts.
+  parents:
+    - { id: danu, rel: mother, cite: adi 65 }
+    - { id: kashyapa, rel: father, cite: adi 65 }
+
+- id: krodhavashas
+  name: Krodhavashas
+  aka: [Krodhavasa]
+  kind: group
+  title: a class of asuras
+  summary: Class of asuras. Adi 67 lists many kings born of them, including Rukmi, Dantavakra and Ekalavya.
+  parents:
+    - { id: krodha-daksha, rel: mother, cite: adi 65 }
+
+- id: rakshasa-shikhandi
+  name: A Rakshasa
+  kind: rakshasa
+  title: unnamed
+  summary: Adi 67 says Shikhandi "was (the incarnation of) a Rakshasa", without a name. The Udyoga Parva instead makes Shikhandi the reborn Amba.
+
+- id: mahabhisha
+  name: Mahabhisha
+  sex: m
+  kind: human
+  house: other
+  title: king of the Ikshvaku race
+  summary: Ikshvaku king who reached heaven. He gazed at Ganga when her garment slipped in Brahma's court, so Brahma cursed him to be born among men; he became Shantanu.
+
+- id: brihaspati
+  name: Brihaspati
+  aka: [Vrihaspati]
+  sex: m
+  kind: rishi
+  title: preceptor of the gods
+  summary: Sage and guru of the gods, son of Angiras. Drona sprang from a portion of him.
+  wiki: Brihaspati
+  parents:
+    - { id: angiras, rel: father, cite: "PE: BRHASPATI" }
+
+- id: kacha
+  name: Kacha
+  sex: m
+  kind: rishi
+  title: son of Brihaspati
+  summary: Son of Brihaspati who learned the art of reviving the dead from Shukra. Devayani loved him; when he refused her, she cursed him and he cursed her never to marry a Brahmin.
+  wiki: Kacha (sage)
+  parents:
+    - { id: brihaspati, rel: father, cite: adi 76 }
+
+- id: hamsa
+  name: Hamsa
+  sex: m
+  kind: gandharva
+  title: Gandharva king, son of Arishta
+  summary: Lord of the Gandharvas, son of Arishta. The Critical Edition (1.61.77-78) says he was born as Dhritarashtra; in heaven Indra shows Dhritarashtra to Yudhishthira as "the king of the Gandharvas".
+
+- id: gandharvas-five
+  name: Five Gandharvas
+  kind: group
+  title: Draupadi's sons in heaven
+  summary: In heaven Indra points out five fiery Gandharvas and tells Yudhishthira they "were the sons of Draupadi and yourself". Adi 67 had made Draupadi's sons the Vishvadevas instead.
+
+- id: surasa
+  name: Surasa
+  sex: f
+  kind: god
+  title: wife of Kashyapa
+  summary: A wife of Kashyapa. The Puranic Encyclopaedia (under Vasudeva) says she was reborn as Rohini, Balarama's mother, when Kashyapa and Aditi were reborn as Vasudeva and Devaki.
+  spouses:
+    - { id: kashyapa, cite: "PE: VASUDEVA" }
+  parents:
+    - { id: krodha-daksha, rel: mother, cite: adi 66, note: "Adi 66 makes Surasa one of Krodha’s nine daughters — a granddaughter of Daksha — while the Puranic Encyclopaedia makes her a wife of Kashyapa, Krodha’s husband." }
