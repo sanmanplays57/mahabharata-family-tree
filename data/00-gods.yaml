@@ -10,6 +10,8 @@
   summary: The creator god, from whom the six mind-born sages and Daksha descend; grandfather of all creatures in the epic's genealogies.
   wiki: Brahma
   pe: BRAHMA
+  spouses:
+    - { id: savitri-devi, cite: "CE 13.134.3" }
 
 - id: marichi
   name: Marichi
@@ -61,6 +63,10 @@
   birth: Sprang from the right toe of Brahma.
   parents:
     - { id: brahma, rel: father, cite: adi 66 }
+    - { id: prachetases, rel: father, cite: "CE 1.70.3-4; Vishnu Purana 1.15.73", note: "Daksha Prachetasa: son of the ten Prachetases. The Adi Parva elsewhere has Daksha born from Brahma's right thumb." }
+    - { id: marisha-kandu, rel: mother, ver: purana, cite: "Vishnu Purana 1.15.73" }
+  spouses:
+    - { id: virini, cite: "CE 1.70.5; Vishnu Purana 1.15.88", note: "The Vishnu Purana calls her Asikni, daughter of Virana." }
 
 - id: kashyapa
   name: Kashyapa
@@ -87,7 +93,7 @@
 
 - id: indra
   name: Indra
-  aka: [Shakra, Sakra, Vasava, Purandara, Devendra, Mahendra]
+  aka: [Shakra, Sakra, Vasava, Purandara, Devendra, Mahendra, Bidaujas]
   sex: m
   kind: god
   title: king of the gods
@@ -112,7 +118,7 @@
 
 - id: surya
   name: Surya
-  aka: [Vivasvat, Vivaswat, Vivasvan, Aditya, Savitr, Arka, Bhaskara]
+  aka: [Vivasvat, Vivaswat, Vivasvan, Aditya, Savitr, Arka, Bhaskara, Divakara]
   sex: m
   kind: god
   title: the Sun
@@ -121,6 +127,8 @@
   parents:
     - { id: kashyapa, rel: father, cite: "adi 65, 75" }
     - { id: aditi, rel: mother, cite: "adi 65, 75" }
+  spouses:
+    - { id: suvarchala, cite: "CE 13.134.4" }
 
 - id: vishnu
   name: Vishnu
@@ -144,6 +152,9 @@
   title: goddess of fortune
   summary: Goddess of fortune and consort of Vishnu. A portion of her was born as Rukmini; the five-Indras story makes her Draupadi.
   wiki: Lakshmi
+  parents:
+    - { id: bhrigu, rel: father, ver: purana, cite: "Vishnu Purana 1.10.2", note: "Lakshmi, Vishnu's wife, born of Bhrigu and Khyati." }
+    - { id: khyati, rel: mother, ver: purana, cite: "Vishnu Purana 1.10.2" }
 
 - id: shiva
   name: Shiva
@@ -164,6 +175,8 @@
   birth: Came out through the right breast of Brahma.
   parents:
     - { id: brahma, rel: father, cite: adi 66 }
+  same:
+    - { as: yama, cite: "adi 63; CE 1.101.22-24; Brahma Purana 4.44-49", note: "The epic makes Dharma Brahma's son (Adi 66) and Yama the Sun's (CE 1.70.10). Yet in the Mandavya story the judge of the dead in his hall is Dharma (CE 1.101.22–24), and a star passage there calls him dharmarāja. Ganguli glosses Yudhishthira's father as “Dharma (Yama, the god of justice)” (Adi 63), and the Brahma Purana says Yama “was known as Dharmaraja” (4.44–49)." }
   spouses:
     - { id: dhriti, cite: "adi 66" }
     - { id: mati, cite: "adi 66", note: "Ganguli prints “Mali”; the Critical Edition (1.60.14) reads mati." }
@@ -178,6 +191,9 @@
   wiki: Yama
   parents:
     - { id: surya, rel: father, cite: CE 1.70.10 }
+    - { id: tvashtri-daughter, rel: mother, ver: purana, cite: "Vishnu Purana 3.2.2; Brahma Purana 4.8", note: "Twin of Yami. His stepmother Chhaya cursed him when he raised his foot at her." }
+  spouses:
+    - { id: dhumorna, cite: "CE 5.115.9, 13.134.3" }
 
 - id: vayu
   name: Vayu
@@ -198,6 +214,7 @@
   wiki: Ashvins
   parents:
     - { id: savitri-aditya, rel: father, cite: "CE 1.60.34", note: "Adi 66 / CE 1.60.34. Elsewhere the Ashvins are sons of Vivasvat; the two solar Adityas are often identified." }
+    - { id: surya, rel: father, ver: purana, cite: "Vishnu Purana 3.2.7; Brahma Purana 4.41-44", note: "The Sun, as a horse, with Sanjna as a mare; the Brahma Purana names the twins Nasatya and Dasra." }
     - { id: tvashtri-daughter, rel: mother, cite: "CE 1.60.34" }
 
 - id: soma
@@ -206,10 +223,13 @@
   sex: m
   kind: god
   title: the Moon
-  summary: The Moon god. He let his beloved son Varchas be born on earth as Abhimanyu, but only for sixteen years.
+  summary: The Moon god, son of the sage Atri and, in the Puranas, of Anasuya, and a portion of Brahma. He let his beloved son Varchas be born on earth as Abhimanyu, but only for sixteen years.
   wiki: Chandra
   parents:
-    - { id: atri, rel: father, cite: "PE: CANDRA" }
+    - { id: atri, rel: father, cite: "PE: CANDRA; Vishnu Purana 1.10.8; Bhagavata Purana 4.1.15" }
+    - { id: anasuya, rel: mother, ver: purana, cite: "Vishnu Purana 1.10.8; Bhagavata Purana 4.1.15" }
+  incarnation:
+    - { of: brahma, kind: portion, ver: purana, cite: "Bhagavata Purana 4.1.33", note: "“Soma was born of a portion of Brahma.”" }
 
 - id: varchas
   name: Varchas
@@ -273,6 +293,9 @@
   title: ancient sage, companion of Narayana
   summary: Primeval sage, eternal companion of Narayana. Born on earth as Arjuna, while Narayana was born as Krishna.
   wiki: Nara-Narayana
+  parents:
+    - { id: dharma, rel: father, cite: "CE 12.321.8-9", note: "Narayana was born to Dharma in four forms: Nara, Narayana, Hari and Krishna." }
+    - { id: murti, rel: mother, cite: "Bhagavata Purana 4.1.52", ver: purana }
 
 - id: shesha
   name: Shesha
@@ -333,6 +356,8 @@
   title: the eleven Rudras
   summary: The troop of Rudra deities. Adi 67 says Kripa was born of them.
   wiki: Rudras
+  members: [Mrigavyadha, Sharva, Nirriti, Ajaikapad, Ahirbudhnya, Pinakin, Dahana, Ishvara, Kapalin, Sthanu, Bhava]
+  membersCite: "CE 1.60.2-3; adi 66"
   parents:
     - { id: sthanu, rel: father, cite: adi 66 }
 
@@ -379,7 +404,9 @@
     - { id: diti, rel: mother, cite: adi 65 }
     - { id: kashyapa, rel: father, cite: adi 65 }
   incarnation:
-    - { of: jaya-vijaya, kind: rebirth, ver: purana, cite: "PE: JAYA XI" }
+    - { of: jaya-vijaya, kind: rebirth, ver: purana, cite: "PE: JAYA XI; Bhagavata Purana 7.1.36-39" }
+  spouses:
+    - { id: kayadhu, ver: purana, cite: "Bhagavata Purana 6.18.12" }
 
 - id: viprachitti
   name: Viprachitti
@@ -400,6 +427,7 @@
   summary: Daitya prince; Adi 67 says he became Shalya, king of Madra.
   parents:
     - { id: hiranyakashipu, rel: father, cite: adi 65 }
+    - { id: kayadhu, rel: mother, ver: purana, cite: "Bhagavata Purana 6.18.12-13" }
 
 - id: vashkala
   name: Vashkala
@@ -436,7 +464,7 @@
   aka: [Aswapati]
   sex: m
   kind: asura
-  title: son of Diti
+  title: "Danava, son of Danu, born as Hardikya (Kritavarma)"
   summary: Asura who, per Adi 67, became "Hardikya", the son of Hridika — that is, Kritavarma. The same chapter also makes Kritavarma a portion of the Maruts.
   parents:
     - { id: danu, rel: mother, cite: adi 65 }
@@ -491,6 +519,9 @@
   sex: m
   kind: gandharva
   title: Gandharva king, son of Arishta
+  parents:
+    - { id: vishva, rel: mother, cite: "CE 1.61.77, 1.59.12" }
+    - { id: kashyapa, rel: father, cite: "CE 1.59.12" }
   summary: Lord of the Gandharvas, son of Arishta. The Critical Edition (1.61.77-78) says he was born as Dhritarashtra; in heaven Indra shows Dhritarashtra to Yudhishthira as "the king of the Gandharvas".
 
 - id: gandharvas-five
@@ -509,3 +540,12 @@
     - { id: kashyapa, cite: "PE: VASUDEVA" }
   parents:
     - { id: krodha-daksha, rel: mother, cite: adi 66, note: "Adi 66 makes Surasa one of Krodha’s nine daughters — a granddaughter of Daksha — while the Puranic Encyclopaedia makes her a wife of Kashyapa, Krodha’s husband." }
+
+- id: bhumi
+  name: Bhumi (the Earth)
+  aka: [Prithvi, Bhudevi, Prithivi, Dharani, Earth]
+  sex: f
+  kind: god
+  title: the Earth goddess, Naraka's mother
+  summary: The Earth as a goddess. She asked Vishnu for an unkillable son and was given the Vaishnava weapon for Naraka, which later passed to Bhagadatta of Pragjyotisha.
+  wiki: Bhumi (goddess)

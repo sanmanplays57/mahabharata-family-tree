@@ -1,0 +1,954 @@
+# Svayambhuva Manu's daughters and the sages' wives, in two Puranic versions that
+# disagree: the Vishnu Purana (1.7, 1.10) makes the sages' wives daughters of Daksha
+# and Prasuti; the Bhagavata (3.12, 3.24, 4.1) makes nine of them daughters of Kardama
+# and Devahuti. Anasuya and Khyati appear in both lists, so they carry both
+# parentages and the viewer marks them with a "?".
+
+- id: svayambhuva-manu
+  name: Svayambhuva Manu
+  aka: [Svayambhuva, Swayambhuva Manu, the first Manu]
+  sex: m
+  kind: human
+  house: other
+  title: the first Manu
+  summary: The first of the fourteen Manus, made by Brahma out of his own self. His wife Shatarupa bore him two sons, Priyavrata and Uttanapada, and three daughters, Akuti, Devahuti and Prasuti.
+  wiki: Svayambhuva Manu
+  ver: purana
+  parents:
+    - { id: brahma, rel: father, cite: "Vishnu Purana 1.7.14", note: "Brahma “made his own self, born of himself, into Manu Svayambhuva”." }
+  spouses:
+    - { id: shatarupa, cite: "Vishnu Purana 1.7.15; Bhagavata Purana 3.12.54" }
+
+- id: shatarupa
+  name: Shatarupa
+  aka: [Satarupa]
+  sex: f
+  kind: human
+  house: other
+  title: wife of Svayambhuva Manu
+  summary: Wife of the first Manu, "purified of sin by austerity"; mother of Priyavrata, Uttanapada, Akuti, Devahuti and Prasuti.
+  wiki: Shatarupa
+  ver: purana
+
+- id: priyavrata
+  name: Priyavrata
+  sex: m
+  kind: human
+  house: other
+  title: son of Svayambhuva Manu
+  summary: Elder son of the first Manu and Shatarupa.
+  ver: purana
+  parents:
+    - { id: svayambhuva-manu, rel: father, cite: "Vishnu Purana 1.7.16; Bhagavata Purana 3.12.55" }
+    - { id: shatarupa, rel: mother, cite: "Vishnu Purana 1.7.16; Bhagavata Purana 3.12.55" }
+
+- id: uttanapada
+  name: Uttanapada
+  sex: m
+  kind: human
+  house: other
+  title: son of Svayambhuva Manu
+  summary: Younger son of the first Manu and Shatarupa; in the Puranas the father of Dhruva.
+  ver: purana
+  parents:
+    - { id: svayambhuva-manu, rel: father, cite: "Vishnu Purana 1.7.16; Bhagavata Purana 3.12.55" }
+    - { id: shatarupa, rel: mother, cite: "Vishnu Purana 1.7.16; Bhagavata Purana 3.12.55" }
+
+- id: prasuti
+  name: Prasuti
+  aka: [Prasooti]
+  sex: f
+  kind: human
+  house: other
+  title: daughter of Svayambhuva Manu, wife of Daksha
+  summary: Daughter of the first Manu, given to Daksha. In the Vishnu Purana she bears him twenty-four daughters; thirteen marry Dharma, and the other eleven marry Bhrigu, Shiva, Marichi, Angiras, Pulastya, Pulaha, Kratu, Atri, Vasishtha, Agni and the Pitris.
+  wiki: Prasuti
+  ver: purana
+  parents:
+    - { id: svayambhuva-manu, rel: father, cite: "Vishnu Purana 1.7.16; Bhagavata Purana 3.12.55" }
+    - { id: shatarupa, rel: mother, cite: "Vishnu Purana 1.7.16; Bhagavata Purana 3.12.55" }
+  spouses:
+    - { id: daksha, cite: "Vishnu Purana 1.7.17; Bhagavata Purana 4.1.11" }
+
+- id: devahuti
+  name: Devahuti
+  sex: f
+  kind: human
+  house: other
+  title: daughter of Svayambhuva Manu, wife of Kardama
+  summary: In the Bhagavata, the first Manu's daughter married to the sage Kardama. She bore nine daughters, who became the wives of the great sages, and then Kapila, her teacher in Sankhya.
+  ver: purana
+  parents:
+    - { id: svayambhuva-manu, rel: father, cite: "Bhagavata Purana 3.12.55" }
+    - { id: shatarupa, rel: mother, cite: "Bhagavata Purana 3.12.54" }
+  spouses:
+    - { id: kardama, cite: "Bhagavata Purana 3.12.27, 3.21.3" }
+
+- id: kardama
+  name: Kardama
+  sex: m
+  kind: rishi
+  title: sage, born of Brahma's shadow
+  summary: In the Bhagavata, a sage born from Brahma's shadow, husband of Devahuti. He gave their nine daughters to the nine great sages, and his son Kapila was Vishnu incarnate.
+  wiki: Kardama
+  ver: purana
+  parents:
+    - { id: brahma, rel: father, cite: "Bhagavata Purana 3.12.27", note: "“From his shadow was born Kardama, the husband of Devahuti.”" }
+
+- id: kapila
+  name: Kapila
+  sex: m
+  kind: rishi
+  title: founder of Sankhya
+  summary: Son of Kardama and Devahuti, Vishnu born in Kardama's house; he taught his mother the Sankhya philosophy.
+  wiki: Kapila
+  ver: purana
+  parents:
+    - { id: kardama, rel: father, cite: "Bhagavata Purana 3.24.16, 3.24.19" }
+    - { id: devahuti, rel: mother, cite: "Bhagavata Purana 3.24.16, 3.24.19" }
+  incarnation:
+    - { of: vishnu, kind: avatar, cite: "Bhagavata Purana 3.24.16" }
+
+- id: anasuya
+  name: Anasuya
+  aka: [Anasooya, Anusuya]
+  sex: f
+  kind: human
+  house: other
+  title: wife of Atri, mother of Soma, Durvasas and Dattatreya
+  summary: Atri's wife, who bore him Soma the Moon, the irascible sage Durvasas and Dattatreya. The two Puranas disagree on her parents. In the Vishnu Purana she is a daughter of Daksha and Prasuti. In the Bhagavata she is a daughter of Kardama and Devahuti, and so Kapila's sister. Either way her mother is a daughter of the first Manu.
+  wiki: Anasuya
+  ver: purana
+  parents:
+    - { id: daksha, rel: father, cite: "Vishnu Purana 1.7.19, 1.7.22-24", note: "Vishnu Purana: one of Daksha's twenty-four daughters by Prasuti." }
+    - { id: prasuti, rel: mother, cite: "Vishnu Purana 1.7.19, 1.7.22" }
+    - { id: kardama, rel: father, cite: "Bhagavata Purana 3.24.22", note: "Bhagavata: one of Kardama's nine daughters, given by him to Atri." }
+    - { id: devahuti, rel: mother, cite: "Bhagavata Purana 3.23.48, 3.24.22" }
+  spouses:
+    - { id: atri, cite: "Vishnu Purana 1.7.22-24; Bhagavata Purana 3.24.22" }
+
+- id: durvasas
+  name: Durvasas
+  aka: [Durvasa, Durvasa Muni]
+  sex: m
+  kind: rishi
+  title: the irascible sage
+  summary: Son of Atri and Anasuya, a portion of Shiva, famous for his temper and his curses. In the epic it is his boon, earned by Kunti's care of him, that lets her summon the gods for sons.
+  wiki: Durvasa
+  parents:
+    - { id: atri, rel: father, ver: purana, cite: "Vishnu Purana 1.10.8; Bhagavata Purana 4.1.15" }
+    - { id: anasuya, rel: mother, ver: purana, cite: "Vishnu Purana 1.10.8; Bhagavata Purana 4.1.15" }
+  incarnation:
+    - { of: shiva, kind: portion, ver: purana, cite: "Bhagavata Purana 4.1.33", note: "“Durvasas was a portion of Shankara.”" }
+
+- id: dattatreya
+  name: Dattatreya
+  aka: [Datta, Dattatreya Yogi]
+  sex: m
+  kind: rishi
+  title: the yogi, portion of Vishnu
+  summary: Son of Atri and Anasuya, the master of yoga, a portion of Vishnu. He gave the Haihaya king Kartavirya Arjuna his thousand arms and boons.
+  wiki: Dattatreya
+  ver: purana
+  parents:
+    - { id: atri, rel: father, cite: "Vishnu Purana 1.10.8; Bhagavata Purana 4.1.15" }
+    - { id: anasuya, rel: mother, cite: "Vishnu Purana 1.10.8; Bhagavata Purana 4.1.15" }
+  incarnation:
+    - { of: vishnu, kind: portion, cite: "Bhagavata Purana 4.1.33", note: "“Datta, the knower of yoga, was a portion of Vishnu.”" }
+
+- id: khyati
+  name: Khyati
+  sex: f
+  kind: human
+  house: other
+  title: wife of Bhrigu
+  summary: Bhrigu's wife in both Puranic lists, which give her different parents. In the Vishnu Purana she is the eldest of Daksha's eleven daughters married to sages. In the Bhagavata she is one of Kardama's nine. The epic names Bhrigu's wife as Puloma instead.
+  ver: purana
+  parents:
+    - { id: daksha, rel: father, cite: "Vishnu Purana 1.7.22-24" }
+    - { id: prasuti, rel: mother, cite: "Vishnu Purana 1.7.19, 1.7.22" }
+    - { id: kardama, rel: father, cite: "Bhagavata Purana 3.24.23" }
+    - { id: devahuti, rel: mother, cite: "Bhagavata Purana 3.23.48, 3.24.23" }
+  spouses:
+    - { id: bhrigu, cite: "Vishnu Purana 1.7.22-24; Bhagavata Purana 3.24.23" }
+
+# --- the rest of Daksha and Prasuti's eleven (Vishnu Purana 1.7.22-24) ---
+- id: sati
+  name: Sati
+  aka: [Dakshayani]
+  sex: f
+  kind: god
+  title: daughter of Daksha, wife of Shiva
+  summary: Daksha's daughter married to Shiva (Bhava). In the Vishnu Purana she is one of the eleven daughters of Daksha and Prasuti given to the sages and gods.
+  wiki: Sati (Hindu goddess)
+  ver: purana
+  parents:
+    - { id: daksha, rel: father, cite: "Vishnu Purana 1.7.22-24" }
+    - { id: prasuti, rel: mother, cite: "Vishnu Purana 1.7.19, 1.7.22" }
+  spouses:
+    - { id: shiva, cite: "Vishnu Purana 1.7.22-24" }
+
+- id: sambhuti
+  name: Sambhuti
+  sex: f
+  kind: human
+  house: other
+  title: wife of Marichi
+  summary: Daughter of Daksha and Prasuti, Marichi's wife; she bore him Paurnamasa.
+  ver: purana
+  parents:
+    - { id: daksha, rel: father, cite: "Vishnu Purana 1.7.22-24" }
+    - { id: prasuti, rel: mother, cite: "Vishnu Purana 1.7.19, 1.7.22" }
+  spouses:
+    - { id: marichi, cite: "Vishnu Purana 1.7.22-24, 1.10.6" }
+
+- id: smriti
+  name: Smriti
+  sex: f
+  kind: human
+  house: other
+  title: wife of Angiras
+  summary: Daughter of Daksha and Prasuti, Angiras's wife; she bore him the daughters Sinivali, Kuhu, Raka and Anumati.
+  ver: purana
+  parents:
+    - { id: daksha, rel: father, cite: "Vishnu Purana 1.7.22-24" }
+    - { id: prasuti, rel: mother, cite: "Vishnu Purana 1.7.19, 1.7.22" }
+  spouses:
+    - { id: angiras, cite: "Vishnu Purana 1.7.22-24, 1.10.7" }
+
+- id: priti
+  name: Priti
+  sex: f
+  kind: human
+  house: other
+  title: wife of Pulastya
+  summary: Daughter of Daksha and Prasuti, Pulastya's wife; mother of Dattoli, who in an earlier age was Agastya.
+  ver: purana
+  parents:
+    - { id: daksha, rel: father, cite: "Vishnu Purana 1.7.22-24" }
+    - { id: prasuti, rel: mother, cite: "Vishnu Purana 1.7.19, 1.7.22" }
+  spouses:
+    - { id: pulastya, cite: "Vishnu Purana 1.7.22-24, 1.10.9" }
+
+- id: kshama
+  name: Kshama
+  sex: f
+  kind: human
+  house: other
+  title: wife of Pulaha
+  summary: Daughter of Daksha and Prasuti, Pulaha's wife; mother of Kardama, Arvarivat and Sahishnu (a different Kardama from the Bhagavata's).
+  ver: purana
+  parents:
+    - { id: daksha, rel: father, cite: "Vishnu Purana 1.7.22-24" }
+    - { id: prasuti, rel: mother, cite: "Vishnu Purana 1.7.19, 1.7.22" }
+  spouses:
+    - { id: pulaha, cite: "Vishnu Purana 1.7.22-24, 1.10.10" }
+
+- id: sannati
+  name: Sannati
+  sex: f
+  kind: human
+  house: other
+  title: wife of Kratu
+  summary: Daughter of Daksha and Prasuti, Kratu's wife; mother of the thumb-sized Valakhilya sages.
+  ver: purana
+  parents:
+    - { id: daksha, rel: father, cite: "Vishnu Purana 1.7.22-24" }
+    - { id: prasuti, rel: mother, cite: "Vishnu Purana 1.7.19, 1.7.22" }
+  spouses:
+    - { id: kratu, cite: "Vishnu Purana 1.7.22-24, 1.10.11" }
+
+- id: urja
+  name: Urja
+  sex: f
+  kind: human
+  house: other
+  title: wife of Vasishtha
+  summary: Daughter of Daksha and Prasuti, Vasishtha's wife in the Vishnu Purana (the epic and the Bhagavata give him Arundhati).
+  ver: purana
+  parents:
+    - { id: daksha, rel: father, cite: "Vishnu Purana 1.7.22-24" }
+    - { id: prasuti, rel: mother, cite: "Vishnu Purana 1.7.19, 1.7.22" }
+  spouses:
+    - { id: vasishtha, cite: "Vishnu Purana 1.7.22-24" }
+
+- id: svaha
+  name: Svaha
+  aka: [Swaha]
+  sex: f
+  kind: god
+  title: wife of Agni
+  summary: Agni's wife, whose name is spoken with every offering poured into the fire. The epic pairs them ("Swaha unto Vibhavasu"); the Vishnu Purana makes her a daughter of Daksha and Prasuti.
+  wiki: Svaha
+  parents:
+    - { id: daksha, rel: father, ver: purana, cite: "Vishnu Purana 1.7.22-24" }
+    - { id: prasuti, rel: mother, ver: purana, cite: "Vishnu Purana 1.7.19, 1.7.22" }
+  spouses:
+    - { id: agni, cite: "adi 201; Vishnu Purana 1.7.22-24" }
+
+- id: svadha
+  name: Svadha
+  aka: [Swadha]
+  sex: f
+  kind: god
+  title: wife of the Pitris
+  summary: Daughter of Daksha and Prasuti given to the Pitris, the ancestors; her name is spoken with offerings to the dead.
+  ver: purana
+  parents:
+    - { id: daksha, rel: father, cite: "Vishnu Purana 1.7.22-24" }
+    - { id: prasuti, rel: mother, cite: "Vishnu Purana 1.7.19, 1.7.22" }
+  spouses:
+    - { id: pitris, cite: "Vishnu Purana 1.7.22-24" }
+
+- id: pitris
+  name: The Pitris
+  aka: [Pitaras, Pitrs, the ancestors]
+  kind: group
+  title: the ancestors
+  summary: The deified ancestors, who receive the offerings made to the dead.
+  wiki: Pitrs
+
+- id: pulaha
+  name: Pulaha
+  sex: m
+  kind: rishi
+  title: mind-born son of Brahma
+  summary: One of Brahma's six mind-born sons. The epic makes the winged insects, lions, Kimpurushas, tigers, bears and wolves his offspring.
+  wiki: Pulaha
+  parents:
+    - { id: brahma, rel: father, cite: adi 65 }
+
+- id: kratu
+  name: Kratu
+  sex: m
+  kind: rishi
+  title: mind-born son of Brahma
+  summary: One of Brahma's six mind-born sons; father of the thumb-sized Valakhilya sages who attend the Sun.
+  wiki: Kratu
+  parents:
+    - { id: brahma, rel: father, cite: adi 65 }
+
+# --- Kardama and Devahuti's other daughters (Bhagavata 3.24.22-24) ---
+- id: kala
+  name: Kala
+  sex: f
+  kind: human
+  house: other
+  title: wife of Marichi, mother of Kashyapa
+  summary: In the Bhagavata, Kardama's daughter given to Marichi; she bore him Kashyapa and Purnima.
+  ver: purana
+  parents:
+    - { id: kardama, rel: father, cite: "Bhagavata Purana 3.24.22" }
+    - { id: devahuti, rel: mother, cite: "Bhagavata Purana 3.23.48, 3.24.22" }
+  spouses:
+    - { id: marichi, cite: "Bhagavata Purana 3.24.22, 4.1.13" }
+
+- id: shraddha-kardama
+  name: Shraddha
+  sex: f
+  kind: human
+  house: other
+  title: Kardama's daughter, wife of Angiras
+  summary: In the Bhagavata, Kardama's daughter given to Angiras, to whom she bore four daughters. Not the Shraddha who is Dharma's wife.
+  ver: purana
+  parents:
+    - { id: kardama, rel: father, cite: "Bhagavata Purana 3.24.22" }
+    - { id: devahuti, rel: mother, cite: "Bhagavata Purana 3.23.48, 3.24.22" }
+  spouses:
+    - { id: angiras, cite: "Bhagavata Purana 3.24.22, 4.1.34" }
+
+- id: havirbhu
+  name: Havirbhu
+  sex: f
+  kind: human
+  house: other
+  title: wife of Pulastya
+  summary: In the Bhagavata, Kardama's daughter given to Pulastya.
+  ver: purana
+  parents:
+    - { id: kardama, rel: father, cite: "Bhagavata Purana 3.24.22" }
+    - { id: devahuti, rel: mother, cite: "Bhagavata Purana 3.23.48, 3.24.22" }
+  spouses:
+    - { id: pulastya, cite: "Bhagavata Purana 3.24.22" }
+
+- id: gati
+  name: Gati
+  sex: f
+  kind: human
+  house: other
+  title: wife of Pulaha
+  summary: In the Bhagavata, Kardama's daughter given to Pulaha.
+  ver: purana
+  parents:
+    - { id: kardama, rel: father, cite: "Bhagavata Purana 3.24.23" }
+    - { id: devahuti, rel: mother, cite: "Bhagavata Purana 3.23.48, 3.24.23" }
+  spouses:
+    - { id: pulaha, cite: "Bhagavata Purana 3.24.23" }
+
+- id: kriya-kardama
+  name: Kriya
+  sex: f
+  kind: human
+  house: other
+  title: Kardama's daughter, wife of Kratu
+  summary: In the Bhagavata, Kardama's daughter given to Kratu. Not the Kriya who is Dharma's wife.
+  ver: purana
+  parents:
+    - { id: kardama, rel: father, cite: "Bhagavata Purana 3.24.23" }
+    - { id: devahuti, rel: mother, cite: "Bhagavata Purana 3.23.48, 3.24.23" }
+  spouses:
+    - { id: kratu, cite: "Bhagavata Purana 3.24.23" }
+
+- id: arundhati
+  name: Arundhati
+  sex: f
+  kind: human
+  house: other
+  title: wife of Vasishtha
+  summary: Vasishtha’s wife, the model of a faithful wife. The Bhagavata makes her one of Kardama’s daughters.
+  wiki: Arundhati (Hinduism)
+  parents:
+    - { id: kardama, rel: father, ver: purana, cite: "Bhagavata Purana 3.24.23" }
+    - { id: devahuti, rel: mother, ver: purana, cite: "Bhagavata Purana 3.23.48, 3.24.23" }
+  spouses:
+    - { id: vasishtha, cite: "adi 175; CE 1.191.6; Bhagavata Purana 3.24.23" }
+
+- id: shanti-kardama
+  name: Shanti
+  aka: [Chitti]
+  sex: f
+  kind: human
+  house: other
+  title: wife of Atharvan
+  summary: In the Bhagavata, Kardama's daughter given to Atharvan, "through whom the sacrifice is spread".
+  ver: purana
+  parents:
+    - { id: kardama, rel: father, cite: "Bhagavata Purana 3.24.24" }
+    - { id: devahuti, rel: mother, cite: "Bhagavata Purana 3.23.48, 3.24.24" }
+  spouses:
+    - { id: atharvan, cite: "Bhagavata Purana 3.24.24" }
+
+- id: atharvan
+  name: Atharvan
+  sex: m
+  kind: rishi
+  title: sage of the Atharva Veda
+  summary: The ancient fire-priest after whom the Atharva Veda is named; in the Bhagavata, husband of Kardama's daughter Shanti.
+  wiki: Atharvan
+  ver: purana
+
+# --- Priyavrata's and Uttanapada's lines (Bhagavata 5.1-5.4; Vishnu Purana 1.11) ---
+- id: barhishmati
+  name: Barhishmati
+  sex: f
+  kind: human
+  house: other
+  title: Priyavrata's wife, Vishvakarma's daughter
+  summary: Daughter of the Prajapati Vishvakarma, married to Priyavrata; she bore him ten sons, all named for the fire, and a youngest daughter, Urjasvati.
+  ver: purana
+  parents:
+    - { id: vishvakarma, rel: father, cite: "Bhagavata Purana 5.1.24" }
+  spouses:
+    - { id: priyavrata, cite: "Bhagavata Purana 5.1.24" }
+
+- id: priyavrata-sons
+  name: Priyavrata's other sons
+  kind: group
+  title: the fire-named sons
+  summary: Priyavrata's sons by Barhishmati besides Agnidhra, "all bearing names of the fire".
+  ver: purana
+  members: [Idhmajihva, "@yajnabahu", Mahavira, Hiranyareta, Ghritaprishtha, Savana, Medhatithi, Vitihotra, Kavi]
+  membersCite: "Bhagavata Purana 5.1.25"
+  parents:
+    - { id: priyavrata, rel: father, cite: "Bhagavata Purana 5.1.24-25" }
+    - { id: barhishmati, rel: mother, cite: "Bhagavata Purana 5.1.24-25" }
+
+- id: urjasvati
+  name: Urjasvati
+  sex: f
+  kind: human
+  house: other
+  title: Shukra's wife, mother of Devayani
+  summary: Priyavrata's youngest child and only daughter, given by him to Ushanas (Shukra); she bore Devayani, "the daughter of Kavya". So Yayati's queen descends from the first Manu.
+  ver: purana
+  parents:
+    - { id: priyavrata, rel: father, cite: "Bhagavata Purana 5.1.24, 5.1.33" }
+    - { id: barhishmati, rel: mother, cite: "Bhagavata Purana 5.1.24" }
+  spouses:
+    - { id: shukra, cite: "Bhagavata Purana 5.1.33" }
+
+- id: agnidhra
+  name: Agnidhra
+  aka: [Agnidhra, Agneedhra]
+  sex: m
+  kind: human
+  house: other
+  title: king of Jambudvipa
+  summary: Priyavrata's eldest son, king of Jambudvipa. By the apsara Purvachitti, sent to him by Brahma, he had nine sons, who gave their names to the nine regions of Jambudvipa.
+  ver: purana
+  parents:
+    - { id: priyavrata, rel: father, cite: "Bhagavata Purana 5.1.25, 5.2.1" }
+    - { id: barhishmati, rel: mother, cite: "Bhagavata Purana 5.1.24-25" }
+  spouses:
+    - { id: purvachitti, cite: "Bhagavata Purana 5.2.3, 5.2.19" }
+
+- id: purvachitti
+  name: Purvachitti
+  sex: f
+  kind: apsara
+  title: apsara, Agnidhra's wife
+  summary: Apsara whom Brahma sent to Agnidhra; after bearing him nine sons, one a year, she left them at home and returned to Brahma.
+  ver: purana
+
+- id: agnidhra-sons
+  name: Agnidhra's other sons
+  kind: group
+  title: eponyms of the regions of Jambudvipa
+  summary: Agnidhra's sons by Purvachitti besides Nabhi, each the eponym of a region of Jambudvipa.
+  ver: purana
+  members: [Kimpurusha, Harivarsha, Ilavrita, Ramyaka, Hiranmaya, Kuru, Bhadrashva, Ketumala]
+  membersCite: "Bhagavata Purana 5.2.19"
+  parents:
+    - { id: agnidhra, rel: father, cite: "Bhagavata Purana 5.2.19" }
+    - { id: purvachitti, rel: mother, cite: "Bhagavata Purana 5.2.19" }
+
+- id: nabhi
+  name: Nabhi
+  sex: m
+  kind: human
+  house: other
+  title: king, father of Rishabha
+  summary: Agnidhra's eldest son. Childless with his queen Merudevi, he worshipped Vishnu, who was born to them as Rishabha.
+  ver: purana
+  parents:
+    - { id: agnidhra, rel: father, cite: "Bhagavata Purana 5.2.19" }
+    - { id: purvachitti, rel: mother, cite: "Bhagavata Purana 5.2.19" }
+  spouses:
+    - { id: merudevi, cite: "Bhagavata Purana 5.3.1" }
+
+- id: merudevi
+  name: Merudevi
+  sex: f
+  kind: human
+  house: other
+  title: Nabhi's queen, mother of Rishabha
+  summary: Nabhi's queen, mother of Rishabha.
+  ver: purana
+
+- id: rishabha
+  name: Rishabha
+  aka: [Rishabhadeva, Rishabhanatha]
+  sex: m
+  kind: human
+  house: other
+  title: king, Vishnu incarnate, father of Bharata
+  summary: Son of Nabhi and Merudevi, Vishnu born on earth; "Indra, jealous, sent no rain on his land" and he rained it himself. By Jayanti, given to him by Indra, he had a hundred sons, of whom Bharata was the eldest.
+  wiki: Rishabhanatha
+  ver: purana
+  parents:
+    - { id: nabhi, rel: father, cite: "Bhagavata Purana 5.3.18-20, 5.4.2" }
+    - { id: merudevi, rel: mother, cite: "Bhagavata Purana 5.3.18-20" }
+  incarnation:
+    - { of: vishnu, kind: avatar, cite: "Bhagavata Purana 5.3.18, 5.4.2" }
+  spouses:
+    - { id: jayanti, cite: "Bhagavata Purana 5.4.8" }
+
+- id: jayanti
+  name: Jayanti
+  sex: f
+  kind: god
+  title: Indra's daughter, Rishabha's queen
+  summary: Indra's daughter and Jayanta's sister. In the Bhagavata, Indra gives her to Rishabha, and she bears him a hundred sons, Bharata the eldest. In the Devi Bhagavata, as the Puranic Encyclopaedia retells it, she serves Shukra through his long penance and lives with him as his wife for ten years, invisible to the world.
+  ver: purana
+  parents:
+    - { id: indra, rel: father, cite: "PE: JAYANTI; Bhagavata Purana 5.4.8", note: "The Bhagavata calls her “Jayanti, given by Indra”; the Puranic Encyclopaedia, “daughter of Indra and sister of Jayanta”." }
+  spouses:
+    - { id: shukra, cite: "PE: JAYANTI", note: "For ten years, after the Devi Bhagavata." }
+
+- id: bharata-rishabha
+  name: Bharata (son of Rishabha)
+  aka: [Jada Bharata, Bharata of Bharatavarsha]
+  sex: m
+  kind: human
+  house: other
+  title: eldest son of Rishabha, eponym of Bharatavarsha
+  summary: Eldest of Rishabha's hundred sons, "after whom this land is called Bharata". He renounced his kingdom, grew so attached to an orphaned fawn that he was reborn as a deer, and in his last birth was a Brahmin who acted dull and mad, known as Jada Bharata.
+  ver: purana
+  parents:
+    - { id: rishabha, rel: father, cite: "Bhagavata Purana 5.4.8-9" }
+    - { id: jayanti, rel: mother, cite: "Bhagavata Purana 5.4.8-9" }
+
+- id: suniti
+  name: Suniti
+  sex: f
+  kind: human
+  house: other
+  title: Uttanapada's queen, mother of Dhruva
+  summary: Uttanapada's chief queen, whom he did not much love; mother of Dhruva.
+  ver: purana
+  spouses:
+    - { id: uttanapada, cite: "Vishnu Purana 1.11.3" }
+
+- id: suruchi
+  name: Suruchi
+  sex: f
+  kind: human
+  house: other
+  title: Uttanapada's favourite queen
+  summary: Uttanapada's favourite queen, mother of Uttama; she drove the boy Dhruva from his father's lap, which sent him into penance.
+  ver: purana
+  spouses:
+    - { id: uttanapada, cite: "Vishnu Purana 1.11.2" }
+
+- id: dhruva
+  name: Dhruva
+  sex: m
+  kind: human
+  house: other
+  title: the boy who became the Pole Star
+  summary: Son of Uttanapada and Suniti. Pushed from his father's lap by his stepmother, he did such penance that Vishnu set him in the sky as the unmoving Pole Star.
+  wiki: Dhruva
+  ver: purana
+  parents:
+    - { id: uttanapada, rel: father, cite: "Vishnu Purana 1.11.3" }
+    - { id: suniti, rel: mother, cite: "Vishnu Purana 1.11.3" }
+    - { id: sunrita, rel: mother, ver: harivamsa, cite: "Harivamsa 2.8-9", note: "The Harivamsa's name for Dhruva's mother; the Vishnu Purana calls her Suniti." }
+  spouses:
+    - { id: bhrami, ver: purana, cite: "Bhagavata Purana 4.10.1" }
+    - { id: ila-vayu, ver: purana, cite: "Bhagavata Purana 4.10.2" }
+
+- id: uttama
+  name: Uttama
+  sex: m
+  kind: human
+  house: other
+  title: Dhruva's half-brother
+  summary: Son of Uttanapada by his favourite queen Suruchi, "dearly loved by his father".
+  ver: purana
+  parents:
+    - { id: uttanapada, rel: father, cite: "Vishnu Purana 1.11.2" }
+    - { id: suruchi, rel: mother, cite: "Vishnu Purana 1.11.2" }
+
+# --- Vamana and Bali's household (Bhagavata 8.17-22) ---
+- id: vamana
+  name: Vamana
+  aka: [Trivikrama, Upendra, Urukrama]
+  sex: m
+  kind: god
+  title: Vishnu as the dwarf Brahmin boy
+  summary: Vishnu born to Aditi and Kashyapa as a dwarf Brahmin boy. He begged three steps of land from the asura king Bali, then grew to cover the earth and the heavens in two strides. The epic praises Vishnu's "three strides" by which he took the three worlds.
+  wiki: Vamana
+  ver: purana
+  parents:
+    - { id: kashyapa, rel: father, cite: "Bhagavata Purana 8.17.22, 8.19.30" }
+    - { id: aditi, rel: mother, cite: "Bhagavata Purana 8.17.21, 8.19.30" }
+  incarnation:
+    - { of: vishnu, kind: avatar, cite: "Bhagavata Purana 8.17.21, 8.19.30" }
+
+- id: vindhyavali
+  name: Vindhyavali
+  sex: f
+  kind: asura
+  title: Bali's queen
+  summary: Bali's wife, who brought the golden pitcher when he poured the water that sealed his gift of three steps to Vamana, and later pleaded with Vishnu for her husband.
+  ver: purana
+  spouses:
+    - { id: bali, cite: "Bhagavata Purana 8.20.17, 8.22.20" }
+
+# --- Vena and Prithu: the epic's line (CE 12.59.94-106) and the Vishnu Purana's (1.13.1-10) ---
+- id: mrityu
+  name: Mrityu
+  aka: [Death]
+  kind: god
+  title: Death personified
+  summary: Death personified; father of Sunitha, Vena's mother.
+  parents:
+    - { id: adharma, rel: father, cite: "CE 1.60.52-53" }
+    - { id: nirriti, rel: mother, cite: "CE 1.60.53" }
+    - { id: bhaya-adharma, rel: father, ver: purana, cite: "Vishnu Purana 1.7.28-29", note: "The Vishnu Purana: Anrita and Nikriti had two pairs, Bhaya and Maya, Naraka and Vedana; of the first pair Maya bore Mrityu. The epic makes Mrityu a son of Adharma and Nirriti (CE 1.60.52-53)." }
+    - { id: maya-adharma, rel: mother, ver: purana, cite: "Vishnu Purana 1.7.29" }
+
+- id: sunitha-mrityu
+  name: Sunitha (Vena's mother)
+  sex: f
+  kind: god
+  title: Mrityu's daughter, mother of Vena
+  summary: Death's daughter, "mind-born and famed in the three worlds", who bore the lawless king Vena. Not the Paurava king Sunitha.
+  parents:
+    - { id: mrityu, rel: father, cite: "CE 12.59.99; Vishnu Purana 1.13.11", note: "“Mrityu's eldest daughter” (Vishnu Purana)." }
+
+- id: virajas
+  name: Virajas
+  sex: m
+  kind: rishi
+  title: Narayana's mind-born son, the first chosen king
+  summary: The radiant mind-born son Narayana created when the gods asked for one man to rule mortals; he would not take the rule and turned to renunciation.
+  parents:
+    - { id: vishnu, rel: father, cite: "CE 12.59.94", note: "Mind-born." }
+
+- id: kirtimat-virajas
+  name: Kirtimat (son of Virajas)
+  sex: m
+  kind: rishi
+  title: Virajas's son
+  summary: Virajas's son, who also renounced the world.
+  parents:
+    - { id: virajas, rel: father, cite: "CE 12.59.96" }
+
+- id: kardama-ananga
+  name: Kardama (Ananga's father)
+  sex: m
+  kind: rishi
+  title: Prajapati, Kirtimat's son
+  summary: Kirtimat's son, the Prajapati Kardama, who did great penance; father of Ananga.
+  parents:
+    - { id: kirtimat-virajas, rel: father, cite: "CE 12.59.96" }
+  same:
+    - { as: kardama, cite: "CE 12.59.96-97", note: "Both are “the Prajapati Kardama”; the Shanti Parva's is Kirtimat's son and Ananga's father, the Bhagavata's is born of Brahma's shadow and marries Devahuti." }
+
+- id: ananga
+  name: Ananga
+  sex: m
+  kind: human
+  house: other
+  title: protector of the people, skilled in the rod of rule
+  summary: Kardama's son, a good king "skilled in the science of the rod (daṇḍanīti)"; father of Atibala.
+  parents:
+    - { id: kardama-ananga, rel: father, cite: "CE 12.59.97" }
+
+- id: atibala
+  name: Atibala
+  sex: m
+  kind: human
+  house: other
+  title: Vena's father in the epic
+  summary: Ananga's son, who took the kingdom and fell under the sway of his senses. In the epic, Vena's father.
+  parents:
+    - { id: ananga, rel: father, cite: "CE 12.59.98" }
+
+- id: shishti
+  name: Shishti
+  aka: [Shlishti]
+  sex: m
+  kind: human
+  house: other
+  title: Dhruva's son
+  summary: Dhruva's son, who by Succhaya had five sons, Ripu the eldest.
+  ver: purana
+  parents:
+    - { id: dhruva, rel: father, cite: "Vishnu Purana 1.13.1" }
+
+- id: ripu
+  name: Ripu
+  sex: m
+  kind: human
+  house: other
+  title: Shishti's son
+  summary: Shishti's eldest son by Succhaya; by Brihati he had Chakshusha.
+  ver: purana
+  parents:
+    - { id: shishti, rel: father, cite: "Vishnu Purana 1.13.1-2" }
+    - { id: succhaya, rel: mother, ver: purana, cite: "Vishnu Purana 1.13.1" }
+
+- id: shishti-sons
+  name: Ripu's brothers
+  kind: group
+  title: Shishti's other sons
+  summary: Shishti's other sons by Succhaya.
+  ver: purana
+  members: [Ripunjaya, Vipra, Vrikala, Vrikatejas]
+  membersCite: "Vishnu Purana 1.13.2"
+  parents:
+    - { id: shishti, rel: father, cite: "Vishnu Purana 1.13.1-2" }
+    - { id: succhaya, rel: mother, ver: purana, cite: "Vishnu Purana 1.13.1" }
+
+- id: chakshusha
+  name: Chakshusha
+  sex: m
+  kind: human
+  house: other
+  title: Ripu's son, father of the sixth Manu
+  summary: Ripu's son by Brihati, "of all radiance"; by Pushkarini, daughter of the Prajapati Virana, he fathered the Manu Chakshusha.
+  ver: purana
+  parents:
+    - { id: ripu, rel: father, cite: "Vishnu Purana 1.13.2" }
+    - { id: brihati-ripu, rel: mother, ver: purana, cite: "Vishnu Purana 1.13.2" }
+
+- id: chakshusha-manu
+  name: Chakshusha Manu
+  sex: m
+  kind: human
+  house: other
+  title: the sixth Manu
+  summary: Chakshusha's son by Pushkarini; by Nadvala, daughter of the Prajapati Vairaja, he had ten sons, Kuru the eldest.
+  ver: purana
+  parents:
+    - { id: chakshusha, rel: father, cite: "Vishnu Purana 1.13.3" }
+    - { id: vishvakarma, rel: father, ver: purana, far: true, cite: "Bhagavata Purana 6.6.15", note: "The Bhagavata makes Chakshusha Manu the son of Vishvakarma and Akriti." }
+    - { id: akriti-vishvakarma, rel: mother, ver: purana, far: true, cite: "Bhagavata Purana 6.6.15" }
+    - { id: pushkarini-varuni, rel: mother, ver: purana, cite: "Vishnu Purana 1.13.3" }
+
+- id: kuru-chakshusha
+  name: Kuru (son of Chakshusha Manu)
+  aka: [Uru]
+  sex: m
+  kind: human
+  house: other
+  title: Manu's son, father of Anga
+  summary: Chakshusha Manu's eldest son, who by Agneyi had six sons, Anga the eldest. Not the Kuru of the Kuru dynasty.
+  ver: purana
+  parents:
+    - { id: chakshusha-manu, rel: father, cite: "Vishnu Purana 1.13.4-5" }
+    - { id: nadvala, rel: mother, ver: purana, cite: "Vishnu Purana 1.13.4-5" }
+
+- id: chakshusha-manu-sons
+  name: Kuru's brothers
+  kind: group
+  title: Chakshusha Manu's other sons
+  summary: Chakshusha Manu's other sons by Nadvala.
+  ver: purana
+  members: [Puru, Shatadyumna, Tapasvin, Satyavan, Shuchi, Agnishtut, Atiratra, Sudyumna, Abhimanyu]
+  membersCite: "Vishnu Purana 1.13.5"
+  parents:
+    - { id: chakshusha-manu, rel: father, cite: "Vishnu Purana 1.13.4-5" }
+    - { id: nadvala, rel: mother, ver: purana, cite: "Vishnu Purana 1.13.4-5" }
+
+- id: anga-vena
+  name: Anga (Vena's father)
+  sex: m
+  kind: human
+  house: other
+  title: Vena's father in the Vishnu Purana
+  summary: Eldest son of Kuru (Chakshusha Manu's son) and Agneyi; by Sunitha, Death's daughter, he had one son, Vena. Not the Anava king Anga.
+  ver: purana
+  parents:
+    - { id: kuru-chakshusha, rel: father, cite: "Vishnu Purana 1.13.6" }
+    - { id: agneyi, rel: mother, ver: purana, cite: "Vishnu Purana 1.13.6" }
+  spouses:
+    - { id: sunitha-mrityu, cite: "Vishnu Purana 1.13.7" }
+
+- id: kuru-chakshusha-sons
+  name: Anga's brothers
+  kind: group
+  title: Kuru's other sons by Agneyi
+  summary: The other sons of Kuru (Chakshusha Manu's son) by Agneyi.
+  ver: purana
+  members: [Sumanas, Khyati, Kratu, Angiras, Shibi]
+  membersCite: "Vishnu Purana 1.13.6"
+  parents:
+    - { id: kuru-chakshusha, rel: father, cite: "Vishnu Purana 1.13.6" }
+    - { id: agneyi, rel: mother, ver: purana, cite: "Vishnu Purana 1.13.6" }
+
+- id: vena
+  name: Vena
+  sex: m
+  kind: human
+  house: other
+  title: the lawless king, slain by the sages
+  summary: Sunitha's son, a king who ruled "against dharma, swayed by passion and hate"; the sages killed him with blades of kusha grass charged with mantras. From his churned right thigh came a dwarfish dark man, ancestor of the Nishadas; from his churned right hand came Prithu.
+  wiki: Vena
+  parents:
+    - { id: atibala, rel: father, cite: "CE 12.59.98-99" }
+    - { id: anga-vena, rel: father, ver: purana, cite: "Vishnu Purana 1.13.7", far: true }
+    - { id: sunitha-mrityu, rel: mother, cite: "CE 12.59.99; Vishnu Purana 1.13.7" }
+
+- id: nishada-vena
+  name: Nishada
+  aka: [ancestor of the Nishadas]
+  sex: m
+  kind: human
+  house: other
+  title: man churned from Vena's thigh
+  summary: The dwarfish, dark, red-eyed man the sages churned from Vena's right thigh and told to "sit down" (niṣīda); from him came the Nishadas of the hills and forests.
+  parents:
+    - { id: vena, rel: father, cite: "CE 12.59.101-103", note: "Churned from his right thigh." }
+
+- id: prithu-vainya
+  name: Prithu
+  aka: [Vainya, Prithu Vainya]
+  sex: m
+  kind: human
+  house: other
+  title: the first consecrated king, who milked the earth
+  summary: The man the sages churned from Vena's right hand, armoured and armed, master of the Vedas and of archery, "like a second Indra"; the whole science of rule came to rest in him.
+  wiki: Prithu
+  parents:
+    - { id: vena, rel: father, cite: "CE 12.59.104-106; Vishnu Purana 1.13.7-10", note: "Churned from his right hand." }
+  spouses:
+    - { id: archi, ver: purana, cite: "Bhagavata Purana 4.15.5" }
+
+# --- Shiva's family: Uma (Parvati), Skanda and Ganesha ---
+- id: himavat
+  name: Himavat
+  aka: [Himavan, Himalaya, Himavant]
+  sex: m
+  kind: god
+  title: lord of the mountains, Uma's father
+  summary: The Himalaya as a king, husband of Mena and father of Uma.
+  ver: purana
+  spouses:
+    - { id: mena, cite: "Vishnu Purana 1.8.13" }
+
+- id: mena
+  name: Mena
+  aka: [Menaka (Himavat's wife)]
+  sex: f
+  kind: god
+  title: Himavat's wife, Uma's mother
+  summary: Daughter of Svadha and the Pitris, sister of Dharini, a yogini "who spoke of brahman"; wife of Himavat and mother of Uma. Not the apsara Menaka.
+  ver: purana
+  parents:
+    - { id: svadha, rel: mother, cite: "Vishnu Purana 1.10.19" }
+    - { id: pitris, rel: father, cite: "Vishnu Purana 1.10.18-19" }
+
+- id: uma
+  name: Uma
+  aka: [Parvati, Gauri, Girija, Haimavati, Durga, Shailaja]
+  sex: f
+  kind: god
+  title: Shiva's wife, Sati reborn
+  summary: Sati reborn. After Sati gave up her body in anger at her father Daksha, she was born again to Himavat and Mena, and Shiva married her once more. In the Puranas she is the mother of Ganesha and of Skanda.
+  wiki: Parvati
+  parents:
+    - { id: himavat, rel: father, ver: purana, cite: "Vishnu Purana 1.8.13" }
+    - { id: mena, rel: mother, ver: purana, cite: "Vishnu Purana 1.8.13" }
+  incarnation:
+    - { of: sati, kind: rebirth, ver: purana, cite: "Vishnu Purana 1.8.13" }
+  spouses:
+    - { id: shiva, cite: "Vishnu Purana 1.8.13" }
+
+- id: krittikas
+  name: The Krittikas
+  aka: [Pleiades, the six Krittikas]
+  kind: group
+  title: the six star-mothers of Skanda
+  summary: The wives of the Seven Sages, all but Arundhati, whose forms Svaha took when she came to Agni; afterwards blamed and abandoned by their husbands, they became the Krittika stars. The epic calls Skanda "the Krittikas' son".
+
+- id: skanda
+  name: Skanda
+  aka: [Kartikeya, Kumara, Guha, Subrahmanya, Pavaki, Mahasena, Shanmukha, Senapati]
+  sex: m
+  kind: god
+  title: commander of the gods' army
+  summary: The six-headed war god, consecrated as general of the gods. The epic gives him several parents at once. He is Agni's son (Pavaki) by Svaha, who took the forms of six sages' wives. He is Rudra's son, because "the twice-born call Agni Rudra". And he is the Krittikas' son. In the Puranas he is the son of Shiva and Parvati.
+  wiki: Kartikeya
+  parents:
+    - { id: agni, rel: father, cite: "CE 3.216.9, 3.220.1" }
+    - { id: svaha, rel: mother, cite: "CE 3.215.6, 3.220.1", note: "Svaha to Skanda: “you are my own true son”." }
+    - { id: shiva, rel: father, cite: "CE 3.218.27-30", note: "“The twice-born call Agni Rudra; so he is Rudra's son” — Rudra had entered Agni." }
+    - { id: krittikas, rel: adoptive-mother, cite: "CE 3.221.25, 3.221.71", note: "Called kṛttikāsuta, “son of the Krittikas”." }
+  spouses:
+    - { id: devasena, cite: "CE 3.218.43-45" }
+
+- id: ganesha
+  name: Ganesha
+  aka: [Ganapati, Vinayaka, Gajanana, Ganesa, Lambodara]
+  sex: m
+  kind: god
+  title: the elephant-headed son of Parvati
+  summary: Parvati's son with the elephant's head. In the Shiva Purana she shapes him from the dirt of her own body to guard her door; when he bars Shiva's way, Shiva cuts off his head, and an elephant's head is set in its place. In the Brahmavaivarta his head falls instead at the glance of Shani. His birth is not told in the epic's critical text.
+  wiki: Ganesha
+  ver: purana
+  parents:
+    - { id: uma, rel: mother, cite: "Shiva Purana, Rudra-samhita, Kumara-khanda 13; Brahmavaivarta Purana, Ganesha-khanda" }
+    - { id: shiva, rel: father, cite: "Shiva Purana, Rudra-samhita, Kumara-khanda 13", note: "In the Shiva Purana Parvati makes him alone, from her body; Shiva accepts him as his son after restoring him." }

@@ -2,12 +2,18 @@
 
 - id: bharadvaja
   name: Bharadvaja
-  aka: [Bharadwaja]
+  aka: [Bharadwaja, Vitatha]
   sex: m
   kind: rishi
-  title: sage, father of Drona
-  summary: Great sage. At the sight of the apsara Ghritachi his seed fell; he kept it in a pot, and Drona was born from it.
+  title: long-lived sage, father of Drona
+  summary: Great sage who lives across many ages. In the epic, Bharata obtains his son Bhumanyu from him; generations later, at the sight of the apsara Ghritachi his seed falls, he keeps it in a pot, and Drona is born from it. In the Vishnu Purana he is Brihaspati's son by Mamata, given by the Maruts to the heirless Bharata and called Vitatha. Since Drona is a portion of Brihaspati (Adi 67), Drona is then an incarnation of his own grandfather. The Puranic Encyclopaedia instead keeps Vitatha apart and, after the Kamba Ramayana, makes Drona's father a son of Atri.
+  birth: In the Vishnu Purana, conceived by Brihaspati on his brother Utathya's wife Mamata while she already carried Utathya's child; the unborn Dirghatamas kicked Brihaspati's seed aside, and it became Bharadvaja.
   wiki: Bharadwaja
+  parents:
+    - { id: brihaspati, rel: father, ver: purana, cite: "Vishnu Purana 4.19.3", far: true, note: "Vishnu Purana. The epic only has Brihaspati hand Bharadvaja the fire weapon (CE 1.158.26)." }
+    - { id: mamata, rel: mother, ver: purana, cite: "Vishnu Purana 4.19.3", far: true }
+    - { id: atri, rel: father, ver: later, cite: "PE: BHARADVAJA", far: true, note: "The Puranic Encyclopaedia, after the Kamba Ramayana's Ayodhya Kanda: “the famous Bharadvaja was the son of Atri”. On this reading he is not Vitatha." }
+    - { id: bharata, rel: adoptive-father, ver: purana, cite: "Vishnu Purana 4.19.3, 4.19.6", note: "The Vishnu Purana's version. In the epic Bharadvaja is not adopted but gives Bharata a son, Bhumanyu (CE 1.89.18).", far: true, disputed: true }
 
 - id: drona
   name: Drona
@@ -20,12 +26,13 @@
   birth: Born from a pot (drona) in which his father's seed was kept.
   parents:
     - { id: bharadvaja, rel: father, cite: "adi 63, 67" }
+    - { id: ghritachi, rel: birth-cause, cite: adi 131, note: "Bharadvaja saw the apsara Ghritachi bathing; his seed fell, he kept it in a pot (droṇa), and Drona was born from it — “not born of any woman”." }
   spouses:
     - { id: kripi, cite: "adi 131, 133" }
   incarnation:
     - { of: brihaspati, kind: portion, cite: adi 67 }
   returned:
-    - { to: brihaspati, cite: "svargarohana 4, 5", note: "“Drona entered Brihaspati, foremost of the Angirasas” (CE 18.5.10)." }
+    - { to: brihaspati, cite: "svargarohana 4, 5; CE 18.5.10", note: "“Drona entered Brihaspati, foremost of the Angirasas” (CE 18.5.10)." }
 
 - id: gautama-sharadvan
   name: Sharadvan Gautama
@@ -35,6 +42,8 @@
   title: archer-sage, father of Kripa and Kripi
   summary: Sage born with arrows, devoted to archery. His seed fell on a clump of reeds at the sight of an apsara, and the twins Kripa and Kripi were born there.
   wiki: Shatananda
+  parents:
+    - { id: gautama, rel: father, cite: "CE 1.120.2", note: "“The great sage Gautama had a son named Sharadvan, born with arrows.”" }
 
 - id: kripa
   name: Kripa
@@ -48,6 +57,8 @@
   parents:
     - { id: gautama-sharadvan, rel: father, cite: adi 63 }
     - { id: shantanu, rel: adoptive-father, note: "Shantanu found the twins while hunting and raised them out of compassion (kripa).", cite: adi 130 }
+    - { id: janapadi, rel: birth-cause, cite: adi 130 }
+    - { id: satyadhriti, rel: father, ver: purana, cite: "Vishnu Purana 4.19.14-15", note: "Shatananda's son Satyadhriti, seeing Urvashi, spilled his seed on a clump of reeds; it split into a boy and a girl, whom Shantanu found and took in out of pity." }
   incarnation:
     - { of: rudras, kind: portion, cite: adi 67 }
 
@@ -61,6 +72,8 @@
   parents:
     - { id: gautama-sharadvan, rel: father, cite: adi 63 }
     - { id: shantanu, rel: adoptive-father, cite: adi 130 }
+    - { id: janapadi, rel: birth-cause, cite: adi 130 }
+    - { id: satyadhriti, rel: father, ver: purana, cite: "Vishnu Purana 4.19.14-15", note: "Shatananda's son Satyadhriti, seeing Urvashi, spilled his seed on a clump of reeds; it split into a boy and a girl, whom Shantanu found and took in out of pity." }
 
 - id: ashwatthama
   name: Ashwatthama
@@ -86,7 +99,8 @@
   house: panchala
   title: king of Panchala
   summary: King of Panchala and friend of Bharadvaja; father of Drupada, who studied alongside Drona.
-  parents: []
+  parents:
+    - { id: somaka, rel: father, ver: purana, cite: "Vishnu Purana 4.19.16", note: "Youngest of Somaka’s hundred sons. The Panchala line puts Drupada 16 generations below Ajamidha against 12 for the Kuru line, so this is drawn as a long-range link.", far: true }
 
 - id: drupada
   name: Drupada
@@ -103,6 +117,8 @@
     - { of: maruts, kind: portion, cite: adi 67 }
   returned:
     - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+  spouses:
+    - { id: prishati, cite: "CE 1.155.34, 5.189.2" }
 
 - id: dhrishtadyumna
   name: Dhrishtadyumna
@@ -116,6 +132,8 @@
   birth: Rose from the sacrificial fire, armed and armoured.
   parents:
     - { id: drupada, rel: father, cite: adi 63, note: "Born from his sacrificial fire." }
+    - { id: yaja, rel: birth-cause, cite: "CE 1.155.36-37; adi 169", note: "Yaja cooked the oblation from whose fire he rose." }
+    - { id: upayaja, rel: birth-cause, cite: "CE 1.155.36-37", note: "Upayaja consecrated the oblation with mantras." }
   incarnation:
     - { of: agni, kind: portion, cite: adi 67 }
   returned:
@@ -133,9 +151,10 @@
   birth: Born female; became male through an exchange with the yaksha Sthuna.
   parents:
     - { id: drupada, rel: father, cite: adi 63 }
+    - { id: prishati, rel: mother, cite: "CE 5.189.2", note: "The Udyoga calls her only Drupada's beloved chief queen, childless until Shikhandini was born." }
   incarnation:
-    - { of: rakshasa-shikhandi, kind: rebirth, cite: adi 67, note: "Adi 67: “was (the incarnation of) a Rakshasa”." }
-    - { of: amba, kind: rebirth, note: "Udyoga Parva: Amba, spurned after Bhishma abducted her, burned herself and was reborn to destroy him. Conflicts with Adi 67.", cite: CE 5.188.12 }
+    - { of: rakshasa-shikhandi, kind: rebirth, cite: adi 67, note: "Adi 67: “was (the incarnation of) a Rakshasa”.", disputed: true }
+    - { of: amba, kind: rebirth, note: "Udyoga Parva: Amba, spurned after Bhishma abducted her, burned herself and was reborn to destroy him. Conflicts with Adi 67.", cite: CE 5.188.12, disputed: true }
 
 - id: virata
   name: Virata
@@ -151,6 +170,8 @@
     - { of: maruts, kind: portion, cite: adi 67 }
   returned:
     - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+  parents:
+    - { id: virata-father, rel: father, cite: "CE 4.30.10", note: "The father is unnamed; this link only joins Virata to his brothers (virāṭasya priyo bhrātā śatānīkaḥ)." }
 
 - id: sudeshna
   name: Sudeshna
@@ -160,6 +181,8 @@
   title: queen of Matsya
   summary: Virata's queen and sister of Kichaka. She sent Draupadi, serving her in disguise, to Kichaka's quarters.
   wiki: Sudeshna
+  parents:
+    - { id: sudeshna-parent, rel: father, cite: "CE 4.17.7", note: "Kichaka is the king’s syāla, his wife’s brother." }
 
 - id: uttar
   name: Uttara Kumara
@@ -172,7 +195,7 @@
   wiki: Uttara (Mahabharata)
   parents:
     - { id: virata, rel: father, cite: adi 188 }
-    - { id: sudeshna, rel: mother }
+    - { id: sudeshna, rel: mother, cite: "CE 4.64.12, 4.8.6", note: "Virata hails him as “joy of Kaikeyi”; Kaikeyi, the Kekaya princess, is Sudeshna (CE 4.8.6, 4.14.1–2)." }
   returned:
     - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
 
@@ -184,6 +207,8 @@
   house: other
   title: king of Magadha
   summary: King of Magadha who married twin princesses of Kashi. The sage Chandakaushika gave him a mango for a son; he split it between the queens, and each bore half a child.
+  parents:
+    - { id: uparichara, rel: father, ver: purana, cite: "Vishnu Purana 4.19.17", note: "Uparichara Vasu’s sons included Brihadratha and Matsya; so Jarasandha is Satyavati’s nephew and Vyasa’s cousin." }
 
 - id: brihadratha-queens
   name: Twin queens of Brihadratha
@@ -223,7 +248,7 @@
   summary: Elephant-riding king of Pragjyotisha who fought for the Kauravas; Arjuna killed him on the twelfth day. Adi 67 says he was the asura Vashkala reborn. Later tradition makes him Narakasura's son, but in the epic itself (Sabha 14, CE 2.13.13) he rules over Mura and Naraka as subordinate Yavana lords.
   wiki: Bhagadatta
   parents:
-    - { id: narakasura, rel: father, ver: later, note: "Later tradition. The epic (CE 2.13.13) has Bhagadatta ruling Mura and Naraka, “the two Yavana lords”; the Puranic Encyclopaedia names his grandfather as Sailalaya instead." }
+    - { id: narakasura, rel: father, ver: later, note: "Later tradition; no text in hand names Bhagadatta Naraka's son. The epic has Bhagadatta ruling Mura and Naraka, “the two Yavana lords” (CE 2.13.13), and Krishna says the Vaishnava weapon he gave Earth for her son Naraka passed from him to Pragjyotisha, Bhagadatta's city (CE 7.28.27–35). In the Bhagavata, Earth commends to Krishna an unnamed son of Naraka (10.59.31). The Puranic Encyclopaedia names Bhagadatta's grandfather as Sailalaya.", disputed: true }
   incarnation:
     - { of: vashkala, kind: rebirth, cite: adi 67 }
 
@@ -235,6 +260,8 @@
   title: asura king of Pragjyotisha
   summary: Asura king, son of the Earth, who held sixteen thousand women captive. Krishna killed him and married the captives.
   wiki: Narakasura
+  parents:
+    - { id: bhumi, rel: mother, cite: "CE 7.28.27-31", note: "When Vishnu woke to grant boons, Earth asked that her son Naraka be unkillable by gods and asuras, and he gave her the Vaishnava weapon for him." }
 
 - id: hiranyadhanus
   name: Hiranyadhanus
@@ -254,6 +281,7 @@
   wiki: Ekalavya
   parents:
     - { id: hiranyadhanus, rel: father, cite: adi 134 }
+    - { id: shrutadeva, rel: mother, ver: harivamsa, cite: "Harivamsa 24.27", note: "Born to Shrutadeva and raised among the Nishadas." }
   incarnation:
     - { of: krodhavashas, kind: portion, cite: adi 67 }
 
@@ -268,3 +296,157 @@
     - { id: virata, rel: father, cite: adi 188 }
   returned:
     - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+
+- id: uluka
+  name: Uluka
+  aka: [Kaitavya]
+  sex: m
+  kind: human
+  house: other
+  title: Shakuni's son, Duryodhana's envoy
+  summary: Son of Shakuni. Duryodhana sent him to carry insults to the Pandavas on the eve of the war; Sahadeva killed him on the last day of the battle, just before killing Shakuni.
+  parents:
+    - { id: shakuni, rel: father, cite: "CE 9.21.25, 26", note: "“Uluka attacked Nakula… Nakula surrounded Saubala’s son with arrows.” Elsewhere he is called Kaitavya, “the gambler’s son”." }
+
+- id: vrishasena
+  name: Vrishasena
+  sex: m
+  kind: human
+  house: kuru
+  title: Karna's son
+  summary: Karna's son, "a great chariot-warrior"; Arjuna killed him before Karna's eyes on the seventeenth day.
+  parents:
+    - { id: karna, rel: father, cite: "CE 5.164.23" }
+    - { id: karna-wife, rel: mother, cite: "CE 11.21.10" }
+
+- id: sahadeva-magadha
+  name: Sahadeva
+  aka: [Sahadeva of Magadha, Jarasandhi]
+  sex: m
+  kind: human
+  house: other
+  title: Jarasandha's son, king of Magadha
+  summary: Son of Jarasandha. After Bhima killed his father, Krishna had him consecrated king of Magadha, and he fought for the Pandavas. Not the Pandava Sahadeva.
+  parents:
+    - { id: jarasandha, rel: father, cite: "CE 2.22.39, 41" }
+
+- id: vajradatta
+  name: Vajradatta
+  sex: m
+  kind: human
+  house: other
+  title: Bhagadatta's son, king of Pragjyotisha
+  summary: Son of Bhagadatta, king of Pragjyotisha after him. He fought Arjuna when the horse of Yudhishthira's horse-sacrifice entered his land, and was spared.
+  parents:
+    - { id: bhagadatta, rel: father, cite: "CE 14.74.1" }
+
+- id: sudeshna-parent
+  name: Father of Sudeshna and Kichaka
+  sex: m
+  kind: human
+  house: other
+  title: unnamed
+  summary: Unnamed parent shared by Sudeshna and Kichaka — Draupadi calls Kichaka the king's syāla, his wife's brother (CE 4.17.7).
+
+- id: kichaka
+  name: Kichaka
+  aka: [Kicaka]
+  sex: m
+  kind: human
+  house: other
+  title: commander of Matsya, Sudeshna's brother
+  summary: Commander of Virata's army and brother of Queen Sudeshna. He pursued Draupadi, then serving the queen in disguise, and Bhima killed him at night in the dancing hall, crushing him into a ball of flesh.
+  wiki: Kichaka
+  parents:
+    - { id: sudeshna-parent, rel: father, cite: "CE 4.17.7", note: "“The commander, the king’s brother-in-law (syāla), most evil-minded.”" }
+
+
+# --- Yavakri, Raibhya, Janapadi, Ilavida ---
+- id: yavakri
+  name: Yavakri
+  aka: [Yavakrita, Yavakrida]
+  sex: m
+  kind: rishi
+  title: son of Bharadvaja
+  summary: Son of Bharadvaja. He won Vedic learning from Indra by austerity, grew arrogant and assaulted the wife of Raibhya's son Paravasu; Raibhya conjured a demon that killed him, and the grieving Bharadvaja cursed Raibhya to die at his own son's hand.
+  parents:
+    - { id: bharadvaja, rel: father, cite: "CE 3.135.13" }
+
+- id: raibhya
+  name: Raibhya
+  sex: m
+  kind: rishi
+  title: sage, Bharadvaja's friend
+  summary: Sage and friend of Bharadvaja. After Yavakri wronged his family he had him killed; by Bharadvaja's curse his own son Paravasu killed him, mistaking him for a deer.
+
+- id: arvavasu
+  name: Arvavasu
+  sex: m
+  kind: rishi
+  title: son of Raibhya
+  summary: Elder son of Raibhya, who did penance for the killing his brother committed and later revived Raibhya, Bharadvaja and Yavakri.
+  parents:
+    - { id: raibhya, rel: father, cite: "CE 3.135.13" }
+
+- id: paravasu
+  name: Paravasu
+  sex: m
+  kind: rishi
+  title: son of Raibhya
+  summary: Younger son of Raibhya, who killed his father by mistake in the dark, taking him for a deer.
+  parents:
+    - { id: raibhya, rel: father, cite: "CE 3.135.13" }
+
+- id: janapadi
+  name: Janapadi
+  sex: f
+  kind: apsara
+  title: apsara sent to tempt Gautama
+  summary: Apsara sent by Indra to disturb the austerities of the archer-sage Sharadvan Gautama; at the sight of her his seed fell on a clump of reeds and became the twins Kripa and Kripi.
+
+- id: trinabindu
+  name: Trinabindu
+  sex: m
+  kind: human
+  house: other
+  title: king, father of Ilavida
+  summary: King who married the apsara Alambusha; their daughter Ilavida married Vishravas (Bhagavata, via the Puranic Encyclopaedia).
+  ver: purana
+  spouses:
+    - { id: alambusha, ver: purana, cite: "PE: ALAMBUSA" }
+
+- id: alambusha
+  name: Alambusha
+  aka: [Alamvusha]
+  sex: f
+  kind: apsara
+  title: apsara, daughter of Pradha
+  summary: Apsara, one of Pradha's daughters by Kashyapa. In the Bhagavata she married King Trinabindu and bore Ilavida, Kubera's mother.
+  parents:
+    - { id: pradha, rel: mother, cite: "adi 65; CE 1.59.47-48" }
+
+- id: ilavida
+  name: Ilavida
+  aka: [Idavida, Ilabila, Ilibila]
+  sex: f
+  kind: human
+  house: other
+  title: wife of Vishravas, mother of Kubera (Puranas)
+  summary: Daughter of Trinabindu and Alambusha, wife of Vishravas and in the Puranas the mother of Kubera. The epic tells it differently — Kubera is born to Pulastya of a cow, and Vishravas is created only afterwards.
+  ver: purana
+  parents:
+    - { id: trinabindu, rel: father, ver: purana, cite: "PE: ALAMBUSA" }
+    - { id: alambusha, rel: mother, ver: purana, cite: "PE: ALAMBUSA" }
+  same:
+    - { as: devavarnini, cite: "PE: ILIBILA", note: "The Puranic Encyclopaedia: “Ilibila alias Devavarnini”. Yet it gives Ilavida's parents as Trinabindu and Alambusha (ALAMBUSA) and Devavarnini's father as the sage Bharadvaja (BHARADVAJA)." }
+  spouses:
+    - { id: vishravas, ver: purana, cite: "PE: ALAMBUSA" }
+
+- id: devaka-vidura
+  name: Devaka (Vidura's father-in-law)
+  sex: m
+  kind: human
+  house: other
+  title: king whose daughter married Vidura
+  summary: "“King Devaka”, whose daughter, born of a Shudra mother, Bhishma obtained as Vidura's wife. The epic does not say he is the Yadava Devaka, Devaki's father, and the Puranic Encyclopaedia keeps him apart (DEVAKA II)."
+  pe: DEVAKA II

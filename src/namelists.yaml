@@ -1,0 +1,35 @@
+# Long lists of names shown in a person's panel as a scrolling dropdown. The verses are
+# copied by the build, verbatim, from the GRETIL Critical Edition (refs/gretil/mbh), so
+# nothing here is typed by hand: only the range is given.
+- id: vishnu
+  title: The thousand names (Vishnu Sahasranama)
+  intro: Bhishma, on his bed of arrows, teaches Yudhishthira the thousand names of Vishnu.
+  book: 13
+  chapter: 135
+  from: 14
+  to: 120
+
+- id: shiva
+  title: The thousand and eight names (Shiva Sahasranama)
+  intro: The thousand and eight names of Shiva (Sharva) in the Anushasana Parva.
+  book: 13
+  chapter: 17
+  from: 30
+  to: 150
+  lastPadas: [a]
+
+- id: skanda
+  title: Skanda's mothers (the Matrikas)
+  intro: The mothers who followed Kartikeya, named at his consecration as general of the gods.
+  book: 9
+  chapter: 45
+  from: 3
+  to: 28
+
+- id: skanda
+  title: Skanda's attendants (the Parishadas)
+  intro: The attendants that Brahma, the gods, the mountains and the oceans gave to Agni's son at his consecration, and the hosts that followed.
+  book: 9
+  chapter: 44
+  from: 21
+  to: 107

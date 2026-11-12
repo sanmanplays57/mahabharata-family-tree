@@ -12,6 +12,9 @@
   wiki: Vaivasvata Manu
   parents:
     - { id: surya, rel: father, cite: "adi 75, 95" }
+    - { id: tvashtri-daughter, rel: mother, ver: purana, cite: "Vishnu Purana 3.2.2; Brahma Purana 4.8" }
+  spouses:
+    - { id: shraddha-manu, ver: purana, cite: "Bhagavata Purana 9.1.11-12" }
 
 - id: ila
   name: Ila
@@ -37,8 +40,8 @@
   wiki: Budha
   ver: purana
   parents:
-    - { id: soma, rel: father, ver: purana, cite: "PE: BUDHA" }
-    - { id: tara, rel: mother, ver: purana, cite: "PE: BUDHA" }
+    - { id: soma, rel: father, ver: purana, cite: "PE: BUDHA; Vishnu Purana 4.6.21-22", note: "Soma embraced the newborn and named him Budha, “the wise one”." }
+    - { id: tara, rel: mother, ver: purana, cite: "Vishnu Purana 4.6.19-21; PE: BUDHA", note: "Brihaspati's wife, carried off by Soma. Returned to Brihaspati pregnant, she was asked by the gods whose the child was, Soma's or Brihaspati's, and at last, ashamed, named Soma." }
 
 - id: tara
   name: Tara
@@ -90,11 +93,11 @@
 
 - id: svarbhanu-daughter
   name: Daughter of Svarbhanu
-  aka: [Prabha]
+  aka: [Prabha, Svarbhanavi]
   sex: f
   kind: asura
   title: wife of Ayus
-  summary: Asura princess, daughter of Svarbhanu (Rahu), and mother of Nahusha. The Puranas call her Prabha.
+  summary: Asura princess, daughter of Svarbhanu (Rahu), and mother of Nahusha. The Puranic Encyclopaedia (from the Brahmanda) calls her Prabha; the Vishnu Purana says only Rahu's daughter.
   parents:
     - { id: svarbhanu, rel: father, cite: adi 75 }
 
@@ -109,6 +112,8 @@
   parents:
     - { id: ayus, rel: father, cite: adi 75 }
     - { id: svarbhanu-daughter, rel: mother, cite: adi 75 }
+  spouses:
+    - { id: viraja-pitri, ver: harivamsa, cite: "Harivamsa 13.60; Vayu Purana 2.31.12" }
 
 - id: yayati
   name: Yayati
@@ -120,6 +125,7 @@
   wiki: Yayati
   parents:
     - { id: nahusha, rel: father, cite: adi 95 }
+    - { id: viraja-pitri, rel: mother, ver: harivamsa, cite: "Harivamsa 13.60" }
   spouses:
     - { id: devayani, cite: adi 95 }
     - { id: sharmishtha, cite: adi 95 }
@@ -134,6 +140,10 @@
   wiki: Shukra
   parents:
     - { id: bhrigu, rel: father, cite: adi 66 }
+    - { id: kavi-bhargava, rel: father, cite: "CE 1.60.40", note: "“Bhrigu's son was the wise Kavi; Kavi's son is Shukra, the planet.”" }
+    - { id: kavyamata, rel: mother, cite: "PE: KAVYAMATA", ver: purana, note: "The Puranas call Shukra's mother Kavyamata (PE, from the Devi Bhagavata)." }
+  spouses:
+    - { id: shataparva, cite: "CE 5.115.13" }
 
 - id: devayani
   name: Devayani
@@ -145,6 +155,7 @@
   wiki: Devayani
   parents:
     - { id: shukra, rel: father, cite: "adi 78, 95" }
+    - { id: urjasvati, rel: mother, ver: purana, cite: "Bhagavata Purana 5.1.33", note: "The epic does not name her mother. Popular retellings make it Jayanti, Indra's daughter; the Bhagavata says Priyavrata's daughter Urjasvati." }
 
 - id: vrishaparvan
   name: Vrishaparvan
@@ -154,7 +165,7 @@
   summary: Asura king, father of Sharmishtha. Adi 67 says he was born on earth as King Dirghaprajna.
   parents:
     - { id: danu, rel: mother, cite: adi 65 }
-    - { id: kashyapa, rel: father, cite: adi 65 }
+    - { id: kashyapa, rel: father, cite: "adi 65; CE 1.59.11, 1.59.24" }
 
 - id: sharmishtha
   name: Sharmishtha
@@ -288,6 +299,7 @@
   parents:
     - { id: prachinvat, rel: father, cite: adi 95 }
     - { id: ashmaki, rel: mother, cite: adi 95 }
+    - { id: bahugava, rel: father, ver: purana, cite: "Vishnu Purana 4.19.1", far: true }
   spouses:
     - { id: varangi, cite: adi 95, note: "daughter of Drishadvata" }
 
@@ -300,11 +312,12 @@
 
 - id: ahamyati
   name: Ahamyati
-  aka: [Ahayanti]
+  aka: [Ahayanti, Ahampati]
   sex: m
   kind: human
   house: kuru
   summary: Son of Samyati and Varangi; husband of Bhanumati, daughter of Kritavirya.
+  notes: "The Critical Edition reads Ahampati (CE 1.90.14–15)."
   parents:
     - { id: samyati, rel: father, cite: adi 95 }
     - { id: varangi, rel: mother, cite: adi 95 }
@@ -362,10 +375,12 @@
 
 - id: avachina
   name: Avachina
+  aka: [Aracina, Arachina]
   sex: m
   kind: human
   house: kuru
   summary: Son of Jayatsena; he too married a Vidarbha princess, Maryada.
+  notes: "The Critical Edition spells him Aracina (CE 1.90.17–18)."
   parents:
     - { id: jayatsena-paurava, rel: father, cite: adi 95 }
     - { id: sushrava, rel: mother, cite: adi 95 }
@@ -385,11 +400,12 @@
   sex: m
   kind: human
   house: kuru
-  title: son of Avachina
-  summary: Son of Avachina and Maryada; husband of Angi.
+  title: son of Avachina (vulgate only)
+  summary: Son of Avachina and Maryada; husband of Angi. The Critical Edition has no such generation.
+  ver: vulgate
   parents:
-    - { id: avachina, rel: father, cite: adi 95 }
-    - { id: maryada-vidarbha, rel: mother, cite: adi 95 }
+    - { id: avachina, rel: father, ver: vulgate, cite: adi 95, note: "Only in the vulgate: CE 1.90.18 has Aracina (Avachina) and Maryada as Mahabhauma's own parents; Arihan and his wife Angi are a generation the Critical Edition puts in its notes (*0899)." }
+    - { id: maryada-vidarbha, rel: mother, ver: vulgate, cite: adi 95, note: "Only in the vulgate: CE 1.90.18 has Aracina (Avachina) and Maryada as Mahabhauma's own parents; Arihan and his wife Angi are a generation the Critical Edition puts in its notes (*0899)." }
   spouses:
     - { id: angi, cite: adi 95 }
 
@@ -398,17 +414,20 @@
   sex: f
   kind: human
   house: other
-  summary: Wife of Arihan and mother of Mahabhauma.
+  summary: Wife of Arihan and mother of Mahabhauma, in the vulgate only.
+  ver: vulgate
 
 - id: mahabhauma
   name: Mahabhauma
   sex: m
   kind: human
   house: kuru
-  summary: Son of Arihan; married Suyajna, daughter of Prasenajit.
+  summary: Son of Avachina and Maryada in the Critical Edition, of Arihan and Angi in the vulgate; married Suyajna, daughter of Prasenajit.
   parents:
-    - { id: arihan-1, rel: father, cite: adi 95 }
-    - { id: angi, rel: mother, cite: adi 95 }
+    - { id: arihan-1, rel: father, ver: vulgate, cite: adi 95, note: "Only in the vulgate: CE 1.90.18 has Aracina (Avachina) and Maryada as Mahabhauma's own parents; Arihan and his wife Angi are a generation the Critical Edition puts in its notes (*0899)." }
+    - { id: angi, rel: mother, ver: vulgate, cite: adi 95, note: "Only in the vulgate (CE 1.90.18 *0899)." }
+    - { id: avachina, rel: father, cite: "CE 1.90.18" }
+    - { id: maryada-vidarbha, rel: mother, cite: "CE 1.90.18" }
   spouses:
     - { id: suyajna, cite: adi 95, note: "daughter of Prasenajit" }
 
@@ -433,11 +452,13 @@
 
 - id: kama-prithushravas
   name: Kama
+  aka: [Bhasa]
   sex: f
   kind: human
   house: other
   title: daughter of Prithushravas
   summary: Daughter of Prithushravas; wife of Ayutanayi and mother of Akrodhana.
+  notes: "The Critical Edition reads her name Bhasa (CE 1.90.20)."
 
 - id: akrodhana
   name: Akrodhana
@@ -453,11 +474,13 @@
 
 - id: karambha
   name: Karambha
+  aka: [Karandu]
   sex: f
   kind: human
   house: other
   title: Kalinga princess
   summary: Daughter of the king of Kalinga; mother of Devatithi.
+  notes: "The Critical Edition reads her name Karandu (CE 1.90.21)."
 
 - id: devatithi
   name: Devatithi
@@ -481,11 +504,13 @@
 
 - id: arihan-2
   name: Arihan
+  aka: [Richa, Rca]
   sex: m
   kind: human
   house: kuru
   title: son of Devatithi
   summary: Son of Devatithi; married Sudeva, princess of Anga.
+  notes: "The Critical Edition calls him Rca, Devatithi's son by Maryada of Videha (CE 1.90.22–23)."
   parents:
     - { id: devatithi, rel: father, cite: adi 95 }
     - { id: maryada-videha, rel: mother, cite: adi 95 }
@@ -535,6 +560,7 @@
 
 - id: matinara
   name: Matinara
+  aka: [Rantinara]
   sex: m
   kind: human
   house: kuru
@@ -542,6 +568,7 @@
   parents:
     - { id: riksha, rel: father, cite: adi 95 }
     - { id: jwala, rel: mother, cite: adi 95 }
+    - { id: anadhrishti, rel: father, cite: "adi 94; Vishnu Purana 4.19.1", far: true, note: "Adi 94 and, as Riteyu, the Vishnu Purana: Matinara is the son of Anadhrishti, one of Raudrashva's ten sons by the apsara Mishrakeshi, three generations below Puru; Adi 95 puts fifteen generations between." }
   spouses:
     - { id: saraswati, cite: adi 95 }
 
@@ -569,14 +596,17 @@
 
 - id: kalingi
   name: Kalingi
+  aka: [Kalindi]
   sex: f
   kind: human
   house: other
   title: Kalinga princess
   summary: Wife of Tamsu and mother of Ilina.
+  notes: "The Critical Edition makes Tamsu's wife Kalindi, not a Kalinga princess (CE 1.90.28)."
 
 - id: ilina
   name: Ilina
+  aka: [Ilila]
   sex: m
   kind: human
   house: kuru
@@ -606,6 +636,7 @@
   parents:
     - { id: ilina, rel: father, cite: adi 95 }
     - { id: rathantari, rel: mother, cite: adi 95 }
+    - { id: marutta-turvasu, rel: adoptive-father, ver: purana, cite: "Vishnu Purana 4.16.2", note: "Marutta of Turvasu’s line, childless, adopted the Paurava Dushyanta." }
   spouses:
     - { id: shakuntala, cite: adi 95 }
 
@@ -616,6 +647,7 @@
   kind: rishi
   title: king turned sage
   summary: King who became a brahmarshi through austerity. The apsara Menaka was sent to break his penance, and Shakuntala was born of them.
+  notes: "By the epic's own lists his line closes into a loop. His daughter Shakuntala bore Bharata (Adi 74). Bharata's descendant Ajamidha fathered Jahnu (Adi 94), and Jahnu's line runs through Sindhudvipa, Balakashva, Vallabha and Kushika to Gadhi, Vishvamitra's own father (CE 13.4.2–6). So Vishvamitra is among his own descendants."
   wiki: Vishvamitra
   parents:
     - { id: gadhi, rel: father, cite: "CE 13.4.46" }
@@ -673,6 +705,8 @@
   house: other
   title: Kashi princess
   summary: Daughter of Sarvasena of Kashi; wife of Bharata and mother of Bhumanyu.
+  parents:
+    - { id: sarvasena-kashi, rel: father, cite: "adi 95; CE 1.90.34" }
 
 - id: bhumanyu
   name: Bhumanyu
@@ -683,16 +717,19 @@
   parents:
     - { id: bharata, rel: father, cite: adi 95 }
     - { id: sunanda-kashi, rel: mother, cite: adi 95 }
+    - { id: bharadvaja, rel: birth-cause, cite: adi 94, note: "Bharata “performed a great sacrifice and through the grace of Bharadwaja obtained a son named Bhumanyu”." }
   spouses:
     - { id: vijaya-dasharha, cite: adi 95 }
 
 - id: vijaya-dasharha
   name: Vijaya
+  aka: [Jaya]
   sex: f
   kind: human
   house: other
   title: daughter of Dasharha
   summary: Daughter of Dasharha; wife of Bhumanyu and mother of Suhotra.
+  notes: "The Critical Edition calls her Jaya (CE 1.90.35)."
 
 - id: suhotra-paurava
   name: Suhotra
@@ -704,6 +741,7 @@
   parents:
     - { id: bhumanyu, rel: father, cite: adi 95 }
     - { id: vijaya-dasharha, rel: mother, cite: adi 95 }
+    - { id: pushkarini, rel: mother, cite: adi 94, far: true }
   spouses:
     - { id: suvarna, cite: adi 95, note: "daughter of Ikshvaku" }
 
@@ -767,6 +805,10 @@
   parents:
     - { id: vikunthana, rel: father, cite: adi 95 }
     - { id: sudeva-dasharha, rel: mother, cite: adi 95 }
+    - { id: suhotra-paurava, rel: father, cite: adi 94, far: true, note: "Adi 94: Suhotra's son by Aikshaki; Adi 95 puts Hasti and Vikunthana between." }
+  spouses:
+    - { id: dhumini, cite: adi 94 }
+    - { id: keshini-ajamidha, cite: adi 94 }
 
 - id: samvarana
   name: Samvarana
@@ -778,6 +820,7 @@
   wiki: Samvarana
   parents:
     - { id: ajamidha, rel: father, cite: adi 95 }
+    - { id: riksha-ajamidha, rel: father, cite: adi 94, far: true, note: "Adi 94: Ajamidha's son Riksha, by Dhumini, “older than both Jala and Rupina, became king” and begat Samvarana." }
   spouses:
     - { id: tapati, cite: adi 95 }
 
@@ -790,6 +833,7 @@
   wiki: Tapati
   parents:
     - { id: surya, rel: father, cite: adi 95, far: true }
+    - { id: chhaya, rel: mother, ver: purana, cite: "Vishnu Purana 3.2.4", far: true }
 
 - id: kuru
   name: Kuru
@@ -803,6 +847,7 @@
     - { id: tapati, rel: mother, cite: adi 95 }
   spouses:
     - { id: shubhangi, cite: adi 95, note: "princess of Dasharha" }
+    - { id: vahini, cite: "CE 1.89.44" }
 
 - id: shubhangi
   name: Shubhangi
@@ -827,19 +872,22 @@
 
 - id: supriya
   name: Supriya
+  aka: [Sampriya]
   sex: f
   kind: human
   house: other
   title: Madhava princess
   summary: Daughter of the Madhavas; wife of Viduratha and mother of Anashvan.
+  notes: "The Critical Edition calls her Sampriya, a Magadha princess (CE 1.90.42)."
 
 - id: anashvan
   name: Anashvan
-  aka: [Anaswan]
+  aka: [Anaswan, Arugvan]
   sex: m
   kind: human
   house: kuru
   summary: Son of Viduratha; married Amrita of the Madhavas.
+  notes: "The Critical Edition reads Arugvan (CE 1.90.42–43)."
   parents:
     - { id: viduratha, rel: father, cite: adi 95 }
     - { id: supriya, rel: mother, cite: adi 95 }
@@ -870,10 +918,12 @@
 
 - id: suvasa
   name: Suvasa
+  aka: [Suyasha]
   sex: f
   kind: human
   house: other
   summary: Daughter of the Vahudas; wife of Parikshit I and mother of Bhimasena I.
+  notes: "The Critical Edition calls her Suyasha, a Bahuda princess (CE 1.90.44)."
 
 - id: bhimasena-1
   name: Bhimasena I
@@ -891,11 +941,13 @@
 
 - id: kumari-kekaya
   name: Kumari
+  aka: [Sukumari]
   sex: f
   kind: human
   house: other
   title: Kekaya princess
   summary: Princess of Kekaya; wife of Bhimasena I and mother of Pratishravas.
+  notes: "The Critical Edition calls her Sukumari (CE 1.90.45)."
 
 - id: pratishravas
   name: Pratishravas
@@ -903,21 +955,26 @@
   sex: m
   kind: human
   house: kuru
-  summary: Son of Bhimasena I and father of Pratipa.
+  summary: Son of Bhimasena I and father of Pratipa, in the vulgate only. In the Critical Edition, Paryashravas is another name of Pratipa (CE 1.90.45).
+  ver: vulgate
   parents:
     - { id: bhimasena-1, rel: father, cite: adi 95 }
     - { id: kumari-kekaya, rel: mother, cite: adi 95 }
 
 - id: pratipa
   name: Pratipa
+  aka: [Paryashravas]
   sex: m
   kind: human
   house: kuru
   title: father of Shantanu
-  summary: Kuru king, son of Pratishravas. By Sunanda of the Shibis he had Devapi, Shantanu and Bahlika.
+  summary: Kuru king, son of Bhimasena (in the vulgate, of Pratishravas). By Sunanda of the Shibis he had Devapi, Shantanu and Bahlika.
   wiki: Pratipa
   parents:
-    - { id: pratishravas, rel: father, cite: adi 95 }
+    - { id: bhimasena-1, rel: father, cite: "CE 1.90.45" }
+    - { id: kumari-kekaya, rel: mother, cite: "CE 1.90.45", note: "“Bhimasena married Sukumari of Kekaya; of her was born Paryashravas, whom they call Pratipa.”" }
+    - { id: pratishravas, rel: father, ver: vulgate, cite: adi 95, note: "The vulgate reads “Pratishravas, whose son was Pratipa”; in the Critical Edition Paryashravas is Pratipa himself (CE 1.90.45)." }
+    - { id: dhritarashtra-janamejaya, rel: father, ver: vulgate, far: true, cite: "adi 94", note: "Adi 94: Dhritarashtra, son of Janamejaya son of Kuru, had many grandsons, of whom three were famous, Pratipa, Dharmanetra and Sunetra; a starred line of the Critical Edition (1.89 *0892) calls them his sons." }
   spouses:
     - { id: sunanda-shibi, cite: adi 95, note: "daughter of Shibi" }
 
@@ -966,7 +1023,7 @@
 
 - id: bhurishravas
   name: Bhurishravas
-  aka: [Bhurisravas, Yupaketu]
+  aka: [Bhurisravas, Yupaketu, Saumadatti]
   sex: m
   kind: human
   house: kuru
@@ -977,3 +1034,329 @@
     - { id: somadatta, rel: father, cite: "PE: SOMADATTA III" }
   returned:
     - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+
+
+# --- Urvashi's six sons by Pururavas (Adi 75): Ayus is above; the other five ---
+
+- id: dhimat
+  name: Dhimat
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Pururavas and Urvashi
+  summary: One of the six sons the apsara Urvashi bore Pururavas — Ayus, Dhimat, Amavasu, Dridhayus, Vanayus and Shatayus.
+  parents:
+    - { id: pururavas, rel: father, cite: adi 75 }
+    - { id: urvashi, rel: mother, cite: adi 75 }
+
+- id: amavasu
+  name: Amavasu
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Pururavas and Urvashi
+  summary: One of the six sons the apsara Urvashi bore Pururavas — Ayus, Dhimat, Amavasu, Dridhayus, Vanayus and Shatayus.
+  parents:
+    - { id: pururavas, rel: father, cite: adi 75 }
+    - { id: urvashi, rel: mother, cite: adi 75 }
+
+- id: dridhayus
+  name: Dridhayus
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Pururavas and Urvashi
+  summary: One of the six sons the apsara Urvashi bore Pururavas — Ayus, Dhimat, Amavasu, Dridhayus, Vanayus and Shatayus.
+  parents:
+    - { id: pururavas, rel: father, cite: adi 75 }
+    - { id: urvashi, rel: mother, cite: adi 75 }
+
+- id: vanayus
+  name: Vanayus
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Pururavas and Urvashi
+  summary: One of the six sons the apsara Urvashi bore Pururavas — Ayus, Dhimat, Amavasu, Dridhayus, Vanayus and Shatayus.
+  parents:
+    - { id: pururavas, rel: father, cite: adi 75 }
+    - { id: urvashi, rel: mother, cite: adi 75 }
+
+- id: shatayus
+  name: Shatayus
+  aka: [Shrutayus, Srutayu]
+  sex: m
+  kind: human
+  house: kuru
+  title: son of Pururavas and Urvashi
+  summary: One of the six sons the apsara Urvashi bore Pururavas — Ayus, Dhimat, Amavasu, Dridhayus, Vanayus and Shatayus.
+  notes: "The Critical Edition reads Shrutayu for Shatayus (CE 1.70.22)."
+  parents:
+    - { id: pururavas, rel: father, cite: adi 75 }
+    - { id: urvashi, rel: mother, cite: adi 75 }
+
+
+# --- the brothers in the lunar line (Adi 75; Vishnu Purana 4.8, 4.10) ---
+- id: ayus-sons
+  name: Ayus's other sons
+  kind: group
+  title: Nahusha's brothers
+  summary: "Ayus's sons by Svarbhanu's daughter besides Nahusha, as the epic names them. The Vishnu Purana's list is Nahusha, Kshatravriddha, Rambha, Raji and Anenas (4.8.2); its Kshatravriddha begins the line of the Kashi kings."
+  members: [Vriddhasharman, "@raji", Gaya, Anenas]
+  membersCite: adi 75
+  parents:
+    - { id: ayus, rel: father, cite: adi 75 }
+    - { id: svarbhanu-daughter, rel: mother, cite: adi 75 }
+
+- id: nahusha-sons
+  name: Yayati's brothers
+  kind: group
+  title: Nahusha's other sons
+  summary: "The epic says Nahusha had six sons but names five, Yati, Yayati, Samyati, Ayati and Dhruva. The Vishnu Purana names six, Yati, Yayati, Samyati, Ayati, Viyati and Kriti (4.10.1). Yati, the eldest, “betaking himself to asceticism became a Muni”, and Yayati became king."
+  members: [Yati, Samyati, Ayati, Dhruva]
+  membersCite: adi 75
+  parents:
+    - { id: nahusha, rel: father, cite: adi 75 }
+
+# --- the Paurava line as Adi 94 tells it (the tree draws Adi 95's) ---
+- id: paushti
+  name: Paushti
+  sex: f
+  kind: human
+  house: kuru
+  title: Puru's wife in Adi 94
+  summary: Puru's wife in Adi 94, mother of Pravira, Ishvara and Raudrashva.
+  spouses:
+    - { id: puru, cite: adi 94 }
+
+- id: pravira-paurava
+  name: Pravira
+  sex: m
+  kind: human
+  house: kuru
+  title: Puru's son in Adi 94
+  summary: Puru's eldest son by Paushti in Adi 94; by Shuraseni he had Manasyu.
+  parents:
+    - { id: puru, rel: father, cite: adi 94 }
+    - { id: paushti, rel: mother, cite: adi 94 }
+    - { id: prachinvat, rel: father, ver: purana, cite: "Vishnu Purana 4.19.1", far: true }
+
+- id: manasyu
+  name: Manasyu
+  sex: m
+  kind: human
+  house: kuru
+  title: Pravira's son
+  summary: Son of Pravira and Shuraseni; by Sauviri he had three sons, Shakta, Sahana and Vagmi, "heroes in battle".
+  parents:
+    - { id: pravira-paurava, rel: father, cite: adi 94 }
+    - { id: shyeni-pravira, rel: mother, cite: "CE 1.89.6; adi 94" }
+
+- id: manasyu-sons
+  name: Manasyu's sons
+  kind: group
+  title: sons of Manasyu and Sauviri
+  summary: Manasyu's three sons by Sauviri, "heroes in battle and mighty car-warriors".
+  members: [Shakta, Sahana, Vagmi]
+  membersCite: adi 94
+  parents:
+    - { id: manasyu, rel: father, cite: adi 94 }
+    - { id: sauviri-manasyu, rel: mother, cite: "CE 1.89.7; adi 94" }
+
+- id: raudrashva
+  name: Raudrashva
+  sex: m
+  kind: human
+  house: kuru
+  title: Puru's son in Adi 94
+  summary: Puru's son by Paushti in Adi 94, "intelligent and virtuous", who had ten sons, "all great bowmen", by the apsara Mishrakeshi.
+  parents:
+    - { id: puru, rel: father, cite: adi 94 }
+    - { id: paushti, rel: mother, cite: adi 94 }
+    - { id: ahamyati, rel: father, ver: purana, cite: "Vishnu Purana 4.19.1", far: true }
+  spouses:
+    - { id: mishrakeshi, ver: vulgate, cite: adi 94, note: "The Critical Edition says only that Raudrashva's ten sons were born of an apsaras (CE 1.89.8); the name Mishrakeshi is the vulgate's." }
+
+- id: mishrakeshi
+  name: Mishrakeshi
+  aka: [Misrakesi]
+  sex: f
+  kind: apsara
+  title: apsara, Raudrashva's wife
+  summary: Apsara who bore Raudrashva ten sons.
+  parents:
+    - { id: pradha, rel: mother, cite: "CE 1.59.47-48; adi 65" }
+
+- id: anadhrishti
+  name: Anadhrishti
+  aka: [Riteyu, Richeyu, Anvagbhanu]
+  sex: m
+  kind: human
+  house: kuru
+  title: Matinara's father in Adi 94
+  summary: One of Raudrashva's ten sons by Mishrakeshi, and in Adi 94 the father of Matinara, who performed the Rajasuya and the horse-sacrifice.
+  notes: "The Vishnu Purana calls Raudrashva's eldest Riteyu, father of Rantinara (Matinara), and names the other nine (4.19.1)."
+  parents:
+    - { id: raudrashva, rel: father, cite: adi 94 }
+    - { id: mishrakeshi, rel: mother, ver: vulgate, cite: adi 94, note: "The Critical Edition says only that Raudrashva's ten sons were born of an apsaras (CE 1.89.8); the name Mishrakeshi is the vulgate's." }
+
+- id: matinara-sons
+  name: Matinara's other sons
+  kind: group
+  title: Tamsu's brothers
+  summary: Matinara's "four sons of immeasurable prowess" besides Tamsu, who carried on Puru's line.
+  notes: "The Vishnu Purana names Rantinara's sons Sumati, Apratiratha and Dhruva instead (4.19.1)."
+  members: [Mahan, Atiratha, Druhyu, Apratiratha, Sumati (Paurava), Dhruva (Paurava)]
+  membersCite: "adi 94; Vishnu Purana 4.19.1; Bhagavata Purana 9.20.6"
+  parents:
+    - { id: matinara, rel: father, cite: adi 94 }
+
+- id: pushkarini
+  name: Pushkarini
+  sex: f
+  kind: human
+  house: kuru
+  title: Bhumanyu's wife in Adi 94
+  summary: Bhumanyu's wife in Adi 94, mother of six sons headed by Suhotra. Adi 95 makes Suhotra's mother Vijaya instead.
+  spouses:
+    - { id: bhumanyu, cite: adi 94 }
+
+- id: bhumanyu-sons
+  name: Bhumanyu's other sons
+  kind: group
+  title: Suhotra's brothers
+  summary: Bhumanyu's sons by Pushkarini besides Suhotra, who took the throne.
+  members: [Suhotri, Suhavih, Sujeya, Diviratha, Kichika]
+  membersCite: adi 94
+  parents:
+    - { id: bhumanyu, rel: father, cite: adi 94 }
+    - { id: pushkarini, rel: mother, cite: adi 94 }
+
+- id: aikshaki
+  name: Aikshaki
+  sex: f
+  kind: human
+  house: other
+  title: Suhotra's wife, an Ikshvaku princess
+  summary: Suhotra's wife in Adi 94, "of Ikshvaku's line" as her name says, mother of Ajamidha, Sumidha and Purumidha.
+  spouses:
+    - { id: suhotra-paurava, cite: adi 94 }
+
+- id: suhotra-sons
+  name: Ajamidha's brothers
+  kind: group
+  title: Suhotra's other sons
+  summary: Suhotra's sons by Aikshaki besides Ajamidha, "the perpetuator of the royal line".
+  members: [Sumidha, Purumidha]
+  membersCite: adi 94
+  parents:
+    - { id: suhotra-paurava, rel: father, cite: adi 94 }
+    - { id: aikshaki, rel: mother, cite: adi 94 }
+
+- id: dhumini
+  name: Dhumini
+  sex: f
+  kind: human
+  house: kuru
+  title: Ajamidha's wife, mother of Riksha
+  summary: One of Ajamidha's three wives in Adi 94, mother of Riksha.
+
+- id: riksha-ajamidha
+  name: Riksha (son of Ajamidha)
+  sex: m
+  kind: human
+  house: kuru
+  title: Samvarana's father in Adi 94
+  summary: Ajamidha's son by Dhumini, who, "older than both Jala and Rupina, became king" and fathered Samvarana. Adi 95 has a Riksha far earlier, as Matinara's father.
+  parents:
+    - { id: ajamidha, rel: father, cite: adi 94 }
+    - { id: dhumini, rel: mother, cite: adi 94 }
+
+- id: nili-sons
+  name: Nili's sons
+  kind: group
+  title: ancestors of the Panchalas
+  summary: Ajamidha's sons by Nili. "All the tribes of the Panchalas are descended from Dushmanta and Parameshthin." This Dushmanta is not Shakuntala's husband.
+  members: [Dushmanta, Parameshthin]
+  membersCite: adi 94
+  parents:
+    - { id: ajamidha, rel: father, cite: adi 94 }
+    - { id: nalini, rel: mother, cite: adi 94 }
+
+- id: keshini-ajamidha
+  name: Keshini (Ajamidha's wife)
+  sex: f
+  kind: human
+  house: kuru
+  title: Ajamidha's wife, mother of Jahnu
+  summary: Ajamidha's third wife in Adi 94, mother of Jahnu, Jala and Rupina. Not Sagara's queen Keshini.
+
+- id: jahnu
+  name: Jahnu
+  sex: m
+  kind: human
+  house: kuru
+  title: ancestor of the Kushikas
+  summary: Ajamidha's son by Keshini; "the Kushikas are the sons of Jahnu", the line that leads to Vishvamitra.
+  parents:
+    - { id: ajamidha, rel: father, cite: "adi 94; CE 13.4.2-3" }
+    - { id: keshini-ajamidha, rel: mother, cite: adi 94 }
+  spouses:
+    - { id: kaveri, ver: harivamsa, cite: "Harivamsa 23.80" }
+
+- id: keshini-sons
+  name: Jahnu's brothers
+  kind: group
+  title: Keshini's other sons
+  summary: Ajamidha's other sons by Keshini.
+  members: [Jala, Rupina]
+  membersCite: adi 94
+  parents:
+    - { id: ajamidha, rel: father, cite: adi 94 }
+    - { id: keshini-ajamidha, rel: mother, cite: adi 94 }
+
+# --- the Vishnu Purana's kings between Manasyu and Samyati (4.19.1) ---
+- id: abhayada
+  name: Abhayada
+  sex: m
+  kind: human
+  house: kuru
+  title: Manasyu's son in the Vishnu Purana
+  summary: Manasyu's son and Sudyu's father in the Vishnu Purana's line of Puru.
+  ver: purana
+  parents:
+    - { id: manasyu, rel: father, cite: "Vishnu Purana 4.19.1" }
+
+- id: sudyu
+  name: Sudyu
+  sex: m
+  kind: human
+  house: kuru
+  title: Abhayada's son in the Vishnu Purana
+  summary: Abhayada's son and Bahugava's father in the Vishnu Purana's line of Puru.
+  ver: purana
+  parents:
+    - { id: abhayada, rel: father, cite: "Vishnu Purana 4.19.1" }
+
+- id: bahugava
+  name: Bahugava
+  sex: m
+  kind: human
+  house: kuru
+  title: Samyati's father in the Vishnu Purana
+  summary: Sudyu's son and, in the Vishnu Purana, the father of Samyati, whom Adi 95 makes Prachinvat's son.
+  ver: purana
+  parents:
+    - { id: sudyu, rel: father, cite: "Vishnu Purana 4.19.1" }
+
+- id: raudrashva-sons
+  name: Raudrashva's other sons
+  kind: group
+  title: the "-eyu" brothers
+  summary: Raudrashva's ten sons as the Vishnu Purana names them, besides the eldest, Riteyu (the epic's Anadhrishti).
+  ver: purana
+  members: [Kaksheyu, Sthandileyu, Dhriteyu, Jaleyu, Sthaleyu, Dharmeyu, Samnateyu, Dhaneyu, Vaneyu, Tejeyu, Satyeyu]
+  membersCite: "Vishnu Purana 4.19.1"
+  parents:
+    - { id: raudrashva, rel: father, cite: "Vishnu Purana 4.19.1" }
+    - { id: mishrakeshi, rel: mother, ver: vulgate, cite: adi 94, note: "The Critical Edition says only that Raudrashva's ten sons were born of an apsaras (CE 1.89.8); the name Mishrakeshi is the vulgate's." }

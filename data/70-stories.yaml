@@ -1,0 +1,1308 @@
+# Side stories and household details: Madhavi (Udyoga 115-122), Astika (Adi 13-15),
+# Krishna's and Balarama's households (Vishnu Purana 4.15), the Pandava wives' fathers (Adi 95).
+
+# --- Madhavi ---
+- id: madhavi
+  name: Madhavi
+  sex: f
+  kind: human
+  house: kuru
+  title: Yayati's daughter, mother of four kings
+  summary: Daughter of Yayati, given to the sage Galava, who needed 800 rare horses as his teacher's fee. He lent her in turn to Haryashva of Ayodhya, Divodasa of Kashi and Ushinara, each paying horses for one son, and finally to Vishvamitra; after each birth she became a maiden again. Offered a svayamvara at last, she chose the forest. Her four sons later gave their merit to Yayati when he fell from heaven.
+  birth: Regained her maidenhood after each of her four sons (Udyoga 118).
+  wiki: Madhavi (Mahabharata)
+  parents:
+    - { id: yayati, rel: father, cite: "udyoga 115, 120" }
+  spouses:
+    - { id: haryashva-2, cite: udyoga 116, far: true, note: "Haryashva of Ikshvaku's race, king of Ayodhya — in the Vishnu Purana's solar list, many generations below Yayati." }
+    - { id: divodasa-kashi, cite: udyoga 117 }
+    - { id: ushinara, cite: udyoga 118, far: true }
+    - { id: vishvamitra, cite: udyoga 119, far: true }
+
+- id: divodasa-kashi
+  name: Divodasa
+  aka: [Divodasa of Kashi]
+  sex: m
+  kind: human
+  house: other
+  title: king of Kashi
+  summary: Illustrious king of the Kashis who took Madhavi for 200 horses and fathered Pratardana. Not the Panchala Divodasa.
+
+- id: pratardana
+  name: Pratardana
+  sex: m
+  kind: human
+  house: other
+  title: Madhavi's son, king of Kashi
+  summary: Son of Divodasa and Madhavi, "that bull among Kshatriyas"; he gave Yayati the merit of his valour.
+  parents:
+    - { id: divodasa-kashi, rel: father, cite: udyoga 117 }
+    - { id: madhavi, rel: mother, cite: "udyoga 117, 121" }
+
+- id: ashtaka
+  name: Ashtaka
+  sex: m
+  kind: human
+  house: other
+  title: Madhavi's son by Vishvamitra
+  summary: Son of Vishvamitra and Madhavi, a royal sage who gave Yayati the merit of his sacrifices.
+  parents:
+    - { id: vishvamitra, rel: father, cite: udyoga 119 }
+    - { id: madhavi, rel: mother, cite: udyoga 119, far: true }
+
+# --- Astika ---
+- id: jaratkaru-rishi
+  name: Jaratkaru
+  aka: [Jaratkaru the sage]
+  sex: m
+  kind: rishi
+  title: ascetic who would marry only a namesake
+  summary: Ascetic who vowed to marry only a woman with his own name; Vasuki gave him his sister, also called Jaratkaru. He left her when she woke him late for his evening rites, telling her the child she carried would save the snakes.
+  wiki: Jaratkaru
+
+- id: jaratkaru-naga
+  name: Jaratkaru
+  aka: [Manasa, Jaratkaru (Vasuki's sister)]
+  sex: f
+  kind: naga
+  title: Vasuki's sister, mother of Astika
+  summary: Younger sister of the naga king Vasuki, married to the sage of the same name so that her son could save the nagas from Kadru's curse.
+  parents:
+    - { id: kadru, rel: mother, cite: adi 14, note: "Called Vasuki’s younger sister (Adi 14); his parents are Kadru and Kashyapa." }
+    - { id: kashyapa, rel: father, cite: adi 14 }
+  spouses:
+    - { id: jaratkaru-rishi, cite: "adi 14, 15" }
+
+- id: astika
+  name: Astika
+  sex: m
+  kind: rishi
+  title: half-naga sage who stopped the snake sacrifice
+  summary: Son of the sage Jaratkaru and the naga Jaratkaru. He persuaded Janamejaya to end the snake sacrifice before Takshaka fell into the fire — the occasion at which the whole Mahabharata is recited.
+  wiki: Astika (sage)
+  parents:
+    - { id: jaratkaru-rishi, rel: father, cite: adi 15 }
+    - { id: jaratkaru-naga, rel: mother, cite: adi 15 }
+
+# --- Krishna's and Balarama's households (Vishnu Purana 4.15) ---
+- id: devaki-sons
+  name: Devaki's six sons
+  kind: group
+  title: killed by Kamsa
+  aka: [Shadgarbhas, Shadgarbha, the six embryos]
+  summary: The six sons Vasudeva had by Devaki before Balarama and Krishna, all killed at birth by Kamsa. The Bhagavata's list (9.24.54) reads Kirtiman, Sushena, Bhadrasena, Riju, Sammardana and Bhadra. Their previous lives differ by text. In the Harivamsa they were Kalanemi's Danava sons, so Kamsa, Kalanemi reborn, killed his own former sons. In the Bhagavata they were Marichi's sons, cursed through a life as Hiranyakashipu's. There Krishna later fetches them from Sutala, Bali's realm; Devaki nurses them with the milk left over from Krishna, and touched by him they go free to the gods (10.85.34–56).
+  members: [Kirtimat, Sushena, Udayin, Bhadrasena, Rijudasa, Bhadradeva]
+  membersCite: "Vishnu Purana 4.15.13"
+  parents:
+    - { id: vasudeva, rel: father, ver: purana, cite: "Vishnu Purana 4.15.13; Bhagavata Purana 9.24.53-54" }
+    - { id: devaki, rel: mother, ver: purana, cite: "Vishnu Purana 4.15.13; Bhagavata Purana 9.24.53-54" }
+  incarnation:
+    - { of: kalanemi-sons, kind: rebirth, ver: harivamsa, cite: "Harivamsa 47.21-27", disputed: true, note: "Hiranyakashipu's curse: “your father himself will kill you all in the womb”." }
+    - { of: marichi-sons, kind: rebirth, ver: purana, cite: "Bhagavata Purana 10.85.47-51", disputed: true, note: "After a life as Hiranyakashipu's sons; Krishna later brings them back from the netherworld to comfort Devaki." }
+
+- id: nishatha
+  name: Nishatha
+  sex: m
+  kind: human
+  house: yadava
+  title: son of Balarama
+  summary: Son of Balarama and Revati; after death he "entered the Vishvadevas" (Svargarohana 5).
+  parents:
+    - { id: balarama, rel: father, ver: purana, cite: "Vishnu Purana 4.15.12" }
+    - { id: revati, rel: mother, ver: purana, cite: "Vishnu Purana 4.15.12" }
+  returned:
+    - { to: vishvadevas, cite: svargarohana 5 }
+
+- id: ulmuka
+  name: Ulmuka
+  sex: m
+  kind: human
+  house: yadava
+  title: son of Balarama
+  summary: Son of Balarama and Revati.
+  parents:
+    - { id: balarama, rel: father, ver: purana, cite: "Vishnu Purana 4.15.12" }
+    - { id: revati, rel: mother, ver: purana, cite: "Vishnu Purana 4.15.12" }
+
+- id: kakudvati
+  name: Kakudvati
+  aka: [Rukmavati]
+  sex: f
+  kind: human
+  house: other
+  title: Rukmi's daughter, wife of Pradyumna
+  summary: Daughter of Rukmi, married to her cousin's son Pradyumna; mother of Aniruddha.
+  ver: purana
+  parents:
+    - { id: rukmi, rel: father, ver: purana, cite: "Vishnu Purana 4.15.43" }
+  spouses:
+    - { id: pradyumna, ver: purana, cite: "Vishnu Purana 4.15.43" }
+
+- id: subhadra-rukmi
+  name: Subhadra
+  aka: [Subhadra (Aniruddha's wife)]
+  sex: f
+  kind: human
+  house: other
+  title: Rukmi's granddaughter, wife of Aniruddha
+  summary: Granddaughter of Rukmi and wife of Aniruddha — the second marriage between Krishna's line and Rukmi's; mother of Vajra. Not Arjuna's wife Subhadra.
+  ver: purana
+  spouses:
+    - { id: aniruddha, ver: purana, cite: "Vishnu Purana 4.15.43" }
+
+- id: vajra
+  name: Vajra
+  aka: [Vajranabha]
+  sex: m
+  kind: human
+  house: yadava
+  title: last of the Yadavas, king at Indraprastha
+  summary: Son of Aniruddha, Krishna's great-grandson and "the survivor of the Yadus". After the Yadavas destroyed each other, Arjuna brought him to the Kuru country and made him king of Shakraprastha (Indraprastha), while Parikshit ruled Hastinapura.
+  parents:
+    - { id: aniruddha, rel: father, ver: purana, cite: "Vishnu Purana 4.15.43" }
+    - { id: subhadra-rukmi, rel: mother, ver: purana, cite: "Vishnu Purana 4.15.43" }
+  cite: "mausala 7; mahaprasthanika 1"
+
+- id: pratibahu
+  name: Pratibahu
+  sex: m
+  kind: human
+  house: yadava
+  summary: Son of Vajra.
+  parents:
+    - { id: vajra, rel: father, ver: purana, cite: "Vishnu Purana 4.15.43" }
+
+- id: sucharu
+  name: Sucharu
+  sex: m
+  kind: human
+  house: yadava
+  summary: Son of Pratibahu, the last Yadava the Vishnu Purana names.
+  parents:
+    - { id: pratibahu, rel: father, ver: purana, cite: "Vishnu Purana 4.15.43" }
+
+# --- Fathers of the Pandavas' other wives (Adi 95) ---
+- id: govasana
+  name: Govasana
+  sex: m
+  kind: human
+  house: other
+  title: Shaibya king, father of Devika
+  summary: King of the Shaibyas, whose daughter Devika chose Yudhishthira at her svayamvara.
+
+- id: dyutimat
+  name: Dyutimat
+  sex: m
+  kind: human
+  house: other
+  title: king of Madra, father of Vijaya
+  summary: King of Madra, whose daughter Vijaya chose Sahadeva at her svayamvara.
+
+# --- Nala and Damayanti (CE 3.50-78) ---
+- id: virasena-nishadha
+  name: Virasena
+  sex: m
+  kind: human
+  house: other
+  title: king of Nishadha, Nala's father
+  summary: King of Nishadha, father of Nala.
+
+- id: nala
+  name: Nala
+  aka: [Naishadha, Bahuka, Nala of Nishadha]
+  sex: m
+  kind: human
+  house: other
+  title: king of Nishadha, Damayanti's husband
+  summary: Virasena's son, king of Nishadha, chosen by Damayanti over the gods themselves. Possessed by Kali, he lost his kingdom at dice to Pushkara and abandoned Damayanti in the forest. He served King Rituparna of Ayodhya as his charioteer, Bahuka, until husband and wife found each other again. Not the Ikshvaku king Nala.
+  wiki: Nala
+  parents:
+    - { id: virasena-nishadha, rel: father, cite: "CE 3.50.1" }
+  spouses:
+    - { id: damayanti, cite: "CE 3.54" }
+
+- id: bhima-vidarbha
+  name: Bhima (king of Vidarbha)
+  sex: m
+  kind: human
+  house: other
+  title: king of Vidarbha, Damayanti's father
+  summary: King of Vidarbha, childless until the sage Damana, pleased by him and his queen, granted them a daughter and three sons. Not the Pandava Bhima.
+
+- id: damana-rishi
+  name: Damana
+  sex: m
+  kind: rishi
+  title: brahmarshi whose boon gave Bhima children
+  summary: A brahmarshi who, pleased by the childless King Bhima of Vidarbha and his queen, granted them "a jewel of a daughter and three noble sons".
+
+- id: damayanti
+  name: Damayanti
+  sex: f
+  kind: human
+  house: other
+  title: princess of Vidarbha, Nala's wife
+  summary: Daughter of King Bhima of Vidarbha, born of the sage Damana's boon. A golden swan carried word of Nala to her; at her svayamvara she picked out the real Nala among four gods who had taken his form.
+  wiki: Damayanti
+  parents:
+    - { id: bhima-vidarbha, rel: father, cite: "CE 3.50.5-9" }
+    - { id: damana-rishi, rel: birth-cause, cite: "CE 3.50.6-9" }
+
+- id: damayanti-brothers
+  name: Damayanti's brothers
+  kind: group
+  title: princes of Vidarbha
+  summary: Bhima's three sons, born of the same boon as Damayanti.
+  members: [Dama, Danta, Damana]
+  membersCite: "CE 3.50.9"
+  parents:
+    - { id: bhima-vidarbha, rel: father, cite: "CE 3.50.8-9" }
+    - { id: damana-rishi, rel: birth-cause, cite: "CE 3.50.8-9" }
+
+- id: nala-children
+  name: Nala's children
+  kind: group
+  title: the twins named Indrasena
+  summary: Nala and Damayanti's daughter Indrasena and son Indrasena, sent to their grandfather in Vidarbha before Nala lost everything.
+  members: [Indrasena (daughter), Indrasena (son)]
+  membersCite: "CE 3.57.21"
+  parents:
+    - { id: nala, rel: father, cite: "CE 3.57.21" }
+    - { id: damayanti, rel: mother, cite: "CE 3.57.21" }
+
+- id: pushkara-nishadha
+  name: Pushkara
+  sex: m
+  kind: human
+  house: other
+  title: Nala's rival at dice
+  summary: Prince of Nishadha whom Kali sent to challenge Nala at dice, and who won his kingdom. The Critical Edition gives no kinship here; the vulgate calls him Nala's brother.
+
+# --- Savitri and Satyavan (CE 3.277-283) ---
+- id: ashvapati-madra
+  name: Ashvapati (king of Madra)
+  sex: m
+  kind: human
+  house: other
+  title: king of Madra, Savitri's father
+  summary: The righteous, childless king of Madra, who did eighteen years of penance to the goddess Savitri for a child. Not Kaikeyi's father.
+  spouses:
+    - { id: malavi, cite: "CE 3.277.21-22" }
+
+- id: malavi
+  name: Malavi
+  sex: f
+  kind: human
+  house: other
+  title: Ashvapati's chief queen, Savitri's mother
+  summary: Ashvapati's eldest queen, mother of Savitri. Through her daughter's boon from Yama she later bore a hundred sons, the Malavas.
+
+- id: savitri-devi
+  name: Savitri (goddess)
+  sex: f
+  kind: god
+  title: the goddess of the Savitri verse
+  summary: The goddess, Brahma's consort and the sacred verse personified, who promised King Ashvapati a radiant daughter by Brahma's grace.
+
+- id: savitri-madra
+  name: Savitri
+  aka: [Savitri of Madra]
+  sex: f
+  kind: human
+  house: other
+  title: princess of Madra, who won Satyavan back from Yama
+  summary: Daughter of Ashvapati and Malavi, named after the goddess who granted her. She chose the exiled prince Satyavan though he was fated to die within a year, followed Yama when he took Satyavan's life, and won back her husband, her father-in-law's sight and kingdom, a hundred sons for herself and a hundred brothers.
+  wiki: Savitri and Satyavan
+  parents:
+    - { id: ashvapati-madra, rel: father, cite: "CE 3.277.21-24" }
+    - { id: malavi, rel: mother, cite: "CE 3.277.22" }
+    - { id: savitri-devi, rel: birth-cause, cite: "CE 3.277.15-24" }
+  spouses:
+    - { id: satyavan, cite: "CE 3.279.16" }
+
+- id: dyumatsena
+  name: Dyumatsena
+  sex: m
+  kind: human
+  house: other
+  title: blind king of the Shalvas, Satyavan's father
+  summary: A righteous king of the Shalvas who went blind and lost his kingdom to an old enemy; he lived in the forest with his wife and son. Savitri's boon restored his sight and his throne.
+
+- id: satyavan
+  name: Satyavan
+  aka: [Chitrashva]
+  sex: m
+  kind: human
+  house: other
+  title: Savitri's husband
+  summary: Dyumatsena's son, born in the city and raised in the forest hermitage; named Satyavan because "his father speaks the truth, his mother speaks the truth", and called Chitrashva because as a boy he loved horses and painted them.
+  wiki: Savitri and Satyavan
+  parents:
+    - { id: dyumatsena, rel: father, cite: "CE 3.278.7-10" }
+    - { id: shaibya-dyumatsena, rel: mother, cite: "CE 3.278.9, 3.282.2" }
+
+- id: malavas
+  name: The Malavas
+  kind: group
+  title: Malavi's hundred sons
+  summary: The hundred sons Yama promised Savitri's mother Malavi, "the Malavas, everlasting, with sons and grandsons", eponyms of the Malava people.
+  parents:
+    - { id: ashvapati-madra, rel: father, cite: "CE 3.281.58" }
+    - { id: malavi, rel: mother, cite: "CE 3.281.58" }
+
+# --- Agastya and Lopamudra (CE 3.94-103) ---
+- id: agastya
+  name: Agastya
+  aka: [Maitravaruni, Kumbhayoni]
+  sex: m
+  kind: rishi
+  title: the great sage of the south
+  summary: The sage called Maitravaruni, "son of Mitra and Varuna". Seeing his ancestors hanging head-down in a pit for want of descendants, he made a girl from the finest parts of every creature and gave her to the childless king of Vidarbha to raise, then asked for her as his wife. He drank up the ocean so the gods could reach the hiding demons.
+  wiki: Agastya
+  parents:
+    - { id: mitra, rel: divine-father, cite: "CE 3.101.13, 3.102.16", note: "Maitrāvaruṇi, “son of Mitra and Varuna”." }
+    - { id: varuna, rel: divine-father, cite: "CE 3.101.13, 3.102.16" }
+    - { id: pulastya, rel: father, ver: purana, cite: "Bhagavata Purana 4.1.36", note: "The Bhagavata makes him Pulastya's son by Havirbhu, Vishravas's brother; elsewhere he is Mitra and Varuna's." }
+    - { id: havirbhu, rel: mother, ver: purana, cite: "Bhagavata Purana 4.1.36" }
+  spouses:
+    - { id: lopamudra, cite: "CE 3.95.7-8" }
+
+- id: vidarbha-king-lopamudra
+  name: King of Vidarbha (Lopamudra's father)
+  sex: m
+  kind: human
+  house: other
+  title: the childless king who raised Lopamudra
+  summary: The king of Vidarbha, longing for a son, to whom Agastya gave the girl he had made. Fearing the sage's curse, he gave her back to Agastya in marriage.
+
+- id: lopamudra
+  name: Lopamudra
+  sex: f
+  kind: human
+  house: other
+  title: Agastya's wife, made by him from all creatures
+  summary: The girl Agastya fashioned from the best parts of every creature, raised as the princess of Vidarbha and named Lopamudra by the brahmins. Married to Agastya, she would not lie with him until he could give her the comforts of a palace, which sent him begging kings for wealth.
+  wiki: Lopamudra
+  parents:
+    - { id: agastya, rel: birth-cause, cite: "CE 3.94.18-21", note: "Not born: Agastya made her from the finest part of each creature." }
+    - { id: vidarbha-king-lopamudra, rel: adoptive-father, cite: "CE 3.94.18-21" }
+
+- id: dridhasyu
+  name: Dridhasyu
+  aka: [Idhmavaha]
+  sex: m
+  kind: rishi
+  title: Agastya and Lopamudra's son
+  summary: Agastya and Lopamudra's son, "blazing with power", called Idhmavaha because as a boy he carried loads of firewood (idhma) for his father's rites. With his birth Agastya's ancestors were freed.
+  parents:
+    - { id: agastya, rel: father, cite: "CE 3.97.23-24" }
+    - { id: lopamudra, rel: mother, cite: "CE 3.97.23-24" }
+
+# --- Krishna's foster family in Gokula (Harivamsa 47-48, Bhagavata 10.2-3) ---
+- id: nanda
+  name: Nanda
+  aka: [Nandagopa]
+  sex: m
+  kind: human
+  house: other
+  title: cowherd chief of Gokula, Krishna's foster father
+  wiki: Nandagopa
+  summary: The cowherd chief of Gokula, "Kamsa's cowherd", into whose house Vasudeva carried the newborn Krishna, taking back Nanda's own newborn daughter in his place. Krishna and Balarama grew up in his herd-station.
+  ver: harivamsa
+  spouses:
+    - { id: yashoda, cite: "Harivamsa 47.33, 48.12" }
+
+- id: yashoda
+  name: Yashoda
+  aka: [Yasoda, Yashodha]
+  sex: f
+  kind: human
+  house: other
+  title: Nanda's wife, Krishna's foster mother
+  summary: Nanda's wife, "of a cowherd family". She gave birth the same night as Devaki, to a daughter, and woke to find Krishna in her bed instead.
+  wiki: Yashoda
+  ver: harivamsa
+
+- id: nidra-yogamaya
+  name: Nidra (Yogamaya)
+  aka: [Yogamaya, Nidra, Kanyaka]
+  sex: f
+  kind: god
+  title: Vishnu's sleep, born as Yashoda's daughter
+  wiki: Yogamaya
+  summary: Vishnu's sleep, "born of his body", whom he sent to be born to Yashoda the night he was born to Devaki. The babies were exchanged; Kamsa dashed the girl against a stone, and she rose into the sky as a goddess with a trident and a sword, to be worshipped on earth. The Bhagavata calls her Yogamaya and lists the names men will give her, Durga, Bhadrakali, Vijaya, Vaishnavi, Chandika, Ambika and others.
+  ver: harivamsa
+  parents:
+    - { id: yashoda, rel: mother, cite: "Harivamsa 48.10-13; Bhagavata Purana 10.3.47" }
+    - { id: nanda, rel: father, cite: "Harivamsa 48.12" }
+
+# --- Krishna's Radha (Brahmavaivarta Purana). Not Radha, Adhiratha's wife and Karna's foster mother. ---
+- id: vrishabhanu
+  name: Vrishabhanu
+  sex: m
+  kind: human
+  house: other
+  title: cowherd of Gokula, Radha's father
+  summary: A cowherd of Gokula, in whose house the goddess Radha was born on earth. With the other cowherds who had come down from Goloka, he returned there when Krishna left the earth.
+  ver: purana
+  spouses:
+    - { id: kalavati, cite: "Brahmavaivarta Purana 2.49" }
+
+- id: kalavati
+  name: Kalavati
+  sex: f
+  kind: human
+  house: other
+  title: Vrishabhanu's wife, Radha's mother
+  summary: Vrishabhanu's wife, mother of Radha on earth. She went back to Goloka with Krishna and Radha.
+  ver: purana
+
+- id: radha-krishna
+  name: Radha (Krishna's beloved)
+  aka: [Radha, Radhika, Radharani]
+  sex: f
+  kind: god
+  title: Krishna's beloved, the goddess of Goloka
+  summary: In the Brahmavaivarta, Krishna's eternal beloved in his heaven, Goloka. Cursed by the cowherd Sudama (Shridama) to be born a human, she came down and was born to Vrishabhanu and Kalavati. Brahma himself married her to Krishna, before the fire, in the Bhandira grove. At twelve she was married to Rayana, but only her shadow went into his house; the real Radha stayed with Krishna. Separated from him for a hundred years by the same curse, she met him again on a pilgrimage, and both returned to Goloka. She is not in the epic. Not Radha, Karna's foster mother.
+  wiki: Radha
+  ver: purana
+  parents:
+    - { id: vrishabhanu, rel: father, cite: "Brahmavaivarta Purana 2.49" }
+    - { id: kalavati, rel: mother, cite: "Brahmavaivarta Purana 2.49" }
+  spouses:
+    - { id: krishna, cite: "Brahmavaivarta Purana 4.15, 2.49", note: "Brahma performed the wedding: he lit the fire, had them circle it seven times, and gave her hand to Krishna." }
+    - { id: rayana, cite: "Brahmavaivarta Purana 2.49, 4.3", note: "Only a shadow Radha was married to him; Sridama's curse foretold that people would call her Rayana's wife." }
+
+- id: rayana
+  name: Rayana
+  aka: [Rayana-gopa]
+  sex: m
+  kind: human
+  house: other
+  title: Yashoda's brother, married to Radha's shadow
+  summary: A cowherd of Gokula (elsewhere called a Vaishya, a trader), "a ray of Krishna", and Yashoda's own brother, so Krishna's maternal uncle in Vrindavana. Radha was married to him at twelve, but only her shadow lived in his house.
+  ver: purana
+  incarnation:
+    - { of: krishna, kind: portion, cite: "Brahmavaivarta Purana 2.49" }
+
+# --- Ashtavakra (CE 3.132-134) ---
+- id: uddalaka
+  name: Uddalaka
+  aka: [Uddalaka Aruni, Aruni]
+  sex: m
+  kind: rishi
+  title: sage, father of Shvetaketu and Sujata
+  summary: The sage who gave his learning and his daughter Sujata to his devoted pupil Kahoda.
+  wiki: Uddalaka Aruni
+
+- id: shvetaketu
+  name: Shvetaketu
+  sex: m
+  kind: rishi
+  title: Uddalaka's son, Ashtavakra's uncle
+  summary: Uddalaka's son, a master of mantras, who once saw the goddess Sarasvati in human form. His nephew Ashtavakra was his own age, and the two went together to Janaka's court.
+  wiki: Shvetaketu
+  parents:
+    - { id: uddalaka, rel: father, cite: "CE 3.132.1, 3.132.10" }
+
+- id: sujata-uddalaka
+  name: Sujata
+  sex: f
+  kind: human
+  house: other
+  title: Uddalaka's daughter, Ashtavakra's mother
+  summary: Uddalaka's daughter, given to his pupil Kahoda. Her unborn son, hearing his father recite the Veda, corrected him, and was cursed to be born bent in eight places.
+  parents:
+    - { id: uddalaka, rel: father, cite: "CE 3.132.7" }
+  spouses:
+    - { id: kahoda, cite: "CE 3.132.6-7" }
+
+- id: kahoda
+  name: Kahoda
+  sex: m
+  kind: rishi
+  title: Uddalaka's pupil, Ashtavakra's father
+  summary: Uddalaka's devoted pupil and son-in-law. Seeking money for his wife, he went to Janaka's court, lost a debate to Bandin, and was drowned; his son Ashtavakra later defeated Bandin and brought him back.
+
+- id: ashtavakra
+  name: Ashtavakra
+  sex: m
+  kind: rishi
+  title: the sage bent in eight places
+  summary: Kahoda's son, cursed in the womb by his father to be born crooked in eight limbs for correcting his recitation. As a boy of ten he defeated the debater Bandin at Janaka's sacrifice, and the sages Bandin had drowned, his father among them, rose from the water.
+  wiki: Ashtavakra
+  parents:
+    - { id: kahoda, rel: father, cite: "CE 3.132.3, 3.132.10" }
+    - { id: sujata-uddalaka, rel: mother, cite: "CE 3.132.11" }
+
+# --- Yavakrita (CE 3.135-139) ---
+- id: nikumbha-daitya
+  name: Nikumbha (father of Sunda)
+  sex: m
+  kind: asura
+  title: Daitya of Hiranyakashipu's line
+  summary: A mighty Daitya lord born in the line of Hiranyakashipu, father of Sunda and Upasunda.
+  parents:
+    - { id: prahlada, rel: father, disputed: true, cite: "CE 1.59.19", note: "Prahlada's three sons were Virochana, Kumbha and Nikumbha (CE 1.59.19). That this Nikumbha is the father of Sunda and Upasunda, “born in Hiranyakashipu's line” (CE 1.201.2), is likely but not stated." }
+
+- id: sunda
+  name: Sunda
+  sex: m
+  kind: asura
+  title: Daitya brother of Upasunda
+  summary: With his brother Upasunda he won from Brahma the boon that nothing but each other could kill them, then conquered the three worlds. Inseparable all their lives, they fought to the death over the apsara Tilottama. Narada told this story to the Pandavas so that Draupadi would never come between them.
+  wiki: Sunda and Upasunda
+  parents:
+    - { id: nikumbha-daitya, rel: father, cite: "CE 1.201.2-3" }
+
+- id: upasunda
+  name: Upasunda
+  sex: m
+  kind: asura
+  title: Daitya brother of Sunda
+  summary: Sunda's brother; the two killed each other over Tilottama.
+  wiki: Sunda and Upasunda
+  parents:
+    - { id: nikumbha-daitya, rel: father, cite: "CE 1.201.2-3" }
+
+- id: tilottama
+  name: Tilottama
+  sex: f
+  kind: apsara
+  title: apsara made to divide Sunda and Upasunda
+  summary: An apsara whom Vishvakarma, at Brahma's command, made from the finest particle (tila) of every jewel in the world. Sent to the brothers Sunda and Upasunda, she made them kill each other.
+  wiki: Tilottama
+  parents:
+    - { id: vishvakarma, rel: birth-cause, cite: "CE 1.203.10-17", note: "Vishvakarma made her at Brahma's command; Brahma named her." }
+
+# --- Uttanka (CE 14.52-57) ---
+- id: uttanka
+  name: Uttanka
+  aka: [Utanka]
+  sex: m
+  kind: rishi
+  title: Gautama's pupil, Bhrigu's descendant
+  summary: A Bhargava, Gautama's pupil for so long that he grew old unnoticed. Released at last, he was given his teacher's daughter as wife, and for his teacher's wife Ahalya he fetched the earrings of King Saudasa's queen. He met Krishna returning from the war and was shown the cosmic form.
+  wiki: Uttanka
+  spouses:
+    - { id: gautama-daughter, cite: "CE 14.55.23" }
+
+- id: gautama-daughter
+  name: Gautama's daughter
+  sex: f
+  kind: human
+  house: other
+  title: Uttanka's wife
+  summary: The daughter of the sage Gautama and Ahalya, given by her father to his pupil Uttanka. The text does not name her.
+  parents:
+    - { id: gautama, rel: father, cite: "CE 14.55.23" }
+    - { id: ahalya, rel: mother, cite: "CE 14.55.24-27" }
+
+# --- In-laws and side branches of the Kurus and Yadavas (see build/lunar-families.cjs) ---
+- id: shishupala-sons
+  name: Shishupala's other sons
+  kind: group
+  title: Dhrishtaketu's brothers
+  summary: Suketu, killed by Drona in the war, and Sharabha, who received Arjuna with honour when the sacrificial horse reached Chedi.
+  members: [Suketu, Sharabha]
+  membersCite: "CE 8.4.82, 14.84.3"
+  parents:
+    - { id: shishupala, rel: father, cite: "CE 8.4.82, 14.84.3" }
+
+- id: jayatsena-magadha
+  name: Jayatsena (Magadha)
+  sex: m
+  kind: human
+  house: other
+  title: Jarasandha's son
+  summary: Jarasandha's son, who brought an akshauhini to Yudhishthira; he and his brother Sahadeva are both called Jarasandha's sons.
+  parents:
+    - { id: jarasandha, rel: father, cite: "CE 5.19.8, 5.49.44" }
+
+- id: meghasandhi
+  name: Meghasandhi
+  sex: m
+  kind: human
+  house: other
+  title: Jarasandha's grandson
+  summary: Sahadeva's son, king of Magadha, who fought Arjuna on foot when the sacrificial horse came to Magadha.
+  parents:
+    - { id: sahadeva-magadha, rel: father, cite: "CE 14.83.3-4" }
+
+- id: prishati
+  name: Prishati
+  sex: f
+  kind: human
+  house: other
+  title: Drupada's queen
+  summary: Drupada's chief queen, whom the priest Yaja called to receive the twins born from the sacrificial fire, Dhrishtadyumna and Draupadi.
+
+- id: drupada-sons
+  name: Drupada's other sons
+  kind: group
+  title: Dhrishtadyumna's and Shikhandi's brothers
+  summary: Satyajit, a hero of the Pandava army, and Viraketu, killed by Drona, whose four brothers then fell on Drona together.
+  members: [Satyajit, Viraketu, Chitraketu, Sudhanvan, Chitravarman, Chitraratha, Suratha, Shrutanjaya]
+  membersCite: "CE 5.168.22, 7.98.27-37; CE 7.131.126"
+  parents:
+    - { id: drupada, rel: father, cite: "CE 5.168.22, 7.98.27-37", note: "The Puranic Encyclopaedia makes Satyajit Drupada's brother instead (SATYAJIT II)." }
+
+- id: dhrishtadyumna-sons
+  name: Dhrishtadyumna's sons
+  kind: group
+  title: Drupada's grandsons
+  summary: Kshatranjaya, Kshatradeva and the boy Kshatradharman, killed in the war. The Puranas continue the Panchala line through a son Dhrishtaketu.
+  members: [Kshatranjaya, Kshatradeva, Kshatradharman, Dhrishtaketu (Panchala)]
+  membersCite: "CE 7.9.49, 5.168.7; Vishnu Purana 4.19.16"
+  parents:
+    - { id: dhrishtadyumna, rel: father, cite: "CE 7.9.49, 5.168.7; Vishnu Purana 4.19.16" }
+
+- id: shikhandi-son
+  name: Shikhandi's son
+  kind: group
+  title: Kshatradeva, called Shikhandi's son
+  summary: The Drona Parva calls Kshatradeva “Shikhandi's son”, raised as if in Drupada's lap; a few chapters earlier it lists a Kshatradeva among Dhrishtadyumna's sons.
+  members: [Kshatradeva]
+  membersCite: "CE 7.9.59"
+  parents:
+    - { id: shikhandi, rel: father, cite: "CE 7.9.59" }
+
+- id: hiranyavarman
+  name: Hiranyavarman
+  sex: m
+  kind: human
+  house: other
+  title: king of Dasharna, Shikhandi's father-in-law
+  summary: King of Dasharna, who gave his daughter to Shikhandi. Learning that the groom was a woman, he threatened war on Drupada, until Shikhandini exchanged her sex with the yaksha Sthunakarna.
+
+- id: hiranyavarman-daughter
+  name: Hiranyavarman's daughter
+  sex: f
+  kind: human
+  house: other
+  title: Shikhandi's wife
+  summary: The Dasharna princess married to Shikhandi, who was then still a woman; her discovery set off the story of Shikhandi's change of sex.
+  parents:
+    - { id: hiranyavarman, rel: father, cite: "CE 5.190.10-14" }
+  spouses:
+    - { id: shikhandi, cite: "CE 5.190.10-14" }
+
+- id: subala-sons
+  name: Shakuni's brothers
+  kind: group
+  title: Subala's other sons, the Gandhara princes
+  summary: Subala's sons who fought for the Kauravas; six of them, led by Gaja, were killed by Iravan; Vrishaka and Achala, “your brothers-in-law”, by Arjuna.
+  members: [Bala, Vrishaka, Brihadbala, Achala, Gaja, Gavaksha, Charmavat, Arjava, Shuka, Gajaksha, Sharabha, Vibhu, Shatachandra]
+  membersCite: "CE 1.177.5, 6.86.24-30, 7.29.9, 7.132.20"
+  parents:
+    - { id: subala, rel: father, cite: "CE 1.177.5, 6.86.30" }
+
+- id: gandhari-sisters
+  name: Gandhari's sisters
+  kind: group
+  title: Subala's ten other daughters, married to Dhritarashtra
+  summary: Subala gave Dhritarashtra Gandhari's ten sisters as well, and he took them all on one day.
+  members: [Satyavrata, Satyasena, Sudeshna, Samhita, Tejashrava, Sushrava, Nikriti, Shubha, Shambhuva, Dasharna]
+  membersCite: "CE 1.103.17 *1113 (vulgate)"
+  ver: vulgate
+  parents:
+    - { id: subala, rel: father, ver: vulgate, cite: "adi 110", note: "A passage the Critical Edition puts in its notes (1.103 *1113)." }
+
+- id: somadatta-sons
+  name: Bhurishravas's brothers
+  kind: group
+  title: Somadatta's other sons
+  summary: Somadatta came to Draupadi's svayamvara with his three sons, Bhuri, Bhurishravas and Shala.
+  members: [Bhuri, Shala]
+  membersCite: "CE 1.177.14; Vishnu Purana 4.20.10"
+  parents:
+    - { id: somadatta, rel: father, cite: "CE 1.177.14; Vishnu Purana 4.20.10" }
+
+- id: shalya-sons
+  name: Shalya's sons
+  kind: group
+  title: the Madra princes
+  summary: Shalya came to Draupadi's svayamvara with his sons Rukmangada and Rukmaratha; Rukmaratha rallied the Kaurava army against Abhimanyu.
+  members: [Rukmangada, Rukmaratha]
+  membersCite: "CE 1.177.13, 7.44.9"
+  parents:
+    - { id: shalya, rel: father, cite: "CE 1.177.13, 7.44.9" }
+
+- id: karna-sons
+  name: Karna's other sons
+  kind: group
+  title: Vrishasena's brothers
+  summary: Sushena and Satyasena guarded the wheels of their father's chariot.
+  members: [Sushena, Satyasena]
+  membersCite: "CE 8.32.40, 8.4.104"
+  parents:
+    - { id: karna, rel: father, cite: "CE 8.32.40, 8.4.104" }
+
+- id: karna-wife
+  name: Karna's wife
+  sex: f
+  kind: human
+  house: other
+  title: Vrishasena's mother
+  summary: Seen weeping over Karna's body on the battlefield, “Karna's wife, Vrishasena's mother”. The Critical Edition does not name her.
+
+- id: adrishyanti
+  name: Adrishyanti
+  sex: f
+  kind: human
+  house: other
+  title: Shakti's widow, Parashara's mother
+  summary: Vasishtha's daughter-in-law. Shakti was devoured by a rakshasa; his unborn son recited the Veda in her womb, and she bore Parashara in Vasishtha's hermitage.
+
+- id: pivari
+  name: Pivari
+  sex: f
+  kind: other
+  title: a daughter of the Pitris, Shuka's wife
+  summary: A mind-born daughter of the Pitris, wife of Vyasa's son Shuka. She bore four sons, Krishna, Gaura, Prabhu and Shambhu, all masters of yoga, and a daughter Kritvi.
+  ver: harivamsa
+
+- id: shuka-sons
+  name: Shuka's sons
+  kind: group
+  title: Vyasa's grandsons
+  summary: Four sons born to Shuka and Pivari, teachers of yoga.
+  members: [Krishna, Gaura, Prabhu, Shambhu, Devashruta]
+  membersCite: "Harivamsa 13.46-47"
+  ver: harivamsa
+  parents:
+    - { id: shuka, rel: father, cite: "Harivamsa 13.46-47" }
+    - { id: pivari, rel: mother, cite: "Harivamsa 13.46-47" }
+
+- id: ekashringa
+  name: Ekashringa
+  sex: f
+  kind: other
+  title: a daughter of the Pitris, Shuka's other wife
+  summary: Go, the mind-born daughter of the Sadhya Pitris, called Ekashringa, wife of Shuka.
+  aka: [Go]
+  ver: harivamsa
+
+- id: upakichakas
+  name: the Upakichakas
+  kind: group
+  title: Kichaka's hundred and five brothers
+  summary: Kichaka's brothers, who tried to burn Draupadi on his pyre; Bhima, taking her for a Gandharva, killed them all.
+  members: []
+  membersCite: "CE 4.22.22"
+  parents:
+    - { id: sudeshna-parent, rel: father, cite: "CE 4.22.22", note: "Called Kichaka's brothers." }
+
+- id: uparichara-sons
+  name: Uparichara's other sons
+  kind: group
+  title: Brihadratha's brothers, founders of kingdoms
+  summary: Vasu's five sons, each set over a kingdom; Brihadratha of Magadha, Pratyagraha, Kushamba (called Manivahana), Macchilla and Yadu.
+  members: [Pratyagraha, Kushamba (Manivahana), Macchilla, Yadu]
+  membersCite: "CE 1.57.29-30"
+  parents:
+    - { id: uparichara, rel: father, cite: "CE 1.57.29-30" }
+
+- id: kolahala
+  name: Kolahala
+  sex: m
+  kind: other
+  title: a mountain, father of Girika
+  summary: A mountain in Uparichara Vasu's country that, out of desire, blocked the river Shuktimati.
+
+- id: shuktimati
+  name: Shuktimati
+  sex: f
+  kind: other
+  title: a river, mother of Girika
+  summary: The river flowing past Uparichara Vasu's capital, on which the mountain Kolahala begot twins.
+
+- id: vahini
+  name: Vahini
+  sex: f
+  kind: human
+  house: other
+  title: Kuru's wife
+  summary: Kuru's wife in the epic's verse genealogy, mother of five sons.
+
+- id: kuru-vahini-sons
+  name: Kuru's sons by Vahini
+  kind: group
+  title: the five sons of Kuru and Vahini
+  summary: Kuru's five sons by Vahini, in the verse genealogy; the prose one has Viduratha by Shubhangi instead.
+  members: [Ashvavat, "@abhishvat", Chitraratha, Muni, "@janamejaya-kuru"]
+  membersCite: "CE 1.89.44"
+  parents:
+    - { id: kuru, rel: father, cite: "CE 1.89.44" }
+    - { id: vahini, rel: mother, cite: "CE 1.89.44" }
+
+- id: vaidehi-shatanika
+  name: Vaidehi (Shatanika's queen)
+  sex: f
+  kind: human
+  house: other
+  title: Shatanika's wife, a Videha princess
+  summary: A Videha princess, wife of Janamejaya's son Shatanika and mother of Ashvamedhadatta.
+
+- id: iravati
+  name: Iravati
+  sex: f
+  kind: human
+  house: other
+  title: Parikshit's wife in the Bhagavata
+  summary: Daughter of Virata's son Uttara, married to Parikshit; she bore him Janamejaya and three more sons.
+  ver: purana
+  parents:
+    - { id: uttar, rel: father, ver: purana, cite: "Bhagavata Purana 1.16.2" }
+
+- id: lakshmana-duryodhani
+  name: Lakshmana (Duryodhana's daughter)
+  sex: f
+  kind: human
+  house: other
+  title: Duryodhana's daughter, Samba's wife
+  summary: Duryodhana's daughter, carried off from her svayamvara by Krishna's son Samba. The Kauravas captured Samba, and Balarama made them give her up by dragging Hastinapura towards the Ganga with his plough. Not her brother Lakshmana Kumara.
+  ver: purana
+  parents:
+    - { id: duryodhana, rel: father, ver: purana, cite: "Bhagavata Purana 10.68.1" }
+  spouses:
+    - { id: samba, ver: purana, cite: "Bhagavata Purana 10.68.1" }
+
+- id: prithukirti
+  name: Prithukirti
+  sex: f
+  kind: human
+  house: other
+  title: Shura's daughter, Dantavakra's mother in the Harivamsa
+  summary: One of Shura's five daughters, with Pritha (Kunti), Shrutadeva, Shrutashrava and Rajadhidevi; married to Vriddhasharman of Karusha.
+  ver: harivamsa
+  parents:
+    - { id: shura, rel: father, ver: harivamsa, cite: "Harivamsa 24.19" }
+
+- id: jayasena-avanti
+  name: Jayasena (Avanti)
+  sex: m
+  kind: human
+  house: other
+  title: king of Avanti, father of Vinda and Anuvinda
+  summary: Rajadhidevi's husband, father of the two Avanti princes.
+  ver: purana
+
+- id: padmavati-ugrasena
+  name: Padmavati (Ugrasena's queen)
+  sex: f
+  kind: human
+  house: other
+  title: Ugrasena's queen, a Vidarbha princess
+  summary: Daughter of Satyaketu, king of Vidarbha, married to Ugrasena of Mathura. The Puranic Encyclopaedia makes her Kamsa's mother.
+  ver: purana
+
+- id: ugrasena-sons
+  name: Kamsa's brothers
+  kind: group
+  title: Ugrasena's other sons
+  summary: Ugrasena's eight younger sons.
+  members: [Nyagrodha, Sunaman, Kanka, Shanku, Subhumi, Rashtrapala, Yuddhamushti, Tushtimat]
+  membersCite: "Vishnu Purana 4.14.5; Harivamsa 27.28"
+  ver: purana
+  parents:
+    - { id: ugrasena, rel: father, cite: "Vishnu Purana 4.14.5" }
+
+- id: ugrasena-daughters
+  name: Kamsa's sisters
+  kind: group
+  title: Ugrasena's daughters, married to Vasudeva's brothers
+  summary: Ugrasena's daughters, who married Vasudeva's younger brothers; Kamsa married Devabhaga, Kamsavati Devashravas, Kanka Kanka, Rashtrapali Srinjaya, Shurabhumi Shyamaka.
+  members: [Kamsa, Kamsavati, Sutanu, Rashtrapali, Kanka]
+  membersCite: "Vishnu Purana 4.14.5; Bhagavata Purana 9.24.25, 9.24.40-42"
+  ver: purana
+  parents:
+    - { id: ugrasena, rel: father, cite: "Vishnu Purana 4.14.5; Bhagavata Purana 9.24.25" }
+
+- id: sugatri
+  name: Sugatri
+  sex: f
+  kind: human
+  house: other
+  title: Ugrasena's daughter, Akrura's wife
+  summary: Ugrasena's daughter (Augraseni), married to Akrura; mother of Prasena and Upadeva.
+  ver: harivamsa
+  parents:
+    - { id: ugrasena, rel: father, ver: harivamsa, cite: "Harivamsa 24.11" }
+
+- id: devabhaga
+  name: Devabhaga
+  sex: m
+  kind: human
+  house: other
+  title: Vasudeva's younger brother, Uddhava's father
+  summary: Shura's son, born after Vasudeva; father of Uddhava.
+  ver: harivamsa
+  parents:
+    - { id: shura, rel: father, ver: harivamsa, cite: "Harivamsa 24.18" }
+
+- id: uddhava
+  name: Uddhava
+  sex: m
+  kind: human
+  house: other
+  title: Krishna's cousin, friend and counsellor
+  summary: Devabhaga's son, wise among the wise, Krishna's cousin and confidant.
+  wiki: Uddhava
+  ver: harivamsa
+  parents:
+    - { id: devabhaga, rel: father, ver: harivamsa, cite: "Harivamsa 24.25" }
+
+- id: chitraka-children
+  name: Chitraka's children
+  kind: group
+  title: Akrura's cousins
+  summary: Chitraka's sons and his two daughters, Shravishtha and Shravana.
+  members: [Prithu, Viprithu, Ashvagriva, Ashvabahu, Suparshvaka, Gaveshana, Arishtanemi, Subahu, Bahubahu, Shravishtha (daughter), Shravana (daughter)]
+  membersCite: "Harivamsa 24.12-13"
+  ver: harivamsa
+  parents:
+    - { id: chitraka, rel: father, cite: "Harivamsa 24.12-13" }
+
+- id: madira
+  name: Madira
+  sex: f
+  kind: human
+  house: other
+  title: Vasudeva's wife
+  summary: One of Vasudeva's wives, who resolved to follow him onto his funeral pyre. Mother of Nanda, Upananda and Kritaka.
+
+- id: bhadra-vasudeva
+  name: Bhadra (Vasudeva's wife)
+  sex: f
+  kind: human
+  house: other
+  title: Vasudeva's wife
+  summary: One of Vasudeva's wives, who followed him onto his funeral pyre; mother of Upanidhi and Gada. Krishna charges Shishupala with carrying off “Bhadra of Vaishali”, wife of his maternal uncle (CE 2.42.11).
+
+- id: madira-sons
+  name: Madira's sons
+  kind: group
+  title: Vasudeva's sons by Madira
+  members: [Nanda, Upananda, Kritaka]
+  membersCite: "Vishnu Purana 4.15.13"
+  ver: purana
+  parents:
+    - { id: vasudeva, rel: father, cite: "Vishnu Purana 4.15.13" }
+    - { id: madira, rel: mother, cite: "Vishnu Purana 4.15.13" }
+
+- id: bhadra-vasudeva-sons
+  name: Bhadra's sons (Vasudeva's)
+  kind: group
+  title: Vasudeva's sons by Bhadra
+  members: [Upanidhi, Gada, Upabimba, Bimba, Sattvadanta, Mahaujas]
+  membersCite: "Vishnu Purana 4.15.13; Vayu Purana 2.34.166-171"
+  ver: purana
+  parents:
+    - { id: vasudeva, rel: father, cite: "Vishnu Purana 4.15.13" }
+    - { id: bhadra-vasudeva, rel: mother, cite: "Vishnu Purana 4.15.13" }
+
+- id: devaka-sons
+  name: Devaki's brothers
+  kind: group
+  title: Devaka's four sons
+  summary: Devaka had four sons and seven daughters, all seven given to Vasudeva.
+  members: [Devavan, Upadeva, Sudeva (Sahadeva), Devarakshita]
+  membersCite: "Vishnu Purana 4.14.5; Harivamsa 27.26"
+  ver: purana
+  parents:
+    - { id: devaka, rel: father, cite: "Vishnu Purana 4.14.5; Harivamsa 27.26" }
+
+- id: bhishmaka-sons
+  name: Rukmi's brothers
+  kind: group
+  title: Bhishmaka's other sons
+  summary: Rukmi was the eldest of Bhishmaka's five sons, Rukmini their sister.
+  members: [Rukmaratha, Rukmabahu, Rukmakesha, Rukmamali]
+  membersCite: "Bhagavata Purana 10.52.22"
+  ver: purana
+  parents:
+    - { id: bhishmaka, rel: father, cite: "Bhagavata Purana 10.52.22" }
+
+- id: charumati
+  name: Charumati
+  sex: f
+  kind: human
+  house: other
+  title: Krishna and Rukmini's daughter
+  summary: Rukmini's daughter, married to Bali, Kritavarma's son.
+  ver: purana
+  parents:
+    - { id: krishna, rel: father, ver: purana, cite: "Bhagavata Purana 10.61.24" }
+    - { id: rukmini, rel: mother, ver: purana, cite: "Bhagavata Purana 10.61.24" }
+  spouses:
+    - { id: bali-kritavarma, ver: purana, cite: "Bhagavata Purana 10.61.24" }
+
+- id: bali-kritavarma
+  name: Bali (son of Kritavarma)
+  sex: m
+  kind: human
+  house: other
+  title: Kritavarma's son, Charumati's husband
+  summary: Kritavarma's son, married to Krishna's daughter Charumati. Not Mahabali.
+  ver: purana
+  parents:
+    - { id: kritavarma, rel: father, ver: purana, cite: "Bhagavata Purana 10.61.24" }
+
+- id: rochana
+  name: Rochana
+  sex: f
+  kind: human
+  house: other
+  title: Rukmi's granddaughter, Aniruddha's wife
+  summary: Rukmi's granddaughter, whom he gave to Aniruddha though he hated Krishna, to please his sister Rukmini. At the wedding Balarama killed Rukmi over a game of dice.
+  ver: purana
+
+- id: gandhari-krishna
+  name: Gandhari (Krishna's wife)
+  sex: f
+  kind: human
+  house: other
+  title: Krishna's wife
+  summary: One of Krishna's queens who entered the fire after his death, with Rukmini, Shaibya, Haimavati and Jambavati. Not Dhritarashtra's wife.
+
+- id: shaibya-krishna
+  name: Shaibya (Krishna's wife)
+  sex: f
+  kind: human
+  house: other
+  title: Krishna's wife
+  summary: One of Krishna's queens who entered the fire after his death.
+
+- id: haimavati-krishna
+  name: Haimavati (Krishna's wife)
+  sex: f
+  kind: human
+  house: other
+  title: Krishna's wife
+  summary: One of Krishna's queens who entered the fire after his death.
+
+- id: yauyudhani
+  name: Yauyudhani
+  sex: m
+  kind: human
+  house: other
+  title: Satyaki's son
+  summary: Satyaki's beloved son, whom Arjuna settled on the Sarasvati with the old men and children after the Yadavas destroyed each other.
+  parents:
+    - { id: satyaki, rel: father, cite: "CE 16.8.69" }
+
+- id: kausalya-satvata
+  name: Kausalya (Satvata's queen)
+  sex: f
+  kind: human
+  house: other
+  title: Satvata's queen
+  summary: Satvata's wife, mother of Bhajin, Bhajamana, Divya and Devavridha.
+  ver: harivamsa
+
+- id: bahyaka
+  name: Bahyaka
+  sex: f
+  kind: human
+  house: other
+  title: Bhajamana's elder wife, a Srinjaya princess
+  summary: One of two Srinjaya sisters married to Bhajamana; mother of Nimi, Kramana, Vishnu, Shura and Puranjaya.
+  ver: harivamsa
+
+- id: upabahyaka
+  name: Upabahyaka
+  sex: f
+  kind: human
+  house: other
+  title: Bhajamana's younger wife, a Srinjaya princess
+  summary: Bahyaka's sister, married to Bhajamana; mother of Ayutajit, Sahasrajit, Shatajit and Dasaka.
+  ver: harivamsa
+
+- id: bahyaka-sons
+  name: Bhajamana's sons by Bahyaka
+  kind: group
+  members: [Nimi, Kramana, Vishnu, Shura, Puranjaya]
+  membersCite: "Harivamsa 27.4"
+  ver: harivamsa
+  parents:
+    - { id: bhajamana, rel: father, cite: "Harivamsa 27.4" }
+    - { id: bahyaka, rel: mother, cite: "Harivamsa 27.4" }
+
+- id: upabahyaka-sons
+  name: Bhajamana's sons by Upabahyaka
+  kind: group
+  members: [Ayutajit, Sahasrajit, Shatajit, Dasaka]
+  membersCite: "Harivamsa 27.5"
+  ver: harivamsa
+  parents:
+    - { id: bhajamana, rel: father, cite: "Harivamsa 27.5" }
+    - { id: upabahyaka, rel: mother, cite: "Harivamsa 27.5" }
+
+- id: parnasha
+  name: Parnasha
+  sex: f
+  kind: other
+  title: a river, Devavridha's wife
+  summary: The river in which Devavridha bathed during his austerities for a son. Pleased with him, she came to him as a woman and bore Babhru.
+  ver: harivamsa
+
+- id: gandhari-kroshtu
+  name: Gandhari (Kroshtu's wife)
+  sex: f
+  kind: human
+  house: other
+  title: Kroshtu's wife, Anamitra's mother
+  summary: One of Kroshtu's two wives, with Madri, in the Harivamsa. Not Dhritarashtra's wife.
+  ver: harivamsa
+
+- id: vaidarbhi-madhu
+  name: Vaidarbhi (Madhu's queen)
+  sex: f
+  kind: human
+  house: other
+  title: Madhu's queen, a Vidarbha princess
+  summary: Madhu's wife, mother of Purutvan.
+  ver: harivamsa
+
+- id: hridika-sons
+  name: Kritavarma's brothers
+  kind: group
+  title: Hridika's other sons
+  members: [Devanta, Naranta, Bhishak, Vaitarana, Sudanta, Adhidanta, Kinasha, Dama, Dambhaka]
+  membersCite: "Harivamsa 28.6"
+  ver: harivamsa
+  parents:
+    - { id: hridika, rel: father, cite: "Harivamsa 28.6" }
+
+- id: satrajit-sons
+  name: Satyabhama's brothers
+  kind: group
+  title: Satrajit's sons
+  summary: Satrajit had ten wives and a hundred sons by them; three were famous, Bhangakara the eldest, Vatapati and Upasvavan.
+  members: [Bhangakara, Vatapati, Upasvavan]
+  membersCite: "Harivamsa 28.32-33"
+  ver: harivamsa
+  parents:
+    - { id: satrajit, rel: father, cite: "Harivamsa 28.32-33" }
+
+- id: satrajit-daughters
+  name: Satyabhama's sisters
+  kind: group
+  title: Satrajit's other daughters, Krishna's wives
+  summary: Satrajit gave Krishna all three of his daughters; Satyabhama, foremost of women, the devout Vratini, and Padmavati.
+  members: [Vratini, Padmavati]
+  membersCite: "Harivamsa 28.34"
+  ver: harivamsa
+  parents:
+    - { id: satrajit, rel: father, cite: "Harivamsa 28.34" }
+
+- id: kartavirya-sons
+  name: Kartavirya's surviving sons
+  kind: group
+  title: Jayadhvaja's brothers
+  summary: Of Kartavirya Arjuna's thousand sons, five survived Parashurama; Shura, Shurasena, Vrishana, Madhu and Jayadhvaja.
+  members: [Shura, Shurasena, Vrishana, "@madhu-haihaya"]
+  membersCite: "Vishnu Purana 4.11.9; Harivamsa 23.157"
+  ver: purana
+  parents:
+    - { id: kartavirya, rel: father, cite: "Vishnu Purana 4.11.9" }
+
+- id: yadu-sons
+  name: Yadu's other sons
+  kind: group
+  title: Sahasrajit's and Kroshtu's brothers
+  summary: Yadu's four sons were Sahasrajit, Kroshtu, Nala and Raghu.
+  members: [Nala, Raghu]
+  membersCite: "Vishnu Purana 4.11.3; Bhagavata Purana 9.23.20"
+  ver: purana
+  parents:
+    - { id: yadu, rel: father, cite: "Vishnu Purana 4.11.3" }
+
+- id: shashabindu-sons
+  name: Shashabindu's sons
+  kind: group
+  title: the chief of his hundred thousand sons
+  summary: Shashabindu had a hundred thousand wives and a million sons; six were chief, the eldest five these and Prithushravas.
+  members: [Prithuyashas, Prithukarman, Prithujaya, Prithukirti, Prithudana]
+  membersCite: "Vishnu Purana 4.12.1-2"
+  ver: purana
+  parents:
+    - { id: shashabindu, rel: father, cite: "Vishnu Purana 4.12.2" }
+
+- id: paravrit-sons
+  name: Jyamagha's brothers
+  kind: group
+  title: Paravrit's other sons
+  summary: Paravrit's five sons were Rukmeshu, Prithurukma, Jyamagha, Palita and Harita.
+  members: [Rukmeshu, Prithurukma, Palita, Harita]
+  membersCite: "Vishnu Purana 4.12.3"
+  ver: purana
+  parents:
+    - { id: paravrit, rel: father, cite: "Vishnu Purana 4.12.3" }
+
+- id: viraja-pitri
+  name: Viraja
+  sex: f
+  kind: other
+  title: a daughter of the Pitris, Nahusha's queen
+  summary: The mind-born daughter of the Pitris, Nahusha's queen and Yayati's mother.
+  ver: harivamsa
+
+- id: shraddha-manu
+  name: Shraddha
+  sex: f
+  kind: human
+  house: other
+  title: Vaivasvata Manu's wife
+  summary: Manu's wife, who bore him ten sons; Ikshvaku, Nriga, Sharyati, Dishta, Dhrishta, Karusha, Narishyanta, Prishadhra, Nabhaga and Kavi.
+  ver: purana
+
+- id: drishadvati-ushinara
+  name: Drishadvati (Ushinara's queen)
+  sex: f
+  kind: human
+  house: other
+  title: Ushinara's fifth wife, Shibi's mother
+  summary: The fifth of Ushinara's five wives, all of royal-sage families; Nriga, Krimi, Nava, Darva and Drishadvati, each the mother of one son.
+  ver: harivamsa
+
+- id: ushinara-sons
+  name: Shibi's brothers
+  kind: group
+  title: Ushinara's other sons
+  summary: Each son was born of the wife whose name he shares; Nriga of Nriga, Krimi of Krimi, Nava of Nava, Suvrata of Darva.
+  members: [Nriga, Krimi, Nava, Suvrata]
+  membersCite: "Harivamsa 23.23"
+  ver: harivamsa
+  parents:
+    - { id: ushinara, rel: father, cite: "Harivamsa 23.23" }
+
+- id: kaveri
+  name: Kaveri
+  sex: f
+  kind: human
+  house: other
+  title: Jahnu's wife, half of her the river Kaveri
+  summary: Yuvanashva's daughter, married to Jahnu; by Ganga's curse half of her body became the river Kaveri.
+  ver: harivamsa
+
+- id: indrasena-maudgalya
+  name: Indrasena (mother of Vadhryashva)
+  sex: f
+  kind: human
+  house: other
+  title: Vadhryashva's mother
+  summary: The Harivamsa says Mudgala's heir Maudgalya fathered Vadhryashva on Indrasena.
+  ver: harivamsa
+
+- id: sammata
+  name: Sammata
+  sex: f
+  kind: human
+  house: other
+  title: Marutta's daughter
+  summary: The daughter of the childless sacrificer-king Marutta of the Turvasu line.
+  ver: harivamsa
+  parents:
+    - { id: marutta-turvasu, rel: father, ver: harivamsa, cite: "Harivamsa 23.125" }

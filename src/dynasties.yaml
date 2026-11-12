@@ -1,0 +1,207 @@
+# Dynasties and clans. Membership is computed, not listed: a person belongs to the
+# dynasty of the nearest founder up their line of fathers (legal father where there
+# is one, else the birth father, else an adoptive father). Daughters belong to their
+# father's line; wives who marry in keep their own. A founder starts a sub-dynasty
+# inside its parent (Kuru inside Bharata inside Paurava inside the Lunar dynasty).
+#
+# hue: the band colour on the map (HSL hue, 0-360); neighbours differ.
+
+- id: lunar
+  name: Lunar dynasty
+  aka: [Chandravamsha, Somavamsha, Aila dynasty]
+  founder: soma
+  hue: 205
+  summary: Descended from Soma, the Moon, through his son Budha and Ila's son Pururavas. Yayati's five sons split it into the Yadava, Paurava, Anava, Druhyu and Turvasu lines.
+  cite: "adi 75; Vishnu Purana 4.6"
+
+- id: paurava
+  name: Paurava dynasty
+  aka: [Pauravas, Puru dynasty, Puruvamsha]
+  parent: lunar
+  founder: puru
+  hue: 265
+  summary: The line of Yayati's youngest son Puru, who received his father's throne.
+  cite: "adi 85, 95"
+
+- id: bharata
+  name: Bharata dynasty
+  aka: [Bharatas, Bharata race]
+  parent: paurava
+  founder: bharata
+  hue: 185
+  summary: The line of Bharata, son of Dushyanta and Shakuntala, from whom "the great race" is called.
+  cite: "adi 74, 94"
+
+- id: kuru
+  name: Kuru dynasty
+  aka: [Kurus, Kauravas, Kuru clan]
+  parent: bharata
+  founder: kuru
+  hue: 222
+  summary: The line of Kuru, who made Kurukshetra holy by his austerities; it runs through Shantanu to the Pandavas and the Kauravas.
+  cite: "adi 94, 95"
+
+- id: panchala
+  name: Panchala dynasty
+  aka: [Panchalas]
+  parent: bharata
+  founder: haryashva
+  hue: 125
+  summary: Haryashva called his five sons "enough" (pañca alam) to guard five countries, and so the Panchalas were named; Drupada's line descends from them.
+  cite: "Vishnu Purana 4.19"
+
+- id: magadha
+  name: Barhadratha dynasty
+  aka: [Magadha dynasty, Brihadratha dynasty]
+  parent: kuru
+  founder: brihadratha
+  hue: 330
+  summary: Kings of Magadha from Brihadratha, son of the Kuru king Uparichara Vasu, through Jarasandha.
+  cite: "Vishnu Purana 4.19"
+
+- id: yadava
+  name: Yadava dynasty
+  aka: [Yadavas, Yaduvamsha, Yadu dynasty]
+  parent: lunar
+  founder: yadu
+  hue: 172
+  summary: The line of Yayati's eldest son Yadu, disinherited by his father; Krishna's people.
+  cite: "adi 85, 95; Vishnu Purana 4.11"
+
+- id: haihaya
+  name: Haihaya dynasty
+  aka: [Haihayas]
+  parent: yadava
+  founder: haihaya
+  hue: 95
+  summary: A Yadava branch from Haihaya, great-grandson of Yadu; its most famous king was the thousand-armed Kartavirya Arjuna.
+  cite: "Vishnu Purana 4.11"
+
+- id: andhaka
+  name: Andhaka clan
+  aka: [Andhakas]
+  parent: yadava
+  founder: andhaka
+  hue: 200
+  summary: The Yadava clan of Andhaka, son of Satvata, through Ahuka to Ugrasena, Kamsa and Devaka. In the Vishnu Purana's genealogy Shura, Vasudeva and Krishna also descend from Andhaka, through Bhajamana and Hridika, though the epic usually calls Krishna a Vrishni.
+  cite: "Vishnu Purana 4.14"
+
+- id: vrishni
+  name: Vrishni clan
+  aka: [Vrishnis]
+  parent: yadava
+  founder: vrishni-satvata
+  hue: 150
+  summary: The Yadava clan of Vrishni, son of Satvata, to which Akrura, Satyaki and Satrajit belong.
+  cite: "Vishnu Purana 4.14"
+
+- id: anava
+  name: Anava dynasty
+  aka: [Anavas, Anu dynasty]
+  parent: lunar
+  founder: anu
+  hue: 290
+  summary: The line of Yayati's son Anu, whose sons the epic counts among the Mlechchhas; the Vishnu Purana traces the Shibi, Kekaya, Madra and Anga kings from it.
+  cite: "adi 85; Vishnu Purana 4.18"
+
+- id: anga
+  name: Anga dynasty
+  aka: [Angas]
+  parent: anava
+  founder: anga
+  hue: 312
+  summary: Kings of Anga from Anga, legally Bali's son, down to Adhiratha, Karna's foster father.
+  cite: "adi 104; Vishnu Purana 4.18"
+
+- id: druhyu
+  name: Druhyu dynasty
+  aka: [Druhyus, Bhojas]
+  parent: lunar
+  founder: druhyu
+  hue: 0
+  summary: The line of Yayati's son Druhyu, whom the epic calls the Bhojas; the Vishnu Purana takes it to the kings of Gandhara.
+  cite: "adi 85; Vishnu Purana 4.17"
+
+- id: gandhara
+  name: Gandhara dynasty
+  aka: [Gandharas]
+  parent: druhyu
+  founder: gandhara-king
+  hue: 22
+  summary: Kings of Gandhara from its eponym, after whom the land of Gandhari, Subala and Shakuni is named.
+  cite: "Vishnu Purana 4.17; Harivamsa 23.132"
+
+- id: gandhara-subala
+  name: Gandhara royal house
+  aka: [House of Subala, Saubalas]
+  founder: subala
+  hue: 22
+  summary: The epic's kings of Gandhara, Subala and his sons Shakuni, Achala and Vrishaka, with his daughter Gandhari. No text in hand names Subala's father, so the house is not joined to the Puranas' line from the eponym Gandhara.
+  cite: "adi 63, 110; CE 7.29.9"
+
+- id: turvasu
+  name: Turvasu dynasty
+  aka: [Turvasus, Yavanas]
+  parent: lunar
+  founder: turvasu
+  hue: 55
+  summary: The line of Yayati's son Turvasu, whom the epic calls the Yavanas.
+  cite: "adi 85; Vishnu Purana 4.16"
+
+- id: solar
+  name: Solar dynasty
+  aka: [Suryavamsha, Suryavansha, Manu's line]
+  founder: manu
+  hue: 38
+  summary: Descended from Vaivasvata Manu, son of the Sun; his son Ikshvaku founded its main line at Ayodhya.
+  cite: "Vishnu Purana 4.1-4.2"
+
+- id: ikshvaku
+  name: Ikshvaku dynasty
+  aka: [Ikshvakus, Ikshvaku clan, Raghuvamsha, Raghu dynasty]
+  parent: solar
+  founder: ikshvaku
+  hue: 28
+  summary: The kings of Ayodhya from Ikshvaku, born of Manu's sneeze, through Mandhatri, Sagara, Bhagiratha, Raghu and Rama, down to Brihadbala, killed by Abhimanyu.
+  cite: "Vishnu Purana 4.2-4.4"
+
+- id: videha
+  name: Videha dynasty
+  aka: [Janaka dynasty, Janakas, Videhas, Maithilas]
+  parent: ikshvaku
+  founder: nimi
+  hue: 75
+  summary: The Janakas of Videha (Mithila), from Ikshvaku's son Nimi, whose son was churned out of his dead body; Sita's father Siradhvaja is one of them.
+  cite: "Vishnu Purana 4.5"
+
+- id: paulastya
+  name: Paulastyas
+  aka: [Pulastya's line, Paulastya]
+  founder: pulastya
+  hue: 350
+  summary: Pulastya's descendants, Kubera and Vishravas, and through Vishravas the rakshasa kings of Lanka.
+  cite: "CE 3.258-259"
+
+- id: bhargava
+  name: Bhargavas
+  aka: [Bhrigu's line, Bhargava]
+  founder: bhrigu
+  hue: 12
+  summary: The sage Bhrigu's descendants, Chyavana, Shukra, Ruru, Shunaka, Jamadagni and Parashurama.
+  cite: "adi 5"
+
+- id: angirasa
+  name: Angirasas
+  aka: [Angiras's line, Angirasa]
+  founder: angiras
+  hue: 245
+  summary: The sage Angiras's descendants, Brihaspati, Utathya and Samvarta among them.
+  cite: "adi 66"
+
+- id: vasishtha
+  name: Vasishthas
+  aka: [Vasishtha's line]
+  founder: vasishtha
+  hue: 160
+  summary: Vasishtha's line through Shakti and Parashara to Vyasa and Shuka; counted through fathers, Vidura too, Vyasa's son by a maid.
+  cite: "adi 60, 63, 178"

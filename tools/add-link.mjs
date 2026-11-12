@@ -21,6 +21,9 @@ for (let i = 0; i < args.length; i += 3) {
     let end = L.findIndex((l, j) => j > start && l.startsWith("- id: "));
     if (end < 0) end = L.length;
     while (end > start + 1 && (L[end - 1].trim() === "" || L[end - 1].startsWith("#"))) end--;
+    // an empty flow list ("parents: []") becomes a block list we can append to
+    const emptyAt = L.findIndex((l, j) => j > start && j < end && l === `  ${field}: []`);
+    if (emptyAt >= 0) L[emptyAt] = `  ${field}:`;
     const fieldAt = L.findIndex((l, j) => j > start && j < end && l === `  ${field}:`);
     if (fieldAt >= 0) {
       let last = fieldAt;
