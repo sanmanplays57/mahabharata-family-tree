@@ -311,11 +311,14 @@
 
 - id: sanatkumara
   name: Sanatkumara
+  aka: [Kumara, Sanakadi]
   sex: m
   kind: rishi
   title: eternal youth, mind-born sage
   summary: One of the four eternally youthful sages; Adi 67 says Pradyumna "was Sanatkumara".
   wiki: Four Kumaras
+  parents:
+    - { id: brahma, rel: father, cite: "Bhagavata Purana 3.12.4; CE 12.327.64-65" }
 
 - id: siddhi
   name: Siddhi
@@ -549,3 +552,84 @@
   title: the Earth goddess, Naraka's mother
   summary: The Earth as a goddess. She asked Vishnu for an unkillable son and was given the Vaishnava weapon for Naraka, which later passed to Bhagadatta of Pragjyotisha.
   wiki: Bhumi (goddess)
+
+# --- Brahma's mind-born sages (build/kumaras-narada.cjs) ---
+- id: sanaka
+  name: Sanaka
+  aka: [Kumara, Sanakadi]
+  sex: m
+  kind: rishi
+  title: "one of the four Kumaras, Brahma's first mind-born sons"
+  summary: "Born first from Brahma's mind, with his brothers he refused to beget offspring and stayed an eternal celibate sage. The four together, turned away at Vaikuntha's gate by Jaya and Vijaya, cursed them to be born as asuras (Bhagavata 7.1.35-37)."
+  parents:
+    - { id: brahma, rel: father, cite: "Bhagavata Purana 3.12.4; CE 12.327.64-65" }
+
+- id: sanandana
+  name: Sanandana
+  aka: [Sananda, Kumara, Sanakadi]
+  sex: m
+  kind: rishi
+  title: "one of the four Kumaras, Brahma's first mind-born sons"
+  summary: "Born first from Brahma's mind, with his brothers he refused to beget offspring and stayed an eternal celibate sage. The Bhagavata calls him Sananda at 3.12.4 and Sanandana at 10.87."
+  parents:
+    - { id: brahma, rel: father, cite: "Bhagavata Purana 3.12.4; CE 12.327.64-65" }
+
+- id: sanatana
+  name: Sanatana
+  aka: [Kumara, Sanakadi]
+  sex: m
+  kind: rishi
+  title: "one of the four Kumaras, Brahma's first mind-born sons"
+  summary: "Born first from Brahma's mind, with his brothers he refused to beget offspring and stayed an eternal celibate sage. The Shanti Parva names him seventh of Brahma's seven mind-born sons."
+  parents:
+    - { id: brahma, rel: father, cite: "Bhagavata Purana 3.12.4; CE 12.327.64-65" }
+
+- id: sana-brahma
+  name: Sana
+  sex: m
+  kind: rishi
+  title: "one of Brahma's seven mind-born sons (Shanti Parva)"
+  summary: "First of the seven mind-born sons of Brahma whom the Shanti Parva names, sages of renunciation and teachers of Samkhya."
+  parents:
+    - { id: brahma, rel: father, cite: "CE 12.327.64-65" }
+
+- id: sanatsujata
+  name: Sanatsujata
+  sex: m
+  kind: rishi
+  title: "mind-born son of Brahma, teacher of Dhritarashtra"
+  summary: "One of Brahma's seven mind-born sons in the Shanti Parva. In the Udyoga Parva he teaches Dhritarashtra that there is no death (CE 5.41-45, the Sanatsujata Parva)."
+  parents:
+    - { id: brahma, rel: father, cite: "CE 12.327.64-65" }
+  same:
+    - { as: sanatkumara, cite: "PE: SANATSUJATA", note: "The Puranic Encyclopaedia takes Sanatsujata as another name of Sanatkumara; the Shanti Parva lists the two separately." }
+
+- id: narada
+  name: Narada
+  aka: [Devarshi Narada]
+  sex: m
+  kind: rishi
+  title: "divine sage, born from Brahma's lap"
+  summary: "Tenth of the mind-born sons Brahma created to people the world, born from his lap. The wandering divine sage of the epic, who visits Yudhishthira's court and tells many of its stories."
+  wiki: Narada
+  pe: NARADA
+  parents:
+    - { id: brahma, rel: father, ver: purana, cite: "Bhagavata Purana 3.12.22-23" }
+
+- id: narada-sister
+  name: Narada's sister
+  sex: f
+  kind: rishi
+  title: "mother of the sage Parvata"
+  summary: "Unnamed sister of Narada; her son was the sage Parvata."
+  parents:
+    - { id: brahma, rel: father, ver: purana, note: "Inferred: the sister of Narada, whom the Bhagavata makes Brahma's son." }
+
+- id: parvata-rishi
+  name: Parvata
+  sex: m
+  kind: rishi
+  title: "sage, Narada's sister's son"
+  summary: "Sage who wandered the worlds with his maternal uncle Narada (“Narada the uncle and Parvata the nephew”); the two quarrel and curse each other in the story of Srinjaya's daughter."
+  parents:
+    - { id: narada-sister, rel: mother, cite: "CE 12.30.6" }

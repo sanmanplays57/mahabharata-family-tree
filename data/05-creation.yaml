@@ -414,6 +414,7 @@
   parents:
     - { id: bali, rel: father, cite: adi 65 }
     - { id: ashana, rel: mother, ver: purana, cite: "Bhagavata Purana 6.18.17", note: "Bali's hundred sons, Bana the eldest, were born of Ashana." }
+    - { id: kotara, rel: mother, ver: purana, cite: "Bhagavata Purana 10.63.20", note: "tan-mātā koṭarā nāma: the Bhagavata names Bana's mother Kotara here, against Ashana at 6.18.17." }
 
 - id: usha
   name: Usha
@@ -1664,7 +1665,7 @@
   kind: group
   title: "Hiranyakashipu's other sons by Kayadhu"
   summary: ""
-  members: ["@anuhlada", Hlada]
+  members: ["@anuhlada", "@hrada"]
   membersCite: "Bhagavata Purana 6.18.13"
   ver: purana
   parents:

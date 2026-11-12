@@ -514,11 +514,12 @@
 
 - id: asamanjas
   name: Asamanjas
-  aka: [Panchajana]
+  aka: [Panchajana, Asamanja]
   sex: m
   kind: human
   house: other
   summary: "Son of Sagara and Keshini."
+  wiki: Asamanja
   notes: "The Harivamsa calls Sagara's surviving heir Panchajana, father of Amshuman (10.63–64)."
   parents:
     - { id: sagara, rel: father, ver: purana, cite: "Vishnu Purana 4.4.4" }
@@ -526,10 +527,12 @@
 
 - id: amshumat
   name: Amshumat
+  aka: [Amshuman]
   sex: m
   kind: human
   house: other
   summary: "Son of Asamanjas. He found the horse and the ashes of Sagara's sons and brought the horse home."
+  wiki: Amshuman
   parents:
     - { id: asamanjas, rel: father, ver: purana, cite: "Vishnu Purana 4.4.24" }
   spouses:
@@ -912,6 +915,8 @@
     - { id: siradhvaja, rel: father, cite: "CE 3.258.9" }
   spouses:
     - { id: rama, cite: "CE 3.258.9" }
+  incarnation:
+    - { of: vedavati, kind: rebirth, ver: ramayana, cite: "Ramayana 7.17.30-31", note: "“This is Vedavati, who lived in the Krita age … born again from a furrow, she is called Sita.”" }
 
 - id: kusha
   name: Kusha

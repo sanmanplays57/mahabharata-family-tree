@@ -29,6 +29,8 @@
   summary: Wife of the first Manu, "purified of sin by austerity"; mother of Priyavrata, Uttanapada, Akuti, Devahuti and Prasuti.
   wiki: Shatarupa
   ver: purana
+  parents:
+    - { id: brahma, rel: father, ver: purana, cite: "Bhagavata Purana 3.12.52-53; Vishnu Purana 1.7.14-17", note: "Brahma's body divided in two: the man was Svayambhuva Manu, the woman Shatarupa." }
 
 - id: priyavrata
   name: Priyavrata
@@ -106,6 +108,7 @@
   parents:
     - { id: kardama, rel: father, cite: "Bhagavata Purana 3.24.16, 3.24.19" }
     - { id: devahuti, rel: mother, cite: "Bhagavata Purana 3.24.16, 3.24.19" }
+    - { id: brahma, rel: father, cite: "CE 12.327.64-65", note: "The Shanti Parva counts Kapila among Brahma's seven mind-born sons, teachers of Samkhya and of liberation; the Bhagavata makes him Kardama and Devahuti's son." }
   incarnation:
     - { of: vishnu, kind: avatar, cite: "Bhagavata Purana 3.24.16" }
 

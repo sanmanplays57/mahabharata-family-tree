@@ -664,6 +664,7 @@
   kind: other
   title: "Hanuman's son, born of a crocodile"
   summary: "A son of Hanuman, born to a crocodile in the ocean when drops of Hanuman's sweat fell on her."
+  wiki: Makaradhwaja
   pe: "MAKARADHVAJA I"
   ver: later
   parents:
@@ -1647,10 +1648,12 @@
 
 - id: lavana-madhu
   name: "Lavana"
+  aka: [Lavanasura]
   sex: m
   kind: rakshasa
   title: "son of Madhu, killed by Shatrughna"
   summary: "Son of the daitya Madhu by Kumbhinasi, cruel from childhood. He inherited his father's trident and ruled Madhuvana until Shatrughna killed him and founded Mathura there."
+  wiki: Lavanasura
   pe: "LAVANA I"
   ver: ramayana
   parents:
@@ -1998,7 +2001,7 @@
   title: "Viprachitti's sons by Simhika, killed by Parashurama"
   summary: "The fourteen sons Simhika bore Viprachitti, Rahu the eldest, and ten thousand more asuras of their kin, all killed by Jamadagni's son. The Vayu Purana's translation reads Hara and Kalpa where the Puranic Encyclopaedia reads one name, Harakalpa; Supunjika is the Brahmanda Purana's, from the Puranic Encyclopaedia."
   ver: purana
-  members: ["Shatagala", "Balavan", "Nyasa", "Shamba", "Anuloma", "Shuchi", "Vatapi", "Sitamshuka", "Hara", "Kalpa", "Kalanabha", "Bhauma", "Naraka", "Supunjika"]
+  members: ["Shatagala", "Balavan", "Nyasa", "Shamba", "Anuloma", "Shuchi", "@vatapi", "Sitamshuka", "Hara", "Kalpa", "Kalanabha", "Bhauma", "Naraka", "Supunjika"]
   membersCite: "Vayu Purana 2.7.17-22; PE: HARAKALPA; PE: SUPUNJIKA"
   parents:
     - { id: viprachitti, rel: father, cite: "Vayu Purana 2.7.17-20" }
@@ -3627,6 +3630,8 @@
   ver: harivamsa
   spouses:
     - { id: brahmadatta, cite: "Harivamsa 18.22-23, 19.24" }
+  parents:
+    - { id: devala, rel: father, cite: "Harivamsa 18.22-23", note: "devalasyātmajā ... asitasya: daughter of Asita's Devala." }
 
 - id: shaibya-dyumatsena
   name: "Shaibya"
@@ -3954,3 +3959,482 @@
   ver: purana
   parents:
     - { id: priyavrata, rel: father, cite: "Vishnu Purana 2.1.7" }
+
+- id: devala
+  name: "Devala"
+  aka: ["Asita Devala", "Brahmishtha"]
+  sex: m
+  kind: rishi
+  title: "sage, son of the Vasu Pratyusha or of Asita"
+  summary: "The epic makes the sage Devala the son of the Vasu Pratyusha; the Vayu Purana makes him the mind-born son of Asita by Ekaparna, Himavat's daughter, and also calls him Brahmishtha. The Harivamsa calls him Asita's Devala and makes Sannati, Brahmadatta's wife, his daughter. Dhaumya was his younger brother."
+  wiki: "Devala"
+  parents:
+    - { id: pratyusha, rel: father, cite: "CE 1.60.25; adi 66" }
+    - { id: asita-kashyapa, rel: father, ver: "purana", cite: "Vayu Purana 2.11.17, 2.9.27; Harivamsa 18.22", note: "The Harivamsa calls him devalasya ... asitasya, Asita's Devala." }
+    - { id: ekaparna, rel: mother, ver: "purana", cite: "Vayu Purana 2.11.17, 2.9.27" }
+
+- id: asita-kashyapa
+  name: "Asita"
+  sex: m
+  kind: rishi
+  title: "sage, son of Kashyapa, father of Devala"
+  summary: "One of two sons, born of a portion of Brahma, that Kashyapa obtained by penance; his brother was Vatsara. Himavat gave him his daughter Ekaparna, who bore him the sage Devala. Not the Ikshvaku Asita."
+  ver: purana
+  parents:
+    - { id: kashyapa, rel: father, cite: "Vayu Purana 2.9.24-25" }
+  spouses:
+    - { id: ekaparna, cite: "Vayu Purana 2.11.17" }
+
+- id: ekaparna
+  name: "Ekaparna"
+  sex: f
+  kind: god
+  title: "Himavat's daughter, Asita's wife"
+  summary: "The second of Himavat's three daughters by Mena, Aparna (Uma), Ekaparna and Ekapatala. She lived under a banyan tree eating a single leaf. Given by Himavat to the yogi Asita, she bore him Devala."
+  ver: purana
+  parents:
+    - { id: himavat, rel: father, cite: "Vayu Purana 2.11.7" }
+    - { id: mena, rel: mother, cite: "Vayu Purana 2.11.7" }
+
+- id: dhaumya
+  name: "Dhaumya"
+  sex: m
+  kind: rishi
+  title: "priest of the Pandavas, Devala's younger brother"
+  summary: "On the Gandharva Angaraparna's advice the Pandavas chose as their priest Dhaumya, Devala's younger brother, who was practising austerities at the Utkochaka tirtha. He stayed their priest through the exile and the war."
+  wiki: "Dhaumya"
+  parents:
+    - { id: pratyusha, rel: father, cite: "CE 1.174.2; adi 185", note: "The text calls him Devala's younger brother (yavīyān devalasya bhrātā); the father is Devala's, CE 1.60.25." }
+
+- id: lomaharshana
+  name: "Lomaharshana"
+  aka: ["Romaharshana"]
+  sex: m
+  kind: human
+  house: other
+  title: "Suta bard, father of Ugrashravas"
+  summary: "A Suta versed in the Puranas, father of Ugrashravas Sauti, who recited the Mahabharata to Shaunaka's sages in the Naimisha forest."
+  wiki: "Lomaharshana"
+
+- id: ugrashravas
+  name: "Ugrashravas"
+  aka: ["Sauti", "Ugrasrava", "Ugrashravas Sauti"]
+  sex: m
+  kind: human
+  house: other
+  title: "Suta bard who narrates the Mahabharata, son of Lomaharshana"
+  summary: "The son of Lomaharshana, a Suta versed in the Puranas. At Shaunaka's twelve-year sacrifice in the Naimisha forest he recited the Mahabharata as he had heard Vaishampayana tell it at Janamejaya's snake sacrifice."
+  parents:
+    - { id: lomaharshana, rel: father, cite: "CE 1.1.1; adi 1, 4" }
+
+- id: sanjaya
+  name: "Sanjaya"
+  aka: ["Gavalgani", "Samjaya"]
+  sex: m
+  kind: human
+  house: other
+  title: "Dhritarashtra's charioteer and minister, son of Gavalgana"
+  summary: "A Suta, son of Gavalgana, Dhritarashtra's minister and charioteer. He carried messages between the Kauravas and Pandavas before the war and, with divine sight given by Vyasa, narrated the battle to the blind king."
+  wiki: "Sanjaya"
+  parents:
+    - { id: gavalgana, rel: father, cite: "CE 1.2.216; udyoga 23" }
+
+- id: gavalgana
+  name: "Gavalgana"
+  sex: m
+  kind: human
+  house: other
+  title: "Suta, father of Sanjaya"
+  summary: "Father of Sanjaya, Dhritarashtra's charioteer, who is often called Gavalgani, son of Gavalgana."
+
+- id: vandin
+  name: "Vandin"
+  aka: ["Bandin", "Bandi"]
+  sex: m
+  kind: other
+  title: "debater at Janaka's court, son of Varuna"
+  summary: "The court disputant of Janaka of Mithila who drowned the brahmins he defeated in debate, among them Kahoda. Beaten by the boy Ashtavakra, he revealed that he was the son of King Varuna and had sent the brahmins to his father's twelve-year sacrifice; they came back alive."
+  wiki: "Vandin"
+  parents:
+    - { id: varuna, rel: father, cite: "CE 3.134.24, 3.134.31" }
+
+- id: nachiketa
+  name: "Nachiketa"
+  aka: ["Nachiketas", "Naciketa"]
+  sex: m
+  kind: rishi
+  title: "son of the sage Uddalaki, who went to Yama"
+  summary: "Cursed by his father Uddalaki in a moment of anger to see Yama, he went to Yama's realm, was honoured there and came back to tell his father of the rewards of giving cows. The Puranic Encyclopaedia, after the Katha Upanishad, names his father Vajashravas."
+  wiki: "Nachiketa"
+  parents:
+    - { id: uddalaki, rel: father, cite: "CE 13.70.2-3" }
+
+- id: uddalaki
+  name: "Uddalaki"
+  sex: m
+  kind: rishi
+  title: "sage, father of Nachiketa"
+  summary: "The sage who sent his son Nachiketa to Yama with a hasty curse. The name is a patronymic, son of Uddalaka; the text does not say which son. The Puranic Encyclopaedia names Nachiketa's father Vajashravas."
+  same:
+    - { as: shvetaketu, cite: "CE 3.132.1, 3.132.3", note: "Auddalaki, son of Uddalaka, is the patronymic the epic gives Shvetaketu; the Anushasana Parva does not say which son of Uddalaka is meant." }
+
+- id: vrishaketu
+  name: "Vrishaketu"
+  sex: m
+  kind: human
+  house: other
+  title: "Karna's son in the Jaimini Bharata"
+  summary: "A son of Karna who guarded Yudhishthira's sacrificial horse and was killed by Babhruvahana. He belongs to the Jaimini Bharata's Ashvamedha, not to the epic."
+  wiki: "Vrishaketu"
+  pe: "VRSAKETU"
+  ver: later
+  parents:
+    - { id: karna, rel: father, ver: "later", cite: "PE: VRSAKETU", note: "Jaimini Bharata, Ashvamedha Parva 30, per the PE." }
+
+- id: mainda
+  name: "Mainda"
+  sex: m
+  kind: animal
+  title: "vanara chief, son of the Ashvins, Dvivida's brother"
+  summary: "One of the two vanara sons of the Ashvins who fought for Rama with Sugriva's army."
+  ver: ramayana
+  parents:
+    - { id: ashvins, rel: divine-father, cite: "Ramayana 4.38.23" }
+
+- id: dvivida
+  name: "Dvivida"
+  sex: m
+  kind: animal
+  title: "vanara chief, son of the Ashvins, Mainda's brother"
+  summary: "One of the two vanara sons of the Ashvins, Mainda's brother, who fought for Rama with Sugriva's army."
+  wiki: "Dvivida"
+  ver: ramayana
+  parents:
+    - { id: ashvins, rel: divine-father, cite: "Ramayana 4.38.23" }
+
+- id: hrada
+  name: "Hrada"
+  aka: ["Hlada", "Hrāda"]
+  sex: m
+  kind: asura
+  title: "son of Hiranyakashipu, father of Ilvala and Vatapi"
+  summary: "The third of the four sons Kayadhu bore Hiranyakashipu, Samhlada, Anuhlada, Hrada and Prahlada. His wife Dhamani bore him Vatapi and Ilvala."
+  ver: purana
+  parents:
+    - { id: hiranyakashipu, rel: father, cite: "Bhagavata Purana 6.18.12-13" }
+    - { id: kayadhu, rel: mother, cite: "Bhagavata Purana 6.18.12-13" }
+  spouses:
+    - { id: dhamani, cite: "Bhagavata Purana 6.18.15" }
+
+- id: dhamani
+  name: "Dhamani"
+  sex: f
+  kind: asura
+  title: "Hrada's wife, mother of Vatapi and Ilvala"
+  summary: "Wife of Hiranyakashipu's son Hrada; she bore Vatapi and Ilvala."
+  ver: purana
+
+- id: ilvala
+  name: "Ilvala"
+  sex: m
+  kind: asura
+  title: "daitya who fed his brother Vatapi to brahmins"
+  summary: "A daitya of Manimati who turned his younger brother Vatapi into a goat, fed him to brahmins and called him back out of their bellies, killing them. Agastya digested Vatapi and took Ilvala's wealth. The Bhagavata makes the brothers sons of Hrada by Dhamani; the Vishnu Purana counts Ilvala and Vatapi among Simhika's sons by Viprachitti."
+  wiki: "Ilvala and Vatapi"
+  parents:
+    - { id: hrada, rel: father, ver: "purana", cite: "Bhagavata Purana 6.18.15" }
+    - { id: dhamani, rel: mother, ver: "purana", cite: "Bhagavata Purana 6.18.15" }
+    - { id: viprachitti, rel: father, ver: "purana", cite: "Vishnu Purana 1.21.10-11" }
+    - { id: simhika, rel: mother, ver: "purana", cite: "Vishnu Purana 1.21.10-11" }
+
+- id: vatapi
+  name: "Vatapi"
+  sex: m
+  kind: asura
+  title: "Ilvala's younger brother, digested by Agastya"
+  summary: "Ilvala's younger brother (CE 3.94.4), who took the form of a goat to be cooked and served to brahmins and then burst out of them; Agastya ate and digested him. The Bhagavata makes him Hrada's son by Dhamani; the Vishnu Purana and Vayu Purana count a Vatapi among Simhika's sons by Viprachitti."
+  wiki: "Ilvala and Vatapi"
+  parents:
+    - { id: hrada, rel: father, ver: "purana", cite: "Bhagavata Purana 6.18.15" }
+    - { id: dhamani, rel: mother, ver: "purana", cite: "Bhagavata Purana 6.18.15" }
+    - { id: viprachitti, rel: father, ver: "purana", cite: "Vishnu Purana 1.21.10-11; Vayu Purana 2.7.17-20" }
+    - { id: simhika, rel: mother, ver: "purana", cite: "Vishnu Purana 1.21.10-11; Vayu Purana 2.7.17-20" }
+
+- id: gargya
+  name: "Gargya"
+  sex: m
+  kind: rishi
+  title: "guru of the Vrishnis and Andhakas, father of Kalayavana"
+  summary: "The celibate preceptor of the Vrishnis and Andhakas. Taunted as impotent by his brother-in-law, he lived on iron filings for twelve years until Shiva granted him a son who would defeat the Yadavas; that son was Kalayavana. Not Manyu's son Garga."
+  ver: harivamsa
+
+- id: gopali
+  name: "Gopali"
+  sex: f
+  kind: apsara
+  title: "apsara, mother of Kalayavana"
+  summary: "An apsara who, disguised as a cowherd woman among the Yavana king's cowherds, conceived Gargya's son Kalayavana."
+  ver: harivamsa
+
+- id: kalayavana
+  name: "Kalayavana"
+  aka: ["Kala Yavana"]
+  sex: m
+  kind: human
+  house: other
+  title: "Yavana king, son of Gargya, burnt by Muchukunda"
+  summary: "The son Shiva granted Gargya, born of the apsara Gopali and brought up by the sonless king of the Yavanas, who crowned him. He besieged Mathura; Krishna led him into Muchukunda's cave, where the waking king's glance burnt him to ashes. The Vishnu Purana has him born of the Yavana king's wife."
+  wiki: "Kalayavana"
+  ver: harivamsa
+  parents:
+    - { id: gargya, rel: father, cite: "Harivamsa 85.7-15; Vishnu Purana 5.23.1-5" }
+    - { id: gopali, rel: mother, cite: "Harivamsa 85.14-15", note: "The Vishnu Purana (5.23.4) has him born of the wife of the sonless Yavana king." }
+
+- id: kushadhvaja-brihaspati
+  name: "Kushadhvaja (Brihaspati's son)"
+  sex: m
+  kind: rishi
+  title: "brahmarshi, son of Brihaspati, Vedavati's father"
+  summary: "A brahmarshi, son of Brihaspati and his equal in wisdom. He refused his daughter Vedavati to every suitor, wishing Vishnu for her husband, and the daitya Shambhu killed him in his sleep. Not Janaka's brother Kushadhvaja."
+  ver: ramayana
+  parents:
+    - { id: brihaspati, rel: father, cite: "Ramayana 7.17.7" }
+
+- id: vedavati
+  name: "Vedavati"
+  sex: f
+  kind: human
+  house: other
+  title: "Kushadhvaja's daughter, reborn as Sita"
+  summary: "Born of her father's Vedic recitation, she did penance in the Himalayas to win Vishnu as husband. When Ravana seized her by the hair she cut it off, entered the fire and vowed to be reborn for his death; she was born again as Sita."
+  wiki: "Vedavati"
+  ver: ramayana
+  parents:
+    - { id: kushadhvaja-brihaspati, rel: father, cite: "Ramayana 7.17.7-8" }
+
+- id: kalaka-vaishvanari
+  name: "Kalaka"
+  sex: f
+  kind: asura
+  title: "Vaishvanara's daughter, Kashyapa's wife, mother of the Kalakeyas"
+  summary: "One of the four daughters of the Danava Vaishvanara. At Brahma's bidding Kashyapa married her and her sister Puloma; Kalaka bore the Kalakeyas. The Mahabharata calls her a great asuri for whose sons Brahma built the flying city Hiranyapura."
+  ver: purana
+  spouses:
+    - { id: kashyapa, cite: "Bhagavata Purana 6.6.33-35" }
+
+- id: kalakeyas
+  name: "The Kalakeyas"
+  aka: ["Kalakeya Danavas"]
+  kind: group
+  title: "Danavas, sons of Kalaka and Kashyapa, killed by Arjuna"
+  summary: "Warlike Danavas who with the Paulomas lived in the flying city Hiranyapura, made by Brahma for Puloma and Kalaka. Arjuna destroyed them after defeating the Nivatakavachas. The Bhagavata counts sixty thousand Paulomas and Kalakeyas and makes them sons of Kashyapa by Vaishvanara's daughters."
+  wiki: "Kalakeyas"
+  parents:
+    - { id: kalaka-vaishvanari, rel: mother, ver: "purana", cite: "Bhagavata Purana 6.6.34-36", note: "CE 3.170.6-11 names Kalaka as the asuri for whose sons Hiranyapura was built." }
+    - { id: kashyapa, rel: father, ver: "purana", cite: "Bhagavata Purana 6.6.34-35" }
+
+- id: puloma-vaishvanari
+  name: "Puloma (Vaishvanara's daughter)"
+  sex: f
+  kind: asura
+  title: "Vaishvanara's daughter, Kashyapa's wife, mother of the Paulomas"
+  summary: "One of the four daughters of the Danava Vaishvanara, married with her sister Kalaka to Kashyapa; she bore the Paulomas. Not Bhrigu's wife Puloma, nor the Danava Puloman."
+  ver: purana
+  spouses:
+    - { id: kashyapa, cite: "Bhagavata Purana 6.6.33-35" }
+
+- id: paulomas
+  name: "The Paulomas"
+  aka: ["Paulomas"]
+  kind: group
+  title: "Danavas, sons of Puloma and Kashyapa, killed by Arjuna"
+  summary: "Danavas who with the Kalakeyas held the flying city Hiranyapura; Arjuna destroyed them. The Bhagavata makes them sons of Kashyapa by Vaishvanara's daughter Puloma."
+  parents:
+    - { id: puloma-vaishvanari, rel: mother, ver: "purana", cite: "Bhagavata Purana 6.6.34-36", note: "CE 3.170.6 names the daiteyi Puloma beside Kalaka." }
+    - { id: kashyapa, rel: father, ver: "purana", cite: "Bhagavata Purana 6.6.34-35" }
+
+- id: varangi-vajranga
+  name: "Varangi (Vajranga's wife)"
+  sex: f
+  kind: asura
+  title: "Vajranga's wife, mother of Taraka"
+  summary: "Wife of the asura Vajranga. Ill-treated by Indra, she asked her husband for a son who would conquer the three worlds, and bore Taraka. Not Samyati's wife Varangi."
+  ver: purana
+  spouses:
+    - { id: vajranga, cite: "Shiva Purana 2.3.14; 2.3.15.1-2" }
+
+- id: taraka
+  name: "Taraka"
+  aka: ["Tarakasura"]
+  sex: m
+  kind: asura
+  title: "asura, son of Vajranga, killed by Skanda"
+  summary: "Born of Varangi to Vajranga amid evil portents and named by Kashyapa. By penance he won near-invincibility and drove the gods from heaven; Skanda, the son of Shiva, killed him. His three sons ruled the three cities, Tripura."
+  wiki: "Tārakāsura"
+  ver: purana
+  parents:
+    - { id: vajranga, rel: father, cite: "Shiva Purana 2.3.15.1-2" }
+    - { id: varangi-vajranga, rel: mother, cite: "Shiva Purana 2.3.15.1-2" }
+
+- id: tripura-asuras
+  name: "The Tripura asuras"
+  aka: ["Tripurasura", "sons of Taraka"]
+  kind: group
+  title: "Taraka's three sons, lords of the three cities"
+  summary: "After the defeat of the daityas, Taraka's three sons did penance and won three cities, of gold, silver and iron, which Shiva burnt with one arrow. Tarakaksha's son Hari made a lake that revived the dead asuras."
+  wiki: "Tripurasura"
+  members: ["Tarakaksha", "Kamalaksha", "Vidyunmalin"]
+  membersCite: "CE 8.24.4; Shiva Purana 2.5.1.7-8"
+  parents:
+    - { id: taraka, rel: father, cite: "CE 8.24.4; Shiva Purana 2.5.1.7-8" }
+
+- id: kumbhanda
+  name: "Kumbhanda"
+  sex: m
+  kind: asura
+  title: "Bana's minister, Chitralekha's father"
+  summary: "Minister of the asura Bana and father of Chitralekha, Usha's friend."
+  ver: purana
+
+- id: chitralekha
+  name: "Chitralekha"
+  sex: f
+  kind: asura
+  title: "Usha's friend, daughter of Kumbhanda"
+  summary: "Daughter of Bana's minister Kumbhanda and friend of Bana's daughter Usha. She painted the gods and princes until Usha recognised Aniruddha, the man of her dream, then carried him from Dvaraka to Usha's chamber by her yogic power."
+  wiki: "Chitralekha (Hinduism)"
+  ver: purana
+  parents:
+    - { id: kumbhanda, rel: father, cite: "Bhagavata Purana 10.62.14" }
+
+- id: kotara
+  name: "Kotara"
+  aka: ["Kotavi"]
+  sex: f
+  kind: asura
+  title: "Bana's mother in the Bhagavata"
+  summary: "When Krishna was about to kill Bana, his mother Kotara stood naked before Krishna, her hair loose, to save her son's life; Krishna turned his face away. The Vishnu Purana calls the naked Kotavi the Daityas' magic (daiteyavidyā), and the Harivamsa does not make her Bana's mother."
+  wiki: "Kotavi"
+  ver: purana
+
+- id: rambha-danava
+  name: "Rambha (Danava)"
+  sex: m
+  kind: asura
+  title: "Danava, father of Mahisha"
+  summary: "A Danava, brother of Karambha. Granted by Agni a son mightier than Agni himself, he fathered Mahisha on a she-buffalo and was killed by a buffalo. Not the apsara Rambha."
+  pe: "MAHISA I"
+  ver: purana
+
+- id: mahishasura
+  name: "Mahisha"
+  aka: ["Mahishasura"]
+  sex: m
+  kind: asura
+  title: "buffalo asura, son of Rambha, killed by the Goddess"
+  summary: "Son of the Danava Rambha by a she-buffalo. He became king of the asuras and drove the gods from heaven until the Goddess killed him. His son Gajasura avenged him on the gods."
+  wiki: "Mahishasura"
+  pe: "MAHISA I"
+  ver: purana
+  parents:
+    - { id: rambha-danava, rel: father, cite: "PE: MAHISA I", note: "Vamana Purana 17, per the PE." }
+
+- id: gajasura
+  name: "Gajasura"
+  sex: m
+  kind: asura
+  title: "elephant asura, son of Mahisha, killed by Shiva"
+  summary: "Son of Mahisha. To avenge his father's death at the Goddess's hands he did penance, won a boon and harassed the gods, until Shiva killed him with his trident."
+  wiki: "Gajasura"
+  ver: purana
+  parents:
+    - { id: mahishasura, rel: father, cite: "Shiva Purana 2.5.57.3-4" }
+
+- id: upamanyu
+  name: "Upamanyu"
+  sex: m
+  kind: rishi
+  title: "sage devoted to Shiva, son of Vyaghrapada"
+  summary: "Son of the sage Vyaghrapada; his younger brother was a Dhaumya. As a boy in the hermitage he cried for milk, and his mother told him that only Shiva could give it; his penance won Shiva's favour, and he later taught Krishna Shiva's thousand names."
+  wiki: "Upamanyu"
+  parents:
+    - { id: vyaghrapada, rel: father, cite: "CE 13.14.75" }
+
+- id: vyaghrapada
+  name: "Vyaghrapada"
+  sex: m
+  kind: rishi
+  title: "sage, father of Upamanyu"
+  summary: "A sage of the Krita age versed in the Vedas and their limbs, father of Upamanyu and of a younger son Dhaumya."
+  wiki: "Vyaghrapada"
+
+- id: yajnavalkya
+  name: "Yajnavalkya"
+  sex: m
+  kind: rishi
+  title: "sage, son of Brahmarata, Vaishampayana's pupil"
+  summary: "Son of Brahmarata and pupil of Vaishampayana. When his teacher demanded back the Yajurveda he had taught him, he vomited it out and won a new Yajus from the Sun. In the epic he teaches Janaka of Mithila. The Puranic Encyclopaedia names his two wives Maitreyi and Kalyani."
+  wiki: "Yajnavalkya"
+  parents:
+    - { id: brahmarata, rel: father, ver: "purana", cite: "Vishnu Purana 3.5.3" }
+
+- id: brahmarata
+  name: "Brahmarata"
+  sex: m
+  kind: rishi
+  title: "father of Yajnavalkya"
+  summary: "A brahmin, father of the sage Yajnavalkya."
+  ver: purana
+
+- id: shaunaka
+  name: "Shaunaka"
+  aka: ["Saunaka"]
+  sex: m
+  kind: rishi
+  title: "head of the Naimisha sages, son of Shunaka"
+  summary: "The kulapati at whose twelve-year sacrifice in the Naimisha forest Ugrashravas recited the Mahabharata. The Anushasana Parva makes him the son of Shunaka, Ruru's son by Pramadvara, at the end of the line of Gritsamada."
+  wiki: "Shaunaka"
+  parents:
+    - { id: shunaka, rel: father, cite: "CE 13.31.62" }
+
+- id: parjanya
+  name: "Parjanya"
+  sex: m
+  kind: god
+  title: "rain god, one of the twelve Adityas"
+  summary: "The god of rain and clouds, counted among the Adityas present at Arjuna's birth. The Vayu Purana names him the tenth of Kashyapa's twelve Adityas and lord of oceans, rivers, clouds and rain."
+  wiki: "Parjanya (Hinduism)"
+  parents:
+    - { id: kashyapa, rel: father, ver: "purana", cite: "Vayu Purana 2.5.66-67" }
+    - { id: aditi, rel: mother, cite: "CE 1.114.55-56; Vayu Purana 2.5.66-67", note: "Counted among the Adityas, the sons of Aditi." }
+
+- id: putana
+  name: "Putana"
+  sex: f
+  kind: rakshasa
+  title: "demoness sent by Kamsa, killed by the infant Krishna"
+  summary: "A child-killing demoness whom Kamsa sent to Gokula; she offered the infant Krishna her poisoned breast and he sucked out her life. The Brahmavaivarta makes her Bali's daughter, or Bali's daughter Ratnamala reborn, who had longed to suckle Vamana."
+  wiki: "Putana"
+  parents:
+    - { id: bali, rel: father, ver: "purana", cite: "Brahmavaivarta Purana 4.115", note: "Brahmavaivarta 4.10 says instead that Bali's daughter Ratnamala, wishing to suckle Vamana, was reborn as Putana." }
+
+- id: ajamila
+  name: "Ajamila"
+  sex: m
+  kind: human
+  house: other
+  title: "fallen brahmin of Kanyakubja saved by the name of Narayana"
+  summary: "A brahmin of Kanyakubja who lived with a maidservant and by theft and gambling. Of his ten sons he loved the youngest, Narayana; dying, he called the boy's name, and Vishnu's messengers drove off Yama's."
+  wiki: "Ajamila"
+  ver: purana
+
+- id: narayana-ajamila
+  name: "Narayana (Ajamila's son)"
+  sex: m
+  kind: human
+  house: other
+  title: "Ajamila's youngest son"
+  summary: "The youngest of Ajamila's ten sons, his father's favourite; calling his name at death saved Ajamila."
+  ver: purana
+  parents:
+    - { id: ajamila, rel: father, cite: "Bhagavata Purana 6.1.24" }
