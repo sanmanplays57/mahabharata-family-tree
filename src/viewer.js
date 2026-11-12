@@ -989,7 +989,10 @@ for (const p of DATA.people) {
     else if (l.rel.startsWith("adoptive")) { kind = "adoptive"; w = 1.35; }
     else if (l.rel === "legal-father") kind = "legal";
     else if (l.rel === "father" && hasLegal) { kind = "bio"; w = 1.02; }
-    if (l.far) w += 0.25;
+    // A far link that is one of several versions (another text's parent, drawn only as a
+    // dotted arrow) must not serve as a shortcut past the main drawn line: Padma 1.8.154's
+    // "from Dilipa Aja was born" would otherwise skip Dirghabahu and Raghu on Rama's route.
+    if (l.far) w += l.doubt ? 4 : 0.25;
     const life = kind === "cause";
     push(adj, p.id, { to: l.id, w, kind, up: true, t: life ? "X" : "P", rel: l.rel, link: l });
     push(adj, l.id, { to: p.id, w, kind, up: false, t: life ? "X" : "C", rel: l.rel, link: l });
@@ -1008,7 +1011,7 @@ for (const p of DATA.people) {
 for (const [id, list] of sameAs)
   for (const l of list) if (people.has(l.id)) push(adj, id, { to: l.id, w: 2, kind: "same", t: "X", link: l });
 for (const [id, list] of spousesOf)
-  for (const s of list) if (people.has(s.id)) push(adj, id, { to: s.id, w: s.far ? 1.45 : 1.2, kind: "spouse", t: "S", link: s });
+  for (const s of list) if (people.has(s.id)) push(adj, id, { to: s.id, w: s.far ? (s.doubt ? 4 : 1.45) : 1.2, kind: "spouse", t: "S", link: s });
 
 function arcLabel(a) {
   const to = people.get(a.to);
@@ -1112,7 +1115,7 @@ function kShortest(a, b, ok, K) {
 // back on a mother, and then on adoption or a divine parent, where it must.
 // A long-range link (most alternative king-list versions are drawn that way) costs a
 // little more, so the main drawn line wins when both lead to the same ancestor.
-const lineCost = (arc) => (arc.kind === "adoptive" || arc.kind === "divine" ? 1e4 : arc.rel === "mother" ? 100 : 1) + (arc.link && arc.link.far ? 0.5 : 0);
+const lineCost = (arc) => (arc.kind === "adoptive" || arc.kind === "divine" ? 1e4 : arc.rel === "mother" ? 100 : 1) + (arc.link && arc.link.far ? (arc.link.doubt ? 50 : 0.5) : 0);
 // Routes to offer: the direct line of descent if one exists (however long), the
 // shortest route, and up to two more that read differently and stay simple
 // ("brother-in-law", "first cousin"), never detours of a shorter route.
@@ -1127,7 +1130,7 @@ function ancestors(src) {
     done.add(u);
     for (const arc of adj.get(u) || []) {
       if (arc.t !== "P") continue;
-      const nd = d + (arc.kind === "adoptive" || arc.kind === "divine" ? 3 : 1);
+      const nd = d + (arc.kind === "adoptive" || arc.kind === "divine" ? 3 : 1) + (arc.link && arc.link.far && arc.link.doubt ? 4 : 0);
       if (nd < (dist.has(arc.to) ? dist.get(arc.to) : Infinity)) { dist.set(arc.to, nd); prev.set(arc.to, [u, arc]); heapPush(h, [nd, arc.to]); }
     }
   }
