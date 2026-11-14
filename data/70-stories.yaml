@@ -228,6 +228,8 @@
   house: other
   title: king of Vidarbha, Damayanti's father
   summary: King of Vidarbha, childless until the sage Damana, pleased by him and his queen, granted them a daughter and three sons. Not the Pandava Bhima.
+  spouses:
+    - { id: damayanti-mother, cite: "CE 3.66.12-13" }
 
 - id: damana-rishi
   name: Damana
@@ -247,6 +249,7 @@
   parents:
     - { id: bhima-vidarbha, rel: father, cite: "CE 3.50.5-9" }
     - { id: damana-rishi, rel: birth-cause, cite: "CE 3.50.6-9" }
+    - { id: damayanti-mother, rel: mother, cite: "CE 3.66.12-13" }
 
 - id: damayanti-brothers
   name: Damayanti's brothers
@@ -258,6 +261,7 @@
   parents:
     - { id: bhima-vidarbha, rel: father, cite: "CE 3.50.8-9" }
     - { id: damana-rishi, rel: birth-cause, cite: "CE 3.50.8-9" }
+    - { id: damayanti-mother, rel: mother, cite: "CE 3.66.12-13", note: "The text names her only as Damayanti's mother; her sons are presumably the same mother's." }
 
 - id: nala-children
   name: Nala's children

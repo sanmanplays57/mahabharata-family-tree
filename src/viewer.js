@@ -978,6 +978,13 @@ window.addEventListener("keydown", (e) => {
 // rebirth-type links (incarnation, after death, birth sparked by) only when asked for.
 const adj = new Map();
 const LIFE_KINDS = new Set(["inc", "ret", "cause", "same"]);
+// Another text's version of a parent: in doubt, drawn only as a long-range arrow, while the
+// person also has a parent of the same kind drawn in the tree. (Bharadvaja's father
+// Brihaspati is long-range too, but no other father of his is drawn, so it is not one.)
+const ALT = new Set();
+for (const p of DATA.people)
+  for (const l of p.parents || [])
+    if (l.far && l.doubt && (p.parents || []).some((m) => m !== l && m.rel === l.rel && !m.far)) ALT.add(l);
 const sexWord = (p, f, m, n) => (p && p.sex === "f" ? f : p && p.sex === "m" ? m : n);
 for (const p of DATA.people) {
   const hasLegal = (p.parents || []).some((l) => l.rel === "legal-father");
@@ -992,7 +999,7 @@ for (const p of DATA.people) {
     // A far link that is one of several versions (another text's parent, drawn only as a
     // dotted arrow) must not serve as a shortcut past the main drawn line: Padma 1.8.154's
     // "from Dilipa Aja was born" would otherwise skip Dirghabahu and Raghu on Rama's route.
-    if (l.far) w += l.doubt ? 4 : 0.25;
+    if (l.far) w += ALT.has(l) ? 4 : 0.25;
     const life = kind === "cause";
     push(adj, p.id, { to: l.id, w, kind, up: true, t: life ? "X" : "P", rel: l.rel, link: l });
     push(adj, l.id, { to: p.id, w, kind, up: false, t: life ? "X" : "C", rel: l.rel, link: l });
@@ -1113,9 +1120,12 @@ function kShortest(a, b, ok, K) {
 }
 // A line of descent is read through fathers (legal before biological) and only falls
 // back on a mother, and then on adoption or a divine parent, where it must.
-// A long-range link (most alternative king-list versions are drawn that way) costs a
-// little more, so the main drawn line wins when both lead to the same ancestor.
-const lineCost = (arc) => (arc.kind === "adoptive" || arc.kind === "divine" ? 1e4 : arc.rel === "mother" ? 100 : 1) + (arc.link && arc.link.far ? (arc.link.doubt ? 50 : 0.5) : 0);
+// A long-range link costs a little more, so the main drawn line wins when both lead to
+// the same ancestor. Another text's version of a parent (ALT) is never part
+// of a line of descent: the Ramayana's reordered Ikshvaku list loops back through Rama's
+// own descendants, which once made Bharata Rama's 42× great-grandson.
+const alt = (arc) => !!arc.link && ALT.has(arc.link);
+const lineCost = (arc) => (arc.kind === "adoptive" || arc.kind === "divine" ? 1e4 : arc.rel === "mother" ? 100 : 1) + (arc.link && arc.link.far ? 0.5 : 0);
 // Routes to offer: the direct line of descent if one exists (however long), the
 // shortest route, and up to two more that read differently and stay simple
 // ("brother-in-law", "first cousin"), never detours of a shorter route.
@@ -1130,7 +1140,7 @@ function ancestors(src) {
     done.add(u);
     for (const arc of adj.get(u) || []) {
       if (arc.t !== "P") continue;
-      const nd = d + (arc.kind === "adoptive" || arc.kind === "divine" ? 3 : 1) + (arc.link && arc.link.far && arc.link.doubt ? 4 : 0);
+      const nd = d + (arc.kind === "adoptive" || arc.kind === "divine" ? 3 : 1) + (alt(arc) ? 4 : 0);
       if (nd < (dist.has(arc.to) ? dist.get(arc.to) : Infinity)) { dist.set(arc.to, nd); prev.set(arc.to, [u, arc]); heapPush(h, [nd, arc.to]); }
     }
   }
@@ -1159,13 +1169,36 @@ function commonAncestorRoute(a, b) {
   }
   return path;
 }
+// One being born as the other, or both born of the same being (Rama and Krishna, both
+// Vishnu). Offered even with rebirth links off: it is the plainest thing the texts say
+// about such a pair. Avatars are preferred to portions, portions to rebirths.
+const INC_RANK = { avatar: 0, portion: 0.1, rebirth: 0.2 };
+function incRoute(a, b) {
+  let best = null, bc = Infinity;
+  const rank = (arc) => INC_RANK[arc.link.kind] ?? 0.3;
+  for (const arc of adj.get(a) || []) {
+    if (arc.kind !== "inc") continue;
+    if (arc.to === b) {
+      const c = rank(arc);
+      if (c < bc) { bc = c; best = [{ id: a }, { id: b, arc }]; }
+    } else if (arc.up) {
+      for (const back of adj.get(arc.to) || []) {
+        if (back.kind !== "inc" || back.up || back.to !== b) continue;
+        const c = 1 + rank(arc) + rank(back);
+        if (c < bc) { bc = c; best = [{ id: a }, { id: arc.to, arc }, { id: b, arc: back }]; }
+      }
+    }
+  }
+  return best;
+}
 function findRoutes(a, b, lives) {
   const ok = (arc) => arcOk(arc, lives);
   const yen = kShortest(a, b, ok, 12);
-  const line = a === b ? null : shortest(a, b, (arc) => arc.t === "P", undefined, undefined, lineCost)
-    || shortest(a, b, (arc) => arc.t === "C", undefined, undefined, lineCost);
+  const line = a === b ? null : shortest(a, b, (arc) => arc.t === "P" && !alt(arc), undefined, undefined, lineCost)
+    || shortest(a, b, (arc) => arc.t === "C" && !alt(arc), undefined, undefined, lineCost);
   const lca = line ? null : commonAncestorRoute(a, b);
-  if (!yen.length) return [];
+  const inc = a === b ? null : incRoute(a, b);
+  if (!yen.length) return inc ? [{ path: inc }] : [];
   const top = pathCost(yen[0]), out = [], seenIds = new Set(), seenPhrase = new Set();
   const add = (p) => {
     const ids = pathKey(p), ph = kinPhrase(p) || "~" + ids;
@@ -1186,7 +1219,29 @@ function findRoutes(a, b, lives) {
     if (!k || k.blood > 1 || pathCost(p) > top * 1.6 + 1.5 || hasChord(p, ok)) continue;
     add(p);
   }
+  // The incarnation leads unless a close family tie says more: Drona -> Brihaspati is
+  // "grandfather" first, Rama -> Krishna "both of Vishnu" before an eighth cousin.
+  if (inc && !seenIds.has(pathKey(inc))) {
+    out.splice(out[0].path.length - 1 > 3 ? 0 : 1, 0, { path: inc });
+    if (out.length > 4) out.length = 4;
+  }
   return out;
+}
+const INC_WORD = { avatar: "an avatar of", portion: "a portion of", rebirth: "a rebirth of" };
+const incWord = (arc) => INC_WORD[arc.link.kind] || "an incarnation of";
+// "both avatars of Vishnu", or for mixed kinds "both incarnations of Vishnu"
+function bothInc(path) {
+  const s1 = path[1].arc, s2 = path[2].arc, x = people.get(path[1].id).name;
+  if (s1.link.kind === s2.link.kind && INC_WORD[s1.link.kind]) return `both ${s1.link.kind}s of ${x}`;
+  return `both incarnations of ${x}`;
+}
+const isBothInc = (path) => path.length === 3 && path[1].arc.kind === "inc" && path[1].arc.up && path[2].arc.kind === "inc" && !path[2].arc.up;
+function routeLabel(path) {
+  const ph = kinPhrase(path);
+  if (ph) return ph;
+  if (isBothInc(path)) return bothInc(path);
+  if (path.length === 2 && path[1].arc.kind === "inc") return path[1].arc.up ? KIND_LABEL[path[1].arc.link.kind] || "incarnation of" : "born again as";
+  return path.length - 1 + " links";
 }
 
 // English kinship words for a route: runs of up-steps then down-steps become
@@ -1300,10 +1355,14 @@ function relSentence(path) {
   const ph = kinPhrase(path);
   if (!ph) {
     const s1 = path[1].arc, s2 = path[2] && path[2].arc;
-    if (n === 2 && s1.kind === "inc" && s1.up && s2.kind === "inc" && !s2.up)
-      return `<b>${esc(A.name)}</b> and <b>${esc(B.name)}</b> are both incarnations of <b class="term">${esc(people.get(path[1].id).name)}</b>.`;
+    if (isBothInc(path)) {
+      const mixed = s1.link.kind !== s2.link.kind && INC_WORD[s1.link.kind] && INC_WORD[s2.link.kind]
+        ? ` (${esc(A.name)} as ${INC_WORD[s1.link.kind].replace(/ of$/, "")}, ${esc(B.name)} as ${INC_WORD[s2.link.kind].replace(/ of$/, "")})` : "";
+      return `<b>${esc(A.name)}</b> and <b>${esc(B.name)}</b> are <b class="term">${esc(bothInc(path))}</b>${mixed}.`;
+    }
     if (n === 1 && s1.kind === "same") return `<b>${esc(A.name)}</b> and <b>${esc(B.name)}</b> <b class="term">may be the same being</b>; the texts disagree.`;
-    if (n === 1 && s1.kind === "inc") return `<b>${esc(A.name)}</b> is ${s1.up ? "an incarnation of" : "born again as"} <b class="term">${esc(B.name)}</b>.`;
+    if (n === 1 && s1.kind === "inc")
+      return s1.up ? `<b>${esc(A.name)}</b> is ${incWord(s1)} <b class="term">${esc(B.name)}</b>.` : `<b>${esc(B.name)}</b> is ${incWord(s1)} <b class="term">${esc(A.name)}</b>.`;
     const life = [...new Set(path.slice(1).map((s) => s.arc.kind).filter((k) => LIFE_KINDS.has(k)))].map((k) => LIFE_WORD[k]);
     return `${n} links apart${life.length ? ", through " + life.join(" and ") : ""}.`;
   }
@@ -1348,7 +1407,7 @@ function showRelation(fly) {
     if (auto) h.push(`<p class="cite">Only rebirth or incarnation links connect them, so those were switched on.</p>`);
     if (routes.length > 1)
       h.push(`<h3>Routes</h3><div class="routes">${routes.map((x, i) =>
-        `<button class="btn${i === idx ? " on" : ""}" data-route="${i}">${esc(kinPhrase(x.path) || x.path.length - 1 + " links")}</button>`).join("")}</div>`);
+        `<button class="btn${i === idx ? " on" : ""}" data-route="${i}">${esc(routeLabel(x.path))}</button>`).join("")}</div>`);
     h.push(`<h3>Chain · ${n} link${n === 1 ? "" : "s"}</h3><ol class="chain"><li>${go(a)}</li>`);
     r.path.slice(1).forEach((s, i) => h.push(li(arcLabel(s.arc), go(s.id), s.arc.link).replace("<li>", i === n - 1 ? '<li class="c-end">' : "<li>")));
     h.push(`</ol>`);
@@ -1450,7 +1509,7 @@ $("#relBtn").onclick = () => (rel ? openFinder(rel.a, rel.b) : openFinder(sel));
 
 /* ---------- start ---------- */
 const zoomTo = (id, kk) => { const p = pos[id]; if (!p) return; stopAnim(); k = kk; tx = innerWidth / 2 - p[0] * k; ty = innerHeight / 2 - p[1] * k; apply(); };
-window.__tree = { select, clearSelection, search, fold, flyTo, fit, zoomTo, relate, findRoutes, kinPhrase };
+window.__tree = { select, clearSelection, search, fold, flyTo, fit, zoomTo, relate, findRoutes, kinPhrase, routeLabel };
 refreshEdges();
 const start = decodeURIComponent(location.hash.slice(1));
 const [ra, rb] = start.split("~");

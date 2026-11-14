@@ -719,6 +719,8 @@
   parents:
     - { id: jamadagni, rel: father, cite: adi 66 }
     - { id: renuka, rel: mother, cite: "CE 3.116.4", note: "“To her were born four sons, with Rama the fifth” — five in all; Adi 66 says Jamadagni had four sons, Rama the youngest." }
+  incarnation:
+    - { of: vishnu, kind: avatar, ver: purana, cite: "Bhagavata Purana 1.3.20", note: "The sixteenth avatar, who in anger emptied the earth of kshatriyas twenty-one times." }
 
 - id: pramati
   name: Pramati
@@ -1796,6 +1798,8 @@
   ver: purana
   spouses:
     - { id: prachinabarhis, ver: purana, cite: "Vishnu Purana 1.14.5-6" }
+  parents:
+    - { id: samudra, rel: father, ver: purana, cite: "Vishnu Purana 1.14.5", note: "samudratanayā, “the Ocean's daughter”." }
 
 - id: prachinabarhis
   name: Prachinabarhis

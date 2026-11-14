@@ -175,6 +175,8 @@
   parents:
     - { id: parashara, rel: father, cite: "adi 60, 63" }
     - { id: satyavati, rel: mother, cite: "adi 60, 63" }
+  incarnation:
+    - { of: vishnu, kind: avatar, ver: purana, cite: "Bhagavata Purana 1.3.21", note: "The seventeenth, born of Satyavati by Parashara, who divided the Veda." }
 
 - id: shuka
   name: Shuka
@@ -1148,18 +1150,30 @@
     - { of: pulastya-sons, kind: portion, cite: adi 67 }
 
 - id: kauravas
-  name: The other Kauravas
-  aka: [Kauravas, sons of Dhritarashtra, Dhartarashtras]
+  name: The hundred Kauravas
+  aka: [Kauravas, sons of Dhritarashtra, Dhartarashtras, The other Kauravas]
   kind: group
-  title: Dhritarashtra's other sons
-  summary: The rest of Dhritarashtra and Gandhari's hundred sons, born from the divided mass of flesh. Adi 67 lists them by birth order; all were killed in the war, almost all of them by Bhima.
+  title: Dhritarashtra and Gandhari's sons, in order of birth
+  summary: "Gandhari's hundred sons, born from the divided mass of flesh, as CE 1.108 lists them in order of birth. The list counts a hundred and one with Yuyutsu, who has his own box (his mother was a Vaishya woman), and names Jalasandha, Sama and Mahabahu twice each, so 98 different names remain. Almost all of them were killed in the war by Bhima. Ganguli's vulgate text gives the list twice, with different names (Adi 67, 117)."
   parents:
-    - { id: dhritarashtra, rel: father, cite: adi 67 }
+    - { id: dhritarashtra, rel: father, cite: "adi 67; CE 1.108.2" }
     - { id: gandhari, rel: mother, cite: "adi 67, 115" }
   incarnation:
     - { of: pulastya-sons, kind: portion, cite: adi 67 }
-  membersCite: "adi 63, 67; CE 7.112.30"
-  members: [Duhsaha, Durmukha, Vivinsati, Jalasandha, Sulochana, Vinda, Anuvinda, Durdharsha, Suvahu, Dushpradharshana, Durmarshana, Dushkarna, Karna, Chitra, Vipachitra, Chitraksha, Charuchitra, Angada, Durmada, Dushpradharsha, Vivitsu, Vikata, Sama, Urnanabha, Padmanabha, Nanda, Upanandaka, Senapati, Sushena, Kundodara, Mahodara, Chitravahu, Chitravarman, Suvarman, Durvirochana, Ayovahu, Mahavahu, Chitrachapa, Sukundala, Bhimavega, Bhimabala, Valaki, Bhimavikrama, Ugrayudha, Bhimashara, Kanakayu, Dridhayudha, Dridhavarman, Dridhakshatra, Somakirti, Anadara, Jarasandha, Dridhasandha, Satyasandha, Sahasravak, Ugrashravas, Ugrasena, Kshemamurti, Aparajita, Panditaka, Vishalaksha, Duradhara, Dridhahasta, Suhasta, Vatavega, Suvarchas, Adityaketu, Bahvashin, Nagadatta, Anuyayin, Nishangi, Kavachi, Dandi, Dandadhara, Dhanurgraha, Ugra, Bhimaratha, Vira, Viravahu, Alolupa, Abhaya, Raudrakarman, Dridharatha, Anadhrishya, Kundabhedi, Viravi, Dirghalochana, Dirghavahu, Vyudhoru, Kanakangada, Kundaja, Chitraka, Jaya, Satyavrata, Purumitra, Dushparajaya, Durvigaha, Ravi, Jaitra, Chitrayudha, Upachitra, Pashi, Shrutarvan, Bhuribala, Shatrunjaya, Shatrusaha, Vrindaraka]
+  membersCite: "CE 1.108.2-14; adi 117"
+  members: ["@duryodhana", "@duhshasana", Duhsaha, Duhshala, Jalasandha, Sama, Saha, Vinda, Anuvinda, Durdharsha, Subahu, Dushpradharshana, Durmarshana, Durmukha, Dushkarna, Karna, Vivimshati, "@vikarna", Sulochana, Chitra, Upachitra, Chitraksha, Charuchitra, Sharasana, Durmada, Dushpragaha (Durvigaha), Vivitsu, Vikata, Urnanabha, Sunabha, Nanda, Upanandaka, Senapati, Sushena, Kundodara, Mahodara, Chitrabana, Chitravarman, Suvarman, Durvimochana, Ayobahu, Mahabahu, Chitranga, Chitrakundala, Bhimavega, Bhimabala, Balaki, Balavardhana, Ugrayudha, Bhimakarman, Kanakayu, Dridhayudha, Dridhavarman, Dridhakshatra, Somakirti, Anudara, Dridhasandha, Jarasandha, Satyasandha, Sadahsuvak, Ugrashravas, Ashvasena, Senani, Dushparajaya, Aparajita, Panditaka, Vishalaksha, Duravara, Dridhahasta, Suhasta, Vatavega, Suvarchas, Adityaketu, Bahvashin, Nagadanta, Ugrayayin, Kavachin, Nishangin, Pashin, Dandadhara, Dhanurgraha, Ugra, Bhimaratha, Vira, Virabahu, Alolupa, Abhaya, Raudrakarman, Dridharatha, Anadhrishya, Kundabhedin, Viravin, Dirghalochana, Dirghabahu, Vyudhoru, Kanakadhvaja, Kundashin, Virajas]
+
+- id: kauravas-war
+  name: Dhritarashtra's sons named in the war books
+  aka: [other sons of Dhritarashtra]
+  kind: group
+  title: sons of Dhritarashtra missing from the birth list
+  summary: "Sons of Dhritarashtra whom the battle books name but the birth list (CE 1.108) does not; most fall to Bhima. The epic still speaks of a hundred, so these may be other names for men on that list, but the texts never match them up. Chitrasena, another such son, has his own box."
+  parents:
+    - { id: dhritarashtra, rel: father, cite: "CE 7.112.28-30, 9.25.3-4" }
+    - { id: gandhari, rel: mother, cite: "CE 7.102.68, 9.25.3", note: "Called Duryodhana's uterine brothers (sodaryāḥ)." }
+  membersCite: "CE 7.102.68-70, 7.112.30, 9.25.4-20; PE: JAYA I, PURUMITRA I, SATYAVRATA III"
+  members: [Shala, Sumukha, Sudarshana, Vrindaraka, Shatrunjaya, Shatrusaha, Chitrayudha, Shrutanta, Jayatsena, Jaitra, Bhuribala, Ravi, Sujata, Durvishaha, Shrutarvan, Jaya, Satyavrata, Purumitra]
 
 - id: duhshala
   name: Duhshala

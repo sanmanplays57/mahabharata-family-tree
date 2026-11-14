@@ -169,12 +169,13 @@ check(/possibly the same being as/i.test(same.panel) && /Yama/.test(same.panel) 
   `Dharma ≟ Yama: listed in the panel, drawn with a “?” only when ticked (${same.off} → ${same.on})`);
 const fam = await page.evaluate(() => {
   const t = window.__tree, first = (a, b) => { const r = t.findRoutes(a, b, false); return r.length ? t.kinPhrase(r[0].path) : null; };
-  return { drona: first("drona", "brihaspati"), subhadra: first("balarama", "subhadra"), rama: first("rama", "krishna"),
+  return { drona: first("drona", "brihaspati"), subhadra: first("balarama", "subhadra"), rama: t.findRoutes("rama", "krishna", false).map((r) => t.routeLabel(r.path)), kaur: [t.findRoutes("vamana", "krishna", false).map((r) => t.routeLabel(r.path))[0]],
     sanjna: first("yama", "shani"), yami: first("yama", "yami") };
 });
 check(fam.drona === "grandfather", `Brihaspati is Drona's ${fam.drona} (and Drona is a portion of him)`);
 check(fam.subhadra === "sister", `Subhadra is Balarama's ${fam.subhadra} (Rohini's daughter, Harivamsa 25.3)`);
-check(/cousin/.test(fam.rama || ""), `Rama → Krishna by common ancestor: ${fam.rama}`);
+check(/^both .*Vishnu$/.test(fam.rama[0] || "") && fam.rama.some((x) => /cousin/.test(x)), `Rama → Krishna: ${fam.rama.join(" / ")}`);
+check(fam.kaur[0] === "both avatars of Vishnu", `Vamana → Krishna: ${fam.kaur[0]}`);
 check(fam.sanjna === "half-brother" && fam.yami === "sister", `Sun's children: Shani is Yama's ${fam.sanjna}, Yami his ${fam.yami}`);
 
 // dynasties: bands drawn, panel names the dynasty chain, search finds a dynasty by name

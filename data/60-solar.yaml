@@ -821,7 +821,7 @@
     - { id: dasharatha-ayodhya, rel: father, cite: "CE 3.258.7" }
     - { id: kausalya, rel: mother, cite: "CE 3.258.8" }
   incarnation:
-    - { of: vishnu, kind: portion, ver: purana, cite: "Vishnu Purana 4.4.49", note: "Vishnu was born as Dasharatha's four sons with a portion of himself, in four parts." }
+    - { of: vishnu, kind: portion, ver: purana, cite: "Vishnu Purana 4.4.49; Bhagavata Purana 1.3.22", note: "Vishnu was born as Dasharatha's four sons with a portion of himself, in four parts. The Bhagavata counts Rama as the eighteenth avatar." }
 
 - id: lakshmana-ayodhya
   name: Lakshmana

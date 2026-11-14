@@ -4438,3 +4438,135 @@
   ver: purana
   parents:
     - { id: ajamila, rel: father, cite: "Bhagavata Purana 6.1.24" }
+
+# --- Shankhachuda, Jalandhara, the Ocean, Sudaman of Dasharna (build/shankhachuda-jalandhara.cjs) ---
+- id: samudra
+  name: Samudra (the Ocean)
+  aka: [Sagara, Sindhu, the Ocean]
+  kind: god
+  sex: m
+  title: "the Ocean personified"
+  summary: "The Ocean as a person: father of Savarna, mother of the Prachetases, and the foster father who claimed the boy Jalandhara as his son."
+
+- id: jalandhara
+  name: Jalandhara
+  sex: m
+  kind: asura
+  title: "asura born of Shiva's third-eye fire, son of the Ocean"
+  summary: "The fire of Shiva's third eye, cast into the salt ocean, became a boy whose cries shook the worlds. The Ocean claimed him as his son, Brahma named him, and he married Kalanemi's daughter Vrinda. He later fought the gods and was killed by Shiva."
+  wiki: Jalandhara
+  ver: purana
+  parents:
+    - { id: samudra, rel: father, ver: purana, cite: "Shiva Purana 2.5.14.15-22", note: "“The son of the ocean” throughout; the Ocean takes the boy as his own." }
+    - { id: shiva, rel: birth-cause, ver: purana, cite: "Shiva Purana 2.5.14.2-4", note: "Born of the brilliance of Shiva's third eye, cast into the briny sea." }
+  spouses:
+    - { id: vrinda, ver: purana, cite: "Shiva Purana 2.5.14.33-35" }
+
+- id: sudama-gopa
+  name: Sudama (Krishna's cowherd)
+  aka: [Shridama, Sridama]
+  sex: m
+  kind: other
+  title: "Krishna's cowherd companion in Goloka, reborn as Shankhachuda"
+  summary: "In the Brahmavaivarta a cowherd attendant of Krishna in Goloka who quarrelled with Radha; she cursed him to be born a Danava, and he became Shankhachuda, while his curse sent her down to earth. The Bhagavata names a cowherd friend of Krishna and Balarama Shridama (10.15.20). Not Kuchela, the poor brahmin friend, whom the Bhagavata leaves unnamed."
+  ver: purana
+
+- id: shankhachuda
+  name: Shankhachuda
+  aka: [Sankhacuda]
+  sex: m
+  kind: asura
+  title: "Danava, son of Dambha, husband of Tulasi"
+  summary: "The son Vishnu granted the childless Danava Dambha after long penance. Married to Tulasi, he ruled the three worlds and fought the gods; Shiva killed him with the trident once Tulasi's chastity, his protection, was broken."
+  ver: purana
+  parents:
+    - { id: dambha-danava, rel: father, ver: purana, cite: "Shiva Purana 2.5.27.22-32; Brahmavaivarta Purana 2.18" }
+  spouses:
+    - { id: tulasi, ver: purana, cite: "Shiva Purana 2.5.28.7-8, 2.5.28.16; Brahmavaivarta Purana 2.16" }
+  incarnation:
+    - { of: sudama-gopa, kind: rebirth, ver: purana, cite: "Shiva Purana 2.5.27.32, 2.5.29; Brahmavaivarta Purana 2.18", note: "Sudama, Krishna's cowherd, born a Danava through Radha's curse." }
+
+- id: dharmadhvaja-bvp
+  name: Dharmadhvaja (Tulasi's father)
+  sex: m
+  kind: human
+  house: other
+  title: "king, father of Tulasi (Brahmavaivarta)"
+  summary: "King whose wife Madhavi bore Tulasi, a portion of Lakshmi. Not Dharmadhvaja of Videha, Kushadhvaja's son."
+  ver: purana
+
+- id: madhavi-bvp
+  name: Madhavi (Dharmadhvaja's wife)
+  sex: f
+  kind: human
+  house: other
+  title: "mother of Tulasi (Brahmavaivarta)"
+  summary: "Dharmadhvaja's queen, who bore Tulasi after a long pregnancy at Gandhamadana. Not Madhavi, Yayati's daughter."
+  ver: purana
+  spouses:
+    - { id: dharmadhvaja-bvp, ver: purana, cite: "Brahmavaivarta Purana 2.14" }
+
+- id: tulasi
+  name: Tulasi
+  aka: [Tulsi]
+  sex: f
+  kind: human
+  house: other
+  title: "wife of Shankhachuda, a portion of Lakshmi"
+  summary: "Born to Dharmadhvaja and Madhavi as a portion of Lakshmi; she did penance at Badari, married the Danava Shankhachuda at Brahma's bidding, and after his death became the tulasi plant, dear to Vishnu."
+  wiki: Tulasi in Hinduism
+  ver: purana
+  parents:
+    - { id: dharmadhvaja-bvp, rel: father, ver: purana, cite: "Brahmavaivarta Purana 2.14; Shiva Purana 2.5.28.8, 2.5.28.16" }
+    - { id: madhavi-bvp, rel: mother, ver: purana, cite: "Brahmavaivarta Purana 2.14" }
+  incarnation:
+    - { of: sri, kind: portion, ver: purana, cite: "Brahmavaivarta Purana 2.6", note: "Lakshmi, cursed in the quarrel of the three goddesses, foretells her birth as Tulasi, Dharmadhvaja's daughter." }
+
+- id: sudaman-dasharna
+  name: Sudaman (king of Dasharna)
+  sex: m
+  kind: human
+  house: other
+  title: "king of the Dasharnas, Damayanti's grandfather"
+  summary: "Lord of the Dasharnas. One daughter married King Bhima of Vidarbha and bore Damayanti; the other married Virabahu of Chedi."
+  pe: SUDAMA II
+
+- id: damayanti-mother
+  name: Damayanti's mother
+  sex: f
+  kind: human
+  house: other
+  title: "queen of Vidarbha, daughter of Sudaman"
+  summary: "Sudaman's daughter, given to King Bhima of Vidarbha; Damayanti was born in her father's house among the Dasharnas."
+  parents:
+    - { id: sudaman-dasharna, rel: father, cite: "CE 3.66.12-13" }
+
+- id: chedi-queen-mother
+  name: Queen mother of Chedi
+  sex: f
+  kind: human
+  house: other
+  title: "Damayanti's maternal aunt, wife of Virabahu"
+  summary: "Sudaman's other daughter, given to Virabahu of Chedi. She took in the wandering Damayanti as a maid without knowing her, and recognised her by a birthmark: “you are my sister's daughter”."
+  parents:
+    - { id: sudaman-dasharna, rel: father, cite: "CE 3.66.12-13" }
+  spouses:
+    - { id: virabahu-chedi, cite: "CE 3.66.13" }
+
+- id: virabahu-chedi
+  name: Virabahu (king of Chedi)
+  sex: m
+  kind: human
+  house: other
+  title: "king of Chedi in Nala's time"
+  summary: "King of Chedi, husband of Sudaman's daughter, in whose palace Damayanti served as a maid."
+
+- id: sunanda-chedi
+  name: Sunanda (princess of Chedi)
+  sex: f
+  kind: human
+  house: other
+  title: "Damayanti's cousin"
+  summary: "The Chedi queen mother's daughter, whose companion Damayanti became; she washed the dirt from Damayanti's brow and so revealed the birthmark."
+  parents:
+    - { id: chedi-queen-mother, rel: mother, cite: "CE 3.62.42, 3.66.9-11" }
