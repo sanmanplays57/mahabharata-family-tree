@@ -200,10 +200,10 @@
 - id: pradha-gandharvas
   name: "Pradha's Gandharva sons"
   kind: group
-  title: "the ten Devagandharvas born of Pradha"
-  summary: "Pradha's ten sons, the Devagandharvas; Siddha, Purna, Barhi, Purnasha, Brahmachari, Ratiguna, Suparna, Vishvavasu, Bhanu and Suchandra. Vishvavasu has a box of his own."
+  title: "the ten Devagandharvas born of Pradha, and her four great Gandharvas"
+  summary: "Pradha's ten sons, the Devagandharvas; Siddha, Purna, Barhi, Purnasha, Brahmachari, Ratiguna, Suparna, Vishvavasu, Bhanu and Suchandra. Vishvavasu has a box of his own. She also bore Atibahu, Haha, Huhu and Tumburu, the four finest Gandharvas (CE 1.59.49)."
   members: ["Siddha", "Purna", "Barhi", "Purnasha", "Brahmachari", "Ratiguna", Suparna, "Bhanu", "Suchandra", Atibahu, Haha, Huhu, Tumburu]
-  membersCite: "CE 1.59.45-46; adi 65"
+  membersCite: "CE 1.59.45-46, 1.59.49; adi 65"
   parents:
     - { id: pradha, rel: mother, cite: "CE 1.59.45-46; adi 65" }
     - { id: kashyapa, rel: father, cite: "adi 65" }

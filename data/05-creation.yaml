@@ -1237,8 +1237,8 @@
   name: Vasishtha's seven sons by Urja
   kind: group
   title: "the Saptarishis of the Uttama age"
-  summary: "Vasishtha's seven sons by Urja, the seven pure sages of the third Manu's age."
-  members: [Rajas, Gotra, Urdhvabahu, Savana, Anagha, Sutapas, Shukra, Surochis]
+  summary: "Vasishtha's seven sons by Urja, the seven pure sages of the third Manu's age, as the Vishnu Purana names them (1.10.13). The Bhagavata (4.1.40-41) gives seven different names, Chitraketu, Surochis, Viraja, Mitra, Ulbana, Vasubhridyana and Dyuman."
+  members: [Rajas, Gotra, Urdhvabahu, Savana, Anagha, Sutapas, Shukra]
   membersCite: "Vishnu Purana 1.10.12-13, 3.1.15; Bhagavata Purana 4.1.40-41"
   ver: purana
   parents:

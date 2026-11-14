@@ -1469,10 +1469,10 @@
   name: Devaka's other daughters
   kind: group
   title: Devaki's six sisters, all married to Vasudeva
-  summary: "Devaka had seven daughters, Devaki among them, and Vasudeva married all seven."
+  summary: "Devaka had seven daughters, Devaki among them, and Vasudeva married all seven (VP 4.14.5). The Bhagavata (9.24.22-23) has the same seven with Dhritadeva in place of Vrikadeva. The Puranic Encyclopaedia cites the Matsya Purana (44.73) for a Satyadevi among them; that text is not on hand."
   ver: purana
-  members: [Vrikadeva, Upadeva, Devarakshita, Shrideva, Shantideva, Sahadeva, Satyadevi]
-  membersCite: "Vishnu Purana 4.14.5"
+  members: [Vrikadeva (Dhritadeva), Upadeva, Devarakshita, Shrideva, Shantideva, Sahadeva]
+  membersCite: "Vishnu Purana 4.14.5; Bhagavata Purana 9.24.22-23"
   parents:
     - { id: devaka, rel: father, ver: purana, cite: "Vishnu Purana 4.14.5" }
   spouses:

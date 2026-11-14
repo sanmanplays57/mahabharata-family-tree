@@ -170,8 +170,14 @@ check(/possibly the same being as/i.test(same.panel) && /Yama/.test(same.panel) 
 const fam = await page.evaluate(() => {
   const t = window.__tree, first = (a, b) => { const r = t.findRoutes(a, b, false); return r.length ? t.kinPhrase(r[0].path) : null; };
   return { drona: first("drona", "brihaspati"), subhadra: first("balarama", "subhadra"), rama: t.findRoutes("rama", "krishna", false).map((r) => t.routeLabel(r.path)), kaur: [t.findRoutes("vamana", "krishna", false).map((r) => t.routeLabel(r.path))[0]],
-    sanjna: first("yama", "shani"), yami: first("yama", "yami") };
+    sanjna: first("yama", "shani"), yami: first("yama", "yami"),
+    arjuna: t.findRoutes("arjuna", "krishna", false).map((r) => t.routeLabel(r.path)),
+    shishu: t.findRoutes("shishupala", "kumbhakarna", true).map((r) => t.routeLabel(r.path) + " :: " + t.relSentence(r.path).replace(/<[^>]+>/g, "")),
+    ghrit: t.findRoutes("drona", "ghritachi", true).map((r) => t.relSentence(r.path).replace(/<[^>]+>/g, "")) };
 });
+check(fam.arjuna[0] === "brother-in-law" && fam.arjuna.includes("both incarnations of Vishnu (through Nara)"), `Arjuna → Krishna: ${fam.arjuna.join(" / ")}`);
+check(fam.shishu.some((x) => /^through Ravana :: Shishupala is a rebirth of Ravana; Ravana’s brother is Kumbhakarna\.$/.test(x)), `rebirths ticked, Shishupala → Kumbhakarna: ${fam.shishu.join(" / ")}`);
+check(fam.ghrit[0] === "Drona was born through Ghritachi.", `rebirths ticked, Drona → Ghritachi: ${fam.ghrit[0]}`);
 check(fam.drona === "grandfather", `Brihaspati is Drona's ${fam.drona} (and Drona is a portion of him)`);
 check(fam.subhadra === "sister", `Subhadra is Balarama's ${fam.subhadra} (Rohini's daughter, Harivamsa 25.3)`);
 check(/^both .*Vishnu$/.test(fam.rama[0] || "") && fam.rama.some((x) => /cousin/.test(x)), `Rama → Krishna: ${fam.rama.join(" / ")}`);

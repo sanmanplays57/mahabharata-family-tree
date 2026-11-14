@@ -1172,25 +1172,85 @@ function commonAncestorRoute(a, b) {
 // One being born as the other, or both born of the same being (Rama and Krishna, both
 // Vishnu). Offered even with rebirth links off: it is the plainest thing the texts say
 // about such a pair. Avatars are preferred to portions, portions to rebirths.
+// Chains of up to two incarnations on each side count too: Arjuna is Nara reborn and
+// Nara an avatar of Vishnu, so Arjuna and Krishna meet in Vishnu.
 const INC_RANK = { avatar: 0, portion: 0.1, rebirth: 0.2 };
-function incRoute(a, b) {
-  let best = null, bc = Infinity;
-  const rank = (arc) => INC_RANK[arc.link.kind] ?? 0.3;
-  for (const arc of adj.get(a) || []) {
-    if (arc.kind !== "inc") continue;
-    if (arc.to === b) {
-      const c = rank(arc);
-      if (c < bc) { bc = c; best = [{ id: a }, { id: b, arc }]; }
-    } else if (arc.up) {
-      for (const back of adj.get(arc.to) || []) {
-        if (back.kind !== "inc" || back.up || back.to !== b) continue;
-        const c = 1 + rank(arc) + rank(back);
-        if (c < bc) { bc = c; best = [{ id: a }, { id: arc.to, arc }, { id: b, arc: back }]; }
+const incRank = (arc) => INC_RANK[arc.link.kind] ?? 0.3;
+function incSources(src) {
+  const out = new Map([[src, { c: 0, steps: [] }]]);
+  let frontier = [src];
+  for (let d = 0; d < 2 && frontier.length; d++) {
+    const next = new Set();
+    for (const u of frontier)
+      for (const arc of adj.get(u) || []) {
+        if (arc.kind !== "inc" || !arc.up) continue;
+        const c = out.get(u).c + 1 + incRank(arc), cur = out.get(arc.to);
+        if (cur && cur.c <= c) continue;
+        out.set(arc.to, { c, steps: [...out.get(u).steps, { from: u, arc }] });
+        next.add(arc.to);
       }
-    }
+    frontier = [...next];
   }
-  return best;
+  return out;
 }
+function incRoute(a, b) {
+  const A = incSources(a), B = incSources(b);
+  let best = null, bc = Infinity;
+  for (const [x, ea] of A) {
+    const eb = B.get(x);
+    if (!eb || (!ea.steps.length && !eb.steps.length) || ea.c + eb.c >= bc) continue;
+    bc = ea.c + eb.c; best = [x, ea, eb];
+  }
+  if (!best) return null;
+  const [, ea, eb] = best, path = [{ id: a }];
+  for (const s of ea.steps) path.push({ id: s.arc.to, arc: s.arc });
+  for (const s of [...eb.steps].reverse()) {
+    const down = (adj.get(s.arc.to) || []).find((x) => x.kind === "inc" && !x.up && x.to === s.from && x.link === s.arc.link);
+    if (!down) return null;
+    path.push({ id: s.from, arc: down });
+  }
+  return path;
+}
+// A route through rebirth-type links, said as clauses: "Arjuna is an avatar of Nara, who
+// is an avatar of Vishnu; Krishna is an avatar of Vishnu". Family stretches in between
+// must be sayable in one kinship word; null when the route can't be put this way.
+function lifeClauses(path) {
+  const cl = [];
+  for (let i = 0; i < path.length - 1;) {
+    const u = path[i].id, arc = path[i + 1].arc, v = path[i + 1].id;
+    if (arc.t === "X") {
+      if (arc.kind === "inc") cl.push(arc.up ? { s: u, pred: `is ${incWord(arc)}`, o: v } : { s: v, pred: `is ${incWord(arc)}`, o: u });
+      else if (arc.kind === "ret") cl.push(arc.up ? { s: u, pred: "rejoined", o: v, tail: " after death" } : { s: v, pred: "rejoined", o: u, tail: " after death" });
+      else if (arc.kind === "cause") cl.push(arc.up ? { s: u, pred: "was born through", o: v } : { s: v, pred: "was born through", o: u });
+      else if (arc.kind === "same") cl.push({ s: u, pred: "may be the same being as", o: v });
+      else return null;
+      i++;
+      continue;
+    }
+    let j = i + 1;
+    while (j < path.length - 1 && path[j + 1].arc.t !== "X") j++;
+    const k = kinParts([{ id: u }, ...path.slice(i + 1, j + 1)]);
+    if (!k || k.blood > 1) return null;
+    cl.push({ s: u, poss: k.phrase, o: path[j].id });
+    i = j;
+  }
+  return cl.length && cl.length <= 4 ? cl : null;
+}
+function lifeSentence(path) {
+  const cl = lifeClauses(path);
+  if (!cl) return null;
+  const ends = new Set([path[0].id, path[path.length - 1].id]);
+  const nm = (id) => (ends.has(id) ? `<b>${esc(people.get(id).name)}</b>` : go(id));
+  let out = "";
+  cl.forEach((c, i) => {
+    const text = c.poss ? `${nm(c.s)}’s ${esc(c.poss)} is ${nm(c.o)}` : `${nm(c.s)} ${c.pred} ${nm(c.o)}${c.tail || ""}`;
+    const prev = cl[i - 1];
+    if (prev && !c.poss && c.s === prev.o) out += `, who ${c.pred} ${nm(c.o)}${c.tail || ""}`;
+    else out += (i ? "; " : "") + text;
+  });
+  return out + ".";
+}
+const hasLife = (path) => path.slice(1).some((s) => s.arc.t === "X");
 function findRoutes(a, b, lives) {
   const ok = (arc) => arcOk(arc, lives);
   const yen = kShortest(a, b, ok, 12);
@@ -1221,9 +1281,20 @@ function findRoutes(a, b, lives) {
   }
   // The incarnation leads unless a close family tie says more: Drona -> Brihaspati is
   // "grandfather" first, Rama -> Krishna "both of Vishnu" before an eighth cousin.
-  if (inc && !seenIds.has(pathKey(inc))) {
-    out.splice(out[0].path.length - 1 > 3 ? 0 : 1, 0, { path: inc });
+  const lead = (p) => {
+    if (seenIds.has(pathKey(p))) return;
+    seenIds.add(pathKey(p));
+    out.splice(out[0].path.length - 1 > 3 ? 0 : 1, 0, { path: p });
     if (out.length > 4) out.length = 4;
+  };
+  // the same beings reached by a weaker link (Krishna as Vishnu's portion, not his avatar)
+  if (inc) for (const r of out) if (pathKey(r.path) === pathKey(inc)) r.path = inc;
+  if (inc) lead(inc);
+  // With rebirth links ticked, the best route through one of them is offered the same way,
+  // as long as it can be said in words and is not a detour of a shorter route.
+  if (lives) {
+    const lp = yen.find((p) => hasLife(p) && !seenIds.has(pathKey(p)) && lifeClauses(p) && !hasChord(p, ok) && pathCost(p) <= top * 1.6 + 1.5);
+    if (lp) lead(lp);
   }
   return out;
 }
@@ -1236,12 +1307,30 @@ function bothInc(path) {
   return `both incarnations of ${x}`;
 }
 const isBothInc = (path) => path.length === 3 && path[1].arc.kind === "inc" && path[1].arc.up && path[2].arc.kind === "inc" && !path[2].arc.up;
+// All incarnation steps, up from A then down to B: the apex is the being they go back to.
+function incApex(path) {
+  const st = path.slice(1);
+  if (!st.length || st.some((s) => s.arc.kind !== "inc")) return -1;
+  let k = 0;
+  while (k < st.length && st[k].arc.up) k++;
+  return st.slice(k).every((s) => !s.arc.up) ? k : -1;
+}
+const nameList = (ids) => ids.map((id) => people.get(id).name).join(", ");
 function routeLabel(path) {
   const ph = kinPhrase(path);
   if (ph) return ph;
   if (isBothInc(path)) return bothInc(path);
   if (path.length === 2 && path[1].arc.kind === "inc") return path[1].arc.up ? KIND_LABEL[path[1].arc.link.kind] || "incarnation of" : "born again as";
-  return path.length - 1 + " links";
+  const n = path.length - 1, k = incApex(path), mid = path.slice(1, -1).map((s) => s.id);
+  if (k > 0 && k < n) return `both incarnations of ${people.get(path[k].id).name} (through ${nameList(mid.filter((id) => id !== path[k].id))})`;
+  if (k === n) return `incarnation of ${people.get(path[n].id).name} (through ${nameList(mid)})`;
+  if (k === 0) return `born again as, through ${nameList(mid)}`;
+  if (n === 1) return arcLabel(path[1].arc);
+  if (!hasLife(path)) return n + " links";
+  // name the beings at either end of each rebirth-type step
+  const at = path.flatMap((s, i) => (s.arc && s.arc.t === "X" ? [path[i - 1].id, s.id] : [])).filter((id) => mid.includes(id));
+  const via = [...new Set(at)];
+  return `through ${nameList(via.slice(0, 3))}${via.length > 3 ? "…" : ""}`;
 }
 
 // English kinship words for a route: runs of up-steps then down-steps become
@@ -1363,6 +1452,10 @@ function relSentence(path) {
     if (n === 1 && s1.kind === "same") return `<b>${esc(A.name)}</b> and <b>${esc(B.name)}</b> <b class="term">may be the same being</b>; the texts disagree.`;
     if (n === 1 && s1.kind === "inc")
       return s1.up ? `<b>${esc(A.name)}</b> is ${incWord(s1)} <b class="term">${esc(B.name)}</b>.` : `<b>${esc(B.name)}</b> is ${incWord(s1)} <b class="term">${esc(A.name)}</b>.`;
+    const words = lifeSentence(path), k = incApex(path);
+    if (words && k > 0 && k < n)
+      return `<b>${esc(A.name)}</b> and <b>${esc(B.name)}</b> both go back to <b class="term">${esc(people.get(path[k].id).name)}</b>: ${words}`;
+    if (words) return words;
     const life = [...new Set(path.slice(1).map((s) => s.arc.kind).filter((k) => LIFE_KINDS.has(k)))].map((k) => LIFE_WORD[k]);
     return `${n} links apart${life.length ? ", through " + life.join(" and ") : ""}.`;
   }
@@ -1509,7 +1602,7 @@ $("#relBtn").onclick = () => (rel ? openFinder(rel.a, rel.b) : openFinder(sel));
 
 /* ---------- start ---------- */
 const zoomTo = (id, kk) => { const p = pos[id]; if (!p) return; stopAnim(); k = kk; tx = innerWidth / 2 - p[0] * k; ty = innerHeight / 2 - p[1] * k; apply(); };
-window.__tree = { select, clearSelection, search, fold, flyTo, fit, zoomTo, relate, findRoutes, kinPhrase, routeLabel };
+window.__tree = { select, clearSelection, search, fold, flyTo, fit, zoomTo, relate, findRoutes, kinPhrase, routeLabel, relSentence };
 refreshEdges();
 const start = decodeURIComponent(location.hash.slice(1));
 const [ra, rb] = start.split("~");
