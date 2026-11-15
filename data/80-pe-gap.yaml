@@ -35,6 +35,8 @@
   parents:
     - { id: danu, rel: mother, cite: "CE 1.59.21-22; adi 65" }
     - { id: kashyapa, rel: father, cite: "adi 65" }
+  killedBy:
+    - { id: indra, cite: "CE 9.42.28-37; Bhagavata Purana 8.11.29-40", note: "Indra had sworn not to kill him with anything wet or dry, by night or day; he cut off his head with foam" }
 
 - id: ruha
   name: "Ruha"
@@ -64,6 +66,8 @@
   membersCite: "CE 4.30.10-13; PE: SURYADATTA"
   parents:
     - { id: virata-father, rel: father, cite: "CE 4.30.10-11", note: "virāṭasya priyo bhrātā śatānīkaḥ; śatānīkād avarajo madirāśvaḥ." }
+  killedBy:
+    - { id: drona, cite: "CE 7.20.20-22, 8.4.83", note: "Shatanika, Virata's younger brother, beheaded on the twelfth day; Madirashva and Suryadatta also fell to Drona's arrows" }
 
 - id: trigarta-king
   name: "King of Trigarta (Susharma's father)"
@@ -84,6 +88,8 @@
   pe: "SUSARMA I"
   parents:
     - { id: trigarta-king, rel: father, cite: "CE 8.19.4", note: "“The king of the Trigartas, surrounded by his brothers and sons”." }
+  killedBy:
+    - { id: arjuna, cite: "CE 9.26.39-45", note: "eighteenth day; after killing his horses Arjuna shot him through the heart, then killed his sons" }
 
 - id: susharma-brothers
   name: "Susharma's brothers"
@@ -94,6 +100,8 @@
   membersCite: "CE 7.16.17-18, 8.19.3-4; PE: SATYAKARMA II, MITRADEVA"
   parents:
     - { id: trigarta-king, rel: father, cite: "CE 7.16.17-18, 8.19.3-4; PE: SATYAKARMA II, MITRADEVA", note: "The CE calls the five Satya- princes brothers and has the Trigarta king surrounded by his brothers and sons; the Puranic Encyclopaedia makes Satyakarman, Mitradeva and others Susharma's brothers." }
+  killedBy:
+    - { id: arjuna, cite: "CE 8.19.10-20, 9.26.33-39", note: "Saushruti, Shatrunjaya and Mitradeva on the seventeenth day; Satyakarman and Satyeshu on the eighteenth" }
 
 - id: danu-sons
   name: "Danu's other sons"
@@ -337,6 +345,10 @@
   ver: ramayana
   spouses:
     - { id: shurpanakha, cite: "Ramayana 7.12.2, 7.24.20-27" }
+  parents:
+    - { id: kalaka-vaishvanari, rel: mother, far: true, ver: ramayana, cite: "Ramayana 7.12.2; Vishnu Purana 1.21.8-9", note: "Called a Kalakeya, and the Vishnu Purana makes every Kalakeya a son of Kalaka (1.21.8-9), so he is one of them." }
+  killedBy:
+    - { id: ravana, ver: ramayana, cite: "Ramayana 7.24.20-27", note: "Shurpanakha's husband (7.12.2), killed unawares in Ravana's war on the Kalakeyas; Ravana admits it (7.24.27)" }
 
 - id: madanika
   name: "Madanika"
@@ -510,8 +522,20 @@
   ver: ramayana
   parents:
     - { id: yatudhana, rel: father, cite: "Vayu Purana 2.8.122-123", ver: "purana" }
+    - { id: brahma, rel: birth-cause, cite: "Ramayana 7.4.9-14", ver: ramayana, note: "Brahma created beings to guard the waters; those who answered rakṣāmaḥ became the rakshasas, with Heti and Praheti their chiefs." }
   spouses:
     - { id: bhaya-kala, cite: "Ramayana 7.4.14-16" }
+
+- id: praheti
+  name: "Praheti"
+  sex: m
+  kind: rakshasa
+  title: "first rakshasa, Heti's brother, who became an ascetic"
+  summary: "With his brother Heti, one of the two rakshasa chiefs among the beings Brahma made to guard the waters. He was righteous and wanted no wife, and went to the forest as an ascetic (Ramayana 7.4.14-15). In the Vayu Purana both are sons of Yatudhana, and Praheti's son is Puloman (2.8.122-124)."
+  ver: ramayana
+  parents:
+    - { id: yatudhana, rel: father, cite: "Vayu Purana 2.8.122-123", ver: "purana" }
+    - { id: brahma, rel: birth-cause, cite: "Ramayana 7.4.9-14", ver: ramayana, note: "Created by Brahma to guard the waters." }
 
 - id: bhaya-kala
   name: "Bhaya"
@@ -577,6 +601,7 @@
   parents:
     - { id: sukesha, rel: father, cite: "Ramayana 7.5.5" }
     - { id: devavati, rel: mother, cite: "Ramayana 7.5.2-5" }
+    - { id: lanku, rel: father, cite: "Vayu Purana 2.8.124", ver: purana }
   spouses:
     - { id: sundari-malyavan, cite: "Ramayana 7.5.27-31" }
 
@@ -593,6 +618,8 @@
     - { id: devavati, rel: mother, cite: "Ramayana 7.5.2-5" }
   spouses:
     - { id: vasuda, cite: "Ramayana 7.5.37" }
+  killedBy:
+    - { id: vishnu, ver: ramayana, cite: "Ramayana 7.7.37-39", note: "Vishnu (Indra's younger brother) beheaded him with the discus when the rakshasas attacked the gods" }
 
 - id: sundari-malyavan
   name: "Sundari"
@@ -826,6 +853,8 @@
   pe: "JANTU"
   parents:
     - { id: somaka, rel: father, cite: "CE 3.127.4; Vishnu Purana 4.19.16" }
+  killedBy:
+    - { name: "Somaka's priest", cite: "CE 3.127.19-3.128.7", note: "to win Somaka a hundred sons the priest dragged him from his mothers, cut him up and offered his omentum; he was born again" }
 
 - id: bhanu-agni
   name: "Bhanu (the fire)"
@@ -869,6 +898,8 @@
   ver: vulgate
   parents:
     - { id: karna, rel: father, ver: "vulgate", cite: "PE: BHANUSENA", note: "The Encyclopaedia cites Karna Parva 48.27 (vulgate); the name is not in the Critical Edition's main text or its starred passages." }
+  killedBy:
+    - { id: bhima, ver: vulgate, cite: "PE: BHANUSENA", note: "PE only, citing vulgate Karna Parva 48.27; not in the CE main or starred text" }
 
 - id: shukra-sons
   name: "Shukra's sons"
@@ -1023,6 +1054,8 @@
   ver: ramayana
   parents:
     - { id: khara, rel: father, cite: "Ramayana 6.65.2" }
+  killedBy:
+    - { id: rama, ver: ramayana, cite: "Ramayana 6.66.35-38", note: "Khara's son; Rama pierced his heart with the fire weapon" }
 
 - id: kunjara-vanara
   name: "Kunjara"
@@ -1659,6 +1692,8 @@
   parents:
     - { id: madhu-daitya, rel: father, cite: "Ramayana 7.53.17-19" }
     - { id: kumbhinasi, rel: mother, cite: "Ramayana 7.53.16-17" }
+  killedBy:
+    - { id: shatrughna, ver: ramayana, cite: "CE 2 App. I.21.543-544; Ramayana 7.61.33-37; Bhagavata Purana 9.11.14; Vishnu Purana 4.4.55", note: "at Rama's command" }
 
 - id: kalki
   name: "Kalki"
@@ -1718,6 +1753,8 @@
   ver: purana
   parents:
     - { id: andhaka-asura, rel: father, cite: "Padma Purana 1.44.46-48" }
+  killedBy:
+    - { id: shiva, ver: purana, cite: "Padma Purana 1.44.70-72", note: "he came to Shiva in Uma's form; Shiva saw through it and killed him" }
 
 - id: kritagni
   name: "Kritagni"
@@ -1744,6 +1781,8 @@
     - { id: kashyapa, rel: father, cite: "PE: SUMBHA; PE: NISUMBHA I" }
     - { id: danu, rel: mother, cite: "PE: SUMBHA" }
     - { id: diti, rel: mother, cite: "PE: NISUMBHA I" }
+  killedBy:
+    - { id: uma, ver: purana, cite: "Brahmavaivarta Purana 3.31; 2.64; Shiva Purana 2.5.40.44, 2.5.24.17; CE 4.41.19*795", note: "The Goddess (Durga), told only in passing: a kavacha's praise, Shiva's forecast, and a starred line where Drona takes the disguised Arjuna for the Goddess who slew Shumbha and Nishumbha." }
 
 - id: shatrunjaya-karna
   name: "Shatrunjaya (Karna's brother)"
@@ -1756,6 +1795,8 @@
   parents:
     - { id: adhiratha, rel: father, cite: "CE 7.31.56-60", note: "The three are the suta's son's sodaryā, born of the same womb; Karna is called Adhirathi and Radheya in the same passage." }
     - { id: radha, rel: mother, cite: "CE 7.31.58-60" }
+  killedBy:
+    - { id: arjuna, cite: "CE 7.31.58-60, 8.4.45", note: "twelfth day; with Vipata and a younger brother, killed before Karna's eyes" }
 
 - id: dattoli
   name: "Dattoli"
@@ -2006,6 +2047,8 @@
   parents:
     - { id: viprachitti, rel: father, cite: "Vayu Purana 2.7.17-20" }
     - { id: simhika, rel: mother, cite: "Vayu Purana 2.7.17-20" }
+  killedBy:
+    - { id: parashurama, ver: purana, cite: "Vayu Purana 2.7.17-22", note: "the fourteen sons of Viprachitti and Simhika and their ten thousand kin" }
 
 - id: pradha-daughters
   name: "Pradha's daughters"
@@ -2027,6 +2070,8 @@
   summary: "Born by Narayana's command from a honey-like drop of water on the lotus where Brahma sat; with Kaitabha he carried off the Vedas from Brahma, and Vishnu killed both."
   parents:
     - { id: vishnu, rel: birth-cause, cite: "CE 12.335.21-23", note: "Born of a drop of water made by Narayana; the Devi Bhagavata has the pair born of Vishnu's ear-wax (PE: KAITABHA)." }
+  killedBy:
+    - { id: vishnu, cite: "CE 3.194.8-30", note: "they asked to be killed where the earth was not under water; Vishnu cut off their heads with his discus on his thighs" }
 
 - id: kaitabha
   name: "Kaitabha"
@@ -2037,6 +2082,8 @@
   pe: "KAITABHA"
   parents:
     - { id: vishnu, rel: birth-cause, cite: "CE 12.335.21-23", note: "Born of a drop of water made by Narayana; the Devi Bhagavata has the pair born of Vishnu's ear-wax (PE: KAITABHA)." }
+  killedBy:
+    - { id: vishnu, cite: "CE 3.194.8-30", note: "they asked to be killed where the earth was not under water; Vishnu cut off their heads with his discus on his thighs" }
 
 - id: kapotaroman-shibi
   name: "Kapotaroman"
@@ -2115,6 +2162,8 @@
   ver: purana
   parents:
     - { id: diti, rel: mother, ver: "purana", cite: "Shiva Purana 2.5.58.2-4; PE: DUNDUBHINIHRADA", note: "The Shiva Purana calls him Prahlada's uncle; the PE makes him Diti's son." }
+  killedBy:
+    - { id: shiva, ver: purana, cite: "Shiva Purana 2.5.58.29-32", note: "at Kashi, in tiger form, crushed under Shiva's armpit and struck on the head with his fist" }
 
 - id: apala
   name: "Apala"
@@ -2230,6 +2279,8 @@
   pe: "SALVA I"
   incarnation:
     - { of: ajaka-danava, kind: rebirth, cite: "adi 67", ver: "vulgate", note: "Ganguli's Adi 67 makes Vrishaparvan's younger brother Ajaka king Salwa; the CE (1.61.17) says Ajaka was born as king Malla." }
+  killedBy:
+    - { id: krishna, cite: "CE 3.23.33-40, 5.47.73; Bhagavata Purana 10.77.33-37; Harivamsa 97.6, 109.40", note: "after the discus split the flying city Saubha, Krishna sent it again and it cut Shalva in two; Krishna narrates" }
 
 - id: ajaka-danava
   name: "Ajaka"
@@ -2319,6 +2370,8 @@
   pe: "RAJADHARMA"
   parents:
     - { id: kashyapa, rel: father, cite: "CE 12.163.18, 12.164.2" }
+  killedBy:
+    - { name: "Gautama, the ungrateful brahmin he sheltered", cite: "CE 12.166.2-4, 12.167.10", note: "struck with a burning brand as he slept, then roasted; revived (12.167.5-10)" }
 
 - id: angiras-daughters-vana
   name: "Angiras's daughters (Vana Parva)"
@@ -2557,6 +2610,8 @@
   summary: "Mother of Shukra (Kavya), an ascetic of great power. While Shukra was away at his penance she sheltered the asuras, put the gods to sleep and paralysed Vishnu and Indra. Vishnu cut off her head with his discus; Bhrigu revived her, and she cursed Vishnu to be born many times (PE, from the Devi Bhagavata)."
   pe: "KAVYAMATA"
   ver: purana
+  killedBy:
+    - { id: vishnu, ver: ramayana, cite: "Ramayana 1.24.18; Vayu Purana 2.35.136-146; Padma Purana 1.13.240-249", note: "Bhrigu's wife, who wanted a world without Indra; Vishvamitra cites her to Rama" }
 
 - id: vaka
   name: "Vaka"
@@ -2833,6 +2888,8 @@
   ver: ramayana
   parents:
     - { id: virochana, rel: father, cite: "Ramayana 1.24.17" }
+  killedBy:
+    - { id: indra, ver: ramayana, cite: "Ramayana 1.24.17", note: "she wanted to destroy the earth; Vishvamitra cites her when urging Rama to kill Tataka" }
 
 - id: acchoda
   name: "Acchoda"
@@ -2858,6 +2915,8 @@
   ver: vulgate
   parents:
     - { id: shibi, rel: father, cite: "CE 3 App. I.21.290-292", ver: "vulgate", note: "Appendix passage, not the CE main text." }
+  killedBy:
+    - { id: shibi, ver: vulgate, cite: "CE 3 App. I.21.290-294", note: "a brahmin (the Creator in disguise) asked Shibi to kill and cook his son for a meal; he did, and the boy was given back alive" }
 
 - id: trinabindu-sons
   name: "Vishala's brothers"
@@ -2882,6 +2941,8 @@
   ver: purana
   parents:
     - { id: maya, rel: father, cite: "Bhagavata Purana 10.37.28" }
+  killedBy:
+    - { id: krishna, ver: purana, cite: "Bhagavata Purana 10.37.28-33", note: "Maya's son, who hid the cowherd boys in a cave; Krishna throttled him like a sacrificial beast" }
 
 # --- Bharata's line with its queens, Bhagavata Purana 5.15 (build/bharata-line.cjs) ---
 
@@ -4015,6 +4076,8 @@
   title: "Suta bard, father of Ugrashravas"
   summary: "A Suta versed in the Puranas, father of Ugrashravas Sauti, who recited the Mahabharata to Shaunaka's sages in the Naimisha forest."
   wiki: "Lomaharshana"
+  killedBy:
+    - { id: balarama, ver: purana, cite: "Bhagavata Purana 10.78.22-28", note: "at Naimisha, for not rising to greet him; Balarama struck him with a kusha blade, then atoned" }
 
 - id: ugrashravas
   name: "Ugrashravas"
@@ -4090,6 +4153,8 @@
   ver: later
   parents:
     - { id: karna, rel: father, ver: "later", cite: "PE: VRSAKETU", note: "Jaimini Bharata, Ashvamedha Parva 30, per the PE." }
+  killedBy:
+    - { id: babhruvahana, ver: later, cite: "PE: VRSAKETU", note: "PE only, from the Jaimini Bharata (Ashvamedha 30): guarding Yudhishthira's sacrificial horse" }
 
 - id: mainda
   name: "Mainda"
@@ -4100,6 +4165,8 @@
   ver: ramayana
   parents:
     - { id: ashvins, rel: divine-father, cite: "Ramayana 4.38.23" }
+  killedBy:
+    - { id: krishna, ver: harivamsa, cite: "Harivamsa 109.40", note: "mention in Anadhrishti's list of Krishna's kills; HV 105.20 says only defeated" }
 
 - id: dvivida
   name: "Dvivida"
@@ -4111,6 +4178,9 @@
   ver: ramayana
   parents:
     - { id: ashvins, rel: divine-father, cite: "Ramayana 4.38.23" }
+  killedBy:
+    - { id: krishna, ver: harivamsa, disputed: true, cite: "Harivamsa 109.40", note: "mention in Anadhrishti's list of Krishna's kills; HV 105.20 says only defeated" }
+    - { id: balarama, ver: purana, disputed: true, cite: "Bhagavata Purana 10.67.17-28; Vishnu Purana 5.36.16-21", note: "on Raivataka, for wrecking the land and molesting women; Balarama struck his collarbone with his fists" }
 
 - id: hrada
   name: "Hrada"
@@ -4146,6 +4216,8 @@
     - { id: dhamani, rel: mother, ver: "purana", cite: "Bhagavata Purana 6.18.15" }
     - { id: viprachitti, rel: father, ver: "purana", cite: "Vishnu Purana 1.21.10-11" }
     - { id: simhika, rel: mother, ver: "purana", cite: "Vishnu Purana 1.21.10-11" }
+  killedBy:
+    - { id: agastya, ver: ramayana, cite: "Ramayana 3.10.60-64", note: "when he rushed at Agastya after Vatapi was digested, the sage's fiery glance burnt him to death" }
 
 - id: vatapi
   name: "Vatapi"
@@ -4159,6 +4231,8 @@
     - { id: dhamani, rel: mother, ver: "purana", cite: "Bhagavata Purana 6.18.15" }
     - { id: viprachitti, rel: father, ver: "purana", cite: "Vishnu Purana 1.21.10-11; Vayu Purana 2.7.17-20" }
     - { id: simhika, rel: mother, ver: "purana", cite: "Vishnu Purana 1.21.10-11; Vayu Purana 2.7.17-20" }
+  killedBy:
+    - { id: agastya, cite: "CE 3.97.1-7; Ramayana 3.10.59-62", note: "served to Agastya as mutton by Ilvala; Agastya ate and digested him, so he could not come back out when called" }
 
 - id: gargya
   name: "Gargya"
@@ -4185,10 +4259,12 @@
   title: "Yavana king, son of Gargya, burnt by Muchukunda"
   summary: "The son Shiva granted Gargya, born of the apsara Gopali and brought up by the sonless king of the Yavanas, who crowned him. He besieged Mathura; Krishna led him into Muchukunda's cave, where the waking king's glance burnt him to ashes. The Vishnu Purana has him born of the Yavana king's wife."
   wiki: "Kalayavana"
-  ver: harivamsa
   parents:
-    - { id: gargya, rel: father, cite: "Harivamsa 85.7-15; Vishnu Purana 5.23.1-5" }
-    - { id: gopali, rel: mother, cite: "Harivamsa 85.14-15", note: "The Vishnu Purana (5.23.4) has him born of the wife of the sonless Yavana king." }
+    - { id: gargya, ver: harivamsa, rel: father, cite: "Harivamsa 85.7-15; Vishnu Purana 5.23.1-5" }
+    - { id: gopali, ver: harivamsa, rel: mother, cite: "Harivamsa 85.14-15", note: "The Vishnu Purana (5.23.4) has him born of the wife of the sonless Yavana king." }
+  killedBy:
+    - { id: krishna, disputed: true, cite: "CE 12.326.88", note: "Narayana foretells that Kalayavana's death will come from him alone, as Krishna" }
+    - { id: muchukunda, ver: purana, disputed: true, cite: "Bhagavata Purana 10.51.10-12; Harivamsa 85.46-52, 85.60; Vishnu Purana 5.23.18-23", note: "Krishna led him into the cave; kicked awake, Muchukunda burned him to ash with a glance" }
 
 - id: kushadhvaja-brihaspati
   name: "Kushadhvaja (Brihaspati's son)"
@@ -4199,6 +4275,8 @@
   ver: ramayana
   parents:
     - { id: brihaspati, rel: father, cite: "Ramayana 7.17.7" }
+  killedBy:
+    - { name: "the Daitya king Shambhu", ver: ramayana, cite: "Ramayana 7.17.10-13", note: "killed asleep at night for refusing him Vedavati, whom he kept for Vishnu; Vedavati tells Ravana" }
 
 - id: vedavati
   name: "Vedavati"
@@ -4230,8 +4308,11 @@
   summary: "Warlike Danavas who with the Paulomas lived in the flying city Hiranyapura, made by Brahma for Puloma and Kalaka. Arjuna destroyed them after defeating the Nivatakavachas. The Bhagavata counts sixty thousand Paulomas and Kalakeyas and makes them sons of Kashyapa by Vaishvanara's daughters."
   wiki: "Kalakeyas"
   parents:
-    - { id: kalaka-vaishvanari, rel: mother, ver: "purana", cite: "Bhagavata Purana 6.6.34-36", note: "CE 3.170.6-11 names Kalaka as the asuri for whose sons Hiranyapura was built." }
+    - { id: kalaka-vaishvanari, rel: mother, ver: "purana", cite: "Bhagavata Purana 6.6.34-36; Vishnu Purana 1.21.8-9", note: "CE 3.170.6-11 names Kalaka as the asuri for whose sons Hiranyapura was built." }
     - { id: kashyapa, rel: father, ver: "purana", cite: "Bhagavata Purana 6.6.34-35" }
+  killedBy:
+    - { id: arjuna, cite: "CE 3.170.1-63; Harivamsa 3.74", note: "the flying city Hiranyapura; Arjuna, narrating, killed them all with Gandiva and Shiva's Raudra weapon" }
+    - { id: ravana, ver: ramayana, cite: "Ramayana 7.23.15, 7.24.21", note: "Ravana took their city Ashmanagara in Rasatala and slew four hundred of them" }
 
 - id: puloma-vaishvanari
   name: "Puloma (Vaishvanara's daughter)"
@@ -4252,6 +4333,8 @@
   parents:
     - { id: puloma-vaishvanari, rel: mother, ver: "purana", cite: "Bhagavata Purana 6.6.34-36", note: "CE 3.170.6 names the daiteyi Puloma beside Kalaka." }
     - { id: kashyapa, rel: father, ver: "purana", cite: "Bhagavata Purana 6.6.34-35" }
+  killedBy:
+    - { id: arjuna, cite: "CE 3.170.1-63; Harivamsa 3.74", note: "the flying city Hiranyapura; Arjuna, narrating, killed them all with Gandiva and Shiva's Raudra weapon" }
 
 - id: varangi-vajranga
   name: "Varangi (Vajranga's wife)"
@@ -4271,10 +4354,11 @@
   title: "asura, son of Vajranga, killed by Skanda"
   summary: "Born of Varangi to Vajranga amid evil portents and named by Kashyapa. By penance he won near-invincibility and drove the gods from heaven; Skanda, the son of Shiva, killed him. His three sons ruled the three cities, Tripura."
   wiki: "Tārakāsura"
-  ver: purana
   parents:
-    - { id: vajranga, rel: father, cite: "Shiva Purana 2.3.15.1-2" }
-    - { id: varangi-vajranga, rel: mother, cite: "Shiva Purana 2.3.15.1-2" }
+    - { id: vajranga, ver: purana, rel: father, cite: "Shiva Purana 2.3.15.1-2" }
+    - { id: varangi-vajranga, ver: purana, rel: mother, cite: "Shiva Purana 2.3.15.1-2" }
+  killedBy:
+    - { id: skanda, cite: "CE 9.45.60-64; Shiva Purana 2.4.10.29-32", note: "Skanda, consecrated commander of the gods, killed the Daitya lord with Indra's spear weapon" }
 
 - id: tripura-asuras
   name: "The Tripura asuras"
@@ -4287,6 +4371,8 @@
   membersCite: "CE 8.24.4; Shiva Purana 2.5.1.7-8"
   parents:
     - { id: taraka, rel: father, cite: "CE 8.24.4; Shiva Purana 2.5.1.7-8" }
+  killedBy:
+    - { id: shiva, cite: "CE 8.24.115-121; Harivamsa 65.38; Shiva Purana 2.5.10.25-30", note: "burned the three cities, once joined, with one arrow charged with the Pashupata weapon" }
 
 - id: kumbhanda
   name: "Kumbhanda"
@@ -4295,6 +4381,8 @@
   title: "Bana's minister, Chitralekha's father"
   summary: "Minister of the asura Bana and father of Chitralekha, Usha's friend."
   ver: purana
+  killedBy:
+    - { id: balarama, ver: purana, cite: "Bhagavata Purana 10.63.8, 10.63.16", note: "in Bana's war, with Kupakarna, felled by Balarama's pestle; their troops fled with their leaders slain" }
 
 - id: chitralekha
   name: "Chitralekha"
@@ -4335,9 +4423,12 @@
   summary: "Son of the Danava Rambha by a she-buffalo. He became king of the asuras and drove the gods from heaven until the Goddess killed him. His son Gajasura avenged him on the gods."
   wiki: "Mahishasura"
   pe: "MAHISA I"
-  ver: purana
   parents:
-    - { id: rambha-danava, rel: father, cite: "PE: MAHISA I", note: "Vamana Purana 17, per the PE." }
+    - { id: rambha-danava, rel: father, ver: purana, cite: "PE: MAHISA I", note: "Vamana Purana 17, per the PE." }
+  killedBy:
+    - { id: skanda, disputed: true, cite: "CE 3.221.60-73, 9.45.65", note: "Rudra held back and remembered Skanda, the asura's destined death; Skanda's spear split his head" }
+    - { id: nidra-yogamaya, ver: vulgate, disputed: true, cite: "CE 4 App. I.4D.29", note: "Yudhishthira's hymn hails Durga, Yashoda's daughter and Vasudeva's sister, as destroyer of Mahishasura" }
+    - { id: uma, ver: purana, disputed: true, cite: "Shiva Purana 2.5.57.2-4; Brahmavaivarta Purana 3.31; 2.64", note: "named as the cause of his son Gajasura's enmity; the Goddess killed him for the gods" }
 
 - id: gajasura
   name: "Gajasura"
@@ -4349,6 +4440,8 @@
   ver: purana
   parents:
     - { id: mahishasura, rel: father, cite: "Shiva Purana 2.5.57.3-4" }
+  killedBy:
+    - { id: shiva, ver: purana, cite: "Shiva Purana 2.5.57.48-52, 57.71", note: "pierced by the trident at Kashi; dying, he asked Shiva to wear his hide" }
 
 - id: upamanyu
   name: "Upamanyu"
@@ -4417,6 +4510,8 @@
   wiki: "Putana"
   parents:
     - { id: bali, rel: father, ver: "purana", cite: "Brahmavaivarta Purana 4.115", note: "Brahmavaivarta 4.10 says instead that Bali's daughter Ratnamala, wishing to suckle Vamana, was reborn as Putana." }
+  killedBy:
+    - { id: krishna, cite: "CE 5.128.45; Bhagavata Purana 10.6.8-14; Vishnu Purana 5.5.7-11; Harivamsa 50.20-24", note: "killed by Krishna as an infant (Vidura's list of his deeds; also named in 2.38.4)" }
 
 - id: ajamila
   name: "Ajamila"
@@ -4461,6 +4556,8 @@
     - { id: shiva, rel: birth-cause, ver: purana, cite: "Shiva Purana 2.5.14.2-4", note: "Born of the brilliance of Shiva's third eye, cast into the briny sea." }
   spouses:
     - { id: vrinda, ver: purana, cite: "Shiva Purana 2.5.14.33-35" }
+  killedBy:
+    - { id: shiva, ver: purana, cite: "Shiva Purana 2.5.24.45-53; Padma Purana 6.18.100-110", note: "with the Sudarshana discus he had drawn with his toe, which cut off his head" }
 
 - id: sudama-gopa
   name: Sudama (Krishna's cowherd)
@@ -4485,6 +4582,8 @@
     - { id: tulasi, ver: purana, cite: "Shiva Purana 2.5.28.7-8, 2.5.28.16; Brahmavaivarta Purana 2.16" }
   incarnation:
     - { of: sudama-gopa, kind: rebirth, ver: purana, cite: "Shiva Purana 2.5.27.32, 2.5.29; Brahmavaivarta Purana 2.18", note: "Sudama, Krishna's cowherd, born a Danava through Radha's curse." }
+  killedBy:
+    - { id: shiva, ver: purana, cite: "Shiva Purana 2.5.40.22-28; Brahmavaivarta Purana 2.20", note: "the trident Vijaya, once Vishnu had taken his armour and Tulasi's chastity was broken" }
 
 - id: dharmadhvaja-bvp
   name: Dharmadhvaja (Tulasi's father)

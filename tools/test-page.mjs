@@ -167,14 +167,33 @@ const same = await page.evaluate(() => {
 });
 check(/possibly the same being as/i.test(same.panel) && /Yama/.test(same.panel) && same.off === 0 && same.on === 1 && same.q >= 1,
   `Dharma ≟ Yama: listed in the panel, drawn with a “?” only when ticked (${same.off} → ${same.on})`);
+// named sets ("One of") and who killed whom, in the panel
+const sets = await page.evaluate(() => {
+  const t = window.__tree, txt = () => document.querySelector("#panelBody").innerText;
+  t.select("mandodari"); const mando = txt();
+  t.select("kumbhakarna"); const kumbha = txt();
+  t.select("rama"); const rama = txt();
+  t.showSet("ashta-vasus"); const vasus = txt(), lit = document.querySelectorAll("#nodes .n.rel").length;
+  const found = t.search("Panchakanya")[0];
+  t.clearSelection();
+  return { mando, kumbha, rama, vasus, lit, found: found && found.it.set };
+});
+check(/One of\s*Panchakanya/.test(sets.mando), "Mandodari's panel: One of Panchakanya");
+check(/killed by\s*Rama[\s\S]*or\s*Lakshmana/.test(sets.kumbha), "Kumbhakarna: killed by Rama (Ramayana) or Lakshmana (CE), side by side");
+check(/KILLED \(\d+\)[\s\S]*Ravana/i.test(sets.rama), "Rama's panel lists whom he killed");
+check(/Pratyusha/.test(sets.vasus) && /Dhara/.test(sets.vasus) && sets.lit >= 3, `the eight Vasus' set panel, ${sets.lit} boxes lit`);
+check(sets.found === "panchakanya", "search finds a set by name");
 const fam = await page.evaluate(() => {
   const t = window.__tree, first = (a, b) => { const r = t.findRoutes(a, b, false); return r.length ? t.kinPhrase(r[0].path) : null; };
   return { drona: first("drona", "brihaspati"), subhadra: first("balarama", "subhadra"), rama: t.findRoutes("rama", "krishna", false).map((r) => t.routeLabel(r.path)), kaur: [t.findRoutes("vamana", "krishna", false).map((r) => t.routeLabel(r.path))[0]],
     sanjna: first("yama", "shani"), yami: first("yama", "yami"),
     arjuna: t.findRoutes("arjuna", "krishna", false).map((r) => t.routeLabel(r.path)),
+    sibs: [["heti", "praheti"], ["malyavan", "mali-rakshasa"], ["karna", "arjuna"], ["yudhishthira", "arjuna"], ["yudhishthira", "nakula"], ["ravana", "vibhishana"]].map(([a, b]) => first(a, b)),
     shishu: t.findRoutes("shishupala", "kumbhakarna", true).map((r) => t.routeLabel(r.path) + " :: " + t.relSentence(r.path).replace(/<[^>]+>/g, "")),
     ghrit: t.findRoutes("drona", "ghritachi", true).map((r) => t.relSentence(r.path).replace(/<[^>]+>/g, "")) };
 });
+check(fam.sibs.join("/") === "brother/brother/half-brother/brother/half-brother/brother or half-brother",
+  `siblings (Heti-Praheti, Malyavan-Mali, Karna-Arjuna, Yudhishthira-Arjuna, Yudhishthira-Nakula, Ravana-Vibhishana): ${fam.sibs.join(" / ")}`);
 check(fam.arjuna[0] === "brother-in-law" && fam.arjuna.includes("both incarnations of Vishnu (through Nara)"), `Arjuna → Krishna: ${fam.arjuna.join(" / ")}`);
 check(fam.shishu.some((x) => /^through Ravana :: Shishupala is a rebirth of Ravana; Ravana’s brother is Kumbhakarna\.$/.test(x)), `rebirths ticked, Shishupala → Kumbhakarna: ${fam.shishu.join(" / ")}`);
 check(fam.ghrit[0] === "Drona was born through Ghritachi.", `rebirths ticked, Drona → Ghritachi: ${fam.ghrit[0]}`);

@@ -303,6 +303,12 @@ body:has(#canvas.hide-dyn) #dynsvg { display: none; }
 #panelBody .tag { font-size: 12px; padding: 1px 8px; border-radius: 99px; border: 1px solid var(--line); color: var(--text-2); }
 #panelBody .tag.folk { border-style: dashed; }
 #panelBody .aka { color: var(--text-2); font-size: 13px; margin: 0 0 10px; }
+/* "One of: Panchakanya · Pandavas": named sets and group boxes, each a link */
+#panelBody .oneof { display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px 6px; margin: 0 0 10px; font-size: 13px; }
+#panelBody .oneof-l { font-size: 12px; color: var(--text-2); margin-right: 2px; }
+#panelBody a.setchip { padding: 1px 9px; border-radius: 99px; background: var(--surface-2); border: 1px solid var(--line); color: var(--accent); font-weight: 550; cursor: pointer; text-decoration: none; }
+#panelBody a.setchip:hover { border-color: var(--accent); }
+#panelBody .plain { font-weight: 550; }
 #panelBody .summary { margin: 0 0 10px; }
 #panelBody .birth { margin: 0 0 10px; font-size: 13.5px; }
 #panelBody .actions { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0 6px; }

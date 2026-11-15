@@ -99,6 +99,8 @@
   incarnation:
     - { of: kalanemi-sons, kind: rebirth, ver: harivamsa, cite: "Harivamsa 47.21-27", disputed: true, note: "Hiranyakashipu's curse: “your father himself will kill you all in the womb”." }
     - { of: marichi-sons, kind: rebirth, ver: purana, cite: "Bhagavata Purana 10.85.47-51", disputed: true, note: "After a life as Hiranyakashipu's sons; Krishna later brings them back from the netherworld to comfort Devaki." }
+  killedBy:
+    - { id: kamsa, ver: harivamsa, cite: "CE 2 App. I.6.37-38; Bhagavata Purana 10.1.66, 10.2.4; Vishnu Purana 5.1.69-73; Harivamsa 48.2, 48.25", note: "killed each at birth, to escape the prophecy about Devaki's eighth child" }
 
 - id: nishatha
   name: Nishatha
@@ -558,6 +560,8 @@
   wiki: Sunda and Upasunda
   parents:
     - { id: nikumbha-daitya, rel: father, cite: "CE 1.201.2-3" }
+  killedBy:
+    - { id: upasunda, cite: "CE 1.204.13-19", note: "the brothers fought over Tilottama with maces and killed each other" }
 
 - id: upasunda
   name: Upasunda
@@ -568,6 +572,8 @@
   wiki: Sunda and Upasunda
   parents:
     - { id: nikumbha-daitya, rel: father, cite: "CE 1.201.2-3" }
+  killedBy:
+    - { id: sunda, cite: "CE 1.204.13-19", note: "the brothers fought over Tilottama with maces and killed each other" }
 
 - id: tilottama
   name: Tilottama
@@ -612,6 +618,8 @@
   membersCite: "CE 8.4.82, 14.84.3"
   parents:
     - { id: shishupala, rel: father, cite: "CE 8.4.82, 14.84.3" }
+  killedBy:
+    - { id: drona, cite: "CE 8.4.82", note: "Suketu, Shishupala's son; known only from Sanjaya's list of the dead" }
 
 - id: jayatsena-magadha
   name: Jayatsena (Magadha)
@@ -622,6 +630,8 @@
   summary: Jarasandha's son, who brought an akshauhini to Yudhishthira; he and his brother Sahadeva are both called Jarasandha's sons.
   parents:
     - { id: jarasandha, rel: father, cite: "CE 5.19.8, 5.49.44" }
+  killedBy:
+    - { id: abhimanyu, cite: "CE 8.4.31", note: "killed by Abhimanyu; only in Sanjaya's list of the dead, though 5.19.8 places him with Yudhishthira" }
 
 - id: meghasandhi
   name: Meghasandhi
@@ -650,6 +660,9 @@
   membersCite: "CE 5.168.22, 7.98.27-37; CE 7.131.126"
   parents:
     - { id: drupada, rel: father, cite: "CE 5.168.22, 7.98.27-37", note: "The Puranic Encyclopaedia makes Satyajit Drupada's brother instead (SATYAJIT II)." }
+  killedBy:
+    - { id: drona, cite: "CE 7.20.11-16, 7.98.27-42, 8.4.60", note: "Satyajit beheaded on the twelfth day; Viraketu, then Chitraketu, Sudhanvan, Chitravarman and Chitraratha on the fourteenth" }
+    - { id: ashwatthama, cite: "CE 10.8.60-62, 10.8.150", note: "the night raid; Drupada's surviving sons and grandsons, with the Prabhadrakas" }
 
 - id: dhrishtadyumna-sons
   name: Dhrishtadyumna's sons
@@ -660,6 +673,9 @@
   membersCite: "CE 7.9.49, 5.168.7; Vishnu Purana 4.19.16"
   parents:
     - { id: dhrishtadyumna, rel: father, cite: "CE 7.9.49, 5.168.7; Vishnu Purana 4.19.16" }
+  killedBy:
+    - { id: drona, cite: "CE 7.101.59-63, 7.161.30-31, 8.4.76", note: "fourteenth day the boy Kshatradharman, shot through the heart; on the fifteenth Drona killed three of Drupada's grandsons" }
+    - { id: ashwatthama, cite: "CE 10.8.60-62", note: "the night raid; Drupada's grandsons who had survived Drona" }
 
 - id: shikhandi-son
   name: Shikhandi's son
@@ -670,6 +686,8 @@
   membersCite: "CE 7.9.59"
   parents:
     - { id: shikhandi, rel: father, cite: "CE 7.9.59" }
+  killedBy:
+    - { id: lakshmana-kumara, cite: "CE 8.4.77", note: "Kshatradeva, killed by Duryodhana's son Lakshmana; only in Sanjaya's list of the dead" }
 
 - id: hiranyavarman
   name: Hiranyavarman
@@ -700,6 +718,10 @@
   membersCite: "CE 1.177.5, 6.86.24-30, 7.29.9, 7.132.20"
   parents:
     - { id: subala, rel: father, cite: "CE 1.177.5, 6.86.30" }
+  killedBy:
+    - { id: iravan, cite: "CE 6.86.24-43", note: "eighth day; Iravan cut down five of the six Gandhara princes with his sword; Vrishaka escaped" }
+    - { id: arjuna, cite: "CE 7.29.8-13", note: "twelfth day; Vrishaka and Achala, sharing one chariot, killed with a single arrow" }
+    - { id: bhima, cite: "CE 7.132.19-21", note: "fourteenth night; Shatachandra, then Gajaksha, Sharabha, Vibhu and others, Shakuni's brothers" }
 
 - id: gandhari-sisters
   name: Gandhari's sisters
@@ -721,6 +743,8 @@
   membersCite: "CE 1.177.14; Vishnu Purana 4.20.10"
   parents:
     - { id: somadatta, rel: father, cite: "CE 1.177.14; Vishnu Purana 4.20.10" }
+  killedBy:
+    - { id: satyaki, cite: "CE 7.141.1-13", note: "fourteenth night; Bhuri, Somadatta's son, felled by Satyaki's spear; Shala's death is mentioned (11.24.9) without a killer" }
 
 - id: shalya-sons
   name: Shalya's sons
@@ -731,6 +755,9 @@
   membersCite: "CE 1.177.13, 7.44.9"
   parents:
     - { id: shalya, rel: father, cite: "CE 1.177.13, 7.44.9" }
+  killedBy:
+    - { id: abhimanyu, disputed: true, cite: "CE 7.44.9-14", note: "thirteenth day; Rukmaratha, Shalya's son, boasted he would take Abhimanyu alive; Abhimanyu cut off his arms and head" }
+    - { id: sahadeva, disputed: true, cite: "CE 8.4.27", note: "Sanjaya's list has Rukmaratha killed by Sahadeva, his cousin; 7.44.13 has Abhimanyu kill Rukmaratha" }
 
 - id: karna-sons
   name: Karna's other sons
@@ -741,6 +768,10 @@
   membersCite: "CE 8.32.40, 8.4.104"
   parents:
     - { id: karna, rel: father, cite: "CE 8.32.40, 8.4.104" }
+  killedBy:
+    - { id: bhima, cite: "CE 8.32.49-51", note: "sixteenth day; Satyasena beheaded with a razor arrow while guarding his father's wheel" }
+    - { name: "Uttamaujas of Panchala", disputed: true, cite: "CE 8.53.6-11", note: "seventeenth day; Sushena beheaded by Uttamaujas; yet 8.60.6-7 has Sushena fall to Satyaki later that day (sandhi cottamaujah)" }
+    - { id: satyaki, disputed: true, cite: "CE 8.60.6-7", note: "seventeenth day; Sushena, attacking Satyaki (Shaineya), fell to his arrows; contrast 8.53.10 (Uttamaujas)" }
 
 - id: karna-wife
   name: Karna's wife
@@ -796,6 +827,8 @@
   membersCite: "CE 4.22.22"
   parents:
     - { id: sudeshna-parent, rel: father, cite: "CE 4.22.22", note: "Called Kichaka's brothers." }
+  killedBy:
+    - { id: bhima, cite: "CE 4.22.15-28", note: "they were taking Draupadi to burn on Kichaka's pyre; Bhima killed all 105 with an uprooted tree" }
 
 - id: uparichara-sons
   name: Uparichara's other sons
@@ -911,6 +944,8 @@
   ver: purana
   parents:
     - { id: ugrasena, rel: father, cite: "Vishnu Purana 4.14.5" }
+  killedBy:
+    - { id: balarama, ver: purana, cite: "Bhagavata Purana 10.44.40-41", note: "all eight, Kanka, Nyagrodha and the rest, rushed to avenge Kamsa; Balarama clubbed them (VP 5.20.78: only Sunaman)" }
 
 - id: ugrasena-daughters
   name: Kamsa's sisters
@@ -1208,9 +1243,10 @@
   summary: Of Kartavirya Arjuna's thousand sons, five survived Parashurama; Shura, Shurasena, Vrishana, Madhu and Jayadhvaja.
   members: [Shura, Shurasena, Vrishana, "@madhu-haihaya"]
   membersCite: "Vishnu Purana 4.11.9; Harivamsa 23.157"
-  ver: purana
   parents:
-    - { id: kartavirya, rel: father, cite: "Vishnu Purana 4.11.9" }
+    - { id: kartavirya, ver: purana, rel: father, cite: "Vishnu Purana 4.11.9" }
+  killedBy:
+    - { id: parashurama, cite: "CE 3.117.6-9, 12.49.44-46; Bhagavata Purana 9.16.17-19", note: "avenging Jamadagni, then emptying the earth of kshatriyas twenty-one times" }
 
 - id: yadu-sons
   name: Yadu's other sons

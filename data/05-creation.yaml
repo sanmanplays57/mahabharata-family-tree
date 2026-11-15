@@ -389,6 +389,8 @@
   wiki: Virochana
   parents:
     - { id: prahlada, rel: father, cite: adi 65 }
+  killedBy:
+    - { id: indra, ver: purana, cite: "Vayu Purana 2.35.80, 2.35.103; Padma Purana 1.13.186, 1.13.210", note: "Prahlada's son, always set on killing Indra, killed by him in the Tarakamaya war" }
 
 - id: bali
   name: Mahabali
@@ -402,6 +404,8 @@
     - { id: virochana, rel: father, cite: adi 65 }
   spouses:
     - { id: ashana, ver: purana, cite: "Bhagavata Purana 6.18.17" }
+  killedBy:
+    - { id: indra, ver: purana, cite: "Bhagavata Purana 8.11.12, 8.11.46-48", note: "Indra's thunderbolt felled him in the war after the churning; Shukra revived him with the Sanjivani lore" }
 
 - id: bana
   name: Bana
@@ -415,6 +419,8 @@
     - { id: bali, rel: father, cite: adi 65 }
     - { id: ashana, rel: mother, ver: purana, cite: "Bhagavata Purana 6.18.17", note: "Bali's hundred sons, Bana the eldest, were born of Ashana." }
     - { id: kotara, rel: mother, ver: purana, cite: "Bhagavata Purana 10.63.20", note: "tan-mātā koṭarā nāma: the Bhagavata names Bana's mother Kotara here, against Ashana at 6.18.17." }
+  killedBy:
+    - { id: krishna, cite: "CE 5.61.11, 5.128.47", note: "Bhishma calls Krishna his slayer; Vidura lists him as killed in battle; 12.326.87 says only defeated. The Bhagavata has Krishna spare him for Prahlada's sake, leaving him four arms (10.63.47-49)." }
 
 - id: usha
   name: Usha
@@ -436,7 +442,6 @@
   summary: Daitya paired with Hiranyakashipu as the first birth of Vishnu's cursed gatekeepers Jaya and Vijaya; killed by Vishnu (as the boar, in the Puranas).
   notes: "The Mahabharata gives Diti one son, Hiranyakashipu (Adi 65); the Puranas add his brother Hiranyaksha. Bhagavata 3.17.18 has Hiranyaksha born first, Bhagavata 7.1.39 calls Hiranyakashipu the elder."
   wiki: Hiranyaksha
-  ver: purana
   incarnation:
     - { of: jaya-vijaya, kind: rebirth, ver: purana, cite: "PE: JAYA XI; Bhagavata Purana 7.1.36-39" }
   parents:
@@ -444,6 +449,8 @@
     - { id: kashyapa, rel: father, ver: purana, cite: "Vishnu Purana 1.15.140; Bhagavata Purana 3.17.18" }
   spouses:
     - { id: upadanavi, ver: purana, cite: "Bhagavata Purana 6.6.33-34" }
+  killedBy:
+    - { id: vishnu, cite: "CE 12.326.72-73; Bhagavata Purana 3.19.25-28; Shiva Purana 2.5.42.44-49; Padma Purana 1.13.185", note: "Narayana foretells that in the boar form he will kill Hiranyaksha" }
 
 # --- Danu's and Danayu's lines ---
 - id: puloman
@@ -466,6 +473,8 @@
     - { id: danayu, rel: mother, cite: adi 65 }
     - { id: kashyapa, rel: father, cite: adi 65 }
     - { id: tvashtri, rel: father, cite: "CE 5.9.40-43", note: "In the Udyoga, Tvashtri creates Vritra to avenge his son Trishiras; the Adi Parva makes Vritra a son of Kashyapa and Danayu." }
+  killedBy:
+    - { id: indra, cite: "CE 3.99.1-15; CE 5.10.33-39; Ramayana 7.76.13-15; Bhagavata Purana 6.12.25-35", note: "with the thunderbolt made from Dadhicha's bones, Vishnu having entered Indra" }
 
 # --- Vinata's and Kadru's lines ---
 - id: garuda
@@ -517,6 +526,8 @@
   summary: Son of Aruna and Shyeni; in the Rama story he fought Ravana to save Sita and was cut down.
   wiki: Jatayu
   parents: [{ id: aruna, rel: father, cite: adi 66 }, { id: shyeni, rel: mother, cite: adi 66 }]
+  killedBy:
+    - { id: ravana, cite: "CE 3.263.2-6, 3.263.19-20; Ramayana 3.49.36-37, 3.64.16", note: "fought Ravana to free Sita; Ravana cut off his wings with a sword; he told Rama and died" }
 
 - id: vasuki
   name: Vasuki
@@ -696,6 +707,8 @@
     - { id: satyavati-gadhi, rel: mother, cite: "CE 3.115.28" }
   spouses:
     - { id: renuka, cite: "CE 3.116.2" }
+  killedBy:
+    - { id: kartavirya-sons, cite: "CE 3.116.25-27, 12.49.42-43; Bhagavata Purana 9.16.9-14", note: "in revenge, while Rama was away; shot down unresisting (3.116) or beheaded with arrows (12.49)" }
 
 - id: renuka
   name: Renuka
@@ -707,6 +720,8 @@
   wiki: Renuka
   parents:
     - { id: prasenajit-renuka, rel: father, cite: "CE 3.116.2; Vishnu Purana 4.7.18" }
+  killedBy:
+    - { id: parashurama, cite: "CE 3.116.13-17; Bhagavata Purana 9.16.5-8", note: "at Jamadagni's command, for desiring King Chitraratha; Rama beheaded her with his axe and then asked that she be revived" }
 
 - id: parashurama
   name: Parashurama
@@ -782,6 +797,8 @@
     - { id: vishvavasu, rel: father, cite: adi 8 }
     - { id: menaka, rel: mother, cite: adi 8 }
     - { id: sthulakesha, rel: adoptive-father, cite: adi 8 }
+  killedBy:
+    - { name: "a sleeping snake she trod on", cite: "CE 1.8.14-18, 1.9.4-10", note: "bitten while playing with friends before her wedding; revived when Ruru gave her half his life" }
 
 - id: shunaka
   name: Shunaka
@@ -879,6 +896,8 @@
   incarnation:
     - { of: jaya-vijaya, kind: rebirth, ver: purana, cite: "PE: JAYA XI; Bhagavata Purana 7.1.43" }
     - { of: hiranyakashipu, kind: rebirth, ver: purana, cite: "Vishnu Purana 4.14.11" }
+  killedBy:
+    - { id: rama, cite: "CE 3.274.24-31; Ramayana 6.97.14-18; Harivamsa 31.122-126", note: "With an arrow charged with the Brahma weapon; in the Ramayana it pierces his heart." }
 
 - id: kumbhakarna
   name: Kumbhakarna
@@ -893,6 +912,9 @@
     - { id: kaikasi, rel: mother, ver: ramayana, cite: "Ramayana 7.9.26" }
   incarnation:
     - { of: jaya-vijaya, kind: rebirth, ver: purana, cite: "PE: JAYA XI; Bhagavata Purana 7.1.43" }
+  killedBy:
+    - { id: rama, ver: ramayana, disputed: true, cite: "Ramayana 6.55.111-123", note: "Rama cut off his arms, then his legs, then his head." }
+    - { id: lakshmana-ayodhya, disputed: true, cite: "CE 3.271.16", note: "Lakshmana burned him with the Brahma weapon." }
 
 - id: raka
   name: Raka
@@ -919,6 +941,8 @@
   parents:
     - { id: vishravas, rel: father, cite: "CE 3.259.8" }
     - { id: raka, rel: mother, cite: "CE 3.259.8" }
+  killedBy:
+    - { id: rama, cite: "CE 3.261.41-43; Ramayana 3.29.24-28", note: "in Janasthana, with Dushana and fourteen thousand rakshasas, after the feud over Shurpanakha" }
 
 - id: shurpanakha
   name: Shurpanakha
@@ -972,6 +996,8 @@
     - { id: sukesha, rel: father, ver: ramayana, cite: "Ramayana 7.5.5" }
     - { id: devavati, rel: mother, ver: ramayana, cite: "Ramayana 7.5.2-5" }
     - { id: lanku, rel: father, cite: "Vayu Purana 2.8.124", ver: purana }
+  killedBy:
+    - { name: "the Vasu Savitra, eighth of the Vasus", ver: ramayana, cite: "Ramayana 7.27.34-41", note: "in Ravana's war on the gods, Savitra smashed his head with a mace and he turned to ash" }
 
 - id: ketumati
   name: Ketumati
@@ -1040,6 +1066,8 @@
     - { id: vriddhasharman, rel: father, ver: purana, cite: "Vishnu Purana 4.14.10" }
     - { id: shrutadeva, rel: mother, ver: purana, cite: "Vishnu Purana 4.14.10" }
     - { id: prithukirti, rel: mother, ver: harivamsa, cite: "Harivamsa 24.21", note: "The Harivamsa makes Vriddhasharman's son, Hiranyakashipu reborn, the son of Prithukirti; the Vishnu Purana gives Shrutadeva." }
+  killedBy:
+    - { id: krishna, ver: purana, cite: "Bhagavata Purana 10.78.3-10", note: "king of Karusha, avenging Shalva; struck in the chest with the mace Kaumodaki" }
 
 - id: dhrishtaketu
   name: Dhrishtaketu
@@ -1054,6 +1082,8 @@
     - { to: vishvadevas, cite: "svargarohana 5" }
   parents:
     - { id: shishupala, rel: father, cite: "CE 5.168.8, 5.49.41" }
+  killedBy:
+    - { id: drona, cite: "CE 7.101.25-38, 8.4.80", note: "fourteenth day; after Drona cut down his mace, javelin and spear, an arrow through the heart" }
 
 - id: jayanta
   name: Jayanta
@@ -1096,6 +1126,8 @@
   membersCite: adi 57
   parents:
     - { id: vasuki, rel: father, far: true, cite: adi 57, note: "“Born of Vasuki”: of his race, not necessarily his sons." }
+  killedBy:
+    - { id: janamejaya, cite: "CE 1.52.4-6, 19-22", note: "fell into the fire of Janamejaya's snake sacrifice" }
 
 - id: takshaka-burnt
   name: Takshaka's serpents burnt at the sacrifice
@@ -1106,6 +1138,8 @@
   membersCite: adi 57
   parents:
     - { id: takshaka, rel: father, far: true, cite: adi 57, note: "“Born of Takshaka”: of his race." }
+  killedBy:
+    - { id: janamejaya, cite: "CE 1.52.7-9, 19-22", note: "fell into the fire of Janamejaya's snake sacrifice" }
 
 - id: airavata-burnt
   name: Airavata's serpents burnt at the sacrifice
@@ -1116,6 +1150,8 @@
   membersCite: adi 57
   parents:
     - { id: airavata-naga, rel: father, far: true, cite: adi 57, note: "Born in his race." }
+  killedBy:
+    - { id: janamejaya, cite: "CE 1.52.10-11, 19-22", note: "fell into the fire of Janamejaya's snake sacrifice" }
 
 - id: kauravya-burnt
   name: Kauravya's serpents burnt at the sacrifice
@@ -1126,6 +1162,8 @@
   membersCite: adi 57
   parents:
     - { id: kauravya, rel: father, far: true, cite: adi 57, note: "Born in his race." }
+  killedBy:
+    - { id: janamejaya, cite: "CE 1.52.11-12, 19-22", note: "burnt in Janamejaya's great snake sacrifice" }
 
 - id: dhritarashtra-burnt
   name: Dhritarashtra's serpents burnt at the sacrifice
@@ -1136,6 +1174,8 @@
   membersCite: adi 57
   parents:
     - { id: dhritarashtra-naga, rel: father, far: true, cite: adi 57, note: "Born in his race." }
+  killedBy:
+    - { id: janamejaya, cite: "CE 1.52.13-22", note: "burnt in Janamejaya's great snake sacrifice" }
 
 # --- Vishvamitra's ancestry: the epic's (CE 13.4.2-8) and the Ramayana's (1.31-33) ---
 - id: sindhudvipa-jahnu
@@ -1255,6 +1295,9 @@
   parents:
     - { id: vasishtha, rel: father, cite: "CE 1.166.4" }
     - { id: arundhati, rel: mother, ver: purana, cite: "Vayu Purana 1" }
+  killedBy:
+    - { id: kalmashapada, disputed: true, cite: "CE 1.166.36-39", note: "Kalmashapada, possessed by the rakshasa Vishvamitra set on Vasishtha's sons, devoured Shakti and all his brothers" }
+    - { id: vishvamitra, ver: ramayana, disputed: true, cite: "Ramayana 1.58.13-19, 1.59.1", note: "by a curse, for mocking Trishanku's sacrifice: burnt to ash and sent to Yama's realm" }
 
 - id: gautama
   name: Gautama
@@ -1296,6 +1339,8 @@
   parents:
     - { id: jamadagni, rel: father, cite: "CE 3.116.4-10" }
     - { id: renuka, rel: mother, cite: "CE 3.116.4-10" }
+  killedBy:
+    - { id: parashurama, ver: purana, cite: "Bhagavata Purana 9.16.5-8", note: "at their father's order, with their mother; revived at his request" }
 
 - id: shunahshepa
   name: Shunahshepa
@@ -1491,6 +1536,8 @@
   parents:
     - { id: tvashtri, rel: father, cite: "CE 5.9.3" }
     - { id: rachana, rel: mother, ver: purana, cite: "Bhagavata Purana 6.6.44" }
+  killedBy:
+    - { id: indra, cite: "CE 5.9.20-26; Bhagavata Purana 6.9.4-5", note: "Indra feared the three-headed son of Tvashtri and struck him with the vajra; a carpenter then cut off his heads" }
 
 - id: riddhi
   name: Riddhi
@@ -1552,6 +1599,8 @@
   parents:
     - { id: varuna, rel: father, cite: "CE 7.67.44" }
     - { id: parnasha, rel: mother, cite: "CE 7.67.44" }
+  killedBy:
+    - { name: "his own mace, Varuna's gift, rebounding off Krishna", cite: "CE 7.67.43-55", note: "fourteenth day; Varuna's mace, hurled at the unarmed Krishna, turned back and killed its owner, as Varuna had warned" }
 
 - id: suvarchala
   name: Suvarchala
@@ -1710,6 +1759,8 @@
   summary: "Takshaka's son, who was in the Khandava forest when Arjuna and Krishna burnt it; his mother swallowed him to carry him out of the fire."
   parents:
     - { id: takshaka, rel: father, cite: "CE 1.218.5-6" }
+  killedBy:
+    - { id: arjuna, cite: "CE 8.66.20-24", note: "seventeenth day; the serpent who rode Karna's arrow, unnamed here; Krishna names him as the one whose mother died at Khandava" }
 
 - id: matali
   name: Matali
@@ -1754,6 +1805,8 @@
   summary: "naga, Sumukha's father, killed by Garuda"
   parents:
     - { id: aryaka, rel: father, cite: "CE 5.101.23-24" }
+  killedBy:
+    - { id: garuda, cite: "CE 5.101.23-24", note: "Sumukha's father, lately killed by Garuda (Vinata's son)" }
 
 - id: sumukha-naga
   name: Sumukha
@@ -1888,8 +1941,134 @@
   kind: asura
   title: blind asura, Shiva's son raised by Hiranyaksha
   summary: "Born blind, deformed and black when Parvati playfully closed Shiva's eyes and her sweat, heated by the fire of his third eye, conceived. Shiva gave him to the sonless Hiranyaksha as his son; after fighting Shiva he became a leader of the Ganas."
-  ver: purana
   parents:
     - { id: shiva, rel: father, ver: purana, cite: "Shiva Purana 2.5.42.16-21", note: "Rudra-samhita, Yuddha-khanda, ch. 42: “You did it yourself by closing my eyes.”" }
     - { id: uma, rel: mother, ver: purana, cite: "Shiva Purana 2.5.42.16-21" }
     - { id: hiranyaksha, rel: adoptive-father, ver: purana, cite: "Shiva Purana 2.5.42.38-40", note: "Shiva to Hiranyaksha: “there may not be a son born of your semen, but I shall grant you a son.”" }
+  killedBy:
+    - { id: shiva, cite: "CE 7.57.50; Padma Purana 1.44.50", note: "epithet in Krishna and Arjuna's hymn to Shiva: slayer of Andhaka" }
+
+- id: varuni
+  name: Varuni
+  aka: [Sura, Suradevi]
+  sex: f
+  kind: god
+  title: goddess of wine, Varuna's daughter, risen from the churned ocean
+  summary: "She rose from the ocean when the gods and asuras churned it, looking for someone to take her. Aditi's sons took her and Diti's sons refused, and the Ramayana says that is why the one are suras and the other a-suras (R 1.44.21-23). The Mahabharata names her only as the goddess Sura, risen from the churning (CE 1.16.34)."
+  parents:
+    - { id: varuna, rel: father, ver: ramayana, cite: "Ramayana 1.44.21", note: "varuṇasya tataḥ kanyā vāruṇī" }
+
+- id: kabandha
+  name: Kabandha
+  sex: m
+  kind: asura
+  title: headless monster of the Dandaka forest, killed by Rama and Lakshmana
+  summary: "A Danava who in his true form was beautiful as the moon. He scared the forest sages in a monstrous shape until the sage Sthulashiras cursed him to keep it, and when he attacked Indra, trusting Brahma's boon of long life, Indra's thunderbolt drove his head and thighs into his body; Indra then gave him arms a yojana long and a mouth in his belly. Cutting off his arms and burning him, as Rama and Lakshmana did, was to free him (R 3.67.1-13). In the Mahabharata he is the Gandharva Vishvavasu, born in that shape by a brahmin's curse (CE 3.263.38)."
+  parents:
+    - { id: danu, rel: mother, ver: ramayana, cite: "Ramayana 3.67.7", note: "śriyā virājitaṃ putraṃ danos tvaṃ viddhi, know me as Danu's son." }
+  incarnation:
+    - { of: vishvavasu, kind: rebirth, cite: "CE 3.263.38", note: "gandharvo viśvāvasur ahaṃ ... prāpto brahmānuśāpena yoniṃ rākṣasasevitām" }
+  killedBy:
+    - { id: lakshmana-ayodhya, cite: "CE 3.263.32-35; Ramayana 3.66.6-7, 3.68.1-5", note: "with Rama; each cut off an arm, then Lakshmana struck the fatal blow; the Gandharva Vishvavasu emerged (3.263.38)" }
+    - { id: rama, cite: "CE 3.263.32-35; Ramayana 3.66.6-7, 3.68.1-5", note: "with Lakshmana; Rama cut off one arm, Lakshmana the other and then struck the fatal blow" }
+
+- id: bhadramada
+  name: Bhadramada
+  sex: f
+  kind: other
+  title: daughter of Krodhavasha, grandmother of the elephant Airavata
+  summary: "One of the ten daughters Krodhavasha bore in the Ramayana's account of creation. Her daughter Iravati was the mother of Airavata."
+  ver: ramayana
+  parents:
+    - { id: krodha-daksha, rel: mother, cite: "Ramayana 3.13.21" }
+
+- id: iravati-elephant
+  name: Iravati (mother of Airavata)
+  sex: f
+  kind: animal
+  title: Bhadramada's daughter, mother of the elephant Airavata
+  summary: "Born to Bhadramada; her son is Airavata, the great elephant, lord of the world (R 3.13.24). Not Parikshit's wife Iravati."
+  ver: ramayana
+  parents:
+    - { id: bhadramada, rel: mother, cite: "Ramayana 3.13.24" }
+
+- id: airavata-elephant
+  name: Airavata (elephant)
+  sex: m
+  kind: animal
+  title: Indra's elephant, Iravati's son
+  summary: "The great elephant Indra rides. In the Ramayana he is Iravati's son (3.13.24); in Vibhishana's account Kumbhakarna tore a tusk from him and struck Indra with it (6.49.17). Not the serpent Airavata, Kadru's son."
+  wiki: Airavata
+  ver: ramayana
+  parents:
+    - { id: iravati-elephant, rel: mother, cite: "Ramayana 3.13.24" }
+
+- id: suketu-yaksha
+  name: Suketu (yaksha)
+  sex: m
+  kind: yaksha
+  title: yaksha lord, Tataka's father
+  summary: "A great yaksha who had no children and did hard penance; Brahma gave him a daughter, Tataka, with the strength of a thousand elephants, but no son (R 1.24.4-6). Not the Videha king Suketu."
+  ver: ramayana
+
+- id: jambha
+  name: Jambha
+  sex: m
+  kind: asura
+  title: father of Sunda, Tataka's husband
+  summary: "Named in the Ramayana only as the father of Sunda, to whom Suketu gave Tataka (R 1.24.7). The Puranic Encyclopaedia calls Sunda's father Jharjha."
+  ver: ramayana
+
+- id: sunda-jambha
+  name: Sunda (Tataka's husband)
+  sex: m
+  kind: other
+  title: Jambha's son, Tataka's husband, Maricha's father
+  summary: "Suketu gave him Tataka as wife and she bore Maricha. The Ramayana says only that he was killed; Tataka and Maricha then attacked Agastya (R 1.24.7-9). The Puranic Encyclopaedia calls him a Gandharva whom Agastya burned to death for attacking his hermitage. Not the asura Sunda of Sunda and Upasunda."
+  ver: ramayana
+  parents:
+    - { id: jambha, rel: father, cite: "Ramayana 1.24.7", note: "jambhaputrāya sundāya; the PE reads Jharjha." }
+  spouses:
+    - { id: tataka, cite: "Ramayana 1.23.25, 1.24.7" }
+  killedBy:
+    - { id: agastya, ver: later, cite: "PE: TATAKA; PE: SUBAHU", note: "PE only: burned to death by Agastya's curse when he attacked the hermitage. Valmiki does not name his killer (R 1.24.9)." }
+
+- id: tataka
+  name: Tataka
+  aka: [Tadaka, Thataka]
+  sex: f
+  kind: yaksha
+  title: yakshi cursed into a man-eater, Maricha's mother, killed by Rama
+  summary: "Brahma's gift to the childless yaksha Suketu, with the strength of a thousand elephants. Married to Sunda, she bore Maricha. When Sunda was killed she and her son attacked Agastya, who cursed Maricha to become a rakshasa and her to become a deformed man-eater; she then laid waste the land of the Maladas and Karushas. Vishvamitra had the young Rama kill her, his first fight (R 1.23.24-1.25.14)."
+  ver: ramayana
+  parents:
+    - { id: suketu-yaksha, rel: father, cite: "Ramayana 1.24.4-5" }
+    - { id: brahma, rel: birth-cause, cite: "Ramayana 1.24.5", note: "Brahma, pleased by Suketu's penance, gave him this daughter." }
+  killedBy:
+    - { id: rama, cite: "Ramayana 1.25.13-14; Vishnu Purana 4.4.49; Vayu Purana 2.6.73", note: "As she rushed at him with arms raised, Rama shot her in the chest and she fell dead." }
+
+- id: maricha
+  name: Maricha
+  aka: [Marica, Mareecha]
+  sex: m
+  kind: rakshasa
+  title: Tataka's son, cursed into a rakshasa; the golden deer
+  summary: "Son of Sunda and Tataka, made a rakshasa by Agastya's curse (R 1.24.8-10). With Subahu he defiled Vishvamitra's sacrifice; Rama's Manava weapon threw him a hundred yojanas into the sea without killing him (R 1.29.15-17). Years later, at Ravana's bidding, he became the golden deer that drew Rama away from Sita, and Rama killed him (R 3.42; CE 3.262.16-22)."
+  parents:
+    - { id: tataka, rel: mother, ver: ramayana, cite: "Ramayana 1.23.25, 1.24.8" }
+    - { id: sunda-jambha, rel: father, ver: ramayana, cite: "Ramayana 1.23.25, 1.24.7-8" }
+  killedBy:
+    - { id: rama, cite: "CE 3.262.21-22; Ramayana 3.42.10-15", note: "Shot while in the form of the golden deer; dying, he cried out in Rama's voice. In the Ramayana the arrow, charged with the Brahma weapon, split his heart." }
+
+- id: subahu-rakshasa
+  name: Subahu (rakshasa)
+  sex: m
+  kind: rakshasa
+  title: rakshasa who defiled Vishvamitra's sacrifice, killed by Rama
+  summary: "With Maricha he rained blood and flesh on Vishvamitra's altar, sent by Ravana (R 1.18.5, 1.19.18). Rama killed him with the fire weapon (R 1.29.19). The Puranic Encyclopaedia makes him Tataka's second son; Valmiki names no parents for him."
+  ver: ramayana
+  parents:
+    - { id: tataka, rel: mother, ver: later, cite: "PE: SUBAHU", note: "PE only; Valmiki names him only beside Maricha." }
+    - { id: sunda-jambha, rel: father, ver: later, cite: "PE: SUBAHU", note: "PE only." }
+  killedBy:
+    - { id: rama, cite: "Ramayana 1.29.18-19; CE 2.35 App. I.21.501; Vishnu Purana 4.4.50", note: "With the fire weapon, at Vishvamitra's sacrifice." }

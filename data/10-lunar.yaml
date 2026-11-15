@@ -67,6 +67,8 @@
     - { id: budha, rel: father, ver: purana, cite: "PE: BUDHA" }
   spouses:
     - { id: urvashi, cite: adi 75 }
+  killedBy:
+    - { name: "the angry great sages, by a curse", cite: "CE 1.70.18-20", note: "for robbing brahmins in his pride, cursed by the sages; he perished at once" }
 
 - id: urvashi
   name: Urvashi
@@ -1010,6 +1012,8 @@
   parents:
     - { id: pratipa, rel: father, cite: adi 95 }
     - { id: sunanda-shibi, rel: mother, cite: adi 95 }
+  killedBy:
+    - { id: bhima, cite: "CE 7.132.11-15", note: "fourteenth night; Bhima's hurled mace took off his head" }
 
 - id: somadatta
   name: Somadatta
@@ -1020,6 +1024,8 @@
   summary: Son of Bahlika and father of Bhurishravas; fought on the Kaurava side.
   parents:
     - { id: bahlika, rel: father, cite: "PE: SOMADATTA III" }
+  killedBy:
+    - { id: satyaki, cite: "CE 7.137.28-33", note: "fourteenth night; Satyaki (called the Satvata) shot him through the chest" }
 
 - id: bhurishravas
   name: Bhurishravas
@@ -1034,6 +1040,8 @@
     - { id: somadatta, rel: father, cite: "PE: SOMADATTA III" }
   returned:
     - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+  killedBy:
+    - { id: satyaki, cite: "CE 7.117.62, 7.118.32-36, 8.4.17", note: "fourteenth day; Arjuna had cut off his sword arm and he sat in prayopavesha; Satyaki beheaded him though all cried out" }
 
 
 # --- Urvashi's six sons by Pururavas (Adi 75): Ayus is above; the other five ---

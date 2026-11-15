@@ -33,6 +33,8 @@
     - { of: brihaspati, kind: portion, cite: adi 67 }
   returned:
     - { to: brihaspati, cite: "svargarohana 4, 5; CE 18.5.10", note: "“Drona entered Brihaspati, foremost of the Angirasas” (CE 18.5.10)." }
+  killedBy:
+    - { id: dhrishtadyumna, cite: "CE 7.165.36-54", note: "fifteenth day; after the lie about Ashvatthaman he laid down arms; he had left his body by yoga (165.41) when Dhrishtadyumna beheaded him" }
 
 - id: gautama-sharadvan
   name: Sharadvan Gautama
@@ -119,6 +121,8 @@
     - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
   spouses:
     - { id: prishati, cite: "CE 1.155.34, 5.189.2" }
+  killedBy:
+    - { id: drona, cite: "CE 7.161.29-35, 8.4.61", note: "fifteenth day; with two broad-headed arrows, one for Drupada and one for Virata" }
 
 - id: dhrishtadyumna
   name: Dhrishtadyumna
@@ -138,6 +142,8 @@
     - { of: agni, kind: portion, cite: adi 67 }
   returned:
     - { to: agni, cite: "svargarohana 5" }
+  killedBy:
+    - { id: ashwatthama, cite: "CE 10.8.12-21", note: "the night raid; Ashwatthama refused him a weapon's death and trampled and kicked him to death in his bed" }
 
 - id: shikhandi
   name: Shikhandi
@@ -155,6 +161,8 @@
   incarnation:
     - { of: rakshasa-shikhandi, kind: rebirth, cite: adi 67, note: "Adi 67: “was (the incarnation of) a Rakshasa”.", disputed: true }
     - { of: amba, kind: rebirth, note: "Udyoga Parva: Amba, spurned after Bhishma abducted her, burned herself and was reborn to destroy him. Conflicts with Adi 67.", cite: CE 5.188.12, disputed: true }
+  killedBy:
+    - { id: ashwatthama, cite: "CE 10.8.59-61", note: "the night raid; cut in two with a sword" }
 
 - id: virata
   name: Virata
@@ -172,6 +180,8 @@
     - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
   parents:
     - { id: virata-father, rel: father, cite: "CE 4.30.10", note: "The father is unnamed; this link only joins Virata to his brothers (virāṭasya priyo bhrātā śatānīkaḥ)." }
+  killedBy:
+    - { id: drona, cite: "CE 7.161.29-35, 8.4.61", note: "fifteenth day; with two broad-headed arrows, one for Drupada and one for Virata" }
 
 - id: sudeshna
   name: Sudeshna
@@ -198,6 +208,8 @@
     - { id: sudeshna, rel: mother, cite: "CE 4.64.12, 4.8.6", note: "Virata hails him as “joy of Kaikeyi”; Kaikeyi, the Kekaya princess, is Sudeshna (CE 4.8.6, 4.14.1–2)." }
   returned:
     - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+  killedBy:
+    - { id: shalya, cite: "CE 6.45.36-39", note: "first day; after Uttara's elephant killed his horses, Shalya (lord of the Madras) hurled an iron spear" }
 
 - id: brihadratha
   name: Brihadratha
@@ -222,6 +234,8 @@
   kind: rakshasa
   title: rakshasi who joined Jarasandha
   summary: Rakshasi who found the two lifeless halves of the baby discarded and joined them, bringing him to life. He was named Jarasandha, "joined by Jara".
+  killedBy:
+    - { id: balarama, cite: "CE 7.156.8-14", note: "Jarasandha's mace, struck down by Balarama's Sthunakarna weapon, fell on her underground home; she died with her kin" }
 
 - id: jarasandha
   name: Jarasandha
@@ -238,6 +252,8 @@
     - { id: jara, rel: adoptive-mother, note: "Joined the two halves into one living child.", cite: "PE: JARA" }
   incarnation:
     - { of: viprachitti, kind: rebirth, cite: adi 67 }
+  killedBy:
+    - { id: bhima, cite: "CE 2.22.1-7, 2.22.45; Bhagavata Purana 10.72.41-45", note: "after a long wrestling match, at Krishna's hint Bhima whirled him a hundred times and broke his back" }
 
 - id: bhagadatta
   name: Bhagadatta
@@ -251,6 +267,8 @@
     - { id: narakasura, rel: father, ver: later, note: "Later tradition; no text in hand names Bhagadatta Naraka's son. The epic has Bhagadatta ruling Mura and Naraka, “the two Yavana lords” (CE 2.13.13), and Krishna says the Vaishnava weapon he gave Earth for her son Naraka passed from him to Pragjyotisha, Bhagadatta's city (CE 7.28.27–35). In the Bhagavata, Earth commends to Krishna an unnamed son of Naraka (10.59.31). The Puranic Encyclopaedia names Bhagadatta's grandfather as Sailalaya.", disputed: true }
   incarnation:
     - { of: vashkala, kind: rebirth, cite: adi 67 }
+  killedBy:
+    - { id: arjuna, cite: "CE 7.28.36-43", note: "twelfth day; after killing his elephant Supratika, Arjuna split his heart with a crescent-headed arrow" }
 
 - id: narakasura
   name: Narakasura
@@ -262,6 +280,8 @@
   wiki: Narakasura
   parents:
     - { id: bhumi, rel: mother, cite: "CE 7.28.27-31", note: "When Vishnu woke to grant boons, Earth asked that her son Naraka be unkillable by gods and asuras, and he gave her the Vaishnava weapon for him." }
+  killedBy:
+    - { id: krishna, cite: "CE 5.47.74-79; Bhagavata Purana 10.59.20-22; Vishnu Purana 5.29.19-22; Harivamsa 91.54-59", note: "Naraka, son of the Earth, of Pragjyotisha, who had taken Aditi's earrings; killed with Mura and Nisunda" }
 
 - id: hiranyadhanus
   name: Hiranyadhanus
@@ -284,6 +304,8 @@
     - { id: shrutadeva, rel: mother, ver: harivamsa, cite: "Harivamsa 24.27", note: "Born to Shrutadeva and raised among the Nishadas." }
   incarnation:
     - { of: krodhavashas, kind: portion, cite: adi 67 }
+  killedBy:
+    - { id: krishna, cite: "CE 5.47.71, 7.156.17-21", note: "the Nishada king; Krishna tells Arjuna he killed him in battle for Arjuna's sake (7.156.21)" }
 
 - id: shankha
   name: Shankha
@@ -307,6 +329,8 @@
   summary: Son of Shakuni. Duryodhana sent him to carry insults to the Pandavas on the eve of the war; Sahadeva killed him on the last day of the battle, just before killing Shakuni.
   parents:
     - { id: shakuni, rel: father, cite: "CE 9.21.25, 26", note: "“Uluka attacked Nakula… Nakula surrounded Saubala’s son with arrows.” Elsewhere he is called Kaitavya, “the gambler’s son”." }
+  killedBy:
+    - { id: sahadeva, cite: "CE 9.27.29-30", note: "eighteenth day; beheaded with a broad-headed arrow before his father" }
 
 - id: vrishasena
   name: Vrishasena
@@ -318,6 +342,8 @@
   parents:
     - { id: karna, rel: father, cite: "CE 5.164.23" }
     - { id: karna-wife, rel: mother, cite: "CE 11.21.10" }
+  killedBy:
+    - { id: arjuna, cite: "CE 8.62.55-62, 8.4.24-25", note: "seventeenth day, before Karna's eyes, in vengeance for Abhimanyu; arms and head cut off with razor arrows" }
 
 - id: sahadeva-magadha
   name: Sahadeva
@@ -359,6 +385,8 @@
   wiki: Kichaka
   parents:
     - { id: sudeshna-parent, rel: father, cite: "CE 4.17.7", note: "“The commander, the king’s brother-in-law (syāla), most evil-minded.”" }
+  killedBy:
+    - { id: bhima, cite: "CE 4.21.38-62", note: "at night in the dancing hall, where Draupadi had lured him; Bhima crushed him into a ball of flesh" }
 
 
 # --- Yavakri, Raibhya, Janapadi, Ilavida ---
@@ -371,6 +399,8 @@
   summary: Son of Bharadvaja. He won Vedic learning from Indra by austerity, grew arrogant and assaulted the wife of Raibhya's son Paravasu; Raibhya conjured a demon that killed him, and the grieving Bharadvaja cursed Raibhya to die at his own son's hand.
   parents:
     - { id: bharadvaja, rel: father, cite: "CE 3.135.13" }
+  killedBy:
+    - { name: "a rakshasa Raibhya made from his matted hair", cite: "CE 3.137.11-20, 3.139.18-23", note: "Raibhya, enraged at Yavakri's assault on his daughter-in-law, created a rakshasa who speared him; the gods later revived him" }
 
 - id: raibhya
   name: Raibhya
@@ -378,6 +408,8 @@
   kind: rishi
   title: sage, Bharadvaja's friend
   summary: Sage and friend of Bharadvaja. After Yavakri wronged his family he had him killed; by Bharadvaja's curse his own son Paravasu killed him, mistaking him for a deer.
+  killedBy:
+    - { id: paravasu, cite: "CE 3.139.4-8, 23", note: "his son, walking home at night, took him in his black deerskin for a deer and killed him; the gods later revived him" }
 
 - id: arvavasu
   name: Arvavasu

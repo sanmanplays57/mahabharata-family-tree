@@ -31,6 +31,7 @@ module.exports = {
   addParent: addTo("parents"),
   addSpouse: addTo("spouses"),
   addIncarnation: addTo("incarnation"),
+  addKilledBy: addTo("killedBy"),
   alias(id, names) {
     edit(id, (t) => {
       const m = t.match(/\n  aka: \[(.*)\]/);

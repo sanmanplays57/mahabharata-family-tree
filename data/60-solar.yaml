@@ -35,6 +35,8 @@
   wiki: Nimi (king)
   parents:
     - { id: ikshvaku, rel: father, ver: purana, cite: "Vishnu Purana 4.2.9" }
+  killedBy:
+    - { id: vasishtha, ver: purana, cite: "Vishnu Purana 4.5.4-8; Bhagavata Purana 9.13.4-6", note: "by curse, for hiring Gautama while Vasishtha served Indra; his body fell and he refused another" }
 
 - id: puranjaya-ikshvaku
   name: Puranjaya
@@ -216,6 +218,8 @@
     - { id: yuvanashva-2, rel: father, ver: purana, cite: "Vishnu Purana 4.2.29" }
   spouses:
     - { id: bindumati, ver: purana, cite: "Vishnu Purana 4.2.37" }
+  killedBy:
+    - { id: lavana-madhu, ver: ramayana, cite: "Ramayana 7.59.16-22", note: "Lavana's trident, Shiva's gift, burnt him to ash with his army; Chyavana tells Shatrughna" }
 
 - id: bindumati
   name: Bindumati
@@ -325,6 +329,8 @@
   parents:
     - { id: sambhuta, rel: father, ver: purana, cite: "Vishnu Purana 4.3" }
     - { id: bana-ikshvaku, rel: father, ver: ramayana, cite: "Ramayana 1.69.20", far: true }
+  killedBy:
+    - { id: ravana, ver: ramayana, cite: "Ramayana 7.19.16-26; Vishnu Purana 4.3.20", note: "struck on the head with Ravana's palm; dying, he cursed Ravana to fall to an Ikshvaku" }
 
 - id: prishadashva
   name: Prishadashva
@@ -511,6 +517,8 @@
   parents:
     - { id: sagara, rel: father, ver: purana, cite: "Vishnu Purana 4.4.4" }
     - { id: sumati-sagara, rel: mother, ver: purana, cite: "Vishnu Purana 4.4.4" }
+  killedBy:
+    - { id: kapila, cite: "CE 3.105.11-3.106.4; Ramayana 1.39.24-28, 1.40.18; Vishnu Purana 4.4.16-17", note: "digging for the lost sacrificial horse, they insulted Kapila (called Vasudeva), who burnt them to ashes with a look" }
 
 - id: asamanjas
   name: Asamanjas
@@ -1127,6 +1135,8 @@
   parents:
     - { id: pushya, rel: father, ver: purana, cite: "Vishnu Purana 4.4.58" }
     - { id: susandhi, rel: father, ver: ramayana, cite: "Ramayana 1.69.23", far: true }
+  killedBy:
+    - { name: "a lion", ver: purana, cite: "PE: DHRUVASANDHI", note: "PE only, from the Devi Bhagavata: the Kosala king, out hunting; his sons' war for the throne followed" }
 
 - id: sudarshana-ikshvaku
   name: Sudarshana
@@ -1225,6 +1235,8 @@
   notes: "The Padma Purana ends the line instead with Shrutayu, killed in the Bharata war (1.8.161–162)."
   parents:
     - { id: vishrutavat, rel: father, ver: purana, cite: "Vishnu Purana 4.4.58" }
+  killedBy:
+    - { id: abhimanyu, cite: "CE 7.46.21-24, 7.48.37", note: "thirteenth day; the Kosala king, chariotless, tried to behead Abhimanyu, who shot him through the heart" }
 
 - id: janaka-1
   name: Janaka
@@ -1459,6 +1471,8 @@
     - { id: kesari, rel: legal-father, cite: "CE 3.147.24; Ramayana 4.65.27, 4.38.17", note: "Jambavan to Hanuman: “you are Kesari's son, born in his field” (kṣetraja)." }
     - { id: anjana, rel: mother, cite: "Ramayana 4.65.8-27" }
     - { id: vayu, rel: divine-father, cite: "CE 3.147.24", note: "“I was born in Kesari's field by Vayu, the life of the world.”" }
+  killedBy:
+    - { id: indra, ver: ramayana, cite: "Ramayana 7.35.47, 7.36.4", note: "as a child leaping at the sun, struck by the thunderbolt; Brahma's touch revived him" }
 
 # --- Valmiki Ramayana (GRETIL critical edition): the brides of Dasharatha's sons,
 # the Kekaya house, the vanaras and their divine fathers, Ravana's wife and sons ---
@@ -1547,6 +1561,8 @@
   spouses:
     - { id: tara-vanara, cite: "Ramayana 4.19.10-14, 4.22.12-13" }
     - { id: ruma, cite: "Ramayana 4.18.19", note: "Taken from Sugriva by force. Rama to Vali: “while your brother Sugriva lives, you live in lust with Ruma, your brother's wife.”" }
+  killedBy:
+    - { id: rama, cite: "CE 3.264.35-39; Ramayana 4.16.25-26", note: "shot in the heart while wrestling Sugriva, who wore a garland so Rama could tell them apart" }
 
 - id: sugriva
   name: Sugriva
@@ -1649,6 +1665,8 @@
   parents:
     - { id: maya, rel: father, cite: "Ramayana 7.12.12" }
     - { id: hema-apsara, rel: mother, cite: "Ramayana 7.12.12" }
+  killedBy:
+    - { id: vali, ver: ramayana, cite: "Ramayana 4.10.15-17, 4.11.38-39", note: "both: Mayavi killed with his kin in a cave (4.10.15-17); the buffalo Dundubhi crushed by the horns" }
 
 - id: indrajit
   name: Indrajit
@@ -1658,10 +1676,11 @@
   title: Ravana's son, conqueror of Indra
   summary: Son of Ravana and Mandodari, named Meghanada ("thunder") by his father for the roar he gave at birth; later called Indrajit for defeating Indra.
   wiki: Indrajit
-  ver: ramayana
   parents:
-    - { id: ravana, rel: father, cite: "Ramayana 7.12.26-28" }
-    - { id: mandodari, rel: mother, cite: "Ramayana 7.12.26" }
+    - { id: ravana, ver: ramayana, rel: father, cite: "Ramayana 7.12.26-28" }
+    - { id: mandodari, ver: ramayana, rel: mother, cite: "Ramayana 7.12.26" }
+  killedBy:
+    - { id: lakshmana-ayodhya, cite: "CE 3.273.16-24; Ramayana 6.78.28-35", note: "three arrows: his bow arm, his other arm, then his head" }
 
 - id: vajrajvala
   name: Vajrajvala
@@ -1929,6 +1948,8 @@
     - { id: ravana, rel: father, cite: "Ramayana 6.57.9-10, 6.59.29" }
     - { id: dhanyamalini, rel: mother, cite: "Ramayana 6.59.29", note: "Vibhishana to Rama: “they know him as Atikaya, Dhanyamalini's son.”" }
     - { id: mandodari, rel: mother, cite: "PE: AKSA I", note: "The Puranic Encyclopaedia makes Meghanada, Atikaya and Aksha the three sons of Mandodari." }
+  killedBy:
+    - { id: lakshmana-ayodhya, ver: ramayana, cite: "Ramayana 6.59.97-105", note: "beheaded by an arrow charged with the Brahma weapon, on Vayu's advice, since his armour was proof against all else" }
 
 - id: aksha
   name: Aksha
@@ -1941,6 +1962,8 @@
   parents:
     - { id: ravana, rel: father, cite: "Ramayana 5.45.1; PE: AKSA I", note: "The Ramayana calls him “prince Aksha” (kumāra); the Puranic Encyclopaedia makes him Ravana's son by Mandodari." }
     - { id: mandodari, rel: mother, cite: "PE: AKSA I" }
+  killedBy:
+    - { id: hanuman, ver: ramayana, cite: "Ramayana 5.45.34-36, 5.46.1", note: "Hanuman seized him by the feet in the air, whirled him round and dashed him to the ground" }
 
 - id: trishiras-ravana
   name: Trishiras (son of Ravana)
@@ -1950,6 +1973,8 @@
   summary: The three-crowned son of Ravana who rallied his grieving father after Kumbhakarna fell. Hanuman cut off his three heads with his own sword. Not Khara's general Trishiras, nor Tvashtri's son.
   parents:
     - { id: ravana, rel: father, cite: "Ramayana 6.57.1-10, 6.57.21, 6.58.31-40" }
+  killedBy:
+    - { id: hanuman, ver: ramayana, cite: "Ramayana 6.58.34-42", note: "Hanuman seized his sword and cut off his three heads with it" }
 
 - id: devantaka
   name: Devantaka
@@ -1960,6 +1985,8 @@
   summary: One of the four sons Ravana sent out together after Kumbhakarna's death. Hanuman killed him with a blow of his fist to the head.
   parents:
     - { id: ravana, rel: father, cite: "Ramayana 6.57.9-10, 6.58.23-24" }
+  killedBy:
+    - { id: hanuman, ver: ramayana, cite: "Ramayana 6.58.23-24", note: "Hanuman crushed his head with a blow of his fist" }
 
 - id: narantaka
   name: Narantaka
@@ -1970,6 +1997,8 @@
   summary: One of the four sons Ravana sent out together after Kumbhakarna's death, riding a huge mount swift as thought. Vali's son Angada killed him.
   parents:
     - { id: ravana, rel: father, cite: "Ramayana 6.57.9-10, 6.57.79-87" }
+  killedBy:
+    - { id: angada, ver: ramayana, cite: "Ramayana 6.57.87-89", note: "Angada smashed his chest with his fist" }
 
 # --- Wives and side branches of the Ikshvaku line (see build/solar-families.cjs) ---
 - id: sudeva-kashi
@@ -1991,6 +2020,8 @@
   summary: The youngest of Ikshvaku's hundred sons, named Danda ("the rod") by his father, who foresaw that punishment would fall on him. Ikshvaku gave him a kingdom between the Vindhya and Shaivala mountains. He forced himself on Araja, the Bhargava sage's eldest daughter, and the sage destroyed his kingdom with a seven-day rain of dust.
   parents:
     - { id: ikshvaku, rel: father, cite: "Vishnu Purana 4.2.9; Ramayana 7.70.15-16; Bhagavata Purana 9.6.4" }
+  killedBy:
+    - { id: shukra, ver: ramayana, cite: "Ramayana 7.72.4-16", note: "cursed for violating Ushanas's daughter Araja; in seven days Indra's rain of dust burnt him, his army and realm (Dandaka)" }
 
 - id: ikshvaku-sons
   name: Ikshvaku's other sons

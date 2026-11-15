@@ -6,7 +6,8 @@ const [pat, book = "", max = "5"] = process.argv.slice(2);
 const re = new RegExp(pat);
 let n = 0;
 for (const line of readFileSync("refs/gretil/mbh/MBH1-18U.HTM", "utf8").split(/\r?\n/)) {
-  const m = line.match(/^(\d\d),(\d\d\d)\.(\d\d\d)([a-f])\t([^<]*)/);
+  // book 10's lines separate the verse id from the text with "<>" instead of a tab
+  const m = line.match(/^(\d\d),(\d\d\d)\.(\d\d\d)([a-f])(?:\t|<>)([^<]*)/);
   if (!m || (book && m[1] !== book)) continue;
   if (re.test(m[5])) {
     console.log(`CE ${+m[1]}.${+m[2]}.${+m[3]}${m[4]}  ${m[5]}`);

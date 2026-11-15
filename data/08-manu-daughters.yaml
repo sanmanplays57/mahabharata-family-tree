@@ -631,6 +631,8 @@
   parents:
     - { id: uttanapada, rel: father, cite: "Vishnu Purana 1.11.2" }
     - { id: suruchi, rel: mother, cite: "Vishnu Purana 1.11.2" }
+  killedBy:
+    - { name: "a Yaksha (Punyajana)", ver: purana, cite: "Bhagavata Purana 4.10.3-4", note: "unmarried, out hunting in the Himalaya; Dhruva then made war on the Yakshas" }
 
 # --- Vamana and Bali's household (Bhagavata 8.17-22) ---
 - id: vamana
@@ -854,6 +856,9 @@
     - { id: atibala, rel: father, cite: "CE 12.59.98-99" }
     - { id: anga-vena, rel: father, ver: purana, cite: "Vishnu Purana 1.13.7", far: true }
     - { id: sunitha-mrityu, rel: mother, cite: "CE 12.59.99; Vishnu Purana 1.13.7" }
+  killedBy:
+    - { name: "the brahmin sages", cite: "CE 12.59.99-100", note: "for his lawless rule, struck down with blades of kusha grass charged with mantras" }
+    - { name: "the sages", ver: purana, cite: "Bhagavata Purana 4.14.34; Vishnu Purana 1.13.27-29; Padma Purana 1.8.4-12", note: "struck down by their angry cries (hum), being already dead through his scorn of Vishnu" }
 
 - id: nishada-vena
   name: Nishada
@@ -957,3 +962,5 @@
   parents:
     - { id: uma, rel: mother, cite: "Shiva Purana, Rudra-samhita, Kumara-khanda 13; Brahmavaivarta Purana, Ganesha-khanda" }
     - { id: shiva, rel: father, cite: "Shiva Purana, Rudra-samhita, Kumara-khanda 13", note: "In the Shiva Purana Parvati makes him alone, from her body; Shiva accepts him as his son after restoring him." }
+  killedBy:
+    - { id: shiva, ver: purana, cite: "Shiva Purana 2.4.16.34-35, 2.4.17.50-51", note: "guarding Parvati's door; revived with an elephant's head" }

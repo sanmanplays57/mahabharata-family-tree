@@ -67,6 +67,8 @@
   parents:
     - { id: babhru-druhyu, rel: father, ver: purana, cite: "Vishnu Purana 4.17.2; Bhagavata Purana 9.23.14; Harivamsa 23.130" }
     - { id: druhyu, rel: father, ver: purana, far: true, cite: "Vayu Purana 2.37.7", note: "“Druhyu had two heroic sons, Babhru and Setu.”" }
+  killedBy:
+    - { name: "Yauvanashva", ver: harivamsa, cite: "Harivamsa 23.130-131", note: "as Angarasetu, lord of the Maruts, after a fourteen-month war; the Vayu tells it of Ripu" }
 
 - id: aradvat
   name: Aradvat
@@ -971,6 +973,8 @@
   summary: "Son of Udaksena."
   parents:
     - { id: udaksena, rel: father, ver: purana, cite: "Vishnu Purana 4.19.11" }
+  killedBy:
+    - { id: karna, ver: harivamsa, cite: "Harivamsa 15.26", note: "the prince Bhallata, Janamejaya's father, killed long ago by Karna" }
 
 - id: sudhanus
   name: Sudhanus
@@ -1040,6 +1044,8 @@
   ver: purana
   parents:
     - { id: babhru-druhyu, rel: father, ver: purana, cite: "Vayu Purana 2.37.7-8" }
+  killedBy:
+    - { name: "Yauvanashva", ver: purana, cite: "Vayu Purana 2.37.8", note: "after a war of fourteen months; the Harivamsa tells it of Angarasetu" }
 
 - id: sucetas-druhyu
   name: Sucetas

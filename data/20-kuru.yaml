@@ -39,6 +39,8 @@
     - { id: ganga, rel: mother, cite: adi 98 }
   incarnation:
     - { of: vasus, kind: portion, cite: adi 67 }
+  killedBy:
+    - { id: ganga, cite: "CE 1.92.44", note: "drowned each newborn in her stream, as agreed with the cursed Vasus, to free them at once" }
 
 - id: bhishma
   name: Bhishma
@@ -56,6 +58,8 @@
     - { of: vasus, kind: portion, cite: "adi 63, 67", note: "The youngest of the eight Vasus." }
   returned:
     - { to: vasus, cite: "svargarohana 4, 5", note: "“Bhishma attained the Vasus — eight Vasus are now seen” (CE 18.5.9)." }
+  killedBy:
+    - { id: arjuna, cite: "CE 6.114.53-84", note: "tenth day; Arjuna shot from behind Shikhandi; \"these arrows are Arjuna's, not Shikhandi's\"; he died later by choice" }
 
 - id: uparichara
   name: Uparichara Vasu
@@ -88,6 +92,8 @@
   kind: apsara
   title: apsara cursed to be a fish
   summary: Apsara cursed by a Brahmin to live as a fish in the Yamuna. She swallowed Uparichara's seed, and when fishermen caught her she gave birth to twins and was freed.
+  killedBy:
+    - { name: "a fisherman", cite: "CE 1.57.49-53", note: "living as a fish under a curse, she was caught and cut open; freed, she regained her divine form" }
 
 - id: dasharaja
   name: Dasharaja
@@ -136,6 +142,8 @@
     - { id: brahma, rel: father, cite: "CE 12.201.3-5", note: "One of Brahma's seven mind-born sons." }
     - { id: varuna, rel: divine-father, cite: "CE 1.93.5", note: "“The son Varuna obtained long ago, the sage Vasishtha, also called Apava.”" }
     - { id: mitra, rel: divine-father, ver: purana, cite: "Bhagavata Purana 6.18.5", note: "Agastya and Vasishtha, the sons of Mitra and Varuna." }
+  killedBy:
+    - { id: nimi, ver: purana, cite: "Vishnu Purana 4.5.5-6; Bhagavata Purana 9.13.5-6", note: "Nimi's counter-curse made his body fall; reborn from Mitra and Varuna's seed at the sight of Urvashi" }
 
 - id: shakti
   name: Shakti
@@ -150,6 +158,8 @@
     - { id: arundhati, rel: mother, ver: purana, cite: "Vayu Purana 2.9.83" }
   spouses:
     - { id: adrishyanti, cite: "CE 1.167.16, 1.169.1" }
+  killedBy:
+    - { id: kalmashapada, cite: "CE 1.166.1-37", note: "cursed by Shakti to eat men, and possessed by a rakshasa Vishvamitra sent, King Kalmashapada killed and ate him" }
 
 - id: parashara
   name: Parashara
@@ -204,6 +214,8 @@
   parents:
     - { id: shantanu, rel: father, cite: adi 95 }
     - { id: satyavati, rel: mother, cite: adi 95 }
+  killedBy:
+    - { name: "the Gandharva king Chitrangada, his namesake", cite: "CE 1.95.5-10; Vishnu Purana 4.20.10", note: "his Gandharva namesake challenged him; they fought three years at Kurukshetra on the Sarasvati, and the Gandharva's magic won" }
 
 - id: vichitravirya
   name: Vichitravirya
@@ -404,6 +416,8 @@
     - { of: dvapara, kind: avatar, cite: adi 67, note: "“Was Dwapara himself.”" }
   returned:
     - { to: dvapara, cite: "svargarohana 5" }
+  killedBy:
+    - { id: sahadeva, cite: "CE 9.27.47-60", note: "eighteenth day; after cutting off his arms as he hurled a lance, Sahadeva beheaded him, keeping his vow" }
 
 - id: kunti
   name: Kunti
@@ -467,6 +481,8 @@
     - { id: madra-king, rel: father, cite: "PE: MADRI" }
   incarnation:
     - { of: samhlada, kind: rebirth, cite: adi 67 }
+  killedBy:
+    - { id: yudhishthira, cite: "CE 9.16.36-56", note: "eighteenth day; Yudhishthira's spear, hurled as Krishna advised, split his heart" }
 
 - id: karna
   name: Karna
@@ -489,6 +505,8 @@
     - { to: surya, cite: "svargarohana 4, 5", note: "“Karna entered the Sun, his father” (āviveśa raviṃ karṇaḥ pitaram, CE 18.5.18)." }
   spouses:
     - { id: karna-wife, cite: "CE 11.21.10" }
+  killedBy:
+    - { id: arjuna, cite: "CE 8.67.17-37, 8.4.54", note: "seventeenth day; beheaded with the Anjalika arrow while his chariot wheel was stuck in the earth" }
 
 - id: adhiratha
   name: Adhiratha
@@ -555,6 +573,8 @@
     - { of: five-indras, kind: rebirth, cite: adi 199 }
   returned:
     - { to: vayu, ver: vulgate, cite: "svargarohana 4", note: "Seen in heaven seated beside the Wind god, among the Maruts. The Critical Edition has him only “surrounded by the hosts of the Maruts, in that same body” (CE 18.4.5); the Wind god at his side is the vulgate's." }
+  killedBy:
+    - { id: dharma, cite: "CE 3.296.38, 3.297.18", note: "fell dead drinking at the Yaksha's lake unasked; the Yaksha was Dharma (3.298.6); revived (3.297.74)" }
 
 - id: arjuna
   name: Arjuna
@@ -578,6 +598,9 @@
     - { of: nara, kind: avatar, cite: adi 67 }
     - { of: indra, kind: portion, cite: adi 67, note: "Adi 67 says both: a portion of Indra, and Nara reborn." }
     - { of: five-indras, kind: rebirth, cite: adi 199 }
+  killedBy:
+    - { id: babhruvahana, cite: "CE 14.78.32-37, 14.81.12", note: "at Manipura, following the sacrificial horse; revived by Ulupi's jewel, the death serving as expiation for Bhishma" }
+    - { id: dharma, cite: "CE 3.296.31, 3.297.18", note: "fell dead drinking at the Yaksha's lake unasked; the Yaksha was Dharma (3.298.6); revived (3.297.74)" }
 
 - id: nakula
   name: Nakula
@@ -600,6 +623,8 @@
     - { of: five-indras, kind: rebirth, cite: adi 199 }
   returned:
     - { to: ashvins, cite: "svargarohana 4", note: "Seen in heaven in the Ashvins’ realm." }
+  killedBy:
+    - { id: dharma, cite: "CE 3.296.13, 3.297.18", note: "fell dead drinking at the Yaksha's lake unasked; the Yaksha was Dharma (3.298.6); revived (3.297.74)" }
 
 - id: sahadeva
   name: Sahadeva
@@ -622,6 +647,8 @@
     - { of: five-indras, kind: rebirth, cite: adi 199 }
   returned:
     - { to: ashvins, cite: "svargarohana 4", note: "Seen in heaven in the Ashvins’ realm." }
+  killedBy:
+    - { id: dharma, cite: "CE 3.296.19, 3.297.18", note: "fell dead drinking at the Yaksha's lake unasked; the Yaksha was Dharma (3.298.6); revived (3.297.74)" }
 
 - id: draupadi
   name: Draupadi
@@ -762,6 +789,8 @@
     - { of: vishvadevas, kind: portion, cite: adi 67 }
   returned:
     - { to: gandharvas-five, cite: "svargarohana 4" }
+  killedBy:
+    - { id: ashwatthama, cite: "CE 10.8.49-50", note: "the night raid; sword thrust in the belly; the verse calls Ashwatthama \"tiger among men\"" }
 
 - id: sutasoma
   name: Sutasoma
@@ -778,6 +807,8 @@
     - { of: vishvadevas, kind: portion, cite: adi 67 }
   returned:
     - { to: gandharvas-five, cite: "svargarohana 4" }
+  killedBy:
+    - { id: ashwatthama, cite: "CE 10.8.51-52", note: "the night raid; cut off his sword arm, then a thrust to the side; the verse calls Ashwatthama \"bull among men\"" }
 
 - id: shrutakirti
   name: Shrutakirti
@@ -795,6 +826,8 @@
     - { of: vishvadevas, kind: portion, cite: adi 67 }
   returned:
     - { to: gandharvas-five, cite: "svargarohana 4" }
+  killedBy:
+    - { id: ashwatthama, cite: "CE 10.8.55-56", note: "the night raid; sword blow to the face. Named Shrutakarman here; CE 1.213.76 gives that name to Arjuna's son" }
 
 - id: shatanika
   name: Shatanika
@@ -812,6 +845,8 @@
     - { of: vishvadevas, kind: portion, cite: adi 67 }
   returned:
     - { to: gandharvas-five, cite: "svargarohana 4" }
+  killedBy:
+    - { id: ashwatthama, cite: "CE 10.8.53-54", note: "the night raid; Nakula's son struck him with a chariot wheel; the brahmin (Ashwatthama) felled and beheaded him" }
 
 - id: shrutasena
   name: Shrutasena
@@ -829,6 +864,8 @@
     - { of: vishvadevas, kind: portion, cite: adi 67 }
   returned:
     - { to: gandharvas-five, cite: "svargarohana 4" }
+  killedBy:
+    - { id: ashwatthama, cite: "CE 10.8.57-58", note: "the night raid; beheaded. The fifth son is called Shrutakirti here; CE 1.57.103 names Sahadeva's son Shrutasena" }
 
 - id: yaudheya
   name: Yaudheya
@@ -863,6 +900,8 @@
   parents:
     - { id: bhima, rel: father, cite: "adi 61, 63, 95" }
     - { id: hidimbi, rel: mother, cite: "adi 61, 63, 95" }
+  killedBy:
+    - { id: karna, cite: "CE 7.154.51-60", note: "fourteenth night; Karna spent Indra's Vaijayanti spear, kept for Arjuna, which pierced his heart; he fell, crushing troops" }
 
 - id: barbarika
   name: Barbarika
@@ -879,6 +918,8 @@
     - { id: maurvi, rel: mother, ver: purana, cite: "PE: BARBARIKA" }
   incarnation:
     - { of: yaksha-barbarika, kind: rebirth, ver: purana, cite: "PE: BARBARIKA", note: "A Yaksha who boasted he could defeat the Danavas without Vishnu; Brahma cursed him to be killed by Vishnu in his next life." }
+  killedBy:
+    - { id: krishna, ver: purana, cite: "PE: BARBARIKA", note: "PE only, from the Skanda Purana: his weapon touched Krishna's feet; beheaded by the discus, revived by the Goddess" }
 
 - id: maurvi
   name: Maurvi
@@ -937,6 +978,8 @@
     - { id: arjuna, rel: father, cite: "CE 6.86.6" }
     - { id: ulupi, rel: mother, cite: "CE 6.86.6", note: "The CE says only “the daughter of the Naga king”, a childless widow given to Arjuna by Airavata. Calling her Ulupi is traditional (Adi 216 makes Ulupi a daughter of Kauravya of the Airavata line)." }
     - { id: ulupi-husband, rel: legal-father, cite: "CE 6.86.7", note: "“Thus was born, in another's field (parakṣetre), Arjuna's son” — a son born to a widow counts as her dead husband's." }
+  killedBy:
+    - { name: "the rakshasa Alambusha, Rishyashringa's son", cite: "CE 6.86.44-70", note: "eighth day; Alambusha took Garuda's form to devour his naga kin, then beheaded him with a sword" }
 
 - id: babhruvahana
   name: Babhruvahana
@@ -969,6 +1012,8 @@
     - { of: varchas, kind: avatar, cite: adi 67, note: "Soma agreed only on condition that Varchas stay sixteen years and return." }
   returned:
     - { to: soma, cite: "svargarohana 4, 5; CE 18.5.16-17", note: "Varchas, son of Soma, “entered Soma at the end of his deeds” (CE 18.5.17)." }
+  killedBy:
+    - { id: duhshasana-son, cite: "CE 7.48.8-14", note: "thirteenth day; after six warriors broke his chariot, both fell in a mace fight; Duhshasana's son rose first and struck his head" }
 
 - id: uttara
   name: Uttara
@@ -998,6 +1043,9 @@
   spouses:
     - { id: madravati, cite: adi 95 }
     - { id: iravati, ver: purana, cite: "Bhagavata Purana 1.16.2", note: "The Bhagavata's version; the Mahabharata's prose genealogy names his wife Madravati (CE 1.90.93)." }
+  killedBy:
+    - { id: ashwatthama, cite: "CE 10.16.7-8, 14.65.9-18", note: "killed in Uttara's womb by Ashwatthama's brahmashiras weapon and born dead; revived by Krishna (14.68)" }
+    - { id: takshaka, cite: "CE 1.39.30-1.40.5; Bhagavata Purana 12.6.11-16", note: "Shamika's son's curse; Takshaka hid as a worm in a fruit, coiled round the king and burnt him with his venom" }
 
 - id: madravati
   name: Madravati
@@ -1098,6 +1146,8 @@
     - { id: bhanumati, cite: "CE 12.4.2", note: "Daughter of King Chitrangada of Kalinga, carried off by Duryodhana from her svayamvara with Karna’s help; the epic leaves her unnamed." }
   incarnation:
     - { of: kali-demon, kind: portion, cite: adi 67 }
+  killedBy:
+    - { id: bhima, cite: "CE 9.57.42-45, 10.9.55", note: "eighteenth day; Bhima's mace broke his thighs, below the navel; he died that night after hearing of the massacre" }
 
 - id: bhanumati
   name: Bhanumati
@@ -1119,6 +1169,8 @@
   summary: Son of Duryodhana, killed by Abhimanyu on the thirteenth day.
   parents:
     - { id: duryodhana, rel: father, cite: CE 11.25.25 }
+  killedBy:
+    - { id: abhimanyu, cite: "CE 7.45.13-18", note: "thirteenth day; Abhimanyu beheaded him with a broad-headed arrow" }
 
 - id: duhshasana
   name: Duhshasana
@@ -1134,6 +1186,8 @@
     - { id: gandhari, rel: mother, cite: "adi 67, 115" }
   incarnation:
     - { of: pulastya-sons, kind: portion, cite: adi 67 }
+  killedBy:
+    - { id: bhima, cite: "CE 8.61.1-16, 8.4.19", note: "seventeenth day; felled by Bhima's mace, then Bhima tore open his chest and drank his blood, keeping his dice-hall vow" }
 
 - id: vikarna
   name: Vikarna
@@ -1148,6 +1202,8 @@
     - { id: gandhari, rel: mother, cite: "adi 67, 115" }
   incarnation:
     - { of: pulastya-sons, kind: portion, cite: adi 67 }
+  killedBy:
+    - { id: bhima, cite: "CE 7.112.26-31", note: "fourteenth day; one of seven brothers Bhima (Pandunandana) shot down before Karna's eyes" }
 
 - id: kauravas
   name: The hundred Kauravas
@@ -1162,6 +1218,8 @@
     - { of: pulastya-sons, kind: portion, cite: adi 67 }
   membersCite: "CE 1.108.2-14; adi 117"
   members: ["@duryodhana", "@duhshasana", Duhsaha, Duhshala, Jalasandha, Sama, Saha, Vinda, Anuvinda, Durdharsha, Subahu, Dushpradharshana, Durmarshana, Durmukha, Dushkarna, Karna, Vivimshati, "@vikarna", Sulochana, Chitra, Upachitra, Chitraksha, Charuchitra, Sharasana, Durmada, Dushpragaha (Durvigaha), Vivitsu, Vikata, Urnanabha, Sunabha, Nanda, Upanandaka, Senapati, Sushena, Kundodara, Mahodara, Chitrabana, Chitravarman, Suvarman, Durvimochana, Ayobahu, Mahabahu, Chitranga, Chitrakundala, Bhimavega, Bhimabala, Balaki, Balavardhana, Ugrayudha, Bhimakarman, Kanakayu, Dridhayudha, Dridhavarman, Dridhakshatra, Somakirti, Anudara, Dridhasandha, Jarasandha, Satyasandha, Sadahsuvak, Ugrashravas, Ashvasena, Senani, Dushparajaya, Aparajita, Panditaka, Vishalaksha, Duravara, Dridhahasta, Suhasta, Vatavega, Suvarchas, Adityaketu, Bahvashin, Nagadanta, Ugrayayin, Kavachin, Nishangin, Pashin, Dandadhara, Dhanurgraha, Ugra, Bhimaratha, Vira, Virabahu, Alolupa, Abhaya, Raudrakarman, Dridharatha, Anadhrishya, Kundabhedin, Viravin, Dirghalochana, Dirghabahu, Vyudhoru, Kanakadhvaja, Kundashin, Virajas]
+  killedBy:
+    - { id: bhima, cite: "CE 9.2.46, 7.112.30, 9.25.4-16, 9.26.47-48", note: "Dhritarashtra: Bhima alone killed his hundred sons, over the war, ending with Duryodhana" }
 
 - id: kauravas-war
   name: Dhritarashtra's sons named in the war books
@@ -1174,6 +1232,8 @@
     - { id: gandhari, rel: mother, cite: "CE 7.102.68, 9.25.3", note: "Called Duryodhana's uterine brothers (sodaryāḥ)." }
   membersCite: "CE 7.102.68-70, 7.112.30, 9.25.4-20; PE: JAYA I, PURUMITRA I, SATYAVRATA III"
   members: [Shala, Sumukha, Sudarshana, Vrindaraka, Shatrunjaya, Shatrusaha, Chitrayudha, Shrutanta, Jayatsena, Jaitra, Bhuribala, Ravi, Sujata, Durvishaha, Shrutarvan, Jaya, Satyavrata, Purumitra]
+  killedBy:
+    - { id: bhima, cite: "CE 7.112.30, 9.25.4-16, 9.26.47-48", note: "Shatrunjaya, Shatrusaha, Chitrayudha (fourteenth day); Shrutanta, Jayatsena, Jaitra, Bhuribala, Ravi, Sujata, Durvishaha, Sudarshana (eighteenth)" }
 
 - id: duhshala
   name: Duhshala
@@ -1201,6 +1261,8 @@
   wiki: Jayadratha
   parents:
     - { id: vriddhakshatra, rel: father, cite: CE 7.121.17 }
+  killedBy:
+    - { id: arjuna, cite: "CE 7.121.30-32, 8.4.12", note: "fourteenth day, at sunset; Arjuna's charmed arrow carried his head away into his father's lap" }
 
 - id: vriddhakshatra
   name: Vriddhakshatra
@@ -1209,6 +1271,8 @@
   house: other
   title: father of Jayadratha
   summary: King of Sindhu who cursed that whoever made his son's head fall to the ground would have his own head burst; Arjuna's arrow dropped Jayadratha's head into his lap.
+  killedBy:
+    - { id: arjuna, cite: "CE 7.121.17-39", note: "his own curse: whoever dropped his son's head would have his head burst; Arjuna's arrows carried Jayadratha's head into his lap" }
 
 - id: yuyutsu
   name: Yuyutsu
@@ -1240,6 +1304,8 @@
   summary: Unnamed naga, husband of the naga princess who bore Iravan. Garuda (Suparna) killed him, leaving her a childless widow; Airavata then gave her to Arjuna (CE 6.86.7).
   spouses:
     - { id: ulupi, cite: "CE 6.86.7" }
+  killedBy:
+    - { id: garuda, cite: "CE 6.86.7", note: "Suparna (Garuda) killed him, leaving Ulupi a childless widow" }
 
 
 # --- Kings after Janamejaya, from the Vishnu Purana (4.21.2-3, GRETIL critical edition) ---
@@ -1543,6 +1609,8 @@
     - { id: gandhari, rel: mother, cite: "adi 67, 115" }
   incarnation:
     - { of: pulastya-sons, kind: portion, cite: adi 67 }
+  killedBy:
+    - { id: bhima, cite: "CE 7.112.26-31", note: "fourteenth day; one of seven brothers Bhima (Pandunandana) shot down before Karna's eyes" }
 
 - id: chitrasena-son
   name: Chitrasena's son
@@ -1565,6 +1633,8 @@
   summary: Unnamed son of Duhshasana. After six warriors had broken Abhimanyu's chariot and weapons, the two fought on foot with maces; both fell, Duhshasana's son rose first and struck Abhimanyu dead.
   parents:
     - { id: duhshasana, rel: father, cite: "CE 7.32.19, 7.48.8", note: "Abhimanyu, “engaged with six heroes, fell under the power of Duhshasana’s son”." }
+  killedBy:
+    - { name: "a son of Draupadi (unnamed)", cite: "CE 8.4.14", note: "killed by one of Draupadi's sons, not named; only in Sanjaya's list of the dead" }
 
 - id: suratha
   name: Suratha
@@ -1615,6 +1685,8 @@
   summary: Ghatotkacha's son, "Bhimasena's grandson", who blocked Ashwatthama in the night battle, rained trees on him from the sky, and was killed by him.
   parents:
     - { id: ghatotkacha, rel: father, cite: "CE 7.131.44-53" }
+  killedBy:
+    - { id: ashwatthama, cite: "CE 7.131.39-54", note: "fourteenth night; Ashwatthama (Drona's son) killed Ghatotkacha's son, Bhima's grandson" }
 
 - id: janamejaya-brothers
   name: Janamejaya's brothers
@@ -1636,3 +1708,5 @@
   ver: vulgate
   parents:
     - { id: virata, rel: father, ver: vulgate, cite: "PE: SVETA III" }
+  killedBy:
+    - { id: bhishma, ver: vulgate, cite: "CE 6.45 App. I.4.272-279", note: "first day; an arrow charged with the Brahma weapon pierced his heart; only in an appendix passage, not the CE main text" }

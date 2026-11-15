@@ -64,13 +64,15 @@ function validate(people) {
   // Unknown keys usually mean a YAML slip, e.g. an unquoted "cite: adi 63, 95" inside { }
   // which parses as cite "adi 63" plus a stray key "95".
   const PERSON_KEYS = new Set(["id", "name", "aka", "sex", "kind", "house", "title", "summary", "wiki", "pe",
-    "birth", "parents", "spouses", "incarnation", "returned", "same", "ver", "notes", "members", "membersCite", "cite", "_file"]);
+    "birth", "parents", "spouses", "incarnation", "returned", "same", "killedBy", "ver", "notes", "members", "membersCite", "cite", "_file"]);
   const LINK_KEYS = {
     parents: new Set(["id", "rel", "cite", "note", "ver", "far", "disputed"]),
     spouses: new Set(["id", "cite", "note", "ver", "far", "disputed"]),
     incarnation: new Set(["of", "kind", "cite", "note", "ver", "disputed"]),
     returned: new Set(["to", "cite", "note", "ver", "disputed"]),
     same: new Set(["as", "cite", "note", "ver"]),
+    // the killer is a person in the tree (id) or, when they have no box, a name
+    killedBy: new Set(["id", "name", "cite", "note", "ver", "disputed"]),
   };
   for (const p of people) {
     for (const k of Object.keys(p)) if (!PERSON_KEYS.has(k)) errors.push(`${p.id}: unknown field "${k}"`);
@@ -90,6 +92,11 @@ function validate(people) {
     }
     for (const l of p.returned || []) { ref(p.id, l.to, "returned"); cited(l); }
     for (const l of p.same || []) { ref(p.id, l.as, "same"); cited(l); }
+    for (const l of p.killedBy || []) {
+      if (l.id) ref(p.id, l.id, "killedBy");
+      else if (!l.name) errors.push(`${p.id}: killedBy entry needs an id or a name`);
+      if (!l.cite) errors.push(`${p.id}: killedBy entry without a cite`);
+    }
   }
   return { byId, errors, warn, links, uncited };
 }
@@ -100,7 +107,7 @@ function validate(people) {
 function markDoubts(people) {
   let n = 0;
   for (const p of people) {
-    for (const field of ["parents", "spouses", "incarnation", "returned"])
+    for (const field of ["parents", "spouses", "incarnation", "returned", "killedBy"])
       for (const l of p[field] || []) if (l.disputed) { l.doubt = true; delete l.disputed; }
     for (const rel of ["mother", "father", "legal-father"]) {
       const ls = (p.parents || []).filter((l) => l.rel === rel && l.rel !== "birth-cause");
@@ -111,6 +118,27 @@ function markDoubts(people) {
     for (const field of ["parents", "spouses", "incarnation", "returned", "same"]) n += (p[field] || []).filter((l) => l.doubt).length;
   }
   return n;
+}
+
+// Named sets (src/sets.yaml): the Panchakanya, the eight Vasus, Krishna's eight queens…
+// Members are ids, or { id, note, cite }, or { name, note } for one with no box.
+async function loadSets(byId) {
+  const list = yaml.load(await readFile(join(ROOT, "src", "sets.yaml"), "utf8")) || [];
+  const errors = [], ids = new Set();
+  const SET_KEYS = new Set(["id", "name", "aka", "title", "summary", "ver", "cite", "box", "members"]);
+  for (const s of list) {
+    if (ids.has(s.id)) errors.push(`set ${s.id}: duplicate id`);
+    ids.add(s.id);
+    for (const k of Object.keys(s)) if (!SET_KEYS.has(k)) errors.push(`set ${s.id}: unknown field "${k}"`);
+    if (s.box && !byId.has(s.box)) errors.push(`set ${s.id}: unknown box ${s.box}`);
+    s.members = (s.members || []).map((m) => (typeof m === "string" ? { id: m } : m));
+    for (const m of s.members) {
+      if (m.id && !byId.has(m.id)) errors.push(`set ${s.id}: unknown member ${m.id}`);
+      if (!m.id && !m.name) errors.push(`set ${s.id}: member needs an id or a name`);
+    }
+  }
+  if (errors.length) { console.error("SET ERRORS:\n  " + errors.join("\n  ")); process.exit(1); }
+  return list;
 }
 
 // Dynasties (src/dynasties.yaml): each person belongs to the nearest founder up their
@@ -375,6 +403,7 @@ async function main() {
   const nDoubt = markDoubts(people);
   const dynasties = assignDynasties(people, byId, await loadDynasties(byId));
   const namelists = await loadNamelists(byId);
+  const sets = await loadSets(byId);
   const g = buildGraph(people, byId);
   const dot = toDot(people, g);
   await writeFile(join(ROOT, "build", "graph.dot"), dot, "utf8").catch(async () => {
@@ -456,6 +485,7 @@ async function main() {
     overlays: g.overlays,
     dynasties,
     namelists,
+    sets,
     verses,
   };
 

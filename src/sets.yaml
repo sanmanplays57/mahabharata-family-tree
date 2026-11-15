@@ -1,0 +1,147 @@
+# Named sets a person belongs to ("one of the Panchakanya", "one of the eight Vasus").
+# Each person's panel lists them under "One of"; clicking one shows the whole set and lights
+# up its members on the tree. Search finds a set by name.
+#   members: an id, or { id, note, cite }, or { name, note } for a member with no box
+#   box:     an existing group box for the same beings, if any
+#   ver:     as for people (folk = a traditional list not found in the texts on hand)
+# Kind-of-person sets ("the Pandavas") are kept even where the family lines already show
+# them: the user asked for them as attributes in the panel (2026-11-14).
+
+- id: panchakanya
+  name: Panchakanya
+  aka: [the five maidens, Pancha Kanya]
+  title: the five maidens of the morning prayer
+  summary: "A traditional dawn prayer names five women to be remembered every day: ahalyā draupadī kuntī tārā mandodarī tathā. Some recite Sita in Kunti's place. The verse is traditional; it is in none of the epics or Puranas on hand."
+  ver: folk
+  members:
+    - ahalya
+    - draupadi
+    - { id: kunti, note: "Some recitations put Sita here instead." }
+    - { id: tara-vanara, note: "Usually taken as Vali's wife; some read Brihaspati's wife Tara." }
+    - mandodari
+
+- id: chiranjivi
+  name: Seven Chiranjivis
+  aka: [Chiranjivi, the seven immortals, Saptachiranjivi]
+  title: the seven who never die
+  summary: "Seven beings held to live on until the end of the age. The list comes from a traditional verse; the Puranic Encyclopaedia gives it among its lists of sevens."
+  ver: folk
+  cite: "PE: ELU"
+  members: [ashwatthama, bali, vyasa, hanuman, vibhishana, kripa, parashurama]
+
+- id: ashta-vasus
+  name: Ashta Vasus
+  aka: [the eight Vasus, Vasus]
+  title: the eight Vasus
+  summary: "The eight sons of Prajapati, Brahma's son (CE 1.60.16), by six mothers: Dhara (by Dhumra), Dhruva, Soma (by Manasvini), Ahah (by Rata), Anila (by Shvasa), Anala (by Shandili), and Pratyusha and Prabhasa (by Prabhata). Cursed by Vasishtha, they were born to Ganga and Shantanu; the eighth lived on as Bhishma."
+  cite: "CE 1.60.16-19"
+  box: vasus
+  members:
+    - { name: Dhara }
+    - { name: Dhruva }
+    - { name: Soma, note: "Also called Chandramas, Manasvini's son (CE 1.60.18)." }
+    - { name: Ahah }
+    - { name: Anila, note: "Also called Shvasana, Shvasa's son (CE 1.60.18)." }
+    - { name: Anala, note: "Also called Hutashana, Shandili's son (CE 1.60.19)." }
+    - pratyusha
+    - prabhasa
+    - { id: bhishma, note: "Not one of the eight names; the youngest Vasu reborn (adi 63, 67)." }
+
+- id: dvadasha-adityas
+  name: Dvadasha Adityas
+  aka: [the twelve Adityas, Adityas]
+  title: Aditi's twelve sons
+  summary: "Aditi's twelve sons by Kashyapa, lords of the world. Vishnu, the twelfth, is the youngest and the greatest."
+  cite: "CE 1.59.14-16"
+  members: [dhatri, mitra, aryaman, indra, varuna, amsha, bhaga, { id: surya, note: "as Vivasvat" }, pushan, { id: savitri-aditya, note: "Savitr" }, tvashtri, vishnu]
+
+- id: ashtabharya
+  name: Ashtabharya
+  aka: [the eight chief queens, Krishna's eight queens, Ashta Mahishi]
+  title: Krishna's eight chief queens
+  summary: "The Bhagavata names Krishna's eight chief queens and then their sons (10.61.7-16). The Vishnu Purana's list is different: Rukmini and seven more, with Rohini and Sushila of Madra and no Bhadra (5.28.2-5)."
+  ver: purana
+  cite: "Bhagavata Purana 10.61.7-16; Vishnu Purana 5.28.2-5"
+  members: [rukmini, satyabhama, jambavati, satya-nagnajiti, kalindi, { id: lakshmana-madra, note: "the Madra princess" }, mitravinda, bhadra-kekaya]
+
+- id: pandavas
+  name: Pandavas
+  aka: [the five Pandavas, Pancha Pandava, sons of Pandu]
+  title: Pandu's five sons
+  summary: "The five sons born to Pandu's queens by the gods: Yudhishthira, Bhima and Arjuna to Kunti, Nakula and Sahadeva to Madri."
+  cite: "CE 1.100.21, 1.114.6, 1.115.17"
+  members: [yudhishthira, bhima, arjuna, nakula, sahadeva]
+
+- id: upapandavas
+  name: Upapandavas
+  aka: [Draupadi's five sons, the sons of Draupadi, Draupadeyas]
+  title: Draupadi's five sons, one by each Pandava
+  summary: "Prativindhya by Yudhishthira, Sutasoma by Bhima, Shrutakarman (Shrutakirti) by Arjuna, Shatanika by Nakula and Shrutasena by Sahadeva."
+  cite: "CE 1.213.72-78"
+  members: [prativindhya, sutasoma, shrutakirti, shatanika, shrutasena]
+
+- id: kumaras
+  name: Four Kumaras
+  aka: [the Kumaras, Sanakadi, Chatursana]
+  title: Brahma's four ever-young sons
+  summary: "Sages Brahma made from his mind, who never acted in the world and kept their seed."
+  ver: purana
+  cite: "Bhagavata Purana 3.12.4"
+  members: [sanaka, sanandana, sanatana, sanatkumara]
+
+- id: lokapalas
+  name: Lokapalas
+  aka: [the four world-guardians, guardians of the world]
+  title: the four guardians of the world
+  summary: "Brahma made Kubera the fourth guardian of the world beside Yama, Indra and Varuna, and gave him the flying chariot Pushpaka."
+  ver: ramayana
+  cite: "Ramayana 7.3.16-18"
+  members: [indra, yama, varuna, kubera]
+
+- id: kaurava-commanders
+  name: Kaurava commanders
+  aka: [the eleven Kaurava commanders, Duryodhana's akshauhini leaders]
+  title: the eleven kings Duryodhana anointed to lead his armies
+  summary: "Before the war Duryodhana consecrated eleven kings as leaders of his eleven akshauhinis."
+  cite: "CE 5.152.26-29"
+  members: [kripa, drona, shalya, jayadratha, { name: Sudakshina of Kamboja }, kritavarma, ashwatthama, karna, bhurishravas, shakuni, bahlika]
+
+- id: pandava-commanders
+  name: Pandava commanders
+  aka: [the seven Pandava commanders, Yudhishthira's akshauhini leaders]
+  title: the seven kings Yudhishthira anointed to lead his armies
+  summary: "Yudhishthira consecrated seven commanders for his seven akshauhinis, made Dhrishtadyumna commander-in-chief, and set Arjuna over all of them with Krishna as his guide."
+  cite: "CE 5.154.10-14"
+  members: [drupada, virata, satyaki, dhrishtadyumna, dhrishtaketu, shikhandi, { id: sahadeva-magadha, note: "Sahadeva of Magadha, Jarasandha's son" }]
+
+- id: shodasha-rajas
+  name: Sixteen great kings
+  aka: [Shodasha Rajas, Shodasharajika, the sixteen kings]
+  title: the sixteen kings Narada names to console Srinjaya
+  summary: "To console Srinjaya for his dead son, Narada lists sixteen kings, each greater than the boy in merit and wealth, and each of them dead."
+  cite: "CE 12.29.16-129"
+  members:
+    - { name: Marutta, note: "Avikshit's son (āvikṣita), CE 12.29.16." }
+    - { name: Suhotra, note: "Vaitithina, CE 12.29.22; which Suhotra of the tree this is, the verse does not say." }
+    - { id: brihadratha-anga, note: "Brihadratha of Anga, CE 12.29.28" }
+    - { id: shibi, note: "Shibi Aushinara, CE 12.29.35" }
+    - { id: bharata, note: "Bharata, Dushyanta's son, CE 12.29.40" }
+    - { id: rama, note: "Rama Dasharathi, CE 12.29.46" }
+    - { id: bhagiratha, note: "CE 12.29.56" }
+    - { name: Dilipa, note: "Ailavila, Ilavila's son, CE 12.29.64; the tree's Dilipas are Amshumat's son and Khatvanga, neither called Ailavila." }
+    - { id: mandhatri, note: "Mandhatri Yauvanashva, CE 12.29.74" }
+    - { id: yayati, note: "Yayati Nahusha, CE 12.29.87" }
+    - { id: ambarisha-2, note: "Ambarisha, Nabhaga's son, CE 12.29.93" }
+    - { id: shashabindu, note: "Shashabindu Chaitraratha, CE 12.29.98" }
+    - { name: Gaya, note: "Amurtarayas's son, CE 12.29.104." }
+    - { id: rantideva, note: "Rantideva Sankriti, CE 12.29.113" }
+    - { id: sagara, note: "CE 12.29.122" }
+    - { id: prithu-vainya, note: "Prithu Vainya, CE 12.29.129" }
+
+- id: war-survivors
+  name: Survivors of Kurukshetra
+  aka: [the ten survivors, war survivors]
+  title: the ten warriors left alive after the eighteen days
+  summary: "Of all the akshauhinis, seven warriors remained on the Pandava side, the five brothers, Krishna and Satyaki, and three on Duryodhana's, Kripa, Kritavarma and Ashvatthama; all the others died."
+  cite: "CE 9.1.33-35"
+  members: [yudhishthira, bhima, arjuna, nakula, sahadeva, krishna, satyaki, kripa, kritavarma, ashwatthama]

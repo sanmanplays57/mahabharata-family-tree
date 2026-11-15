@@ -124,6 +124,8 @@
     - { of: kalanemi, kind: rebirth, cite: "adi 67; Harivamsa 44.61-62; Vishnu Purana 5.1.23; Bhagavata Purana 10.1.68", note: "Kalanemi, the great Daitya Vishnu killed in the Taraka war, was born as Ugrasena's son. In the Critical Edition's Adi Parva the verse is starred (1.61 *0559); the Harivamsa and the Puranas have it." }
   returned:
     - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+  killedBy:
+    - { id: krishna, cite: "CE 5.47.72, 16.7.9; Bhagavata Purana 10.44.34-38; Vishnu Purana 5.20.73-77; Harivamsa 76.29-42", note: "Krishna, with Baladeva as his second, struck down Ugrasena's wicked son and gave Ugrasena the kingdom" }
 
 - id: krishna
   name: Krishna
@@ -151,6 +153,8 @@
     - { of: vishnu, kind: avatar, cite: adi 199, note: "In Vyasa's five-Indras story, Krishna sprang from one of Narayana's hairs — the black one.", disputed: true }
   returned:
     - { to: vishnu, ver: vulgate, cite: "svargarohana 5", note: "“Vasudeva was a portion of Narayana; accordingly he entered Narayana.” That verse is starred in the Critical Edition (18.5 *0024); its main text has Yudhishthira find Govinda in heaven “in his Brahma form”, attended by his weapons in person (CE 18.4.2–3)." }
+  killedBy:
+    - { name: "the hunter Jara", cite: "CE 16.5.19-21; Bhagavata Purana 11.30.32-34; Vishnu Purana 5.37.62-68", note: "lying in yoga in the forest, he was shot in the sole of the foot by the hunter Jara, who took him for a deer" }
 
 - id: balarama
   name: Balarama
@@ -230,6 +234,8 @@
     - { id: bhishmaka, rel: father, cite: CE 5.155.2 }
   incarnation:
     - { of: krodhavashas, kind: portion, cite: adi 67 }
+  killedBy:
+    - { id: balarama, ver: purana, cite: "Bhagavata Purana 10.61.34-39; Vishnu Purana 5.28.13-23; Harivamsa 89.33-49", note: "at Aniruddha's wedding, after cheating at dice and mocking him; Balarama struck him dead with a bar" }
 
 - id: satyabhama
   name: Satyabhama
@@ -256,6 +262,8 @@
     - { of: devasharma, kind: rebirth, ver: purana, cite: "PE: SATYABHAMA" }
   parents:
     - { id: nighna, rel: father, ver: purana, cite: "Vishnu Purana 4.13.6" }
+  killedBy:
+    - { id: shatadhanu, ver: purana, cite: "Bhagavata Purana 10.57.3-8; Vishnu Purana 4.13.24-28; Harivamsa 29.1-10", note: "Shatadhanvan, named in 10.57.3, killed him asleep for the Syamantaka jewel" }
 
 - id: jambavati
   name: Jambavati
@@ -294,6 +302,8 @@
     - { to: sanatkumara, cite: "svargarohana 5", note: "“Entered Sanatkumara, whence he had come” (CE 18.5.11)." }
   spouses:
     - { id: rati, ver: purana, cite: "Bhagavata Purana 10.55.7-8; Harivamsa 99.6", note: "As Mayavati, in the asura Shambara's house: Kama's wife Rati, waiting for her husband reborn as Pradyumna." }
+  killedBy:
+    - { name: "the Bhojas and Andhakas", cite: "CE 16.4.32-34", note: "at Prabhasa, rushing to save Satyaki, he was overwhelmed by numbers before Krishna's eyes" }
 
 - id: aniruddha
   name: Aniruddha
@@ -308,6 +318,8 @@
     - { id: kakudvati, rel: mother, ver: purana, cite: "Vishnu Purana 4.15.43; Bhagavata Purana 10.61.18", note: "The Bhagavata calls her Rukmavati, Rukmi's daughter." }
   spouses:
     - { id: rochana, ver: purana, cite: "Bhagavata Purana 10.61.25" }
+  killedBy:
+    - { name: "fellow Yadavas, with clubs of eraka grass", cite: "CE 16.4.36-43", note: "in the Mausala brawl; his killer is not named" }
 
 - id: samba
   name: Samba
@@ -322,6 +334,8 @@
     - { id: jambavati, rel: mother, cite: CE 3.17.12 }
   returned:
     - { to: vishvadevas, cite: "svargarohana 5", note: "“They entered the Vishvadevas” (viśveṣāṃ devatānāṃ te viviśuḥ, CE 18.5.15)." }
+  killedBy:
+    - { name: "fellow Yadavas, with clubs of eraka grass", cite: "CE 16.4.36-43", note: "in the Mausala brawl the Yadavas killed one another with eraka grass turned into iron clubs; his killer is not named" }
 
 - id: satyaka
   name: Satyaka
@@ -346,6 +360,8 @@
     - { id: satyaka, rel: father, cite: adi 63 }
   incarnation:
     - { of: maruts, kind: portion, cite: adi 67 }
+  killedBy:
+    - { name: "the Bhojas and Andhakas", cite: "CE 16.4.29-33", note: "at Prabhasa, the drunken Bhojas and Andhakas beat him to death with the leftover drinking vessels" }
 
 - id: hridika
   name: Hridika
@@ -373,6 +389,8 @@
     - { of: ashvapati-asura, kind: rebirth, cite: adi 67, note: "The same chapter says the asura Ashvapati became “Hardikya” (son of Hridika)." }
   returned:
     - { to: maruts, cite: "svargarohana 5" }
+  killedBy:
+    - { id: satyaki, cite: "CE 16.4.16-28", note: "at the drunken feast at Prabhasa, taunted over the night massacre, Satyaki (Yuyudhana) beheaded him with a sword" }
 
 - id: damaghosha
   name: Damaghosha
@@ -401,6 +419,8 @@
     - { of: ravana, kind: rebirth, ver: purana, cite: "Vishnu Purana 4.14.11", note: "“Formerly Hiranyakashipu… he again became Dashanana (Ravana), killed by Vishnu as Raghava; then the Chedi king Shishupala.”" }
   returned:
     - { to: vishnu, ver: purana, cite: "Vishnu Purana 4.14.13", note: "Killed by Krishna, he fixed his mind on him and attained union (sāyujya) with him." }
+  killedBy:
+    - { id: krishna, cite: "CE 2.42.17-23; Bhagavata Purana 10.74.42-45; Vishnu Purana 4.14.13", note: "at Yudhishthira's royal consecration; Krishna's discus took his head, and his radiance entered Krishna" }
 
 - id: devasharma
   name: Devasharma
@@ -454,6 +474,8 @@
   pe: PURUJIT
   parents:
     - { id: kuntibhoja, rel: father, cite: "PE: PURUJIT; CE 8.4.73" }
+  killedBy:
+    - { id: drona, cite: "CE 8.4.73", note: "with his brother Kuntibhoja, Arjuna's maternal uncle(s); only in Sanjaya's list of the dead" }
 
 - id: kuntibhoja-2
   name: Kuntibhoja the younger
@@ -465,6 +487,8 @@
   summary: Son of Kuntibhoja who bore his father's name; brother of Purujit and an adoptive brother of Kunti, he fought on the Pandava side.
   parents:
     - { id: kuntibhoja, rel: father, cite: "PE: PURUJIT; CE 8.4.73" }
+  killedBy:
+    - { id: drona, cite: "CE 8.4.73", note: "with his brother Purujit; the war's Kuntibhoja is the son, the old king being Kunti's adoptive father" }
 
 
 # --- The Yadava line from Yadu to Shura, per the Vishnu Purana 4.11-4.14 (GRETIL critical edition) ---
@@ -598,9 +622,10 @@
   house: yadava
   summary: "Thousand-armed Haihaya emperor of the seven continents, given his boons by the sage Dattatreya. He tied up Ravana \"like a beast\" at Mahishmati, and after 85,000 years of rule was killed by Parashurama."
   wiki: Kartavirya Arjuna
-  ver: purana
   parents:
     - { id: kritavirya, rel: father, ver: purana, cite: "Vishnu Purana 4.11.4" }
+  killedBy:
+    - { id: parashurama, cite: "CE 3.116.19-24, 12.49.41, 8.4.52; Harivamsa 31.101-103; Bhagavata Purana 9.15.34-35", note: "for taking Jamadagni's calf; Parashurama cut off his thousand arms with arrows (3.116) and killed him" }
 
 - id: jayadhvaja
   name: Jayadhvaja
@@ -1173,6 +1198,8 @@
   ver: purana
   parents:
     - { id: nighna, rel: father, ver: purana, cite: "Vishnu Purana 4.13.6" }
+  killedBy:
+    - { name: "a lion", ver: purana, cite: "Bhagavata Purana 10.56.13-14; Vishnu Purana 4.13.12-15; Harivamsa 28.15-24", note: "hunting with the Syamantaka at his throat; the lion took the jewel and was killed by Jambavan" }
 
 - id: shini
   name: Shini
@@ -1403,6 +1430,8 @@
   ver: purana
   parents:
     - { id: hridika, rel: father, ver: purana, cite: "Vishnu Purana 4.14.6" }
+  killedBy:
+    - { id: krishna, ver: purana, cite: "Bhagavata Purana 10.57.18-22; Vishnu Purana 4.13.31-34; Harivamsa 29.12-19", note: "fled on horseback to Mithila; Krishna, on foot, beheaded him with the discus and found no jewel" }
 
 - id: devamidhusha
   name: Devamidhusha
@@ -1543,12 +1572,14 @@
   kind: group
   title: Pandava allies, Kunti's nephews
   summary: "Five sons of the Kekaya king and Shrutakirti, so first cousins of the Pandavas; they fought on the Pandava side."
-  ver: purana
   members: [Santardana]
   membersCite: "Vishnu Purana 4.14.10"
   parents:
     - { id: kekaya-king, rel: father, ver: purana, cite: "Vishnu Purana 4.14.10" }
     - { id: shrutakirti-yadava, rel: mother, ver: purana, cite: "Vishnu Purana 4.14.10" }
+  killedBy:
+    - { id: drona, cite: "CE 7.101.5-22, 8.4.28", note: "fourteenth day; Brihatkshatra, the Kekaya leader, shot through the heart" }
+    - { id: karna, cite: "CE 8.60.3-5", note: "seventeenth day; Vishoka, a Kekaya prince, then the Kekaya commander who came to avenge him; Karna called the suta's son" }
 
 - id: rajadhidevi
   name: Rajadhidevi
@@ -1574,6 +1605,8 @@
   parents:
     - { id: rajadhidevi, rel: mother, ver: purana, cite: "Vishnu Purana 4.14.10" }
     - { id: jayasena-avanti, rel: father, ver: purana, cite: "Bhagavata Purana 9.24.39" }
+  killedBy:
+    - { id: arjuna, cite: "CE 7.74.20-25", note: "fourteenth day; Arjuna beheaded the elder Avanti prince with a razor-headed arrow" }
 
 - id: anuvinda-avanti
   name: Anuvinda
@@ -1585,6 +1618,8 @@
   parents:
     - { id: rajadhidevi, rel: mother, ver: purana, cite: "Vishnu Purana 4.14.10" }
     - { id: jayasena-avanti, rel: father, ver: purana, cite: "Bhagavata Purana 9.24.39" }
+  killedBy:
+    - { id: arjuna, cite: "CE 7.74.26-29", note: "fourteenth day; after he struck Krishna's forehead with a mace, Arjuna cut him apart with six arrows" }
 
 
 - id: asti
@@ -1681,6 +1716,8 @@
     - { id: vasudeva, rel: father, cite: "Harivamsa 25.7; Bhagavata Purana 9.24.46" }
     - { id: sunama, rel: mother, ver: harivamsa, cite: "Harivamsa 25.7" }
     - { id: rohini, rel: mother, ver: purana, cite: "Bhagavata Purana 9.24.46" }
+  killedBy:
+    - { name: "fellow Yadavas, with clubs of eraka grass", cite: "CE 16.4.36-44", note: "in the Mausala brawl; his killer is not named" }
 
 # --- the previous lives of Devaki's six sons ---
 - id: kalanemi-sons
@@ -1827,12 +1864,13 @@
   kind: group
   title: Pradyumna's brothers
   summary: Rukmini's ten sons, Pradyumna the eldest, "not inferior to their father".
-  ver: purana
   members: [Charudeshna, Sudeshna, Charudeha, Sucharu, Charugupta, Bhadracharu, Charuchandra, Vicharu, Charu]
   membersCite: "Bhagavata Purana 10.61.8-9"
   parents:
-    - { id: krishna, rel: father, cite: "Bhagavata Purana 10.61.8-9" }
-    - { id: rukmini, rel: mother, cite: "Bhagavata Purana 10.61.8-9" }
+    - { id: krishna, ver: purana, rel: father, cite: "Bhagavata Purana 10.61.8-9" }
+    - { id: rukmini, ver: purana, rel: mother, cite: "Bhagavata Purana 10.61.8-9" }
+  killedBy:
+    - { name: "fellow Yadavas, with clubs of eraka grass", cite: "CE 16.4.36-43", note: "Charudeshna, in the Mausala brawl; his killer is not named" }
 
 - id: satyabhama-sons
   name: Satyabhama's sons

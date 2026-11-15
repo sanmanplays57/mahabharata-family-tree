@@ -695,15 +695,74 @@ function relSection(title, rows) {
   for (const r of rows) push(groups, r.key, r);
   const out = [];
   let differ = false;
+  // a row names a person in the tree (id) or, for a killer with no box, just a name (text)
+  const who = (r) => (r.id ? go(r.id) : `<span class="plain">${esc(r.text)}</span>`);
   for (const rs of groups.values()) {
     if (rs.length > 1 && rs.some((r) => r.link && r.link.doubt)) {
       differ = true;
-      const alt = (r) => `<span class="alt">${go(r.id)}${r.kind ? ` <span class="cite">${esc(r.kind)}</span>` : ""}${r.link.ver ? ` <span class="tag folk" title="${esc(VER_LABEL[r.link.ver] || "")}">${esc(VER_SHORT[r.link.ver] || r.link.ver)}</span>` : ""} <span class="cite">(</span>${citeHTML(r.link.cite)}<span class="cite">)</span></span>`;
-      const notes = rs.filter((r) => r.link.note).map((r) => `<span class="note"><b>${esc(people.get(r.id).name)}:</b> ${esc(r.link.note)}</span>`).join("");
+      const alt = (r) => `<span class="alt">${who(r)}${r.kind ? ` <span class="cite">${esc(r.kind)}</span>` : ""}${r.link.ver ? ` <span class="tag folk" title="${esc(VER_LABEL[r.link.ver] || "")}">${esc(VER_SHORT[r.link.ver] || r.link.ver)}</span>` : ""} <span class="cite">(</span>${citeHTML(r.link.cite)}<span class="cite">)</span></span>`;
+      const notes = rs.filter((r) => r.link.note).map((r) => `<span class="note"><b>${esc(r.id ? people.get(r.id).name : r.text)}:</b> ${esc(r.link.note)}</span>`).join("");
       out.push(`<li class="alts"><span class="rel">${esc(rs[0].label)}</span><span class="alt-list">${rs.map(alt).join(` <span class="or">or</span> `)}</span>${notes}</li>`);
-    } else for (const r of rs) out.push(li(r.label, go(r.id), r.link));
+    } else for (const r of rs) out.push(li(r.label, who(r), r.link));
   }
   return `<h3>${esc(title)}</h3>${differ ? `<p class="differ">${DOUBT_TAG}</p>` : ""}<ul>${out.join("")}</ul>`;
+}
+// Named sets (src/sets.yaml) and group boxes listing a person by "@id": the panel's "One of".
+const setById = new Map((DATA.sets || []).map((s) => [s.id, s]));
+const setsOf = new Map(), groupsOf = new Map();
+for (const s of DATA.sets || []) for (const m of s.members) if (m.id) push(setsOf, m.id, s);
+for (const p of DATA.people) (p.memberRefs || []).forEach((r) => r && push(groupsOf, r, p.id));
+// who killed whom: killedBy on the victim, read backwards for the killer's "Killed" list
+const killedOf = new Map();
+for (const p of DATA.people) for (const l of p.killedBy || []) if (l.id) push(killedOf, l.id, { id: p.id, link: l });
+function oneOfLine(id) {
+  const chips = [...new Set(setsOf.get(id) || [])].map((s) => `<a class="setchip" data-set="${esc(s.id)}" title="${esc(s.title || "")}">${esc(s.name)}</a>`)
+    .concat([...new Set(groupsOf.get(id) || [])].map((g) => `<a class="setchip go" data-go="${esc(g)}" title="${esc(people.get(g).title || "")}">${esc(people.get(g).name)}</a>`));
+  return chips.length ? `<p class="oneof"><span class="oneof-l">One of</span>${chips.join("")}</p>` : "";
+}
+function deathSections(id) {
+  const p = people.get(id), h = [];
+  const by = p.killedBy || [];
+  // disputed accounts share one "or" row; joint or separate killings get a row each
+  if (by.length) h.push(relSection("Death", by.map((l) => ({ key: l.doubt ? "killed by" : "kb:" + (l.id || l.name), label: "killed by", id: l.id, text: l.name, link: l }))));
+  const killed = killedOf.get(id) || [];
+  if (killed.length) {
+    const list = `<ul>${killed.map((k) => li("", go(k.id), k.link)).join("")}</ul>`;
+    h.push(killed.length > 12 ? `<details class="members-d"><summary>Killed (${killed.length})</summary>${list}</details>` : `<h3>Killed (${killed.length})</h3>${list}`);
+  }
+  return h.join("");
+}
+// A set's own panel: its members lit up on the tree, the rest dimmed.
+function showSet(sid) {
+  const s = setById.get(sid);
+  if (!s) return;
+  clearSelection();
+  const ids = s.members.filter((m) => m.id && nodeEls.has(m.id)).map((m) => m.id);
+  if (s.box && nodeEls.has(s.box)) ids.push(s.box);
+  svg.classList.add("has-sel");
+  for (const id of ids) nodeEls.get(id).classList.add("rel");
+  // members lie far apart, so each gets a name label at a readable size, as on a route
+  pathLabels = ids.map((id) => {
+    const t = el("text", { class: "pl-name end", "text-anchor": "middle" }, gPathTop);
+    t.textContent = people.get(id).name;
+    return { el: t, x: pos[id][0], y: pos[id][1] };
+  });
+  sizePathLabels();
+  const h = [`<h2>${esc(s.name)}</h2>`, `<div class="chips"><span class="tag">set of ${s.members.length}</span>${s.title ? `<span class="tag">${esc(s.title)}</span>` : ""}${s.ver ? `<span class="tag folk">${esc(VER_LABEL[s.ver] || s.ver)}</span>` : ""}</div>`];
+  if (s.aka && s.aka.length) h.push(`<p class="aka">Also called ${s.aka.map(esc).join(", ")}</p>`);
+  if (s.summary) h.push(`<p class="summary">${esc(s.summary)}</p>`);
+  h.push(`<p>Source: ${s.cite ? citeHTML(s.cite) : `<span class="unv" title="A traditional list, not found in the texts on hand">traditional, not in the texts on hand</span>`}</p>`);
+  h.push(`<h3>Members</h3><ul class="setmembers">${s.members.map((m) => `<li>${m.id ? go(m.id) : `<span class="plain">${esc(m.name)}</span> <span class="cite">(no box)</span>`}${m.cite ? " " + citeHTML(m.cite) : ""}${m.note ? `<span class="note">${esc(m.note)}</span>` : ""}</li>`).join("")}</ul>`);
+  if (s.box) h.push(`<p><a class="go" data-go="${esc(s.box)}">→ ${esc(people.get(s.box).name)} in the tree</a></p>`);
+  panelBody.innerHTML = h.join("");
+  if (isOpen(panel)) { panelBody.classList.remove("swap"); void panelBody.offsetWidth; panelBody.classList.add("swap"); }
+  setOpen(panel, true);
+  panel.scrollTop = 0;
+  setHash("#set-" + sid);
+  if (ids.length) {
+    const xs = ids.map((id) => pos[id][0]), ys = ids.map((id) => pos[id][1]), pad = 120;
+    flyTo(null, null, [Math.min(...xs) - pad, Math.min(...ys) - pad, Math.max(...xs) + pad, Math.max(...ys) + pad]);
+  }
 }
 const li = (label, body, link) =>
   `<li><span class="rel">${esc(label)}</span>${body}${link && link.doubt ? " " + DOUBT_TAG : ""}${link && link.ver ? ` <span class="tag folk" title="${esc(VER_LABEL[link.ver] || "")}">${esc(VER_SHORT[link.ver] || link.ver)}</span>` : ""}${link ? " " + citeHTML(link.cite) : ""}${link && link.note ? `<span class="note">${esc(link.note)}</span>` : ""}</li>`;
@@ -729,6 +788,7 @@ function showPanel(id, member) {
   if (p.title) chips.push(p.title);
   h.push(`<div class="chips">${chips.map((c) => `<span class="tag">${esc(c)}</span>`).join("")}${p.ver ? `<span class="tag folk">${esc(VER_LABEL[p.ver] || p.ver)}</span>` : ""}</div>`);
   if (p.aka && p.aka.length) h.push(`<p class="aka">Also called ${p.aka.map(esc).join(", ")}</p>`);
+  h.push(oneOfLine(id));
   // dynasty: nearest first, then the dynasties it sits inside; names fly to the founder
   if (p.dyn) {
     const chain = [];
@@ -756,6 +816,7 @@ function showPanel(id, member) {
   if (lr && lr.path.some((s) => s.id === id))
     h.push(`<a class="back" data-act="rel-back">← back to ${esc(people.get(lastRel.a).name)} → ${esc(people.get(lastRel.b).name)}</a>`);
   if (p.wiki) h.push(`<p class="wiki">Loading Wikipedia summary…</p>`);
+  h.push(deathSections(id));
 
   // lives: previous births -> this person -> merged into
   const prev = p.incarnation || [], ret = p.returned || [];
@@ -856,7 +917,9 @@ function showPanel(id, member) {
 }
 panelBody.addEventListener("click", (e) => {
   const a = e.target.closest("a.go");
-  if (a) { e.preventDefault(); select(a.dataset.go, { fly: true }); }
+  if (a) { e.preventDefault(); select(a.dataset.go, { fly: true }); return; }
+  const s = e.target.closest("a[data-set]");
+  if (s) { e.preventDefault(); showSet(s.dataset.set); }
 });
 
 /* ---------- search ---------- */
@@ -892,6 +955,10 @@ for (const p of DATA.people) {
 }
 for (const d of dynasties.values())
   for (const n of [d.name, ...(d.aka || [])]) index.push({ key: fold(n), text: n, id: d.founder, dyn: d.id });
+for (const s of setById.values()) {
+  const anchor = s.box || (s.members.find((m) => m.id) || {}).id;
+  if (anchor) for (const n of [s.name, ...(s.aka || [])]) index.push({ key: fold(n), text: n, id: anchor, set: s.id, primary: true });
+}
 function search(q) {
   const fq = fold(q);
   if (!fq) return [];
@@ -910,17 +977,17 @@ function search(q) {
     }
     if (!s) continue;
     s += (it.primary ? 4 : 0) - (it.member ? 6 : 0) + Math.min(6, degree(it.id) / 3);
-    const key = it.id + (it.member ? "|" + it.member : "") + (it.dyn ? "#" + it.dyn : "");
+    const key = it.id + (it.member ? "|" + it.member : "") + (it.dyn ? "#" + it.dyn : "") + (it.set ? "$" + it.set : "");
     if (!best.has(key) || best.get(key).s < s) best.set(key, { s, it });
   }
   return [...best.values()].sort((a, b) => b.s - a.s).slice(0, 15);
 }
 let results = [], cursor = 0;
 function resultLI({ it }, i, on) {
-  const p = people.get(it.id), d = it.dyn && dynasties.get(it.dyn);
-  const name = d ? d.name : p.name;
-  const via = d ? `founded by ${esc(p.name)}` : it.member ? `one of: ${esc(it.text)}` : it.primary ? "" : `“${esc(it.text)}”`;
-  const desc = d ? `${d.members.length} people` : p.title || (p.summary || "").split(/(?<=[.;])\s/)[0];
+  const p = people.get(it.id), d = it.dyn && dynasties.get(it.dyn), s = it.set && setById.get(it.set);
+  const name = d ? d.name : s ? s.name : p.name;
+  const via = d ? `founded by ${esc(p.name)}` : s ? (it.text !== s.name ? `“${esc(it.text)}”` : "") : it.member ? `one of: ${esc(it.text)}` : it.primary ? "" : `“${esc(it.text)}”`;
+  const desc = d ? `${d.members.length} people` : s ? `set of ${s.members.length}: ${s.title || ""}` : p.title || (p.summary || "").split(/(?<=[.;])\s/)[0];
   return `<li data-i="${i}" class="${on ? "on" : ""}"><span class="r-name">${esc(name)}</span>${via ? `<span class="r-via">${via}</span>` : ""}<span class="r-desc">${esc(desc)}</span></li>`;
 }
 function renderResults() {
@@ -942,7 +1009,8 @@ function choose(i) {
   const r = results[i];
   if (!r) return;
   closeSearch();
-  select(r.it.id, { fly: true, member: r.it.member });
+  if (r.it.set) showSet(r.it.set);
+  else select(r.it.id, { fly: true, member: r.it.member });
 }
 qEl.addEventListener("input", () => { results = search(qEl.value); cursor = 0; renderResults(); });
 qEl.addEventListener("keydown", (e) => {
@@ -1338,17 +1406,39 @@ function routeLabel(path) {
 const GREAT = (n) => (n <= 0 ? "" : n === 1 ? "great-" : n === 2 ? "great-great-" : `${n}× great-`);
 const ORD = ["", "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"];
 const ordinal = (n) => ORD[n] || n + (n % 100 >= 11 && n % 100 <= 13 ? "th" : { 1: "st", 2: "nd", 3: "rd" }[n % 10] || "th");
-const coreParents = (id) => new Set((people.get(id).parents || []).filter((l) => ["mother", "father", "legal-father"].includes(l.rel)).map((l) => l.id));
+// Siblings are compared one kind of parent at a time: mothers, and fathers (the legal
+// father where there is one, else the father, else the divine father, so the Pandavas
+// share Pandu and Karna's father is Surya).
+// - "half-" when the recorded parents of one kind have nothing in common (Yudhishthira and
+//   Nakula; Karna and Arjuna).
+// - "brother or half-" when they share one but each also has another text's parent the
+//   other lacks (Ravana and Vibhishana: Kaikasi in the Ramayana, two mothers in CE 3.259).
+// - Otherwise full. A parent recorded for only one of them is no evidence: Heti and
+//   Praheti, with only their father known, are brothers (Ramayana 7.4.14 bhrātarau), and
+//   the Vayu's Lanku, father of Malyavan and Sumali but silent on Mali, doesn't split Mali off.
+function siblingPrefix(x, y) {
+  const sets = (id) => {
+    const ls = people.get(id).parents || [], of = (r) => ls.filter((l) => l.rel === r).map((l) => l.id);
+    const dads = of("legal-father").length ? of("legal-father") : of("father").length ? of("father") : of("divine-father");
+    return [new Set(of("mother")), new Set(dads)];
+  };
+  const X = sets(x), Y = sets(y);
+  let half = false, mixed = false;
+  for (let i = 0; i < 2; i++) {
+    const p = X[i], q = Y[i];
+    if (!p.size || !q.size) continue;
+    const shared = [...p].some((v) => q.has(v));
+    if (!shared) half = true;
+    else if ([...p].some((v) => !q.has(v)) && [...q].some((v) => !p.has(v))) mixed = true;
+  }
+  return half ? "half-" : mixed ? (people.get(y).sex === "f" ? "sister or half-" : people.get(y).sex === "m" ? "brother or half-" : "sibling or half-") : "";
+}
 function bloodTerm(a, b, fromId, toId, steps) {
   const B = people.get(toId), g = (f, m, n) => sexWord(B, f, m, n);
   let w;
   if (a && !b) w = a === 1 ? arcLabel(steps[0].arc) : GREAT(a - 2) + g("grandmother", "grandfather", "grandparent");
   else if (!a && b) w = b === 1 ? arcLabel(steps[0].arc) : GREAT(b - 2) + g("granddaughter", "grandson", "grandchild");
-  else if (a === 1 && b === 1) {
-    const pa = coreParents(fromId), pb = coreParents(toId);
-    const full = pa.size >= 2 && pa.size === pb.size && [...pa].every((x) => pb.has(x));
-    w = (full ? "" : "half-") + g("sister", "brother", "sibling");
-  } else if (a === 1) w = (b === 2 ? "" : GREAT(b - 3) + "grand") + g("niece", "nephew", "nephew or niece");
+  else if (a === 1 && b === 1) w = siblingPrefix(fromId, toId) + g("sister", "brother", "sibling"); else if (a === 1) w = (b === 2 ? "" : GREAT(b - 3) + "grand") + g("niece", "nephew", "nephew or niece");
   else if (b === 1) w = GREAT(a - 2) + g("aunt", "uncle", "uncle or aunt");
   else {
     const d = Math.min(a, b) - 1, r = Math.abs(a - b);
@@ -1602,13 +1692,16 @@ $("#relBtn").onclick = () => (rel ? openFinder(rel.a, rel.b) : openFinder(sel));
 
 /* ---------- start ---------- */
 const zoomTo = (id, kk) => { const p = pos[id]; if (!p) return; stopAnim(); k = kk; tx = innerWidth / 2 - p[0] * k; ty = innerHeight / 2 - p[1] * k; apply(); };
-window.__tree = { select, clearSelection, search, fold, flyTo, fit, zoomTo, relate, findRoutes, kinPhrase, routeLabel, relSentence };
+window.__tree = { select, clearSelection, search, fold, flyTo, fit, zoomTo, relate, findRoutes, kinPhrase, routeLabel, relSentence, showSet };
 refreshEdges();
 const start = decodeURIComponent(location.hash.slice(1));
 const [ra, rb] = start.split("~");
 if (rb && people.has(ra) && people.has(rb)) {
   fit();
   relate(ra, rb);
+} else if (start.startsWith("set-") && setById.has(start.slice(4))) {
+  fit();
+  showSet(start.slice(4));
 } else if (start && people.has(start)) {
   const p = pos[start];
   k = 1; tx = innerWidth / 2 - p[0]; ty = innerHeight / 2 - p[1]; apply();

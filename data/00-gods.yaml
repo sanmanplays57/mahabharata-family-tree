@@ -67,6 +67,8 @@
     - { id: marisha-kandu, rel: mother, ver: purana, cite: "Vishnu Purana 1.15.73" }
   spouses:
     - { id: virini, cite: "CE 1.70.5; Vishnu Purana 1.15.88", note: "The Vishnu Purana calls her Asikni, daughter of Virana." }
+  killedBy:
+    - { name: "Virabhadra", ver: purana, cite: "Bhagavata Purana 4.5.17-26, 4.7.3-8", note: "Rudra's portion Virabhadra beheaded him at his sacrifice like a victim and burnt the head; revived with a goat's head" }
 
 - id: kashyapa
   name: Kashyapa
@@ -194,6 +196,8 @@
     - { id: tvashtri-daughter, rel: mother, ver: purana, cite: "Vishnu Purana 3.2.2; Brahma Purana 4.8", note: "Twin of Yami. His stepmother Chhaya cursed him when he raised his foot at her." }
   spouses:
     - { id: dhumorna, cite: "CE 5.115.9, 13.134.3" }
+  killedBy:
+    - { id: shiva, ver: purana, cite: "Shiva Purana 2.5.24.27; PE: MARKANDEYA", note: "mention of Shiva as slayer of Antaka (Death); the PE tells the Markandeya story: Shiva killed Yama, then revived him" }
 
 - id: vayu
   name: Vayu
@@ -259,6 +263,8 @@
   wiki: Kamadeva
   parents:
     - { id: dharma, rel: father, cite: adi 66 }
+  killedBy:
+    - { id: shiva, ver: ramayana, cite: "Ramayana 1.22.10-14; Shiva Purana 2.3.19.14-18", note: "burnt by Shiva's eye for assailing him at his austerities; lives on bodiless as Ananga" }
 
 - id: krodha
   name: Krodha
@@ -412,6 +418,8 @@
     - { of: jaya-vijaya, kind: rebirth, ver: purana, cite: "PE: JAYA XI; Bhagavata Purana 7.1.36-39" }
   spouses:
     - { id: kayadhu, ver: purana, cite: "Bhagavata Purana 6.18.12" }
+  killedBy:
+    - { id: vishnu, cite: "CE 3.100.20, 12.326.73; Bhagavata Purana 7.8.28-31; Vishnu Purana 1.20.32, 4.15.4; Harivamsa 31.64-67, 65.37; Shiva Purana 2.5.43.38-40; Vayu Purana 2.6.66, 2.35.77", note: "in the man-lion form, as the gods recall in praising Vishnu" }
 
 - id: viprachitti
   name: Viprachitti
@@ -423,6 +431,8 @@
   parents:
     - { id: danu, rel: mother, cite: adi 65 }
     - { id: kashyapa, rel: father, cite: adi 65 }
+  killedBy:
+    - { id: indra, ver: purana, cite: "Padma Purana 1.13.191", note: "with the thunderbolt, though he had hidden himself by magic, in the list of the twelve wars" }
 
 - id: samhlada
   name: Samhlada
@@ -451,6 +461,8 @@
   title: mighty Danava
   summary: Danava who, per Adi 67, was born as Kamsa, son of Ugrasena.
   wiki: Kalanemi
+  killedBy:
+    - { id: vishnu, cite: "CE 13.135.82; CE 2 App. I.21.671-672; Bhagavata Purana 10.1.68; Bhagavata Purana 8.10.56", note: "epithet in the Vishnu Sahasranama: slayer of Kalanemi" }
 
 - id: svarbhanu
   name: Svarbhanu
@@ -518,6 +530,8 @@
   wiki: Kacha (sage)
   parents:
     - { id: brihaspati, rel: father, cite: adi 76 }
+  killedBy:
+    - { name: "the Danavas", cite: "CE 1.71.25-43", note: "killed three times, fed to jackals, then burnt and given to Shukra in wine; Shukra revived him each time" }
 
 - id: hamsa
   name: Hamsa
